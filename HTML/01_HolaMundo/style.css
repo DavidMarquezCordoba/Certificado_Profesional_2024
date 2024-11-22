@@ -1,0 +1,92 @@
+/* Afecta a todo */
+*{
+   margin: 0;
+   padding: 0;
+}
+
+/* ********* */
+/*  HEADER  */
+/* ******* */
+
+header{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   text-align: center;
+   background-color: aqua;
+   font-weight: bolder;
+}
+
+
+#img-logo{
+   width: 90px;
+   height: auto;
+}
+
+/* ********* */
+/*    NAV   */
+/* ******* */
+nav{
+   text-align: center;
+   background-color: rgb(210, 192, 228);
+}
+
+/* ********* */
+/* SECTION  */
+/* ******* */
+section{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   background-color: rgb(27, 247, 7);
+}
+
+p{
+   text-align: center;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+}
+
+h1{
+color:blue;
+text-align: center;
+}
+
+h2{
+color:red;
+text-align: center;
+}
+
+h3{
+color:green;
+text-align: center;
+}
+
+h4{
+color:rgb(143, 219, 0);
+text-align: center;
+}
+
+h5{
+color:rgb(255, 166, 0);
+text-align: center;
+}
+
+h6{
+color:blue;
+text-align: center;
+}
+
+#span-1{color: rgb(238, 134, 7)}
+#span-2{color: rgb(174, 0, 255)}
+#span-3{color: rgb(0, 174, 218)}
+#span-4{color: rgb(122, 49, 94)}
+#span-5{color: rgb(1, 133, 56)}
+#span-6{color: rgb(146, 236, 0)}
+
+/* ********* */
+/*  FOOTER  */
+/* ******* */
+footer{
+   text-align: center;
+   background-color: chocolate;
+}
