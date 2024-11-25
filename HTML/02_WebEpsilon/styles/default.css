@@ -1,0 +1,15 @@
+
+
+:root{
+  /* Colores */
+  --principal: #000000;
+  --secundario: #b4b4e8;
+  --blanco: #ffffff;
+  --secundario-oscuro: #0A3981;
+
+  /* Fuentes */
+  --fuente-principal: "Kanit", Arial;
+  --forma-principal: 400; /*normal*/
+  --forma-negrita: 700; /* Tamaño negrita */
+  --estilo-principal: italic;
+}

@@ -1,0 +1,77 @@
+/* CONVERSIÓN */
+/* Creamos un estandar para que el contenido se vea en todos los navegadores igual */
+
+/* Convertimos a 10px el rem */
+html{
+  font-size: 62.5%;
+}
+
+/* Y ahora le volvemos a asignar el valor de 16px */
+body {
+  font-size: 16px;
+  font-family: var(--fuente-principal);
+}
+/* ********** */
+
+.contenedor {
+  max-width: 80rem;
+  /* El auto se reparte de forma igual el horizontal, en este caso la distancia que le hayamos dicho */
+  margin: 0 auto;
+}
+
+
+.cabecera{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem; /* equivalente a 40px */
+  font-style: var(--estilo-principal);
+}
+
+.cabecera span{
+  font-size: 2rem;
+  
+}
+
+.nav-fondo{
+  background-color: var(--secundario);
+}
+
+.nav-cabecera {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-cabecera a {
+  padding: 2rem;
+  color: var(--principal);
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 20%;
+  text-align: center;
+  
+  /* Animamos la animación del nav*/
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-cabecera a:hover{
+  /* padding: 1rem; */
+  font-weight: var(--forma-negrita);
+  background-color: var(--secundario-oscuro);
+  color: var(--blanco);
+  
+  /* Le damos más tamaño al pulsar por encima */
+  font-size: 1.8rem;
+}
+
+/* Mdia Queris */
+@media (max-width:500px) {
+  .nav-cabecera{
+    flex-direction: column;
+  }
+
+  .nav-cabecera a{
+    
+    width: 100%;
+    transition: none;
+  }
+}
