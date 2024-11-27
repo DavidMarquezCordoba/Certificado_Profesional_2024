@@ -13,3 +13,13 @@
   --forma-negrita: 700; /* Tamaño negrita */
   --estilo-principal: italic;
 }
+
+@media (prefers-color-scheme: dark) {
+  /* Colores */
+  :root{
+    --principal: #ffffff;
+    --secundario: #0A3981;
+    --blanco: #000000;
+    --secundario-oscuro: #b4b4e8;
+  }
+}
