@@ -25,6 +25,8 @@ body {
   text-transform: uppercase;
   font-size: 4rem; /* equivalente a 40px */
   font-style: var(--estilo-principal);
+  /* Serían 10px vertical y 0px horizontal */
+  margin: 1rem 0;
 }
 
 .cabecera span{
@@ -63,7 +65,7 @@ body {
   font-size: 1.8rem;
 }
 
-/* Mdia Queris */
+/* Mdia Queries */
 @media (max-width:500px) {
   .nav-cabecera{
     flex-direction: column;
