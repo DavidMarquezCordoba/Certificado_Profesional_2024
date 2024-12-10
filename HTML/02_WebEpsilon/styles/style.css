@@ -27,9 +27,9 @@ body {
 /* *************************** */
 
 .contenedor {
-  max-width: 80rem;
+  max-width: 100rem;
   /* El auto se reparte de forma igual el horizontal, en este caso la distancia que le hayamos dicho */
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .sombra{
@@ -76,11 +76,18 @@ h2{
 }
 
 h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: var(--secundario-oscuro);
 }
 
 h1,h2,h3{
   text-align: center;
+}
+
+p{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem;
 }
 
 .cabecera{
@@ -101,6 +108,7 @@ h1,h2,h3{
 .nav-cabecera {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 
 .nav-cabecera a {
@@ -150,7 +158,7 @@ h1,h2,h3{
 
 .cabecera-contenido{
   /* position: absolute; */
-  height: 100%;
+  width: 100%;
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.5);
@@ -177,6 +185,37 @@ h1,h2,h3{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 1fr;
   
+}
+
+.fondo-iconos{
+  background-color: var(--secundario);
+  display: flex;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50px;
+  justify-content: center;
+  
+}
+
+/* .fondo-iconos svg{
+  justify-self: center;
+} */
+
+.mod-formativos svg{
+  height: 6rem;
+  width: 6rem;
+  align-self: center;
+  
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer{
+  text-align: center;
 }
 
 /* Mdia Queries */
