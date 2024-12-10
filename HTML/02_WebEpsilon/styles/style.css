@@ -60,13 +60,6 @@ body {
   color: var(--blanco);
 }
 
-@media (width <= 768px) {
-  .boton{
-    width: 80%;
-    
-  }
-}
-
 h1{
   font-size: 4rem;
 }
@@ -151,10 +144,7 @@ p{
 
   width: 100%;
   height: 45rem;
-
-  
 }
-
 
 .cabecera-contenido{
   /* position: absolute; */
@@ -197,10 +187,6 @@ p{
   
 }
 
-/* .fondo-iconos svg{
-  justify-self: center;
-} */
-
 .mod-formativos svg{
   height: 6rem;
   width: 6rem;
@@ -228,5 +214,27 @@ footer{
     
     width: 100%;
     transition: none;
+  }
+
+  .boton{
+    width: 80%;
+  }
+}
+
+@media (max-width:1140px) {
+  .mod-formativos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1fr;
+    
+  }
+}
+
+@media (max-width:768px) {
+  .mod-formativos{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1fr;
+    
   }
 }
