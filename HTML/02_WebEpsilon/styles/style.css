@@ -173,9 +173,20 @@ p{
 .mod-formativos{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 1fr;
+  column-gap: 1rem;
   
+  /* subgrid */
+  grid-template-rows: auto auto auto auto;
 }
+
+/* SUBGRID */
+.modformativo{
+  grid-row: span 4;
+  display: grid;
+  grid-template-rows: subgrid;
+  align-items: start;
+}
+/* SUBGRID */
 
 .fondo-iconos{
   background-color: var(--secundario);
@@ -184,7 +195,7 @@ p{
   width: 10rem;
   border-radius: 50px;
   justify-content: center;
-  
+  margin: 0 auto;
 }
 
 .mod-formativos svg{
@@ -226,7 +237,6 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1fr;
-    
   }
 }
 
