@@ -133,7 +133,105 @@
       <!-- Formulario -->
       <section>
         <h2 id="formulario">Formulario de contacto</h2>
-      </section>
+        
+        <!-- Datos personales -->
+        <form action="" class="formulario">
+          <fieldset>
+            <legend>Solicítanos información enciando este formulario</legend>
+
+          <!-- Nombre -->
+          <div class="campo-formulario">
+            <label for="nombre">nombre</label>
+            <input id="nombre" class="input-formulario" name="nombre" type="text" placeholder="Escribe tu nombre">
+          </div>
+          
+          <!-- Mail -->
+          <div class="campo-formulario">
+            <label for="mail">mail</label>
+            <input id="mail" class="input-formulario" name="mail" type="email" placeholder="Escribe tu email">
+          </div>
+
+          <!-- Teléfono -->
+          <div class="campo-formulario">
+            <label for="telefono">telefono</label>
+            <input id="telefono" class="input-formulario" name="telefono" type="tel" placeholder="Escribe tu teléfono">
+          </div>
+          
+          <!-- Estado laboral -->
+          <div class="campo-formulario">
+            <label for="estalabo">estado laboral</label>
+            <input id="estalabo" list="labos" class="input-formulario" name="estalabo" type="tel" placeholder="Escribe si estás trabajando o desempleado ... ">
+            
+            <!-- Datalist es una especie de ayuda de las distintas opciones disponibles -->
+            <datalist id="labos">
+              <option value="Desempleado ">
+              <option value="Trabajo Fijo">
+              <option value="Trabajo Temporal">
+              <option value="Trabajo">
+            </datalist>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="tipoinfo">Tipo de información</label>
+            <select name="tipoinfo" id="tipoinfo" class="input-formulario">
+              <!-- Disabled: Se desabilita para queno se pueda seleccionar -->
+              <!-- selected: Selecciona de forma predeterminada el texto -->
+              <option value="" disabled selected>pincha aquí para seleccionar una opción</option>
+              
+              <!-- Agrupamos los tipos de selecciones con optgroup -->
+              <!-- GRUPO 1 -->
+              <optgroup label="Cursos">
+                <option value="encurso">Curso Comenzado</option>
+                <option value="nocurso">Próximos cursos</option>
+              </optgroup>
+              
+              <!-- GRUPO 2 -->
+              <optgroup label="Trabajos">
+                <option value="encurso">Solicitud de trabajo</option>
+                <option value="encurso">Interesado en prácticas</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="campo-formulario">
+            <label>Selecciona preferencia para contactarte</label>
+            <div class="prefes">
+              <input type="radio" id="prtel" name="contacto" value="prtel">
+              <label for="prtel">Teléfono</label>
+              <!-- ID y FOR deben coincidir para pincha en el nombre y que se marque -->
+              <input type="radio" id="prtmail" name="contacto" value="prtmail">
+              <label for="prtmail">Email</label>
+            </div>
+          </div>
+          
+          <div class="campo-formulario">
+            <label>Selecciona tus campos de interés</label>
+            <div class="interes">
+              <input type="checkbox" id="ofimatica" name="ofimatica">
+              <label for="ofimatica">Ofimática</label>
+              
+              <input type="checkbox" id="contabilidad" name="contabilidad">
+              <label for="contabilidad">Contabilidad</label>
+              
+              <input type="checkbox" id="hosteleria" name="hosteleria">
+              <label for="hosteleria">Hostelería</label>
+              
+              <input type="checkbox" id="seguridad" name="seguridad">
+              <label for="seguridad">Seguridad</label>
+            </div>
+          </div>
+          
+          <div class="campo-formulario">
+            <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje :-)"></textarea>
+          </div>
+          
+          <div class="flex derecha">
+            <input type="submit" class="boton" value="Enviar">
+          </div>
+        </fieldset>
+      </form>
+    </section>  
+      
     </main>
 
 

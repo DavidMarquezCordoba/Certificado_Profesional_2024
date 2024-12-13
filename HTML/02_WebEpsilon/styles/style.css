@@ -9,6 +9,13 @@ html{
   se lo estamos dando al content, a este valor tendríamos que añadir
   el resto de partes del área del elemento que ya hemos visto */
   box-sizing: border-box;
+
+  /* Añadimos para el formulario */
+  /* Para mayor suavidad a la hora de moverse con el ancla */
+  scroll-behavior: smooth; 
+
+  /* Para que se pare al hacer scroll en determinados puntos (como una especie de ancla) */
+  /* scroll-snap-type:mandatory; */
 }
 
   /* Con esto, cuando le damos un un ancho o alto a un elemento, tendrá en cuenta el 
@@ -24,6 +31,11 @@ body {
   font-family: var(--fuente-principal);
   background-color: var(--blanco);
 }
+
+/* .paradas{
+  scroll-snap-align: start;
+  scroll-snap-stop:always;
+} */
 /* *************************** */
 
 .contenedor {
@@ -77,6 +89,9 @@ h1,h2,h3{
   text-align: center;
 }
 
+header span{
+  font-size: 2rem;
+}
 p{
   text-align: center;
   font-size: 1.5rem;

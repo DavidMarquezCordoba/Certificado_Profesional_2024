@@ -1,0 +1,104 @@
+.formulario{
+   background-color: var(--secundario);
+   /* Mirar esto bien */
+   width: min(80rem, 100%);
+
+   /* Para centrar elemento a si mismo */
+   margin: 0 auto;
+   /*  */
+
+   border-radius: 1rem;
+   padding: 2rem;
+   
+}
+
+.formulario fieldset{
+   border: none;
+}
+
+.formulario legend{
+   text-align: center;
+   font-size: 2rem;
+   font-weight: var(--forma-negrita);
+   color: var(--secundario-oscuro);
+   text-transform: uppercase;
+   margin-bottom: 2rem;
+}
+
+.formulario label{
+   text-transform: capitalize;
+   color: var(--secundario-oscuro);
+   font-weight: var(--forma-negrita);
+   /* Separación de 0.5 rem entre el label y el input */
+   margin-bottom: 0.5rem;
+}
+
+.campo-formulario{
+   /* Separación de 1 rem entre label e input del siguiente */
+   margin-bottom: 1rem;
+}
+
+.formulario .campo-formulario > label {
+   display: block;
+   
+}
+
+.input-formulario{
+   /* Ocupamos el 100% de la casilla al ancho total del formulario */
+   width: 100%;
+   /* Quitamos el borde de la propia casilla */
+   border: none;
+
+   /* Damos un poquito de anchura en la casilla */
+   padding: 0.5rem;
+   
+   /* Quitamos la flechita para el Tipo de Información */
+   appearance: none;
+}
+
+.prefes, 
+.interes {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.campo-formulario input[type="radio"], 
+.campo-formulario input[type="checkbox"]{
+   display: none;
+}
+
+/* Para que afecte tanto a Preferencia de contacto y a Interés */
+.campo-formulario input[type="radio"]:checked + label,
+.campo-formulario input[type="checkbox"]:checked + label{
+   background-color: var(--secundario-oscuro);
+   color: var(--blanco);
+}
+
+.campo-formulario .prefes label,
+.campo-formulario .interes label{
+   color: var(--principal);
+   background-color: var(--blanco);
+   font-weight: var(--forma-principal);
+   width: 100%;
+   text-align: center;
+   padding: 0.5rem;
+   border: 1px solid black;
+   /* poner una manita en lugar del ratón típico */
+   cursor: pointer;
+}
+
+textarea{
+   border: none;
+   width: 100%;
+   height: 200px;
+   /* text-align: center; */
+}
+
+.flex{
+   display: flex;
+}
+
+.derecha{
+   justify-content: end;
+}
