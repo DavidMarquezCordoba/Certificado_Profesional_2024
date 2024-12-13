@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+    <!-- necolas style SE CARGA LO PRIMERO-->
+    <!-- Es una hoja de estilos que formatea todos los navegadores -->
+    <!-- https://necolas.github.io/normalize.css/8.0.1/normalize.css -->
+    <link rel="preload" href="/02_WebEpsilon/styles/normalice.css" as="style">
+    <link rel="stylesheet" href="/02_WebEpsilon/styles/normalice.css">
+
     <meta charset="UTF-8">
+
     <!-- Carga de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <!-- Estilos -->
+    <!-- La precarga sirve para preparar el archivo ANTES de conectarlo con el html -->
+    <link rel="preload" href="/02_WebEpsilon/styles/default.css" as="style">
     <link rel="stylesheet" href="/02_WebEpsilon/styles/default.css">
+
+    <link rel="preload" href="/02_WebEpsilon/styles/style.css" as="style">
     <link rel="stylesheet" href="/02_WebEpsilon/styles/style.css">
-    <link rel="stylesheet" href="/02_WebEpsilon/styles/instalaciones-flex.css">
-
-
-    <!-- necolas style -->
-    <!-- Es una hoja de estilos que formatea todos los navegadores -->
-    <!-- https://necolas.github.io/normalize.css/8.0.1/normalize.css -->
-    <link rel="preload" href="/02_WebEpsilon/styles/normalice.css" as="style">
-    <link rel="stylesheet" href="/02_WebEpsilon/styles/normalice.css">
     
+    <link rel="preload" href="/02_WebEpsilon/styles/instalaciones_flex.css" as="style">
+    <link rel="stylesheet" href="/02_WebEpsilon/styles/instalaciones-flex.css">
+    
+    <link rel="preload" href="/02_WebEpsilon/styles/formulario.css" as="style">
+    <link rel="stylesheet" href="/02_WebEpsilon/styles/formulario.css">
+
     <!-- info -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epsilon</title>
@@ -37,7 +47,8 @@
         <a class="instalaciones" href="instalaciones.html">instalaciones</a>
         <a class="nosotros" href="nosotros.html">nosotros</a>
         <a class="blog" href="blog.html">Blog</a>
-        <a class="contacto" href="contacto.html">contacto</a>
+        <!-- Ancla -->
+        <a class="contacto" href="index.html#formulario">contacto</a>
       </nav>        
     </div>
 
@@ -46,6 +57,7 @@
     <section class="cabecera-fondo">
       <div class="cabecera-contenido">
         <h2>academia épsilon</h2>
+        <!-- Icono central -->
         <svg  
           xmlns="http://www.w3.org/2000/svg"  
           width="80"  
@@ -66,15 +78,18 @@
             <path d="M9 15l0 .01" />
             <path d="M9 18l0 .01" />
         </svg>
+        <!-- Botón -->
         <p>Fuengirola, Málaga</p>
-        <a class="boton" href="http://">contactar</a>
+        <a class="boton" href="#formulario">contactar</a>
       </div>
     </section>
     
-    <!-- Section -->
+    <!-- Sombra del contenedor -->
     <main class="contenedor sombra">
       <h2>Módulos formativos</h2>
       <div class="mod-formativos">
+
+        <!-- Módulo formativo 1 -->
         <section class="modformativo">
           <h3>Programación web en el entorno clienteProgramación web en el entorno clienteProgramación web en el entorno cliente</h3>
           <div class="fondo-iconos">
@@ -84,6 +99,7 @@
           <p class="horas">150 Horas</p>
         </section>
         
+        <!-- Módulo formativo 2 -->
         <section class="modformativo">
           <h3>Programación web en el</h3>
           <div class="fondo-iconos">
@@ -93,6 +109,7 @@
           <p class="horas">150 Horas</p>
         </section>
 
+        <!-- Módulo formativo 3 -->
         <section class="modformativo">
           <h3>Implementación de aplicaciones web en entornos internet</h3>
           <div class="fondo-iconos">
@@ -102,6 +119,7 @@
           <p class="horas">150 Horas</p>
         </section>
         
+        <!-- Módulo formativo 4 -->
         <section class="modformativo">
           <h3>Módulo de prácticas profesionales en empresas empresas</h3>
           <div class="fondo-iconos">
@@ -111,9 +129,13 @@
           <p class="horas">150 Horas</p>
         </section>
       </div>
+
+      <!-- Formulario -->
+      <section>
+        <h2 id="formulario">Formulario de contacto</h2>
+      </section>
     </main>
 
-    <!-- Formulario -->
 
 
     <!-- Footer -->
