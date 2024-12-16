@@ -102,3 +102,15 @@ textarea{
 .derecha{
    justify-content: end;
 }
+
+@media (max-width: 768px) {
+   .interes{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .interes label{
+      margin: 0;
+   }
+}
