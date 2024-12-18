@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DOM</title>
+</head>
+
+<style>
+   #miid{
+      background-color: violet;
+   }
+</style>
+<body>
+   <h1 id="mih1">Hola mundo</h1>
+   <div id="miid1">Mi id 1</div>
+   <div id="miid">Javascript</div>
+
+   <script>
+      // Cambio de title
+
+      // Mostramos en console el contenido de title, que está en la posición 2
+      console.log(document.head.children[2]);
+
+      // Modificamos título a la página
+      document.head.children[2].innerHTML = "Título cambiado";
+      
+      
+      // Trabajo en el body
+      console.log(document.body.children[0].innerHTML);
+      console.log(document.body.children[0].id);
+
+      // alert("Voy a borrar el texto");
+      // Añadimos un h2 a través de un innerHTML
+      document.body.children[1].innerHTML = "<h2>Adios</h2>";
+
+      // document.getElementById("miid").innerHTML="<h3>Modificado</h3>"
+
+      // Modificamos el "modificado"
+      document.getElementById("miid").onclick = function(){
+         document.getElementById("miid").innerHTML = "Me has tocado";
+      };
+
+      // document.getElementsByTagName("div")[1].onclick = function(){
+      //    document.getElementById("mih1").innerHTML = "<h1>He tocado un div</h1>";
+      // };
+
+      console.log("backgroundColor:");
+
+      let objetoCSS = getComputedStyle(document.getElementById("miid"));
+      console.log(objetoCSS.getPropertyValue("background-color"));
+      
+      console.log(document.getElementById("miid").style.backgroundColor);
+      
+      
+      document.getElementById("miid").onclick = function(){
+         document.getElementById("mih1").innerHTML = "He tocado un div";
+         document.getElementById("miid").style.backgroundColor = "green";
+         // document.getElementById("mih1").style = "background-color: green";
+         
+         console.log("backgroundColor:");
+         console.log(objetoCSS.getPropertyValue("background-color"));
+         
+         // console.log(document.getElementById("miid").style.backgroundColor);
+         
+         
+      };
+
+      let misdiv1 = document.getElementsByTagName("div");
+      let misdiv2 = document.querySelectorAll("div");
+      console.log(misdiv1.length);
+      console.log(misdiv2.length);
+      
+   </script>
+
+   <!-- ////////// DIA 2 //////////// -->
+   <div id="div3">div3</div>
+   <div id="div4">div4</div>
+
+   <script>
+      console.log(misdiv1.length);
+      console.log(misdiv2.length);
+
+      misdiv2 = document.querySelectorAll("div");
+      console.log(misdiv2.length);
+      
+   </script>
+
+</body>
+</html>

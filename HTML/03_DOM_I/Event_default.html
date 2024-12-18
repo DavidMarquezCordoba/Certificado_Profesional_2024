@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Evento por defecto</title>
+</head>
+<body>
+
+   <a id="google" href="http://google.es" target="_blank">Google</a>
+
+   <script>
+      function noGoogle(event) {
+         // Para evitar que <a> redirija a google
+         event.preventDefault();
+         alert("No tienes permiso para ir a Google");
+      }
+
+      document.querySelector("#google").addEventListener("click", noGoogle);
+   </script>
+</body>
+</html>

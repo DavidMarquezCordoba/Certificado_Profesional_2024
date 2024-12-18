@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>events</title>
+</head>
+
+<style>
+
+   .miflex{
+      display: flex;
+      border: 1px solid black;
+   }
+
+   .cajas{
+      display: flex;
+      height: 100px;
+      width: 100%;
+      border: 1px solid black;
+      justify-content: center;
+      align-items: center;
+   }
+
+   #caja1{
+      background-color: aliceblue;
+   }
+
+   #caja2{
+      background-color: aqua;
+   }
+   
+   #caja3{
+      background-color: beige;
+   }
+
+   #caja4{
+      background-color: bisque;
+   }
+</style>
+<body>
+   <div class="miflex">
+      <div class="cajas" id="caja1">1</div>
+      <div class="cajas" id="caja2">2</div>
+      <div class="cajas" id="caja3">3</div>
+      <div class="cajas" id="caja4">4</div>
+   </div>
+
+   <script>
+
+      // Creamos la función que precargará y cambiará el estilo
+      function miClick(event) {
+
+         // Vemos todos los eventos posibles
+         console.log(event);
+         
+         // Imprime la id de la caja
+         console.log(event.target.id);
+
+         // Precarga el estilo que cambiará cuando haga click
+         document.getElementById(event.target.id).style.backgroundColor = "red";
+         
+         // Si pulsa alt mientras hace click
+         if (event.altKey == true) {
+            document.getElementById(event.target.id).style.backgroundColor = "green";
+         } 
+         
+         // Si pulsa Ctrl mientras hace click
+         if (event.ctrlKey == true) {
+            document.getElementById(event.target.id).style.backgroundColor = "violet";
+         }
+      }
+
+      // Declaración de variables
+      let caja1 =  document.querySelector("#caja1");
+      let caja2 =  document.querySelector("#caja2");
+      let caja3 =  document.querySelector("#caja3");
+      let caja4 =  document.querySelector("#caja4");
+
+      // Esto hace que realmente se pinte de color, la acción en sí
+      // caja1.onclick = miClick;
+      // caja2.onclick = miClick;
+      // caja3.onclick = miClick;
+      // caja4.onclick = miClick;
+
+      // Otra forma de hacerlo; con EventListenner
+      caja1.addEventListener("click", miClick);
+      caja2.addEventListener("click", miClick);
+      caja3.addEventListener("click", miClick);
+      caja4.addEventListener("click", miClick);
+
+   </script>
+</body>
+</html>
