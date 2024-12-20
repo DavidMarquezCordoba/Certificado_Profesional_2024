@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ejercicio DOM</title>
+   
+
+   <style>
+
+      .caja-padre{
+         display: flex;
+         height: 200px;
+         gap: 10px;
+      }
+
+      .cajas{
+         display: flex;
+         width: 100%;
+         border: 1px black solid;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .roja{
+         background-color: red;
+      }
+
+   </style>
+</head>
+<body>
+   <div class="caja-padre">
+      <div class="cajas roja" id="caja5">Desactivar</div>
+      <div class="cajas roja" id="caja6">Cambia color</div>
+   </div>
+
+   <script src="script/script.js"></script>
+</body>
+</html>
