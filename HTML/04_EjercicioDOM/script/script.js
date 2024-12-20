@@ -27,6 +27,7 @@ function desactivar(event) {
    caja6.style.backgroundColor = "grey";
    // Cambiamos el nombre a DESACTIVADO
    caja6.innerHTML="DESACTIVADO";
+   caja5.innerHTML="Activar";
    // Elminamos el evento
    caja6.removeEventListener("click", cambioColor);
    // Mostramos imagen
@@ -44,6 +45,7 @@ function activar(event) {
    // Restauramos color y texto 
    caja6.style.backgroundColor = "red";
    caja6.innerHTML = "Cambia color";
+   caja5.innerHTML = "Desactivar";
 
    // Volvemos a activar el evento cambio de color 
    caja6.addEventListener("click", cambioColor);
