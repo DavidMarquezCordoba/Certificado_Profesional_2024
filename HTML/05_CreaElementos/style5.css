@@ -1,0 +1,37 @@
+/* Una forma visual de visualizar todas las cajas */
+*{
+   outline: 1px solid black;
+   margin: 5px;
+   padding: 5px;
+}
+
+html {
+   background-color: aquamarine;
+}
+
+body{
+   background-color: white;
+}
+
+.agua{
+   background-color: aqua;
+}
+
+.rosa{
+   background-color: pink;
+}
+.violeta{
+   background-color: violet;
+}
+.gris{
+   background-color: gray;
+}
+
+.por-texto{
+   background-color: violet;
+}
+
+.caja13{
+   background-color: black;
+   color: white;
+}
