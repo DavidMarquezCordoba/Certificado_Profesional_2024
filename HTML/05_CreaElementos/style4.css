@@ -1,12 +1,18 @@
+html {
+   background-color: aquamarine;
+}
 /* Una forma visual de visualizar todas las cajas */
 *{
    outline: 1px solid black;
    margin: 5px;
    padding: 5px;
+   /* Calc sirve para hacer cálculos */
+   width: calc(100% - 10px);
 }
 
-html {
-   background-color: aquamarine;
+/* Para que se ajuste a la caja padre */
+*, *:before, *:after {
+   box-sizing: inherit;
 }
 
 body{
