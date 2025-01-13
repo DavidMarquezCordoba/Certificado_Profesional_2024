@@ -17,7 +17,12 @@ console.log("resta decimal con toFixed -> ",(0.3 - 0.2).toFixed(2));
 console.log("resta decimal con toFixed -> ",(0.3 - 0.2).toFixed(2)+1);
 
 console.log("resta decimal con toFixed Number-> ",Number((0.3 - 0.2).toFixed(2)));
+// Resultado = texto
 console.log("resta decimal con toFixed Number-> ",Number((0.3 - 0.2)).toFixed(2)+1);
+// Resultado ennúmero, lo forzamos con el + delante
+let resultadoDecimal = +(0.3-0.2).toFixed(2);
+resultadoDecimal = 0.10 //Texto convertido a número
+
 
 console.log("119_223_372_036_854_775_808",119_223_372_036_854_775_808);
 console.log("119_223_372_036_854_775_808 bigint",119_223_372_036_854_775_808n);
