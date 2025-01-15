@@ -1,0 +1,26 @@
+
+
+:root{
+  /* Colores */
+  --principal: #000000;
+  --secundario: #b4b4e8;
+  --blanco: #ffffff;
+  --secundario-oscuro: #0A3981;
+  --seleccionado: #cb5b00;
+
+  /* Fuentes */
+  --fuente-principal: "Kanit", Arial;
+  --forma-principal: 400; /*normal*/
+  --forma-negrita: 700; /* Tamaño negrita */
+  --estilo-principal: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Colores */
+  :root{
+    --principal: #ffffff;
+    --secundario: #0A3981;
+    --blanco: #000000;
+    --secundario-oscuro: #b4b4e8;
+  }
+}
