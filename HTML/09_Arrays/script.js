@@ -103,7 +103,6 @@ console.table(arrayObjetos);
 
 
 
-// NO ME HA QUEDADO CLARO !!!!!!!!!!!!!!!!
 
 // ================================ //
 // REST OPERADOR o SPREAD OPERATOR //
@@ -111,19 +110,22 @@ console.table(arrayObjetos);
 
 // ¿Qué hace?: CREAR NUEVO ARRAY CON UN ARRAY Y VALORES NUEVOS
 
+// numMayor(1,5,9, ...) los parámetros los metemos en un array llamado ...numeros
 function numMayor(...numeros) {
-   let elMayor = numeros[0];
-   numeros.forEach(function(numero){
-      if(elMayor < numero){
+   let elMayor = 0;//Creamos una variable que usaremos para comparar números
+   numeros.forEach(function(numero){ //Recorremos el array
+      if(elMayor < numero){   //Recorremos cada número y actualizamos el mayor
          elMayor = numero;
       }
    });
 
+   // Imprimimos el mayor
    console.log(elMayor);
    
 }
 
-console.log(numMayor(1,5,9));
+// Llamamos a la función queaveriguará cuál es el número mayor
+numMayor(1,5,9,10,15,99,0,-1);
 
 
 
