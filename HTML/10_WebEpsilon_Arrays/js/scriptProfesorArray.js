@@ -1,8 +1,14 @@
+// Creamos el contenedor base
 const contenedor = document.querySelector(".mod-formativos");
 
+// Iteraremos cada objeto del array 
+// Pasamos por parámetro el nombre del array de datos.js
 modulos.forEach(function(modulo){
-   const moduloFormativo = document.createElement("section");
-   moduloFormativo.classList.add("modformativo");
+
+   // Empezamos a crear la estructura
+
+   const moduloFormativo = document.createElement("section"); //Creamos elemento
+   moduloFormativo.classList.add("modformativo"); 
 
    const moduloFormativo_titulo = document.createElement("h3");
    moduloFormativo_titulo.innerHTML = modulo.titulo;
@@ -18,11 +24,12 @@ modulos.forEach(function(modulo){
    moduloFormativo_horas.classList.add("horas");
    moduloFormativo_horas.innerHTML = modulo.horas;
 
-   // Inyecta cada título, icono, texto y horas para cada iteración
+   // rellena en la memoria título, icono, texto y horas para cada iteración
    moduloFormativo.appendChild(moduloFormativo_titulo);
    moduloFormativo.appendChild(moduloFormativo_icono);
    moduloFormativo.appendChild(moduloFormativo_texto);
    moduloFormativo.appendChild(moduloFormativo_horas);
 
+   // Inyecta la información iterada en la web
    contenedor.appendChild(moduloFormativo);
 });
