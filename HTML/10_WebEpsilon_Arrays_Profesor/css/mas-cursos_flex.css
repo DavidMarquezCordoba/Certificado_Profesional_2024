@@ -1,0 +1,66 @@
+.nav-cabecera .mas-cursos {
+    color: var(--seleccionado);
+}
+
+.otros-cursos {
+    text-align: center;
+}
+
+.otros-cursos img {
+    width: 95%;
+    margin: 1rem;
+    box-shadow: 0px 4px 9px -1px rgba(0,0,0,0.75);
+}
+
+@media (min-width:768px) {
+    .otros-cursos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .otros-cursos img {
+        width: 49%;
+        margin: 1rem 0;
+    }
+    .otros-cursos .imagen1 {
+        order: 1;
+    }
+    .otros-cursos .aula1 {
+        order: 2;
+    }
+    .otros-cursos .imagen2 {
+        order: 3;
+    }
+    .otros-cursos .imagen2-3 {
+        order: 3;
+    }
+    .otros-cursos .aula2 {
+        order: 4;
+    }
+    .otros-cursos .imagen3 {
+        order: 5;
+    }
+    .otros-cursos .aula3 {
+        order: 6;
+    }
+    .otros-cursos .aula1,
+    .otros-cursos .aula2,
+    .otros-cursos .aula3 {
+        width: 100%;
+    }
+}
+
+@media (min-width:1140px) {
+    .otros-cursos img {
+        width: 32%;
+        margin: 1rem 0;
+    }
+    .otros-cursos .imagen2-3 {
+        order: 5;
+    }
+    .otros-cursos .aula1,
+    .otros-cursos .aula2,
+    .otros-cursos .aula3 {
+        width: 66%;
+    }
+}

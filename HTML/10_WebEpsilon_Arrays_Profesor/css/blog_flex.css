@@ -1,0 +1,77 @@
+.nav-cabecera .blog {
+    color: var(--seleccionado);
+}
+
+.miblog img {
+    width: 100%;
+}
+
+.miblog p {
+    text-align: justify;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+li {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.cursos-comenzados,
+.objetivo,
+.experiencias {
+    width: 90%;
+    margin: 5rem auto;
+}
+
+@media (min-width:768px) {
+    .des-objetivo,
+    .arti-experiencias  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+    .arti-experiencias article {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width:1140px) {
+    .miblog {
+        width: 95%;
+        margin: 2rem auto;
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .des-objetivo,
+    .arti-experiencias  {
+        display: block;
+    }
+
+    .cursos-comenzados,
+    .objetivo,
+    .experiencias {
+        width: 100%;
+    }
+
+    .cursos-comenzados {
+        margin-top: 0;
+        flex-basis: 60%;
+    }
+    .objetivo {
+        order: -1;
+        flex-basis: 20%;
+    }
+    .experiencias {
+        flex-basis: 20%;
+    }
+}
+
+.experiencias h3 {
+    color: var(--secundario-oscuro);
+}
