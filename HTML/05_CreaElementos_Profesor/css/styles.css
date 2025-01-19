@@ -1,0 +1,46 @@
+html {
+    background-color: aquamarine;
+    box-sizing: border-box;
+}
+
+* {
+    outline: 1px solid black; 
+    margin: 5px;
+    padding: 5px;
+    width: calc(100% - 10px);
+}
+
+*, *:before, *:after { box-sizing: inherit;}
+
+
+body {
+    background-color: white;
+}
+
+.agua {
+    background-color: aqua;
+}
+
+.rosa {
+    background-color: pink;
+}
+.violeta {
+    background-color: violet;
+}
+.gris {
+    background-color: grey;
+}
+
+.por-texto {
+    background-color: cadetblue;
+}
+
+.caja13 {
+    background-color: black;
+    color: white;
+}
+
+input {
+    display: block;
+}
+
