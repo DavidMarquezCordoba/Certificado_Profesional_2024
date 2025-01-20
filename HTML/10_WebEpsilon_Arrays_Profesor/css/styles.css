@@ -228,7 +228,14 @@ h1, h2, h3 {
 .modformativo .icono svg{
     width: 8rem;
     height: 8rem;
+    transition: all 0.3s ease-in-out;
 }
+
+.modformativo .icono:hover svg{
+    width: 12rem;
+    height: 12rem;
+}
+
 .modformativo p {
     line-height: 2;
     text-align: center;
