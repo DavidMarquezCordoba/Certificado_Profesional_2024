@@ -1,0 +1,106 @@
+/* Con esto no dejamos que se copie nada de la web */
+body{
+   user-select: none;
+}
+
+.midiv {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 50px auto;
+   width: 100%;
+   height: 100px;
+   color: white;
+   text-align: center;
+   cursor: pointer;
+
+   transition: transform 1s;
+}
+
+.rojo {
+   background-color: red;
+}
+
+.azul {
+   background-color: blue;
+}
+
+.verde {
+   background-color: green;
+}
+
+.amarillo{
+   background-color: yellow;
+   color: black;
+}
+
+.violeta{
+   background-color: violet;
+}
+
+.rotar{
+   transform: rotate(180deg);
+}
+
+.transladar{
+   /* Si queremos que haga dos cosas distintas, se debe poner al lado, de lo
+   contrario, solo cogerá elúltimo */
+   transform: 
+      translate(100px, 100px);
+}
+
+.escalar {
+   transform: scale(1.5);
+}
+
+.escalar-transladar {
+   transform: 
+      translate(100px, 100px)
+      scale(0.5);
+}
+
+.animar{
+   animation: animacion 4s ease-in-out infinite;
+}
+
+@keyframes animacion {
+   0%{
+      transform: scale(1) translate(0px, 0px) rotate(0deg);
+      
+   }
+
+   50%{
+      transform: scale(0.5) translate(-100px, 100px) rotate(360deg);
+      background-color: red;
+   }
+
+   100%{
+      transform: scale(1) translate(0px, 0px) rotate(0deg);
+      
+   }
+}
+
+/* Modal */
+
+.modal {
+   /* Para que no se vea */
+   display: block; 
+   
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ocultar{
+   display: none;
+
+}
+
+/* Hay que indicar esta instrucción al body */
+.quieto{
+   /* Todo lo que esté fuera de la pantalla visible, lo oculte, que pare el body */
+   overflow: hidden;
+}
