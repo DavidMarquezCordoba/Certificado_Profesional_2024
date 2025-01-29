@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.caja{
+    display: flex;
+    background-color: red;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    align-items: center;
+}
+
+.azul{
+    background-color: blue;
+}
+.verde{
+    background-color: green;
+}
+.gris{
+    background-color: gray;
+}
+
