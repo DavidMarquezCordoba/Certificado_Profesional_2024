@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.verde{
+    background-color: green;
+}
+
+.azul{
+    background-color: blue;
+}
