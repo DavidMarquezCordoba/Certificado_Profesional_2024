@@ -1,0 +1,185 @@
+NOTAS: 1º SUBIR EXAMEN A GITHUB Y DESCARGAR EL DEL PROFESOR
+        2º DESCARGAR JUEGO DE CARTAS
+
+////////////////////////////
+    Miércoles  05/02/2025
+////////////////////////////
+
+ACCESIBILIDAD
+
+Carcterísticas:
+    * Leer los textos alternativos de las imágenes
+    * Lista de encabezados con la estructura de la página
+    * Lista de vínculos o enlaces de la página
+    * Lista de tablas de la página
+    * Crean atajos de teclado para navegar por la página
+    * Velocidad de lectura configurable
+
+A tener en cuenta:
+    - Usar elementos semánticos a la hora de crear las páginas
+    - Usar los WAI-ARIA (Atributos, estados y roles adicionales)
+    - Contraste de colores adecuado
+    - Navegación con teclado
+    - Subtítulos en los vídeos
+    - Uso de atributo ALT de las imágenes con una descripción más detallada de la imagen
+    - Crear migas de pan (BREADCRUMBS) => Inicio/Todas las gestiones/Otros servicios/Asistencia y Cita
+
+Macro estructuctura semántica del código HTML
+    - main
+    - section
+    - header
+Micro estructura semántica del código HTML
+    - figure: Se usan para imágenes con descripciones
+    - figcaption: Descripción de la imagen (típica descripción corta en los periódicos detrás de la foto)
+    - code:
+    - mark: Resalta el texto como si estuviera marcado conun marcados fluorescente
+    - time: Representa fechas u horas en un formato legible para máquinas
+
+<time datetime="2024-01-01">1 de Enero de 2024</time>
+
+    - address: Representa info de contacto, direcciones, números de tlf, correo, enlaces, rrss.
+
+<address>
+    Avenida ......
+    29230 Segovia
+    Email ....
+</address>
+
+    - abbr: Define una abreviatura o acrónico
+
+        Mostrando el significado (title) al pasar el cursor por encima
+<p> La <abbr title="Organización mundial de la salud"> OMS </abbr> es una agencia dela ONU </p>
+
+    - cite: Define el título de una obra citada en el texto. Se usa para citar obras o autores. Lo mismo que abbr pero de libros.
+    - code: Se usa para el código en línea, mientras que <pre> mantiene el formato original, incluido espacios y tabulaciones    
+    - bdi : permite incluir texto ondirección de lectura independiente.
+    - details: Crea un desplegable de información.
+
+<details>
+    <summary>Pulsa en este texto para ver la parte oculta</summary>
+    <p>Texto</p>
+    <p>Texto</p>
+</details>
+
+    - dialog: Con este elemento podemos construir nuestras propias ventanas de dialogo personalizadas. Podemos incluir formularios incluso
+
+<dialog open>
+    <p>Estas líneas de un cuadro</p>
+    <p>de dialogo si no tiene</p>
+    <p>Open el cuadro será invisible</p>
+</dialog>
+
+    Podemos usarlo para fabricar un modal
+
+<dialog id="mi-modal">
+    <p>Estas lineas son de un modal</p>
+    <form method="dialog"><button> Cerrar modal</button></form>
+</dialog>
+
+        Pulsando ese botón se cierra el cuadro de dialogo o modal.
+
+        document.querySelector("#mi-modal").showModal() = abre el dialog como modal
+        document.querySelector("#mi-modal").show() = abre el dialog como cuadro normal
+        document.querySelector("#mi-modal").close() = cierra el dialog
+
+        #mi-modal:open {css para cuando está abierto}
+        #mi-modal:closed {css para cuando está oculto}
+        #mi-modal::backdrop {css para modificar el color / opacidad del sombreado}
+
+    - popover: Atributo global que convertimos cualquier elemento en un alert (mejorado) al que no hay que pulsar Aceptar
+
+<div popover><p>Atención esto es un popover</p></div>
+
+        POR DEFECTO ESTÁ OCULTO, APARECERÁ POR JS
+
+        .hidePopover() = Oculta el elemento que tiene el atributo popover
+        .showPopover() = hace visible elelemento que tiene el atb popover
+        .togglePopover()
+        
+        CSS
+        [popover] = Aplica estilos a cualquier elemento con el atributo popover
+        [popover]
+        [popover]
+
+    - ul = crea una lista desordenada
+    - ol = crea una lista ORDENADA
+
+        Dentro de cada <li> puede ponerse otroelemento cualquiera
+
+    - meter: Se usa para representar visualmente una medida dentro de un rango conocido, por ejemplo, una casrga de bateria
+
+<label>Carga de bateria
+<meter id="bateria" value="65" min="0" max="100">65%</meter>
+
+    - progress: Se usa para representar visualmente elprogreso de un proceso en curso, comola carga de un archivo
+
+WAI-ARIA
+
+    * Coleección de atrb que definen como realizar contenido y app web más accesibles 
+    * Se compone de roles, propiedades y estados, cada uno con una función específica
+    * Si puede usar un elemento o atrb html nativo con la semántica y el comportamiento que necesita ya integrado en lugar de reutilizar un elmto y agregar un rol, estado o propiedad de aria para hacerlo accesible, hágalo
+    * No utilizar aria es mejor que hacerlo mal
+
+- <img role="button"></img> => Deja de entenderse como imagen y pasa a aser un botón (para un lector de pantalla)
+
+    Roles: Define lo que es o hace un elemento
+        Roles de estructura (Para describir distintas estructuras)
+        Roles abstractos (utilizados por el navegador)
+        Roles tipo widget (Definen patrones interactivos comunes, como un slider, switch)
+
+<li role="menuitem">Nosotros</li> 
+
+    Propiedades: Se encarga de otorgar a los elementos un significado o semántica adicional
+        * Esenciales parala naturaleza de un objeto determinado o que representa un valor de datos asociado con el obj
+        * Proporcionan información adicional sobre un elemento, pero no cambian dinámicamente por si solas
+
+        Lo ideal:
+
+<label for="mi-input">Nombre:</label>
+<input id="mi-input" type="text">
+
+    Estados: Describen la condición actual de un elemento y pueden cambiar dinámicamente con js
+
+    El texto debe tener un contraste de color suficiente con el fondo en el que se muestra para que pueda ser fácilmente legible.
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////
+    Viernes  07/02/2025
+////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////
+    Lunes  07/02/2025
+////////////////////////////
+
+
+
+
+
+////////////////////////////
+    Miércoles  07/02/2025
+////////////////////////////
+
+
+
+////////////////////////////
+    Viernes  07/02/2025
+////////////////////////////
