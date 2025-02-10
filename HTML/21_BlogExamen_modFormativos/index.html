@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi blog</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Mi Blog</h1>
+        <nav>
+            <a href="#" class="seleccionado">Mi blog</a>
+            <a href="#">Noticias</a>
+            <a href="#">Login</a>
+            <a href="#">Registro</a>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <article>
+            <h3>Mi título</h3>
+            <code>mi texto</code>
+            <time datetime="">Miércoles, 7 de septiembre de 2025</time>
+        </article>
+        <!-- Importamos el icono "+" -->
+        <svg id="boton-nuevo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+            <path d="M12 5l0 14"></path>
+            <path d="M5 12l14 0"></path>
+        </svg>
+    </main>
+
+    <!-- Modal de entradas -->
+    <!-- Si añadimos el atribuo OPEN podemos verlo previsualizado -->
+    <dialog id="nueva-entrada" open>
+        <div>
+            <label for="titulo">Título</label>
+            <input id="titulo" type="text" placeholder="Escribe un título">
+        </div>
+        <div>
+            <label for="titulo">Texto</label>
+            <textarea id="texto" type="text" placeholder="Escribe un texto"></textarea>
+        </div>
+        <form method="dialog">
+            <button id="agregar">Agregar</button>
+            <button id="cancelar">Cancelar</button>
+        </form>
+    </dialog>
+
+    <!-- Importamos JS -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
