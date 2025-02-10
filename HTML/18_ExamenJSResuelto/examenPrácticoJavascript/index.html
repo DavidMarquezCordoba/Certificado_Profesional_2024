@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Examen Práctico Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda Javascript</h1>
+        <div class="div-busqueda">
+            <label for="busqueda" id="buscar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                    <path d="M21 21l-6 -6"></path>
+                </svg>
+            </label>
+            <input type="search" name="busqueda" id="busqueda" class="busqueda" placeholder="Escribe aquí tu búsqueda">
+        </div>
+        <nav>
+            <button id="ver-carrito" class="eliminar">Carrito</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos" class="contenedor"></section>
+    </main>
+    <section id="carrito" class="oculto">
+    </section>
+
+    <footer>
+        <p>© 2025 Tienda Examen Práctico Javascript</p>
+    </footer>
+
+    <script src="js/datos.js"></script>
+    <script src="js/index_solucion.js"></script>
+</body>
+</html>
