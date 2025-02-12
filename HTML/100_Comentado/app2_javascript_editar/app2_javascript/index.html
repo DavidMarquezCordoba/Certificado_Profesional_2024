@@ -1,0 +1,159 @@
+
+<!-- Explicación general:
+
+Este código HTML es una estructura básica para una página web de una academia llamada "Academia Épsilon". 
+Se utiliza para presentar cursos y un formulario de contacto. El formulario está diseñado para que los usuarios puedan proporcionar 
+información como su nombre, correo electrónico, teléfono y estado laboral, entre otros. Además, la página está estructurada para ser 
+esponsive y adaptable a diferentes dispositivos.
+
+Cada parte del código está cuidadosamente estructurada para facilitar la navegación y ofrecer una experiencia de usuario intuitiva. 
+El uso de etiquetas semánticas como <header>, <nav>, <main>, y <footer> ayuda a organizar la página de manera lógica, lo que es 
+    fundamental tanto para el SEO como para la accesibilidad. -->
+
+
+    <!DOCTYPE html>
+<!-- Define el tipo de documento como HTML5. Esto es necesario para asegurar que el navegador interprete el documento correctamente. -->
+<html lang="es">
+<!-- El atributo "lang" define el idioma principal de la página, en este caso, español (es). -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Define el juego de caracteres que se utilizará en la página como UTF-8, que incluye caracteres especiales como acentos y símbolos. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Permite que la página sea responsive en dispositivos móviles. "width=device-width" establece el ancho de la página igual al del dispositivo, y "initial-scale=1.0" configura el zoom inicial al 100%. -->
+    <title>App2</title>
+    <!-- Establece el título de la página que aparece en la pestaña del navegador. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Pre-conecta el navegador al servidor de Google Fonts para mejorar la carga de fuentes. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Establece una conexión previa con el servidor de fuentes de Google. El atributo "crossorigin" permite solicitudes de origen cruzado. -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,500;1,700&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Vincula las fuentes "Kanit" y "Roboto" de Google Fonts a la página. -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <!-- Pre-carga la hoja de estilos normalize.css para reducir el tiempo de carga. -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Vincula la hoja de estilos normalize.css para garantizar que todos los navegadores tengan un estilo base similar. -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <!-- Pre-carga la hoja de estilos personalizadas (styles.css). -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Vincula la hoja de estilos personalizadas styles.css para aplicar los estilos definidos en ella. -->
+    <link rel='preload' href='css/formulario.css' as='style'>
+    <!-- Pre-carga la hoja de estilos formulario.css. -->
+    <link rel="stylesheet" href="css/formulario.css">
+    <!-- Vincula la hoja de estilos formulario.css para los estilos del formulario de contacto. -->
+</head>
+<body>
+    <header>
+        <!-- Contenedor de encabezado, suele ser la parte superior de la página con el título. -->
+        <h1 class="cabecera para">Curso de aplicaciones web <span>academia Épsilon</span></h1>
+        <!-- Título principal de la página con la clase cabecera. La clase "para" puede ser utilizada para aplicar estilos adicionales. -->
+    </header>
+
+    <div class="nav-fondo">
+        <!-- Sección de fondo para la barra de navegación. -->
+        <nav class="nav-cabecera contenedor">
+            <!-- Barra de navegación con la clase "nav-cabecera". "contenedor" define el ancho máximo para el contenido. -->
+            <a class="inicio" href="index.html">inicio</a>
+            <!-- Enlace a la página principal. -->
+            <a class="mas-cursos" href="mas-cursos.html">más cursos</a>
+            <!-- Enlace a la página con más cursos. -->
+            <a class="instalaciones" href="instalaciones.html">instalaciones</a>
+            <!-- Enlace a la página de instalaciones. -->
+            <a class="nosotros" href="nosotros.html">nosotros</a>
+            <!-- Enlace a la página de la academia. -->
+            <a class="blog" href="blog.html">blog</a>
+            <!-- Enlace al blog de la academia. -->
+            <a class="contacto" href="#formulario">contacto</a>
+            <!-- Enlace que lleva al formulario de contacto. -->
+        </nav>
+    </div>
+
+    <section class="cabecera_fondo">
+        <!-- Sección principal de la cabecera con fondo. -->
+        <div class="cabecera_contenido">
+            <!-- Contenedor del contenido de la cabecera. -->
+            <h2>ACADEMIA ÉPSILON</h2>
+            <!-- Título secundario con el nombre de la academia. -->
+            <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
+                <!-- SVG que dibuja un icono (edificio). Se usa para representar visualmente el logo o íconos gráficos en la página. -->
+                <path d="M3 21l18 0"></path>
+                <path d="M5 21v-14l8 -4v18"></path>
+                <path d="M19 21v-10l-6 -4"></path>
+                <path d="M9 9l0 .01"></path>
+                <path d="M9 12l0 .01"></path>
+                <path d="M9 15l0 .01"></path>
+                <path d="M9 18l0 .01"></path>
+            </svg>
+            <p>Fuengirola, Málaga</p>
+            <!-- Ubicación de la academia. -->
+            <a class="boton" href="#formulario">Contactar</a>
+            <!-- Botón para navegar al formulario de contacto. -->
+        </div>
+    </section>
+
+    <main class="contenedor sombra para">
+        <!-- Sección principal de la página con clases "contenedor" para el tamaño y "sombra" para aplicar una sombra de estilo. -->
+        <h2>Módulos formativos</h2>
+        <!-- Título para los módulos formativos ofrecidos. -->
+        <div class="modformativos">
+            <!-- Contenedor de los módulos formativos. -->
+            <section class="modformativo">
+                <!-- Sección para un módulo específico de formación. -->
+                <h3>Programación web en el entorno cliente Programación web en el entorno cliente</h3>
+                <!-- Título del módulo formativo. -->
+                <div class="icono">
+                    <!-- Contenedor para el ícono que representa el módulo. -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
+                        <!-- Icono SVG asociado al módulo. -->
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                        <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4"></path>
+                        <path d="M2 21v-6"></path>
+                        <path d="M5 15v6"></path>
+                        <path d="M2 18h3"></path>
+                        <path d="M20 15v6h2"></path>
+                        <path d="M13 21v-6l2 3l2 -3v6"></path>
+                        <path d="M7.5 15h3"></path>
+                        <path d="M9 15v6"></path>
+                    </svg>
+                </div>
+                <p>Información del curso.</p>
+                <!-- Descripción breve del curso. -->
+                <p class="horas">150 horas</p>
+                <!-- Duración del curso en horas. -->
+            </section>
+        </div>
+
+        <section>
+            <!-- Sección del formulario de contacto. -->
+            <h2 id="formulario" class="para">Formulario de contacto</h2>
+            <!-- Título para el formulario de contacto. -->
+            <form action="" class="formulario">
+                <!-- Formulario HTML. -->
+                <fieldset>
+                    <!-- Contenedor de grupo de controles de formulario. -->
+                    <legend>Solicitanos información enviando este formulario</legend>
+                    <!-- Título dentro del formulario. -->
+                    <div class="campo-formulario">
+                        <!-- Contenedor para cada campo de formulario. -->
+                        <label for="nombre">nombre</label>
+                        <!-- Etiqueta para el campo de nombre. -->
+                        <input id="nombre" class="input-formulario" name="nombre" type="text" placeholder="escribe tu nombre">
+                        <!-- Campo de entrada de texto para el nombre. -->
+                    </div>
+                    <!-- Se repite la misma estructura para los otros campos del formulario como email, teléfono, etc. -->
+                    <input type="submit" class="boton" value="Enviar">
+                    <!-- Botón para enviar el formulario. -->
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="para">
+        <!-- Pie de página con la clase "para". -->
+        <p>Todos los derechos reservados Academia Épsilon 2024</p>
+        <!-- Información de derechos reservados. -->
+    </footer>
+
+    <script src="js/index.js"></script>
+    <!-- Vincula el archivo JavaScript que probablemente contenga funciones interactivas para la página. -->
+</body>
+</html>

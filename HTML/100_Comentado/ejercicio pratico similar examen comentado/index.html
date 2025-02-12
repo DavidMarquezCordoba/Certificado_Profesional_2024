@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Práctico preparatorio Examen final Módulo Formativo 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Mi Blog</h1>
+        <nav class="nav-contenedor">
+            <a class="mi-blog" href="index.html">Mi Blog</a>
+            <a class="noticias" href="noticias.html">Noticias</a>
+            <a class="login" href="login.html">Login</a>
+            <a class="registro" href="registro.html">Registro</a>
+        </nav>
+    </header>
+    <div class="svg">
+        <svg id="mi-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+            <path d="M12 5l0 14"></path>
+            <path d="M5 12l14 0"></path>
+        </svg>
+    </div>
+    <main id="main-content">
+        <!-- Aquí se insertarán los artículos -->
+    </main>
+    <dialog id="mi-modal">
+        <form method="dialog" class="modal-form">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo">
+            <label for="texto">Texto:</label>
+            <textarea id="texto" name="texto" rows="10" cols="30"></textarea>
+            <div class="modal-buttons">
+                <button id="agregar" type="button">Agregar</button>
+                <button id="cerrar" type="button">Cerrar Modal</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="js/index.js"></script>     
+</body>
+</html>

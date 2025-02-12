@@ -1,0 +1,303 @@
+
+
+/* Explicación:
+
+Uso de Variables CSS: Definir las variables al principio del archivo CSS (:root) permite gestionar fácilmente los colores, 
+fuentes y estilos, lo que hace que sea más fácil cambiar el diseño en toda la página.
+
+Modo oscuro: Se utiliza @media (prefers-color-scheme: dark) para aplicar estilos específicos cuando el usuario tiene configurado 
+su sistema en modo oscuro. Esto garantiza que el diseño se adapte automáticamente a la preferencia del usuario.
+
+Estilos Responsivos: Se emplean consultas de medios (@media) para adaptar el diseño a diferentes tamaños de pantalla,
+ como dispositivos móviles, tabletas y escritorios. Por ejemplo, la propiedad display: grid se utiliza en el diseño de módulos y 
+ cambia de disposición según el tamaño de la pantalla.
+
+Botones: Se le da estilo a los botones con un color de fondo secundario, texto blanco y un efecto de hover que oscurece el 
+color de fondo y aumenta el tamaño de la fuente. Esto crea una interacción visual cuando el usuario pasa el mouse sobre el botón.
+
+Efectos de Hover: Muchos elementos tienen transiciones y efectos de hover, como los iconos dentro de los módulos formativos, 
+lo que mejora la experiencia interactiva del usuario.
+
+Este es un diseño estructurado y responsivo que aprovecha la flexibilidad de CSS para hacer la página accesible y 
+estética en diferentes dispositivos. */
+
+
+
+
+/* Definición de variables CSS para la paleta de colores y fuentes */
+:root {
+    --primario: #000000; /* Color principal (negro) */
+    --secundario: #b4b4e8; /* Color secundario (lavanda claro) */
+    --blanco: #fff; /* Color blanco */
+    --secundario-oscuro: #0A3981; /* Color secundario oscuro (azul oscuro) */
+    --claro: #E38E49; /* Color claro (naranja) */
+    --negro-trans: rgba(0, 0, 0, 0.7); /* Color negro con transparencia */
+    --seleccionado: yellow; /* Color amarillo para elementos seleccionados */
+
+    /* Fuentes */
+    --fuente-principal: "Kanit", sans-serif; /* Fuente principal */
+    --forma-principal: 400; /* Peso de la fuente principal (normal) */
+    --forma-negrita: 700; /* Peso de la fuente en negrita */
+    --estilo-principal: normal; /* Estilo de la fuente principal */
+}
+
+/* Estilos para la apariencia en modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primario: #ffffff; /* Color primario en modo oscuro (blanco) */
+        --blanco: #000; /* Color blanco en modo oscuro (negro) */
+        --negro-trans: rgba(255, 255, 255, 0.2); /* Color negro-transparente en modo oscuro */
+        --secundario-oscuro: #b4b4e8; /* Color secundario oscuro en modo oscuro */
+        --secundario: #0A3981; /* Color secundario en modo oscuro */
+    }
+}
+
+/* Estilos generales para la estructura HTML */
+html {
+    font-size: 62.5%; /* Establece la base de la tipografía a 10px (1rem = 10px) */
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten al tamaño total del elemento */
+    scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+    scroll-snap-type: y mandatory; /* Habilita el desplazamiento suave para los elementos que se alinean al hacer scroll */
+}
+
+/* Aplica el box-sizing a todos los elementos */
+*, *:before, *:after { 
+    box-sizing: inherit; 
+}
+
+/* Estilos para el body */
+body {
+    font-size: 16px; /* 1rem = 10px, por lo que el tamaño del cuerpo es 16px */
+    font-family: var(--fuente-principal); /* Usa la fuente principal definida en las variables */
+    font-weight: var(--forma-principal); /* Usa el peso de la fuente principal */
+    font-style: var(--estilo-principal); /* Usa el estilo de la fuente principal */
+    background-image: linear-gradient(to top, var(--secundario) 0%, var(--blanco) 80%); /* Fondo de gradiente de color */
+}
+
+/* Estilos para los títulos */
+h1 {
+    font-size: 4rem; /* Tamaño de fuente para h1 */
+}
+h2 {
+    font-size: 2.8rem; /* Tamaño de fuente para h2 */
+}
+h3 {
+    font-size: 1.8rem; /* Tamaño de fuente para h3 */
+}
+
+/* Alineación central para los títulos */
+h1, h2, h3 {
+    text-align: center; 
+}
+
+/* Estilo para los elementos con la clase .para */
+.para {
+    scroll-snap-stop: always; /* Detiene el desplazamiento en este elemento */
+    scroll-snap-align: start; /* Alinea el elemento al inicio del contenedor */
+}
+
+/* Estilo para la cabecera */
+.cabecera {
+    text-align: center; 
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    color: var(--primario); /* Color primario */
+    margin: 10px; 
+    font-weight: 700; /* Peso de la fuente (negrita) */
+    font-style: italic; /* Estilo de fuente en cursiva */
+}
+
+/* Estilo para los elementos span dentro de la cabecera */
+.cabecera span {
+    font-size: 2rem; /* Tamaño de fuente para el span */
+}
+
+/* Estilo para el contenedor principal */
+.contenedor {
+    max-width: 120rem; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal del contenedor */
+}
+
+/* Estilo para la sombra */
+.sombra {
+    background-color: var(--blanco); /* Color de fondo blanco */
+    box-shadow: 0px 4px 18px -1px rgba(0,0,0,1); /* Sombra del contenedor */
+    padding: 2rem; /* Padding interno */
+    border-radius: 1rem; /* Bordes redondeados */
+}
+
+/* Estilo para los botones */
+.boton {
+    background-color: var(--secundario); /* Fondo secundario */
+    color: var(--primario); /* Color primario del texto */
+    padding: 1rem 3rem; /* Espaciado interno */
+    margin-top: 1rem; /* Margen superior */
+    font-size: 2rem; /* Tamaño de fuente */
+    text-decoration: none; /* Elimina la subrayado en los enlaces */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    font-weight: bold; /* Peso de fuente en negrita */
+    border-radius: .5rem; /* Bordes redondeados */
+    width: 80%; /* Ancho adaptado para pantallas pequeñas */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+/* Estilo para el botón al hacer hover */
+.boton:hover {
+    background-color: var(--secundario-oscuro); /* Fondo oscuro */
+    color: var(--blanco); /* Color blanco del texto */
+}
+
+/* Estilos para el botón en pantallas grandes */
+@media (min-width:768px) {
+    .boton {
+        width: auto; /* Ancho automático */
+    }
+}
+
+/* Estilos para la barra de navegación */
+.nav-fondo {
+    background-color: var(--secundario); /* Color de fondo secundario */
+}
+
+.nav-cabecera {
+    display: flex; /* Utiliza flexbox para la disposición de los elementos */
+    flex-direction: column; /* Dirección de los elementos (de arriba hacia abajo) */
+}
+
+.nav-cabecera a {
+    font-size: 1.4rem; /* Tamaño de fuente */
+    color: var(--primario); /* Color del texto */
+    font-weight: var(--forma-negrita); /* Peso de la fuente en negrita */
+    padding: 1rem; /* Espaciado interno */
+    text-decoration: none; /* Elimina subrayados */
+    text-align: center; /* Centra el texto */
+    transition: all 0.5s ease-in-out; /* Transición suave */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+}
+
+/* Estilo para los enlaces en la barra de navegación al hacer hover */
+.nav-cabecera a:hover {
+    background-color: var(--secundario-oscuro); /* Fondo oscuro al pasar el mouse */
+    color: var(--blanco); /* Color blanco en el texto */
+    font-size: 1.8rem; /* Aumento del tamaño de la fuente */
+}
+
+/* Estilos para la barra de navegación en pantallas grandes */
+@media (min-width:768px) {
+    .nav-cabecera {
+        flex-direction: row; /* Cambia la dirección a horizontal */
+        justify-content: space-between; /* Espacio entre los elementos */
+    }
+
+    .nav-cabecera a {
+        width: 20%; /* Establece un ancho fijo para los enlaces */
+    }
+}
+
+/* Estilo para la cabecera de fondo */
+.cabecera_fondo {
+    background-image: url(../img/programando.jpg); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-size: cover; /* Cubre todo el espacio disponible */
+    background-position: center; /* Centra la imagen */
+    height: 450px; /* Altura de la cabecera */
+    position: relative; /* Posicionamiento relativo */
+    margin-bottom: 2rem; /* Espacio debajo de la cabecera */
+}
+
+/* Contenido dentro de la cabecera */
+.cabecera_contenido {
+    position: absolute; /* Posición absoluta dentro de su contenedor */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: var(--negro-trans); /* Fondo negro transparente */
+    display: flex; /* Flexbox para la disposición */
+    flex-direction: column; /* Dirección de arriba hacia abajo */
+    align-items: center; /* Alineación horizontal centrada */
+    justify-content: center; /* Alineación vertical centrada */
+}
+
+.cabecera_contenido h2,
+.cabecera_contenido p {
+    color: var(--blanco); /* Color blanco para los textos */
+}
+
+.cabecera_contenido svg {
+    color: var(--secundario); /* Color del icono SVG */
+}
+
+.cabecera_contenido h2 {
+    font-size: 4rem; /* Tamaño de fuente para el título */
+}
+
+/* Diseño de la sección .modformativos en pantallas grandes */
+@media (min-width:750px) {
+    .modformativos {
+        display: grid; /* Utiliza grid para la disposición */
+        column-gap: 1rem; /* Espacio entre columnas */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        grid-template-rows: auto 1fr auto auto; /* Disposición de las filas */
+    }
+}
+
+/* Estilo adicional para pantallas aún más grandes */
+@media (min-width:1140px) {
+    .modformativos {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+    }
+}
+
+/* Estilos para los módulos formativos */
+.modformativo {
+    grid-row: span 4; /* El módulo ocupa 4 filas */
+    display: grid; /* Usando grid dentro de los módulos */
+    grid-template-rows: subgrid; /* Hereda la disposición de las filas */
+    align-items: start; /* Alineación al inicio */
+}
+
+/* Estilo para el título de cada módulo formativo */
+.modformativo h3 {
+    color: var(--secundario-oscuro); /* Color de título */
+    font-weight: normal; /* Peso de la fuente normal */
+}
+
+/* Estilo para los iconos dentro de los módulos */
+.modformativo .icono {
+    margin: 1rem auto; /* Margen automático y centrado */
+    width: 15rem; /* Tamaño de los iconos */
+    height: 15rem;
+    background-color: var(--secundario); /* Fondo color secundario */
+    border-radius: 50%; /* Bordes redondeados para hacer el icono circular */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Estilo para el icono dentro de los módulos al hacer hover */
+.modformativo .icono svg {
+    width: 8rem; /* Tamaño inicial */
+    height: 8rem;
+    transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Aumento de tamaño del icono al hacer hover */
+.modformativo .icono:hover svg {
+    width: 12rem;
+    height: 12rem;
+}
+
+/* Estilo para los párrafos dentro de los módulos */
+.modformativo p {
+    line-height: 2; /* Interlineado */
+    text-align: center; /* Alineación de texto centrada */
+}
+
+/* Estilo para las horas de los módulos */
+.modformativo .horas {
+    margin: 0; /* Elimina el margen */
+    text-align: start; /* Alineación de texto al inicio */
+}
+
+/* Estilo para el footer */
+footer {
+    text-align: center; /* Centrado del texto en el pie de página */
+}

@@ -1,0 +1,162 @@
+<!-- 
+Explicación General:
+
+Este código HTML es una página web diseñada para ofrecer información sobre un curso de aplicaciones web. El documento está organizado 
+en una estructura semántica que incluye secciones importantes como la cabecera (<header>), navegación (<nav>), contenido principal (<main>), 
+    y pie de página (<footer>).
+
+
+Estructura de la página:
+
+La etiqueta <html> encierra todo el contenido, especificando que el idioma es español.
+El <head> contiene información no visible en la página, como la codificación de caracteres (UTF-8), la metaetiqueta de viewport 
+    para dispositivos móviles, y la inclusión de hojas de estilo CSS y fuentes externas.
+El <body> contiene el contenido visible de la página, incluyendo la cabecera, navegación, artículos y pie de página.
+
+
+Uso de las etiquetas semánticas:
+
+Se utiliza <header> para definir la cabecera del sitio, <nav> para la barra de navegación, <main> para el contenido principal, 
+    <article> para el contenido de los cursos y testimonios, <aside> para información complementaria y <footer> para el pie de página.
+Accesibilidad:
+
+El uso de atributos alt en las imágenes ayuda a la accesibilidad para usuarios con discapacidad visual.
+Las listas <ul> y los encabezados (<h1>, <h2>, <h3>) ayudan a organizar el contenido de manera estructurada y accesible.
+Este tipo de código es fundamental para crear una página web clara, organizada y optimizada tanto para usuarios como para 
+motores de búsqueda (SEO).
+
+
+
+
+ -->
+
+
+ <!DOCTYPE html>
+ <!-- Definir el tipo de documento. Informa al navegador que este es un documento HTML5. -->
+ <html lang="es">
+ <!-- La etiqueta <html> es el contenedor principal de todo el contenido HTML. El atributo "lang" define el idioma del contenido, en este caso, español (es). -->
+ <head>
+     <meta charset="UTF-8">
+     <!-- La etiqueta <meta> define metadatos sobre el documento HTML. El atributo "charset" especifica la codificación de caracteres utilizada en el documento, en este caso UTF-8, que incluye la mayoría de los caracteres internacionales. -->
+     
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- La etiqueta <meta> con el atributo "name" y valor "viewport" ajusta la escala de la página para dispositivos móviles. El valor "width=device-width" ajusta el ancho de la página al ancho del dispositivo, y "initial-scale=1.0" establece el nivel de zoom inicial en 1 (sin zoom). -->
+     
+     <title>App2</title>
+     <!-- La etiqueta <title> define el título de la página que aparecerá en la pestaña del navegador. -->
+     
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <!-- La etiqueta <link> con el atributo "rel" establece una conexión previa a un servidor para optimizar la carga de fuentes externas. En este caso, se está conectando a Google Fonts. -->
+     
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <!-- Otra conexión previa a Google Fonts, esta vez a un dominio diferente para obtener las fuentes, con "crossorigin" para habilitar solicitudes de recursos de diferentes orígenes. -->
+     
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,500;1,700&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
+     <!-- Enlace a una hoja de estilo externa que carga fuentes desde Google Fonts. En este caso, se cargan las fuentes "Kanit" y "Roboto" con sus respectivos pesos y estilos. -->
+     
+     <link rel="preload" href="css/normalize.css" as="style">
+     <!-- Pre-carga la hoja de estilo "normalize.css" para mejorar la velocidad de carga. El atributo "as" indica el tipo de recurso que se está pre-cargando, en este caso, un archivo de estilo. -->
+     
+     <link rel="stylesheet" href="css/normalize.css">
+     <!-- Enlaza el archivo CSS "normalize.css", que restablece los estilos predeterminados del navegador para tener una base consistente en todos los navegadores. -->
+     
+     <link rel="preload" href="css/styles.css" as="style">
+     <!-- Pre-carga la hoja de estilo "styles.css" para mejorar la velocidad de carga. -->
+     
+     <link rel="stylesheet" href="css/styles.css">
+     <!-- Enlaza el archivo CSS principal "styles.css" que contiene los estilos específicos para la página web. -->
+     
+     <link rel="preload" href="css/blog_grid.css" as="style">
+     <!-- Pre-carga la hoja de estilo "blog_grid.css" que probablemente define el diseño de la cuadrícula del blog. -->
+     
+     <link rel="stylesheet" href="css/blog_grid.css"> 
+     <!-- Enlaza el archivo CSS "blog_grid.css" para el diseño específico del blog. -->
+ </head>
+ <body>
+     <header>
+         <h1 class="cabecera">Curso de aplicaciones web <span>academia Épsilon</span></h1>
+         <!-- El <header> contiene la cabecera de la página. Un título principal (<h1>) con la clase "cabecera" que indica que es el título principal del documento. El <span> dentro del <h1> se usa para aplicar un estilo diferente a "academia Épsilon". -->
+     </header>
+ 
+     <div class="nav-fondo">
+         <!-- <div> se usa para crear un contenedor que agrupa elementos. Aquí se usa para contener la navegación con la clase "nav-fondo" que probablemente aplica un fondo o un estilo adicional. -->
+         <nav class="nav-cabecera contenedor">
+             <!-- La etiqueta <nav> contiene los enlaces de navegación. La clase "nav-cabecera" podría estar relacionada con estilos específicos de la barra de navegación, y "contenedor" se usa para limitar el ancho de la barra de navegación. -->
+             <a class="inicio" href="index.html">inicio</a>
+             <!-- Enlace a la página principal ("index.html") con la clase "inicio" para aplicar estilos específicos. -->
+             <a class="mas-cursos" href="mas-cursos.html">más cursos</a>
+             <!-- Enlace a la página "mas-cursos.html" con la clase "mas-cursos". -->
+             <a class="instalaciones" href="instalaciones.html">instalaciones</a>
+             <!-- Enlace a la página "instalaciones.html" con la clase "instalaciones". -->
+             <a class="nosotros" href="nosotros.html">nosotros</a>
+             <!-- Enlace a la página "nosotros.html" con la clase "nosotros". -->
+             <a class="blog" href="blog.html">blog</a>
+             <!-- Enlace a la página "blog.html" con la clase "blog". -->
+             <a class="contacto" href="index.html#formulario">contacto</a>
+             <!-- Enlace a una sección dentro de la misma página (con un ancla) donde está el formulario de contacto. -->
+         </nav>
+     </div>
+ 
+     <div class="miblog">
+         <main class="cursos-comenzados sombra">
+             <!-- La etiqueta <main> contiene el contenido principal de la página. Aquí se usa la clase "cursos-comenzados" para estilizarlo y "sombra" probablemente para darle un efecto de sombra al contenedor. -->
+             <article>
+                 <!-- La etiqueta <article> se utiliza para encapsular contenido que podría ser distribuido o reutilizado, como un artículo o post de blog. -->
+                 <h2>Cursos Comenzados</h2>
+                 <!-- Título secundario (<h2>) que describe el tema del artículo. -->
+                 <img src="img/curso-app.jpeg" alt="foto curso programación">
+                 <!-- Una imagen relacionada con el curso. El atributo "alt" proporciona una descripción alternativa para la imagen, útil para la accesibilidad. -->
+                 <h3>¿Que haremos durante el curso?:</h3>
+                 <!-- Subtítulo (<h3>) que introduce los temas que se tratarán en el curso. -->
+                 <ul>
+                     <!-- La etiqueta <ul> crea una lista desordenada de elementos. -->
+                     <li>Aprenderemos HTML5...</li>
+                     <!-- Un elemento de lista (<li>) que describe una de las actividades del curso. -->
+                     <li>Aprenderemos CSS3...</li>
+                     <!-- Otro elemento de lista que describe otra actividad. -->
+                     <li>Aprenderemos SCSS...</li>
+                     <li>Aprenderemos Javascript...</li>
+                     <li>Aprenderemos a Construir una Aplicación...</li>
+                 </ul>
+             </article>
+         </main>
+     
+         <aside class="objetivo sombra">
+             <!-- La etiqueta <aside> se utiliza para contenido relacionado, como una barra lateral. Aquí contiene el objetivo del curso. -->
+             <h2>Objetivo</h2>
+             <div class="des-objetivo">
+                 <!-- Contenedor <div> con la clase "des-objetivo", que agrupa la imagen y el texto explicativo. -->
+                 <img src="img/logo-epsilon.jpeg" alt="logo academia épsilon">
+                 <!-- Imagen del logo de la academia con el atributo "alt" para accesibilidad. -->
+                 <p>Nuestro objetivo es proporcionar...</p>
+                 <!-- Un párrafo que explica el objetivo de la academia. -->
+             </div>
+         </aside>
+ 
+         <aside class="experiencias sombra">
+             <!-- Otro bloque <aside> para testimonios de los estudiantes. -->
+             <h2>Experiencias</h2>
+             <div class="arti-experiencias">
+                 <!-- Contenedor <div> para agrupar los testimonios. -->
+                 <article>
+                     <h3>Jose Luis</h3>
+                     <!-- Título (<h3>) para el nombre del estudiante. -->
+                     <p>Gran variedad de cursos...</p>
+                     <!-- Testimonio de Jose Luis dentro de un párrafo (<p>). -->
+                 </article>
+                 <article>
+                     <h3>Patricia</h3>
+                     <p>Encantada con el curso...</p>
+                 </article>
+             </div>
+         </aside>
+     </div>
+ 
+     <footer>
+         <p>Todos los derechos reservados Academia Épsilon 2024</p>
+         <!-- El <footer> contiene información del pie de página, en este caso, los derechos reservados. -->
+     </footer>
+ 
+ </body>
+ </html>
+ 

@@ -1,0 +1,93 @@
+Html
+---agregar el atributo aria-label para describir el propósito del botón, se vuelve más descriptivo y accesible---
+
+<a class="boton" href="#formulario" aria-label="Contactar con Academia Épsilon">Contactar</a>
+
+ ---Botón para leer en voz alta---
+    <button id="leer-voz-alta" aria-label="Leer contenido en voz alta">Leer en Voz Alta</button>
+
+
+contraste pantalla
+Html
+<header>
+    <h1 class="cabecera para">Curso de aplicaciones web <span>academia Épsilon</span></h1>
+    <button id="alto-contraste" aria-label="Activar modo de alto contraste">Alto Contraste</button>
+</header>
+
+css ---una clase CSS que aplique un esquema de colores de alto contraste---
+
+/* Estilos de alto contraste */
+.alto-contraste {
+    --primario: #000000;
+    --blanco: #FFFFFF;
+    --secundario: #0000FF;
+    --secundario-oscuro: #000080;
+    --claro: #FF0000;
+    --negro-trans: rgba(0, 0, 0, 0.9);
+}
+
+.alto-contraste body {
+    background-color: var(--blanco);
+    color: var(--primario);
+}
+
+.alto-contraste .boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+}
+
+.alto-contraste .nav-fondo {
+    background-color: var(--secundario-oscuro);
+}
+
+.alto-contraste .cabecera_fondo {
+    background-color: var(--primario);
+}
+
+
+
+JavaScript (el codigo JavaScript lo inserte con script en el codigo Html)
+---para cambiar dinámicamente entre los estilos normales y los de alto contraste---
+
+const botonAltoContraste = document.getElementById('alto-contraste');
+
+botonAltoContraste.addEventListener('click', () => {
+    document.body.classList.toggle('alto-contraste');
+
+    if (document.body.classList.contains('alto-contraste')) {
+        botonAltoContraste.textContent = 'Modo Normal';
+        botonAltoContraste.setAttribute('aria-label', 'Desactivar modo de alto contraste');
+    } else {
+        botonAltoContraste.textContent = 'Alto Contraste';
+        botonAltoContraste.setAttribute('aria-label', 'Activar modo de alto contraste');
+    }
+});
+
+
+---Esta API se utiliza para lectura---
+
+// Seleccionar el botón de lectura en voz alta
+const botonLeerVozAlta = document.getElementById('leer-voz-alta');
+
+// Función para leer el contenido en voz alta
+function leerEnVozAlta() {
+    const textoALeer = document.querySelector('main').innerText;
+    const utterance = new SpeechSynthesisUtterance(textoALeer);
+    utterance.lang = 'es-ES';
+
+    speechSynthesis.speak(utterance);
+
+    botonLeerVozAlta.textContent = 'Detener Lectura';
+    botonLeerVozAlta.setAttribute('aria-label', 'Detener lectura en voz alta');
+
+    botonLeerVozAlta.onclick = () => {
+        if (speechSynthesis.speaking) {
+            speechSynthesis.cancel();
+            botonLeerVozAlta.textContent = 'Leer en Voz Alta';
+            botonLeerVozAlta.setAttribute('aria-label', 'Leer contenido en voz alta');
+        }
+    };
+}
+
+// Asignar la función al botón
+botonLeerVozAlta.addEventListener('click', leerEnVozAlta);

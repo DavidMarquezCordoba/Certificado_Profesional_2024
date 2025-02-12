@@ -1,0 +1,233 @@
+header {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.nav-contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 250px; /* Ajustado para mayor espaciado entre los enlaces */
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px; /* Espaciado general en los lados */
+}
+
+.nav-contenedor a {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: var(--forma-negrita);
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+    text-transform: uppercase;
+    white-space: nowrap; /* Evita saltos de línea de manera sencilla */
+}
+
+@media (min-width: 768px) {
+    .nav-contenedor {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.nav-contenedor a:hover {
+    color: black;
+    transform: scale(1.2); /* Mantiene el texto en una sola línea al agrandarlo */
+}
+
+#main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.svg svg {
+    color: blue;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease; /* Transición suave para el aumento */
+    cursor: pointer;
+}
+
+.svg:hover svg {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% cuando el puntero está sobre el div */
+}
+
+#mi-svg {
+    transition: transform 0.3s ease;
+}
+
+#mi-svg.reducido {
+    transform: scale(0.8);
+}
+
+.modal-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+.modal-form label {
+    font-weight: bold; /* Títulos en negrita */
+}
+
+#titulo {
+    font-size: 2rem;
+}
+
+#texto {
+    font-size: 1.1rem;
+    resize: vertical;
+    width: 100%;
+    height: 130px; /* Ajuste para que el recuadro sea más grande */
+    font-weight: normal; /* Texto en tamaño normal */
+}
+
+.modal-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+}
+
+#mi-modal {
+    border-radius: 5px;
+}
+
+.modal-buttons button {
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.modal-buttons button:hover {
+    background-color: darkblue;
+}
+
+dialog {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+dialog.open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+article {
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "content"
+        "date";
+    background-color: antiquewhite;
+    gap: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 0; /* Eliminamos el margen para que se ajuste correctamente en la cuadrícula */
+    margin-top: 5px; /* Margen superior para que no esté pegado al header */
+}
+
+article h3 {
+    grid-area: title;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+article pre {
+    grid-area: content;
+    text-align: left;
+    white-space: pre-wrap; /* Mantiene los saltos y espacios */
+}
+
+.article-date {
+    grid-area: date;
+    text-align: right;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+/* Animaciones para la creación y eliminación de artículos */
+/* Animaciones para la creación y eliminación de artículos */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.article-enter {
+    animation: slideDown 0.5s forwards;
+}
+
+.article-exit {
+    animation: slideUp 0.5s forwards;
+}
+#main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Para pantallas de tamaño medio (tablets) */
+@media (max-width: 768px) {
+    #main-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    #main-content {
+        grid-template-columns: 1fr;
+    }
+}
+.article-info {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Dos columnas: una para el botón y otra para la fecha y hora */
+    align-items: center;
+    margin-top: 10px; /* Añade un margen superior para separación */
+}
+
+.leer-voz-alta {
+    background-color: blue; /* Personaliza el estilo del botón */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-self: start; /* Alinea el botón a la izquierda */
+}
+
+.leer-voz-alta:hover {
+    background-color: darkblue; /* Color del botón al pasar el ratón por encima */
+}

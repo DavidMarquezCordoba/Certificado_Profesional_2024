@@ -1,0 +1,235 @@
+<!-- 
+
+Explicación General:
+
+Este es un documento HTML estructurado para una página web que proporciona información sobre una academia de formación (Academia Épsilon). 
+El código está diseñado de forma que sea compatible con dispositivos móviles y fácil de entender, con varios estilos y scripts vinculados 
+para la personalización de la página.
+
+Cabecera (<head>): Contiene todos los metadatos, enlaces a hojas de estilo y fuentes externas. Aquí se define la codificación de caracteres, 
+    el título de la página y la configuración del viewport para la adaptación móvil.
+
+Cuerpo (<body>): Aquí se encuentra todo el contenido visible de la página, que incluye:
+
+Un encabezado con el nombre de la academia.
+Una barra de navegación con enlaces a diferentes secciones de la web.
+Un formulario de contacto con diversos campos que permiten que los usuarios proporcionen información como su nombre, correo electrónico y 
+preferencias de contacto.
+Un pie de página con derechos reservados.
+El uso de etiquetas semánticas como <header>, <footer>, <form>, <section>, y <nav> hace que la estructura del documento sea más accesible, 
+    organizada y fácil de leer tanto para humanos como para motores de búsqueda. Además, el código está optimizado para una carga más rápida 
+    gracias al uso de preload y otras optimizaciones.
+
+Esta estructura es muy común en páginas de contacto o páginas de servicios en línea y puede ser extendida con JavaScript para agregar 
+interactividad adicional. -->
+
+
+<!DOCTYPE html>
+<!-- Esta línea define el tipo de documento y especifica que es una página HTML5. 'DOCTYPE' es importante porque le dice al navegador que debe procesar el documento como HTML5. -->
+
+<html lang="es">
+<!-- La etiqueta <html> define el comienzo de un documento HTML. El atributo 'lang="es"' especifica que el idioma principal de la página es español, lo que mejora la accesibilidad y el SEO. -->
+<head>
+    <meta charset="UTF-8">
+    <!-- La etiqueta <meta> se utiliza para definir metadatos en el documento. 'charset="UTF-8"' especifica que la codificación de caracteres es UTF-8, lo cual permite que se muestren correctamente caracteres especiales, acentos y otros símbolos. -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esta línea establece la etiqueta viewport, que se utiliza para hacer que la página sea más amigable para dispositivos móviles. 'width=device-width' asegura que el ancho de la página se adapte al ancho del dispositivo, mientras que 'initial-scale=1.0' establece el nivel de zoom inicial al cargar la página. -->
+    
+    <title>App2</title>
+    <!-- La etiqueta <title> define el título de la página, que aparece en la pestaña del navegador. -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- La etiqueta <link> con el atributo 'rel="preconnect"' permite que el navegador se conecte de forma anticipada al servidor 'fonts.googleapis.com'. Esto mejora la velocidad de carga al pre-establecer la conexión antes de que se carguen las fuentes. -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Similar al anterior, pero conecta con 'fonts.gstatic.com', que es el servidor donde se almacenan las fuentes de Google. El atributo 'crossorigin' se usa para permitir compartir recursos entre orígenes diferentes sin restricciones. -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,500;1,700&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Esta línea importa las fuentes 'Kanit' y 'Roboto' desde Google Fonts y las aplica a la página. 'rel="stylesheet"' indica que el archivo es una hoja de estilos. -->
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <!-- El atributo 'rel="preload"' se usa para pre-cargar el archivo CSS 'normalize.css', que ayuda a estandarizar los estilos básicos entre diferentes navegadores. El atributo 'as="style"' indica que se trata de un archivo de estilos. -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Este enlace aplica el archivo 'normalize.css' a la página, que es útil para hacer que los elementos HTML se comporten de manera consistente en todos los navegadores. -->
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <!-- Pre-carga el archivo 'styles.css', que contiene los estilos personalizados de la página. -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Aplica el archivo 'styles.css' a la página, que contiene los estilos personalizados para la apariencia de la web. -->
+
+    <link rel='preload' href='css/formulario.css' as='style'>
+    <!-- Pre-carga el archivo 'formulario.css', que contiene los estilos específicos para el formulario de contacto. -->
+
+    <link rel="stylesheet" href="css/formulario.css">
+    <!-- Aplica los estilos definidos en 'formulario.css' al formulario de la página. -->
+</head>
+
+<body>
+    <header>
+        <!-- La etiqueta <header> define el encabezado de la página. -->
+        <h1 class="cabecera para">Curso de aplicaciones web <span>academia Épsilon</span></h1>
+        <!-- La etiqueta <h1> define el título principal de la página. Aquí se usan las clases 'cabecera' y 'para' para darle un estilo definido en CSS. El <span> resalta la parte 'academia Épsilon'. -->
+    </header>
+
+    <div class="nav-fondo">
+        <!-- Esta etiqueta <div> crea un contenedor con clase 'nav-fondo', que probablemente aplica un fondo al área de navegación. -->
+        <nav class="nav-cabecera contenedor">
+            <!-- La etiqueta <nav> se utiliza para agrupar los enlaces de navegación. 'nav-cabecera' es una clase que le da un estilo específico, y 'contenedor' es otra clase que probablemente se utiliza para controlar el diseño (como márgenes, padding, etc.). -->
+            <a class="inicio" href="index.html">inicio</a>
+            <!-- La etiqueta <a> crea un enlace de texto. El atributo 'href' define la URL a la que lleva el enlace. La clase 'inicio' le da un estilo personalizado. -->
+            <a class="mas-cursos" href="mas-cursos.html">más cursos</a>
+            <a class="instalaciones" href="instalaciones.html">instalaciones</a>
+            <a class="nosotros" href="nosotros.html">nosotros</a>
+            <a class="blog" href="blog.html">blog</a>
+            <a class="contacto" href="#formulario">contacto</a>
+            <!-- Más enlaces a otras secciones de la página o a otras páginas dentro del sitio. Cada enlace tiene su clase específica para el estilo. El enlace 'contacto' lleva al formulario de contacto dentro de la misma página (referenciado por el ID 'formulario'). -->
+        </nav>
+    </div>
+
+    <section class="cabecera_fondo">
+        <!-- La etiqueta <section> se utiliza para agrupar contenido temáticamente. Aquí, se aplica un fondo a la cabecera de la sección. -->
+        <div class="cabecera_contenido">
+            <!-- <div> es un contenedor genérico, aquí se usa para agrupar el contenido de la cabecera con la clase 'cabecera_contenido'. -->
+            <h2>ACADEMIA ÉPSILON</h2>
+            <!-- Un subtítulo de nivel 2 (h2) para describir la academia. -->
+            
+            <!-- Icono SVG de un edificio (probablemente un ícono de una estructura o edificio, como se muestra en el código). -->
+            <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
+                <path d="M3 21l18 0"></path>
+                <path d="M5 21v-14l8 -4v18"></path>
+                <path d="M19 21v-10l-6 -4"></path>
+                <path d="M9 9l0 .01"></path>
+                <path d="M9 12l0 .01"></path>
+                <path d="M9 15l0 .01"></path>
+                <path d="M9 18l0 .01"></path>
+            </svg>
+            <!-- El elemento <svg> se usa para incluir gráficos vectoriales escalables. Los elementos <path> definen las rutas del gráfico (en este caso, líneas que forman la imagen de un edificio). -->
+
+            <p>Fuengirola, Málaga</p>
+            <!-- Un párrafo que muestra la ubicación de la academia. -->
+            <a class="boton" href="#formulario">Contactar</a>
+            <!-- Un enlace que actúa como un botón para llevar al formulario de contacto, definido por el ID 'formulario'. -->
+        </div>
+    </section>
+
+    <main class="contenedor sombra para">
+        <!-- La etiqueta <main> envuelve el contenido principal de la página. 'contenedor' se usa para controlar el diseño, y 'sombra' agrega una sombra al contenedor. La clase 'para' aplica estilos adicionales. -->
+        <h2>Módulos formativos</h2>
+        <!-- Título que introduce la sección de módulos formativos. -->
+
+        <div class="modformativos"></div>
+        <!-- Un contenedor vacío donde se agregarán los módulos formativos dinámicamente mediante JavaScript. -->
+
+        <section>
+            <h2 id="formulario" class="para">Formulario de contacto</h2>
+            <!-- Título para la sección de formulario, con un ID 'formulario' para que pueda ser referenciado por otros enlaces en la página. -->
+            <form action="" class="formulario">
+                <!-- La etiqueta <form> se utiliza para definir el formulario. El atributo 'action' está vacío porque no se envía a ninguna URL (esto podría ser manejado con JavaScript). La clase 'formulario' aplica el estilo correspondiente. -->
+                <fieldset>
+                    <!-- El <fieldset> agrupa los elementos relacionados dentro del formulario. -->
+                    <legend>Solicitanos información enviando este formulario</legend>
+                    <!-- La etiqueta <legend> proporciona un título para el grupo de elementos dentro del <fieldset>. -->
+                    
+                    <div class="campo-formulario">
+                        <!-- Un contenedor para cada campo del formulario. -->
+                        <label for="nombre">nombre</label>
+                        <!-- La etiqueta <label> describe un campo de entrada y 'for="nombre"' lo asocia con el campo de entrada con el ID 'nombre'. -->
+                        <input id="nombre" class="input-formulario" name="nombre" type="text" placeholder="escribe tu nombre">
+                        <!-- Un campo de entrada de tipo texto. 'id="nombre"' permite que la etiqueta <label> lo asocie. 'placeholder' muestra un texto indicativo en el campo. -->
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="email">email</label>
+                        <input id="email" class="input-formulario" name="email" type="email" placeholder="escribe tu correo">
+                    </div>
+                    <!-- Campo de entrada para el correo electrónico. El tipo 'email' valida que el valor introducido sea un correo válido. -->
+                    
+                    <div class="campo-formulario">
+                        <label for="telefono">teléfono</label>
+                        <input id="telefono" class="input-formulario" name="telefono" type="tel" placeholder="escribe tu teléfono">
+                    </div>
+                    <!-- Campo de entrada para el teléfono. El tipo 'tel' no valida el formato del teléfono, pero lo hace más semántico. -->
+                    
+                    <div class="campo-formulario">
+                        <label for="estalabo">estado laboral</label>
+                        <input id="estalabo" list="labos" class="input-formulario" name="estalabo" type="text" placeholder="escribe si estas trabajando o desempleado...">
+                        <datalist id="labos">
+                            <option value="Desempleado">
+                            <option value="Trabajo Fijo">
+                            <option value="Trabajo Temporal">
+                            <option value="Trabajo fijo-discontinuo">
+                        </datalist>
+                    </div>
+                    <!-- Campo de entrada con un datalist que ofrece opciones predefinidas para el estado laboral. -->
+                    
+                    <div class="campo-formulario">
+                        <label for="tipoinfo">Tipo de información</label>
+                        <select name="tipoinfo" id="tipoinfo" class="input-formulario">
+                            <!-- El <select> crea un menú desplegable, donde el usuario puede elegir una opción de un grupo de opciones <option>. -->
+                            <option value="" disabled selected>pincha aquí para seleccionar una opción</option>
+                            <optgroup label="Cursos">
+                                <option value="encurso">Curso Comenzado</option>
+                                <option value="nocurso">Próximo Curso</option>
+                            </optgroup>
+                            <optgroup label="Trabajo">
+                                <option value="soltrabajo">Solicitud de Tabajo</option>
+                                <option value="practicas">Interesado Prácticas</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <!-- Campo de selección con opciones agrupadas por temas (Cursos y Trabajo). -->
+                    
+                    <div class="campo-formulario">
+                        <label>Selecciona preferencia para contactarte</label>
+                        <div class="prefes">
+                            <!-- Un grupo de opciones para elegir el método preferido de contacto. -->
+                            <input type="radio" id="prtel" name="contacto" value="prtel">
+                            <label for="prtel">Teléfono</label>
+                            <input type="radio" id="premail" name="contacto" value="premail">
+                            <label for="premail">Email</label>
+                        </div>
+                    </div>
+                    <!-- Dos opciones de radio para que el usuario seleccione cómo prefiere ser contactado (Teléfono o Email). -->
+                    
+                    <div class="campo-formulario">
+                        <label>selecciona tus campos de interés</label>
+                        <div class="interes">
+                            <!-- Casillas de verificación para que el usuario elija su interés. -->
+                            <input type="checkbox" id="ofimatica" name="ofimatica">
+                            <label for="ofimatica">Ofimática</label>
+                            <input type="checkbox" id="contabilidad" name="contabilidad">
+                            <label for="contabilidad">Contabilida</label>
+                            <input type="checkbox" id="hosteleria" name="hosteleria">
+                            <label for="hosteleria">Hosteleria</label>
+                            <input type="checkbox" id="seguridad" name="seguridad">
+                            <label for="seguridad">Seguridad</label>
+                        </div>
+                    </div>
+                    <!-- Varias opciones de casillas de verificación (checkbox) para que el usuario indique áreas de interés. -->
+
+                    <div class="campo-formulario">
+                        <textarea name="mensaje" id="mensaje" placeholder="Escribe cualquier cosa que quieras añadir"></textarea>
+                    </div>
+                    <!-- Un área de texto donde el usuario puede escribir un mensaje adicional. -->
+                    
+                    <div class="flex derecha">
+                        <input type="submit" class="boton" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="para">
+        <!-- El <footer> contiene información adicional, en este caso, un aviso de derechos reservados. -->
+        <p>Todos los derechos reservados Academia Épsilon 2024</p>
+    </footer>
+
+    <script src="js/datos.js"></script>
+    <script src="js/index_pro.js"></script>
+    <!-- Los scripts de JavaScript se vinculan al final del documento para mejorar el rendimiento de la carga de la página. -->
+</body>
+</html>

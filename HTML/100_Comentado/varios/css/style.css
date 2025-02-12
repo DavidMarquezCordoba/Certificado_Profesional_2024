@@ -1,0 +1,136 @@
+/* 
+Resumen:
+Este código CSS define estilos para:
+
+Elementos generales:
+
+Desactiva la selección de texto en el body.
+
+Define estilos base para los divs con la clase .midiv, incluyendo flexbox, márgenes, dimensiones, colores y transiciones.
+
+Colores específicos:
+
+Aplica colores de fondo a los divs usando clases como .rojo, .azul, .verde, etc.
+
+Transformaciones CSS:
+
+Define clases para rotar (rotar), trasladar (trasladar), escalar (escalar) y combinar transformaciones (escalar-trasladar).
+
+Animaciones:
+
+Crea una animación llamada animacion que combina escalado, traslación y rotación, y se aplica con la clase .animar.
+
+Modal:
+
+Define estilos para un modal que se muestra y oculta con la clase .mostrar.
+
+Evita el desplazamiento del body cuando el modal está abierto usando la clase .quieto. */
+
+
+/* ==================================================
+   Estilos generales del body
+   ================================================== */
+   body {
+    user-select: none; /* Evita que el usuario pueda seleccionar texto en la página. */
+}
+
+/* ==================================================
+   Estilos base para los divs con clase .midiv
+   ================================================== */
+.midiv {
+    display: flex; /* Usa flexbox para alinear el contenido. */
+    justify-content: center; /* Centra el contenido horizontalmente. */
+    align-items: center; /* Centra el contenido verticalmente. */
+    margin: 50px auto; /* Margen exterior de 50px arriba y abajo, y centrado horizontalmente. */
+    width: 100%; /* Ocupa el 100% del ancho disponible. */
+    height: 100px; /* Altura fija de 100px. */
+    color: white; /* Color del texto en blanco. */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el div. */
+
+    transition: transform 1s; /* Aplica una transición suave de 1 segundo a las transformaciones. */
+}
+
+/* ==================================================
+   Estilos para los divs con colores específicos
+   ================================================== */
+.rojo {
+    background-color: red; /* Fondo de color rojo. */
+}
+
+.azul {
+    background-color: blue; /* Fondo de color azul. */
+}
+
+.verde {
+    background-color: green; /* Fondo de color verde. */
+}
+
+.amarillo {
+    background-color: yellow; /* Fondo de color amarillo. */
+}
+
+.violeta {
+    background-color: violet; /* Fondo de color violeta. */
+}
+
+/* ==================================================
+   Clases para aplicar transformaciones CSS
+   ================================================== */
+.rotar {
+    transform: rotate(180deg); /* Rota el div 180 grados. */
+}
+
+.trasladar {
+    transform: translate(100px, 100px); /* Mueve el div 100px a la derecha y 100px hacia abajo. */
+}
+
+.escalar {
+    transform: scale(0.5); /* Reduce el tamaño del div a la mitad. */
+}
+
+.escalar-trasladar {
+    transform: scale(0.5) translate(-100px, -100px); /* Combina escala y traslación. */
+}
+
+/* ==================================================
+   Animación para la clase .animar
+   ================================================== */
+.animar {
+    animation: animacion 4s ease-in-out infinite; /* Aplica una animación llamada "animacion" que dura 4 segundos, con un efecto ease-in-out y se repite infinitamente. */
+}
+
+/* Definición de la animación "animacion" */
+@keyframes animacion {
+    0% {
+        transform: scale(1) translate(0px, 0px) rotate(0deg); /* Estado inicial: tamaño normal, sin traslación ni rotación. */
+    }
+    50% {
+        transform: scale(0.5) translate(-100px, 100px) rotate(360deg); /* Estado intermedio: reduce el tamaño, traslada y rota 360 grados. */
+    }
+    100% {
+        transform: scale(1) translate(0px, 0px) rotate(0deg); /* Estado final: vuelve al estado inicial. */
+    }
+}
+
+/* ==================================================
+   Estilos para el modal
+   ================================================== */
+.modal {
+    display: none; /* Oculta el modal por defecto. */
+    position: fixed; /* Posiciona el modal de forma fija en la pantalla. */
+    left: 0px; /* Alinea el modal a la izquierda de la pantalla. */
+    top: 0px; /* Alinea el modal en la parte superior de la pantalla. */
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla. */
+    height: 100%; /* Ocupa el 100% de la altura de la pantalla. */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente (negro al 50% de opacidad). */
+}
+
+/* Clase para mostrar el modal */
+.mostrar {
+    display: block; /* Muestra el modal al cambiar a display: block. */
+}
+
+/* Clase para evitar el desplazamiento del body cuando el modal está abierto */
+.quieto {
+    overflow: hidden; /* Oculta el desbordamiento del contenido del body. */
+}

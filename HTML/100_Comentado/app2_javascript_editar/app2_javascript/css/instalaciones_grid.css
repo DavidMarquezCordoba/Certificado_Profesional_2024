@@ -1,0 +1,116 @@
+/* Explicación general:
+Organización básica:
+
+El código define estilos para una sección denominada nuestras-instalaciones y sus elementos relacionados, como secciones (section), 
+títulos (h3), imágenes (img), y enlaces (a).
+Responsividad:
+
+Usa Media Queries para ajustar el diseño en pantallas más anchas, como tablets o desktops.
+En pantallas con un ancho de al menos 768px, las instalaciones se organizan en un grid con dos columnas, separadas por un espacio uniforme.
+Uso de CSS Grid:
+
+El diseño principal emplea display: grid para organizar elementos en filas y columnas, lo que facilita una estructura visual clara y flexible.
+Interactividad:
+
+Los enlaces dentro del contenedor contacto aumentan su tamaño y cambian de color al pasar el cursor, proporcionando retroalimentación visual 
+al usuario.
+Diseño visual:
+
+Los elementos como títulos e imágenes tienen colores y bordes definidos por variables CSS (--seleccionado, --secundario-oscuro), 
+que garantizan consistencia y flexibilidad para cambios globales.
+Aplicaciones prácticas:
+
+Este código puede ser usado en páginas web que presenten instalaciones físicas o virtuales, con un enfoque en la responsividad y 
+claridad visual.
+
+
+
+
+ */
+
+/* Estilo general para elementos con la clase .instalaciones */
+.instalaciones {
+    /* Establece el color del texto en amarillo */
+    color: yellow;
+}
+
+/* Estilo específico para .instalaciones dentro de .nav-cabecera */
+.nav-cabecera .instalaciones {
+    /* Cambia el color del texto al valor de la variable --seleccionado */
+    color: var(--seleccionado);
+}
+
+/* Consulta de medios para pantallas con un ancho mínimo de 768px */
+@media (min-width:768px) {
+    /* Estilo para el contenedor principal de nuestras instalaciones */
+    .nuestras-instalaciones {
+        /* Organiza los elementos hijos en un grid */
+        display: grid;
+        /* Define dos columnas con un ancho igual (1fr) */
+        grid-template-columns: repeat(2, 1fr);
+        /* Alinea los elementos con un espacio uniforme entre ellos */
+        justify-content: space-between;
+        /* Espaciado horizontal entre columnas */
+        column-gap: 2rem;
+    }
+}
+
+/* Estilo para cada sección dentro del contenedor nuestras-instalaciones */
+.nuestras-instalaciones section {
+    /* Agrega un margen alrededor de cada sección */
+    margin: 1rem;
+}
+
+/* Estilo para los títulos (h3) dentro de nuestras-instalaciones */
+.nuestras-instalaciones h3 {
+    /* Define el color del texto usando la variable --secundario-oscuro */
+    color: var(--secundario-oscuro);
+}
+
+/* Estilo para las imágenes dentro de nuestras-instalaciones */
+.nuestras-instalaciones img {
+    /* Asegura que las imágenes ocupen el 100% del ancho de su contenedor */
+    width: 100%;
+    /* Bordes redondeados con un radio de 10px */
+    border-radius: 10px;
+}
+
+/* Estilo para el contenedor de contacto dentro de nuestras-instalaciones */
+.nuestras-instalaciones .contacto {
+    /* Margen izquierdo para separar el contenido */
+    margin-left: 4rem;
+    /* Organiza los elementos hijos en un grid */
+    display: grid;
+}
+
+/* Estilo para los enlaces dentro del contenedor de contacto */
+.nuestras-instalaciones .contacto a {
+    /* Hereda el color del texto del contenedor padre */
+    color: inherit;
+    /* Elimina el subrayado predeterminado de los enlaces */
+    text-decoration: none;
+    /* Organiza los elementos hijos del enlace en un grid */
+    display: grid;
+    /* Define dos columnas: una para el icono y otra para el texto */
+    grid-template-columns: auto auto;
+    /* Espaciado entre las columnas */
+    column-gap: 1rem;
+    /* Alinea los elementos al inicio del eje principal */
+    justify-content: flex-start;
+    /* Alinea los elementos verticalmente al centro */
+    align-items: center;
+}
+
+/* Efecto hover para los enlaces dentro de contacto */
+.nuestras-instalaciones .contacto a:hover {
+    /* Incrementa el tamaño de la fuente para llamar la atención */
+    font-size: 2rem;
+    /* Cambia el color del texto al definido por la variable --seleccionado */
+    color: var(--seleccionado);
+}
+
+/* Estilo para los iconos SVG dentro de los enlaces */
+.nuestras-instalaciones .contacto a svg {
+    /* Define un ancho fijo para los iconos */
+    width: 3rem;
+}

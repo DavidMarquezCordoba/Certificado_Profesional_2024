@@ -1,0 +1,146 @@
+/* 
+Explicación general:
+Uso de grid: Se emplea el modelo de diseño de cuadrícula (grid) en varias partes del código. Este modelo permite disponer los elementos 
+en filas y columnas, lo que proporciona un control total sobre la alineación y el espaciado. Algunas secciones usan áreas de grid, 
+y otras usan columnas y filas automáticas para organizar los elementos de manera flexible.
+
+Consultas de medios: El código utiliza consultas de medios (@media) para aplicar estilos específicos dependiendo del tamaño de 
+la pantalla del dispositivo. Por ejemplo, los estilos dentro de la consulta @media (min-width:860px) se aplicarán solo a 
+pantallas de 860px o más. Esto asegura que la disposición de los elementos se adapte de forma eficiente a diferentes tamaños de pantalla, 
+mejorando la experiencia en dispositivos móviles, tabletas y computadoras de escritorio.
+
+Organización con grid-template-columns y grid-template-rows: El uso de grid-template-columns y grid-template-rows en los contenedores 
+permite definir el número y el tamaño de las columnas y filas, lo que hace que los elementos dentro del contenedor se organicen de 
+manera estructurada.
+
+Enlaces interactivos: Los enlaces dentro de la clase .micontacto tienen un efecto visual cuando se pasa el cursor sobre ellos, 
+cambiando el tamaño de la fuente y el color, lo que mejora la interactividad y la accesibilidad.
+
+Uso de variables CSS: El código hace uso de variables CSS (--seleccionado y --secundario-oscuro) para definir colores y estilos, 
+lo que permite que los valores sean fácilmente reutilizados y modificados en el diseño global.
+
+Este enfoque hace que el código sea flexible, reutilizable y fácil de mantener, además de optimizado para una experiencia 
+de usuario fluida y adaptable a diferentes dispositivos.
+ */
+
+
+ /* Estilo para la clase .nosotros */
+.nosotros {
+    color: yellow; /* Establece el color del texto de los elementos con la clase .nosotros a amarillo */
+}
+
+/* Estilo para la clase .nosotros dentro de .nav-cabecera */
+.nav-cabecera .nosotros {
+    color: var(--seleccionado); /* Cambia el color del texto de los elementos .nosotros dentro de .nav-cabecera al valor de la variable CSS --seleccionado */
+}
+
+/* Estilo para la clase .pag-nosotros */
+.pag-nosotros {
+    margin-bottom: 10rem; /* Aplica un margen inferior de 10rem (espacio debajo de este elemento) */
+}
+
+
+
+/* Comentada la sección @media para el diseño de 768px, se puede activar según se necesite */
+
+/*
+@media (min-width:768px) {
+    .pag-nosotros {
+        display: grid;  Utiliza el modelo de diseño de cuadrícula (grid) 
+        grid-template-areas: "d d f f"  Define áreas en el grid para los elementos 
+                             ". r r ."; Define áreas para el contenido con nombres de fila y columna 
+        justify-content: center; Centra los elementos dentro del contenedor 
+        column-gap: 2rem;  Establece un espacio de 2rem entre las columnas dentro de la cuadrícula 
+    } 
+    .personal:nth-child(1) {
+        grid-area: d; Asigna el área 'd' a la primera personal 
+    }
+    .personal:nth-child(2) {
+        grid-area: f; Asigna el área 'f' a la segunda personal 
+    }
+    .personal:nth-child(3) {
+        grid-area: r; Asigna el área 'r' a la tercera personal 
+        width: 66%; Establece un ancho de 66% para la tercera personal 
+    }
+}
+*/
+
+
+/* Estilo para pantallas con un ancho mínimo de 860px */
+@media (min-width:860px) {
+    .pag-nosotros {
+        display: grid; /* Utiliza el modelo de diseño de cuadrícula (grid) */
+        grid-template-columns: repeat(3, 1fr); /* Define tres columnas de igual tamaño dentro del grid */
+        justify-content: space-between; /* Distribuye el espacio entre las columnas */
+        column-gap: 2rem; /* Establece un espacio de 2rem entre las columnas */
+    } 
+}
+
+/* Estilo para las imágenes dentro de la clase .pag-nosotros */
+.pag-nosotros img {
+    width: 100%; /* Las imágenes ocuparán el 100% del ancho de su contenedor */
+}
+
+/* Estilo para la clase .personal */
+.personal {
+    margin-top: 5rem; /* Aplica un margen superior de 5rem (espacio arriba de este elemento) */
+}
+
+/* Estilo para los encabezados h3 dentro de la clase .personal */
+.personal h3 {
+    margin: 0; /* Elimina el margen predeterminado de los elementos h3 */
+    color: var(--secundario-oscuro); /* Establece el color del texto con el valor de la variable CSS --secundario-oscuro */
+}
+
+/* Estilo para las clases .datos y .micontacto */
+.datos,
+.micontacto {
+    display: grid; /* Utiliza el modelo de diseño de cuadrícula (grid) */
+    grid-template-columns: repeat(2, auto); /* Define dos columnas automáticas dentro del grid */
+    justify-content: space-between; /* Distribuye los elementos con el máximo espacio entre ellos */
+    column-gap: 2rem; /* Establece un espacio de 2rem entre las columnas dentro de este contenedor */
+    row-gap: 0; /* No aplica espacio adicional entre las filas */
+    margin: 0.5rem 0.5rem; /* Aplica márgenes de 0.5rem en todos los lados de los elementos dentro de este contenedor */
+}
+
+/* Estilo para los encabezados h4 y los párrafos dentro de la clase .datos */
+.datos h4,
+.datos p {
+    margin: 0; /* Elimina el margen predeterminado de los elementos h4 y p */
+}
+
+/* Estilo para la clase .micontacto */
+.micontacto {
+    display: grid; /* Utiliza el modelo de diseño de cuadrícula (grid) */
+    grid-template-columns: 1fr; /* Define una sola columna dentro del grid */
+    grid-template-rows: repeat(2, 1fr); /* Define dos filas dentro del grid */
+    justify-content: end; /* Alinea los elementos al final del contenedor */
+}
+
+/* Estilo para los enlaces dentro de la clase .micontacto */
+.micontacto a {
+    color: inherit; /* Hereda el color del texto del contenedor padre */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    
+    display: grid; /* Utiliza el modelo de diseño de cuadrícula (grid) */
+    grid-template-columns: repeat(2, auto); /* Define dos columnas automáticas dentro del grid */
+    justify-content: end; /* Alinea los elementos al final del contenedor */
+    align-items: center; /* Alinea los elementos hijos del enlace de forma vertical (centrado) */
+    column-gap: 0.5rem; /* Establece un espacio de 0.5rem entre las columnas dentro del enlace */
+    grid-auto-rows: 2.5rem; /* Establece una altura de fila de 2.5rem automáticamente */
+}
+
+/* Estilo para los enlaces dentro de .micontacto cuando se pasa el cursor sobre ellos */
+.micontacto a:hover {
+    font-size: 2rem; /* Aumenta el tamaño de la fuente a 2rem cuando se pasa el cursor sobre el enlace */
+    color: var(--seleccionado); /* Cambia el color del texto al valor de la variable CSS --seleccionado */
+}
+
+/* Estilo para los iconos SVG dentro de .micontacto */
+.micontacto svg {
+    width: 3rem; /* Establece un ancho de 3rem para los iconos SVG */
+}
+
+
+
+

@@ -1,0 +1,115 @@
+
+
+/* Explicación general:
+
+Este código CSS está diseñado para establecer una estructura y estilo coherente en una página web que tiene varias secciones 
+relacionadas con un equipo o personal y una página "Nosotros". La página parece estar estructurada en un diseño flexible con el 
+uso de flexbox para una disposición dinámica de los elementos.
+
+Variables CSS: Se utilizan varias variables CSS (como --seleccionado y --secundario-oscuro) para controlar los colores y otros estilos, 
+lo que facilita la personalización y el mantenimiento del diseño de la página.
+
+Flexbox: Se utiliza ampliamente el modelo de diseño flexible (Flexbox) para organizar los elementos dentro de los contenedores. 
+Esto ayuda a que los elementos se alineen y distribuyan de manera eficiente, adaptándose a diferentes tamaños de pantalla.
+
+Consultas de medios: La regla @media (min-width: 768px) asegura que los estilos dentro de ella solo se apliquen a pantallas de mayor tamaño 
+(como tabletas y escritorios). Esto permite una adaptación responsive (diseño adaptable) del contenido según el tamaño de la pantalla del 
+dispositivo.
+
+Estilos para márgenes y espacios: Se aplica un manejo de márgenes y espaciado consistente con unidades relativas como rem para una 
+mejor escala en diferentes tamaños de pantalla.
+
+Interactividad: Los enlaces dentro de .micontacto tienen un efecto de cambio de color y tamaño de fuente cuando el usuario pasa 
+el cursor sobre ellos, mejorando la experiencia del usuario.
+
+Este enfoque modular permite un diseño flexible y fácil de mantener, además de ofrecer una experiencia visual consistente en 
+diferentes dispositivos y tamaños de pantalla. */
+
+
+
+
+/* Estilo para la clase .nav-cabecera y el elemento con la clase .nosotros */
+.nav-cabecera .nosotros {
+    color: var(--seleccionado); /* Establece el color del texto con el valor de la variable CSS --seleccionado */
+}
+
+/* Estilo para la clase .pag-nosotros */
+.pag-nosotros {
+    margin-bottom: 10rem; /* Aplica un margen inferior de 10rem (espacio debajo de este elemento) */
+}
+
+/* Estilo para las imágenes dentro de la clase .pag-nosotros */
+.pag-nosotros img {
+    width: 100%; /* Las imágenes ocuparán el 100% del ancho de su contenedor */
+}
+
+/* Estilo para la clase .personal */
+.personal {
+    margin-top: 5rem; /* Aplica un margen superior de 5rem (espacio arriba de este elemento) */
+    min-width: 28.5rem; /* Establece un ancho mínimo de 28.5rem para este contenedor */
+}
+
+/* Estilos aplicados cuando la pantalla tiene un ancho mínimo de 768px (tabletas y dispositivos más grandes) */
+@media (min-width:768px) {
+    .pag-nosotros {
+        display: flex; /* Utiliza el modelo Flexbox para organizar los elementos dentro de este contenedor */
+        justify-content: center; /* Centra los elementos hijos de este contenedor horizontalmente */
+        gap: 1rem; /* Establece un espacio de 1rem entre los elementos dentro de este contenedor */
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si el espacio es insuficiente */
+    } 
+    .personal {
+        width: 30%; /* Establece que los elementos con la clase .personal ocuparán el 30% del ancho de su contenedor */
+    }
+}
+
+/* Estilo para los encabezados h3 dentro de la clase .personal */
+.personal h3 {
+    margin: 0; /* Elimina el margen predeterminado de los elementos h3 */
+    color: var(--secundario-oscuro); /* Establece el color del texto con el valor de la variable CSS --secundario-oscuro */
+}
+
+/* Estilo para las clases .datos y .micontacto */
+.datos,
+.micontacto {
+    display: flex; /* Utiliza el modelo Flexbox para organizar los elementos dentro de este contenedor */
+    justify-content: space-between; /* Distribuye los elementos con el máximo espacio entre ellos */
+    column-gap: 2rem; /* Establece un espacio de 2rem entre las columnas de los elementos dentro de este contenedor */
+    row-gap: 0; /* No aplica espacio adicional entre las filas */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si el espacio es insuficiente */
+    margin: 0.5rem 0.5rem; /* Aplica márgenes de 0.5rem en todos los lados de los elementos dentro de este contenedor */
+}
+
+/* Estilo para los encabezados h4 y los párrafos dentro de la clase .datos */
+.datos h4,
+.datos p {
+    margin: 0; /* Elimina el margen predeterminado de los elementos h4 y p */
+}
+
+/* Estilo para la clase .micontacto */
+.micontacto {
+    display: flex; /* Utiliza el modelo Flexbox para organizar los elementos dentro de este contenedor */
+    flex-direction: column; /* Organiza los elementos en una columna (de arriba hacia abajo) */
+    align-items: flex-end; /* Alinea los elementos al final del contenedor (a la derecha) */
+}
+
+/* Estilo para los enlaces dentro de la clase .micontacto */
+.micontacto a {
+    color: inherit; /* Hereda el color del texto del contenedor padre */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    display: flex; /* Utiliza el modelo Flexbox para organizar los elementos dentro del enlace */
+    justify-content: flex-start; /* Alinea los elementos hijos del enlace al inicio del contenedor */
+    align-items: center; /* Alinea los elementos hijos del enlace de forma vertical (centrado) */
+    column-gap: 0.5rem; /* Establece un espacio de 0.5rem entre los elementos dentro del enlace */
+    height: 2.5rem; /* Establece una altura de 2.5rem para los enlaces */
+}
+
+/* Estilo para los enlaces dentro de .micontacto cuando se pasa el cursor sobre ellos */
+.micontacto a:hover {
+    font-size: 2rem; /* Aumenta el tamaño de la fuente a 2rem cuando se pasa el cursor sobre el enlace */
+    color: var(--seleccionado); /* Cambia el color del texto al valor de la variable CSS --seleccionado */
+}
+
+/* Estilo para los iconos SVG dentro de .micontacto */
+.micontacto svg {
+    width: 3rem; /* Establece un ancho de 3rem para los iconos SVG */
+}

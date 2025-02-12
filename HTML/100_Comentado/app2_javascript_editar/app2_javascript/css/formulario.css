@@ -1,0 +1,174 @@
+/* 
+Explicación general:
+Este código CSS está diseñado para estilizar un formulario y hacerlo adaptable a diferentes dispositivos. Los puntos clave son:
+
+Base del formulario:
+
+Se establecen estilos generales para el contenedor del formulario (.formulario) y sus elementos internos como fieldset, legend, y label.
+Los campos se organizan usando clases como .campo-formulario.
+Inputs personalizados:
+
+Los campos de texto (.input-formulario) y los botones de selección (radio y checkbox) se personalizan para tener un diseño limpio y 
+centrado en la usabilidad.
+Responsividad:
+
+Para pantallas pequeñas (máximo 768px), los elementos se reorganizan usando flex-flow y max-width para adaptarse mejor al espacio reducido.
+Interactividad:
+
+Cambios visuales como colores y fondos se aplican a los inputs cuando están seleccionados mediante combinadores adyacentes (+ label).
+El código logra un diseño limpio, funcional y adaptable para formularios en cualquier tamaño de pantalla. */
+
+
+/* Estilo para el contenedor principal del formulario */
+.formulario {
+    /* Color de fondo usando la variable CSS --secundario */
+    background-color: var(--secundario);
+    /* Define un ancho máximo de 80rem o el 100% del contenedor, el que sea menor */
+    width: min(80rem, 100%);
+    /* Centra el formulario horizontalmente */
+    margin: 0 auto;
+    /* Bordes redondeados del formulario */
+    border-radius: 1rem;
+    /* Espaciado interno en todos los lados */
+    padding: 2rem;
+}
+
+/* Estilo para los fieldsets dentro del formulario */
+.formulario fieldset {
+    /* Elimina el borde predeterminado del fieldset */
+    border: none;
+}
+
+/* Estilo para los legend dentro de los fieldsets */
+.formulario legend {
+    /* Centra el texto */
+    text-align: center;
+    /* Tamaño de fuente más grande */
+    font-size: 2rem;
+    /* Aplica peso definido en la variable --forma-negrita */
+    font-weight: var(--forma-negrita);
+    /* Color definido en la variable --secundario-oscuro */
+    color: var(--secundario-oscuro);
+    /* Convierte el texto a mayúsculas */
+    text-transform: uppercase;
+    /* Espacio inferior */
+    margin-bottom: 2rem;
+}
+
+/* Estilo para los contenedores individuales de cada campo del formulario */
+.campo-formulario {
+    /* Espaciado inferior entre los campos */
+    margin-bottom: 1rem;
+    /* Ocupan todo el ancho del contenedor padre */
+    width: 100%;
+}
+
+/* Estilo general para las etiquetas del formulario */
+.formulario label {
+    /* Capitaliza la primera letra de cada palabra */
+    text-transform: capitalize;
+    /* Color de texto definido en la variable --secundario-oscuro */
+    color: var(--secundario-oscuro);
+    /* Peso de fuente definido en la variable --forma-negrita */
+    font-weight: var(--forma-negrita);
+    /* Espacio inferior entre etiqueta y su input */
+    margin-bottom: 0.5rem;
+}
+
+/* Forzar que las etiquetas dentro de .campo-formulario sean bloques */
+.formulario .campo-formulario > label {
+    display: block;
+}
+
+/* Estilo para los inputs de texto y otros elementos similares */
+.input-formulario {
+    /* Ocupan todo el ancho disponible */
+    width: 100%;
+    /* Elimina bordes predeterminados */
+    border: none;
+    /* Espaciado interno */
+    padding: 0.5rem;
+    /* Elimina estilos de apariencia predeterminada */
+    appearance: none;
+}
+
+/* Estilo para grupos de preferencias e intereses */
+.prefes,
+.interes {
+    /* Ocupan todo el ancho disponible */
+    width: 100%;
+    /* Alinean los elementos de manera uniforme con espacio entre ellos */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Estilo para pantallas con un ancho máximo de 768px */
+@media (max-width:768px) {
+    .interes {
+        /* Cambia el flujo de los elementos a modo envolvente */
+        flex-flow: wrap;
+    }
+    .interes label {
+        /* Limita el ancho máximo de las etiquetas al 50% */
+        max-width: 50%;
+        /* Elimina márgenes */
+        margin: 0;
+    }
+}
+
+/* Oculta inputs de tipo radio y checkbox */
+.campo-formulario input[type="radio"],
+.campo-formulario input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilo para etiquetas asociadas a radio o checkbox cuando están seleccionados */
+.campo-formulario input[type="radio"]:checked + label,
+.campo-formulario input[type="checkbox"]:checked + label {
+    /* Cambia el color de fondo a la variable --secundario-oscuro */
+    background-color: var(--secundario-oscuro);
+    /* Cambia el color del texto a la variable --blanco */
+    color: var(--blanco);
+}
+
+/* Estilo específico para las etiquetas dentro de preferencias e intereses */
+.campo-formulario .prefes label,
+.campo-formulario .interes label {
+    /* Color de texto usando la variable --principal */
+    color: var(--principal);
+    /* Fondo blanco */
+    background-color: var(--blanco);
+    /* Peso de fuente definido en la variable --forma-principal */
+    font-weight: var(--forma-principal);
+    /* Ocupan todo el ancho disponible */
+    width: 100%;
+    /* Alineación centrada del texto */
+    text-align: center;
+    /* Espaciado interno */
+    padding: 0.5rem;
+    /* Borde negro */
+    border: 1px solid black;
+    /* Cambia el cursor al pasar sobre las etiquetas */
+    cursor: pointer;
+}
+
+/* Estilo para los textarea del formulario */
+.campo-formulario textarea {
+    /* Ocupan todo el ancho disponible */
+    width: 100%;
+    /* Altura mínima y predeterminada */
+    min-height: 20rem;
+    height: 20rem;
+    /* Permite ajustar la altura manualmente */
+    resize: vertical;
+}
+
+/* Clase para elementos flexibles */
+.flex {
+    display: flex;
+}
+
+/* Clase para alinear elementos flexibles hacia la derecha */
+.derecha {
+    justify-content: end;
+}

@@ -1,0 +1,102 @@
+h1 {
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.caja {
+    background-color: red;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.azul {
+    background-color: blue;
+}
+.verde {
+    background-color: green;
+}
+.gris {
+    background-color: grey;
+}
+
+
+
+/* 
+Segunda Parte: Explicación de cada bloque
+
+
+
+Centrando el título:
+
+h1 {
+    text-align: center;
+}
+Descripción:
+
+Esta regla CSS alinea el texto dentro de los elementos <h1> al centro de su contenedor.
+Contenedor flex con alineación a la izquierda:
+
+.contenedor {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+Descripción:
+
+display: flex; convierte al contenedor en un contenedor flexible (flexbox), lo que permite que los elementos dentro de él se distribuyan de manera flexible.
+justify-content: flex-start; alinea los elementos hijos (en este caso, las cajas) al principio del contenedor, lo que los coloca de izquierda a derecha.
+gap: 10px; agrega un espacio de 10 píxeles entre los elementos hijos del contenedor.
+Estilos para las cajas:
+
+
+.caja {
+    background-color: red;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+Descripción:
+
+background-color: red; le da a las cajas un color de fondo rojo.
+border: 1px solid black; agrega un borde negro de 1 píxel alrededor de cada caja.
+height: 100px; establece una altura de 100 píxeles para las cajas.
+width: 100px; establece un ancho de 100 píxeles para las cajas.
+display: flex; convierte las cajas en elementos flexibles, lo que permite centrar su contenido fácilmente.
+justify-content: center; alinea los elementos hijos (el texto o contenido dentro de la caja) de manera horizontal al centro.
+align-items: center; alinea los elementos hijos de manera vertical al centro.
+Color de fondo personalizado para las cajas con clases:
+
+
+.azul {
+    background-color: blue;
+}
+Descripción:
+
+Los elementos con la clase .azul tendrán un fondo de color azul.
+
+
+.verde {
+    background-color: green;
+}
+Descripción:
+
+Los elementos con la clase .verde tendrán un fondo de color verde.
+
+
+.gris {
+    background-color: grey;
+}
+Descripción:
+
+Los elementos con la clase .gris tendrán un fondo de color gris. */

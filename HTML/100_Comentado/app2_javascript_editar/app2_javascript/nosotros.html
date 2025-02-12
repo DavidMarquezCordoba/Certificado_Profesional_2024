@@ -1,0 +1,127 @@
+<!-- 
+Explicación General
+
+Este código HTML es para una página web de la "Academia Épsilon". Tiene las siguientes secciones clave:
+
+Encabezado: Un encabezado <header> que contiene el título del curso y la academia.
+Navegación: Un bloque <nav> con enlaces de navegación que permiten a los usuarios moverse entre las diferentes secciones del sitio web.
+Contenido Principal: En la sección <main>, se presentan los detalles del equipo de trabajo de la academia. Cada miembro tiene una foto, 
+    nombre, cargo y detalles de contacto como teléfono y correo electrónico.
+Pie de página: Un pie de página <footer> con la información de derechos reservados de la academia.
+Fuentes Externas y CSS: Se cargan fuentes desde Google Fonts y varios archivos CSS para el estilo del sitio, incluyendo la normalización 
+de estilos entre diferentes navegadores.
+Cada comando y etiqueta está diseñada para mejorar la accesibilidad y la estructura del sitio. Las imágenes y los enlaces de contacto 
+proporcionan una forma interactiva para que los usuarios se comuniquen con el equipo de la academia. -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<!-- Declara el tipo de documento como HTML5 y define el idioma de la página como español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Define el conjunto de caracteres para la página como UTF-8, que es el estándar para caracteres internacionales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la visualización de la página para dispositivos móviles, asegurando que se adapta al ancho del dispositivo y tiene un nivel de zoom inicial 1 -->
+    <title>App2</title>
+    <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconecta a la fuente de Google Fonts para mejorar el tiempo de carga -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconecta a la fuente de Google Fonts con especificación de "crossorigin" para evitar problemas de CORS -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,500;1,700&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Vincula las hojas de estilo de Google Fonts para cargar las fuentes Kanit y Roboto con diferentes pesos -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <!-- Pre-carga el archivo CSS de normalización para asegurar que se carga antes de renderizar la página -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Vincula el archivo CSS de normalización que asegura que los elementos se comporten de manera consistente en todos los navegadores -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <!-- Pre-carga el archivo CSS principal para la página -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Vincula el archivo CSS principal para el diseño y estilo de la página -->
+    <link rel="preload" href="css/nosotros_grid.css" as="style">
+    <!-- Pre-carga el archivo CSS específico para la sección de 'Nosotros' -->
+    <link rel="stylesheet" href="css/nosotros_grid.css">
+    <!-- Vincula el archivo CSS específico para la sección de 'Nosotros' -->
+</head>
+<body>
+    <header>
+        <h1 class="cabecera">Curso de aplicaciones web <span>academia Épsilon</span></h1>
+        <!-- Cabecera de la página, mostrando el nombre del curso y la academia, donde el 'span' tiene un estilo adicional -->
+    </header>
+
+    <div class="nav-fondo">
+        <!-- Div contenedor para el fondo de la navegación -->
+        <nav class="nav-cabecera contenedor">
+            <!-- Navegación principal con clase 'nav-cabecera' y contenedor para controlar el ancho -->
+            <a class="inicio" href="index.html">inicio</a>
+            <!-- Enlace a la página de inicio -->
+            <a class="mas-cursos" href="mas-cursos.html">más cursos</a>
+            <!-- Enlace a la página de más cursos -->
+            <a class="instalaciones" href="instalaciones.html">instalaciones</a>
+            <!-- Enlace a la página de instalaciones -->
+            <a class="nosotros" href="nosotros.html">nosotros</a>
+            <!-- Enlace a la página 'Nosotros' -->
+            <a class="blog" href="blog.html">blog</a>
+            <!-- Enlace al blog -->
+            <a class="contacto" href="index.html#formulario">contacto</a>
+            <!-- Enlace a la sección de contacto dentro de la página 'index.html' -->
+        </nav>
+    </div>
+
+    <main class="contenedor">
+        <!-- Contenedor principal para el contenido de la página -->
+        <h2>Nosotros</h2>
+        <!-- Título de la sección 'Nosotros' -->
+        <section class="pag-nosotros">
+            <!-- Sección que contiene información sobre el equipo -->
+            <article class="personal">
+                <!-- Artículo que contiene la información de una persona del equipo -->
+                <h3>Dirección</h3>
+                <!-- Título de la subsección 'Dirección' -->
+                <img src="img/direccion.jpg" alt="foto academia epsilon">
+                <!-- Imagen de la persona de dirección, con texto alternativo en caso de que la imagen no se cargue -->
+                <div class="datos">
+                    <!-- Contenedor para los datos de la persona -->
+                    <h4>Óliver</h4>
+                    <!-- Nombre de la persona (Óliver) -->
+                    <p>Director Academia Épsilon</p>
+                    <!-- Cargo de la persona (Director) -->
+                </div>
+                <div class="micontacto">
+                    <!-- Contenedor para los métodos de contacto -->
+                    <a href="tel:+34672280553">
+                        <!-- Enlace para realizar una llamada telefónica al número indicado -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
+                            <path d="M20 3h-2a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2z"></path>
+                            <path d="M16 4h-11a3 3 0 0 0 -3 3v10a3 3 0 0 0 3 3h11"></path>
+                            <path d="M12 8h-6v3h6z"></path>
+                            <path d="M12 14v.01"></path>
+                            <path d="M9 14v.01"></path>
+                            <path d="M6 14v.01"></path>
+                            <path d="M12 17v.01"></path>
+                            <path d="M9 17v.01"></path>
+                            <path d="M6 17v.01"></path>
+                        </svg>672 28 05 53
+                    </a>
+                    <!-- Enlace para realizar una llamada -->
+                    <a href="mailto:direccion@academiaepsilon.es">
+                        <!-- Enlace para enviar un correo electrónico -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
+                            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                            <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path>
+                        </svg>direccion@academiaepsilon.es
+                    </a>
+                    <!-- Enlace para enviar un correo electrónico -->
+                </div>
+            </article>
+            <!-- Otros artículos con la misma estructura para otros miembros del equipo -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados Academia Épsilon 2024</p>
+        <!-- Pie de página con derechos de autor -->
+    </footer>
+
+</body>
+</html>

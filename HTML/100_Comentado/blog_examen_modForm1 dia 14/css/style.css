@@ -1,0 +1,477 @@
+:root {
+    --numColumnas: 4; /* Define una variable global para el número de columnas en el nav, que puede ser modificada desde JavaScript */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Establece las fuentes para el cuerpo del documento */
+    box-sizing: border-box; /* El padding y el borde se sumarán al tamaño total de los elementos */
+    background-color: #f4f4f4; /* Color de fondo gris claro para el cuerpo */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+* {
+    box-sizing: inherit; /* Todos los elementos heredarán el 'box-sizing: border-box' del body */
+}
+
+header {
+    background-color: #007bff; /* Color de fondo azul para el header */
+    color: white; /* Color del texto blanco */
+    text-align: center; /* Centra el texto dentro del header */
+    padding: 5px; /* Añade un pequeño padding alrededor del contenido */
+}
+
+h1 {
+    margin: 0 0 10px 0; /* Elimina los márgenes laterales y superiores del h1 y agrega un margen inferior de 10px */
+    font-size: 24px; /* Establece el tamaño de fuente del título a 24px */
+}
+
+nav {
+    /* display: flex; */ /* Desactivado, ya que estamos usando grid en lugar de flexbox */
+    display: grid; /* Cambia el layout del nav a un sistema de cuadrícula */
+    grid-template-columns: repeat(var(--numColumnas), 1fr); /* Define el número de columnas con el valor de la variable --numColumnas, que es 4 por defecto */
+    justify-content: space-around; /* Distribuye los elementos con espacio igual alrededor de ellos */
+    align-items: center; /* Centra los elementos del nav verticalmente */
+    height: auto; /* La altura del nav se ajusta automáticamente al contenido */
+    padding-bottom: 5px; /* Añade un padding de 5px en la parte inferior */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Los enlaces tienen color blanco */
+    transition: all 0.2s; /* Aplica una transición suave a todas las propiedades del enlace */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el enlace */
+}
+
+a:hover {
+    font-size: 1.5rem; /* Al pasar el cursor sobre el enlace, su tamaño de fuente aumenta a 1.5rem */
+}
+
+.seleccionado {
+    color: yellow; /* Cambia el color del texto a amarillo para los elementos con la clase 'seleccionado' */
+}
+
+main {
+    padding: 10px; /* Añade un padding de 10px alrededor del contenido del main */
+    display: grid; /* Establece un sistema de cuadrícula dentro de 'main' */
+    gap: 10px; /* Añade un espacio de 10px entre las celdas de la cuadrícula */
+    grid-template-columns: 1fr; /* Define una columna en la cuadrícula para pantallas pequeñas */
+    grid-template-rows: 1fr auto 1fr; /* Define tres filas, con la fila central ajustándose automáticamente */
+}
+
+@media (min-width: 480px) {
+    main {
+        grid-template-columns: repeat(2, 1fr); /* Para pantallas más grandes (a partir de 480px), cambia a dos columnas */
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(3, 1fr); /* Para pantallas más grandes (a partir de 768px), cambia a tres columnas */
+    }
+}
+
+#boton-nuevo {
+    grid-row: span 3; /* El botón ocupará tres filas dentro de la cuadrícula */
+    color: #007bff; /* Establece el color del texto del botón como azul */
+    width: 100px; /* Establece un ancho fijo de 100px para el botón */
+    height: 100px; /* Establece una altura fija de 100px para el botón */
+    margin: auto; /* Centra el botón dentro de su contenedor */
+    transition: all 0.3s; /* Aplica una transición suave a todas las propiedades del botón */
+}
+
+#boton-nuevo:hover {
+    transform: scale(1.3); /* Al pasar el cursor sobre el botón, este se escala un 30% más grande */
+}
+
+#boton-nuevo:active {
+    transform: scale(0.8); /* Cuando el botón es presionado, su tamaño se reduce al 80% */
+}
+
+article {
+    grid-row: span 3; /* El artículo ocupará tres filas dentro de la cuadrícula */
+    padding: 15px; /* Añade un padding de 15px dentro del artículo */
+    width: 100%; /* El artículo ocupará el 100% del ancho disponible */
+    background-color: antiquewhite; /* Establece el color de fondo como 'antiquewhite' */
+    display: grid; /* Utiliza CSS Grid dentro del artículo */
+    justify-content: start; /* Alinea el contenido del artículo a la izquierda */
+    align-items: center; /* Centra el contenido verticalmente */
+    grid-template-columns: 1fr; /* Define una sola columna en el artículo */
+    grid-template-rows: subgrid; /* Utiliza un subgrid para las filas del artículo */
+}
+
+article h3 {
+    text-align: center; /* Centra el texto del título h3 dentro del artículo */
+    width: 100%; /* El título h3 ocupa el 100% del ancho disponible */
+}
+
+article code {
+    padding: 5px; /* Añade un pequeño padding a los bloques de código dentro del artículo */
+}
+
+article time {
+    text-align: end; /* Alinea el texto de la fecha al final (a la derecha) */
+    width: 100%; /* La fecha ocupa el 100% del ancho disponible */
+}
+
+dialog {
+    width: min(100%, 400px); /* El modal tendrá un ancho máximo de 400px, pero no más grande que el 100% de su contenedor */
+    background-color: white; /* Establece el color de fondo blanco */
+    box-shadow: 0 0 10px black; /* Añade una sombra alrededor del modal */
+    border-radius: 10px; /* Redondea los bordes del modal */
+    border: none; /* Elimina el borde del modal */
+    padding: 15px; /* Añade un padding de 15px dentro del modal */
+}
+
+dialog[open] {
+    display: flex; /* Muestra el modal como un contenedor flex */
+    flex-direction: column; /* Organiza el contenido del modal en una columna */
+    justify-content: flex-end; /* Alinea el contenido al final del modal */
+    align-items: center; /* Centra el contenido horizontalmente */
+    gap: 15px; /* Añade un espacio de 15px entre los elementos dentro del modal */
+    animation: entrada-modal 0.8s ease-in; /* Añade una animación de entrada al modal */
+}
+
+dialog div {
+    display: flex; /* Organiza el contenido de los divs dentro del modal con flexbox */
+    flex-direction: column; /* Dispone los elementos en una columna */
+    width: 100%; /* Los divs ocupan el 100% del ancho disponible */
+    align-items: flex-start; /* Alinea los elementos a la izquierda dentro del div */
+    justify-content: center; /* Centra los elementos verticalmente dentro del div */
+}
+
+input, textarea {
+    width: 100%; /* Los campos de entrada y textarea ocupan el 100% del ancho disponible */
+    padding: 8px; /* Añade un padding de 8px dentro de los campos */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px */
+    border: none; /* Elimina los bordes */
+    border-bottom: 1px solid #cccccc; /* Añade un borde inferior gris claro */
+    outline: none; /* Elimina el contorno cuando el campo es seleccionado */
+}
+
+textarea {
+    border: 1px solid #cccccc; /* Añade un borde gris claro al textarea */
+    height: 100px; /* Establece la altura del textarea en 100px */
+}
+
+button {
+    background-color: #007bff; /* Establece el color de fondo del botón como azul */
+    color: white; /* Establece el color del texto del botón como blanco */
+    border: none; /* Elimina el borde del botón */
+    padding: 8px 15px; /* Añade un padding de 8px en la parte superior e inferior y 15px a los lados */
+    cursor: pointer; /* Cambia el cursor a una mano cuando el usuario pasa sobre el botón */
+    border-radius: 10px; /* Redondea los bordes del botón */
+    margin: 10px; /* Añade un margen de 10px alrededor del botón */
+}
+
+.crece {
+    animation: nueva-entrada 0.8s ease-in; /* Aplica una animación al agregar una nueva entrada */
+}
+
+@keyframes nueva-entrada {
+    100% {
+        background-color: white; /* Al final de la animación, el fondo es blanco */
+        transform: translateY(0); /* El elemento se mueve a su posición original */
+        opacity: 1; /* La opacidad del elemento es 1 (totalmente visible) */
+    }
+    0% {
+        background-color: rgba(0, 255, 0, 0.4); /* El fondo comienza con un color verde claro */
+        transform: translateY(-150%); /* El elemento comienza desplazado hacia arriba */
+        opacity: 0; /* La opacidad comienza en 0 (totalmente invisible) */
+    }
+}
+
+.quita {
+    animation: quita-entrada 1.5s ease-in; /* Aplica una animación al eliminar una entrada */
+}
+
+@keyframes quita-entrada {
+    0% {
+        background-color: white; /* Al inicio de la animación, el fondo es blanco */
+        transform: translateY(0); /* El elemento está en su posición original */
+        opacity: 1; /* El elemento es completamente visible */
+    }
+    100% {
+        background-color: rgba(255, 0, 0, 0.4); /* El fondo se vuelve rojo claro */
+        transform: translateY(-250%); /* El elemento se mueve hacia arriba fuera de la vista */
+        opacity: 0; /* La opacidad se reduce a 0 (totalmente invisible) */
+    }
+}
+
+@keyframes entrada-modal {
+    100% {
+        background-color: white; /* Al final de la animación, el fondo del modal es blanco */
+        transform: translateY(0); /* El modal se mueve a su posición original */
+        opacity: 1; /* El modal es completamente visible */
+    }
+    0% {
+        background-color: grey; /* El fondo comienza gris */
+        transform: translateY(-150%); /* El modal comienza desplazado hacia arriba */
+        opacity: 0; /* El modal es invisible al principio */
+    }
+}
+
+
+
+
+
+
+/* EXPLICACION PASO A PASO
+
+:root
+
+:root {
+    --numColumnas: 4; /* el número de columnas del nav (si usamos grid) se representa por esta variable para poder ser modificada desde javascript */
+/* } 
+:root: Aquí estamos utilizando el selector :root, que hace referencia al elemento raíz del documento (el <html>). Esto es útil para definir variables globales CSS que pueden ser reutilizadas en todo el archivo.
+--numColumnas: 4: Esta es una variable personalizada de CSS que representa el número de columnas que tendrá el nav. Se asigna el valor 4, pero más adelante se puede cambiar dinámicamente desde JavaScript. */
+
+
+
+/* body
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+font-family: Establece la tipografía del cuerpo de la página. En este caso, se utilizarán las fuentes Arial, Helvetica y sans-serif.
+box-sizing: border-box: Esto significa que el padding y los bordes de los elementos serán parte del tamaño total de los elementos, lo cual es útil para evitar desbordamientos inesperados.
+background-color: #f4f4f4: Se establece un color de fondo gris claro para el cuerpo de la página.
+margin: 0; padding: 0: Elimina los márgenes y el padding por defecto del body. */
+
+
+
+/* 
+* (Selector universal)
+
+* {
+    box-sizing: inherit;
+}
+box-sizing: inherit: El selector universal * se utiliza para seleccionar todos los elementos. Aquí se está heredando el box-sizing: border-box de body, lo que asegura que todos los elementos tengan el mismo comportamiento con respecto al tamaño de su caja.
+
+ */
+/* 
+header
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+background-color: #007bff: Establece un color de fondo azul para el encabezado.
+color: white: Cambia el color del texto a blanco.
+text-align: center: Centra el texto dentro del header.
+padding: 5px: Añade un poco de espacio interior al header. */
+
+
+
+
+
+/* 
+h1
+
+h1 {
+    margin: 0 0 10px 0;  margin-bottom:10px 
+    font-size: 24px;
+}
+margin: 0 0 10px 0: Elimina los márgenes de los lados y en la parte superior, pero establece un margen de 10px en la parte inferior del título <h1>.
+font-size: 24px: Define el tamaño de la fuente del título a 24px.
+ 
+
+
+
+
+/* nav
+
+nav {
+    /* display: flex; */ /* esta línea para el navegador con flex y así si se mueven los enlaces cuando hover */ 
+    /*display: grid; estas 2 líneas para el navegador con grid y así no se mueven los enlaces cuando hover */ 
+    /*grid-template-columns: repeat(var(--numColumnas), 1fr); estas 2 líneas para el navegador con grid y así no se mueven los enlaces cuando hover */ 
+   /*  justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding-bottom: 5px; 
+}
+display: grid: Cambia el layout del nav a un sistema de cuadrícula (CSS Grid), lo que permite organizar los elementos en filas y columnas.
+grid-template-columns: repeat(var(--numColumnas), 1fr): Define que las columnas en el nav serán dinámicas y su número dependerá de la variable --numColumnas (que es 4 por defecto). 1fr significa que cada columna ocupará el mismo espacio disponible.
+justify-content: space-around: Distribuye los elementos en el contenedor con un espacio igual alrededor de ellos.
+align-items: center: Alinea los elementos del nav de manera vertical en el centro.
+height: auto: La altura del nav se ajusta automáticamente al contenido.
+padding-bottom: 5px: Añade un pequeño espacio en la parte inferior del nav. */
+
+
+
+/* 
+a
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+text-decoration: none: Elimina el subrayado de los enlaces.
+color: white: Establece el color de los enlaces como blanco.
+transition: all 0.2s: Añade una transición suave de 0.2 segundos a todos los cambios de propiedades en los enlaces.
+cursor: pointer: Cambia el cursor a una mano cuando el usuario pasa sobre el enlace.
+ */
+
+
+
+
+/* 
+a:hover
+
+a:hover {
+    font-size: 1.5rem;
+}
+font-size: 1.5rem: Cuando el usuario pasa el cursor sobre el enlace (evento hover), el tamaño de la fuente se aumenta a 1.5rem, haciéndolo más grande.
+
+ */
+
+
+
+/* 
+.seleccionado
+
+.seleccionado {
+    color: yellow;
+}
+color: yellow: Los elementos con la clase .seleccionado tendrán el texto de color amarillo. Esto se puede usar para resaltar un enlace o elemento seleccionado.
+
+ */
+
+
+/* 
+main
+
+main {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+}
+padding: 10px: Añade un espacio interior de 10px alrededor del contenido del main.
+display: grid: Utiliza CSS Grid para organizar el contenido dentro del main.
+gap: 10px: Establece un espacio de 10px entre las celdas de la cuadrícula.
+grid-template-columns: 1fr: Define una columna en la cuadrícula que ocupe todo el espacio disponible.
+grid-template-rows: 1fr auto 1fr: Define tres filas, donde las filas superior e inferior ocupan espacio proporcional y la fila central tiene un tamaño ajustado automáticamente.
+ */
+
+
+
+
+
+/* @media (min-width: 480px)
+
+@media (min-width: 480px) {
+    main {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width: 480px): Este bloque aplica estilos solo si el ancho de la pantalla es de al menos 480px (en dispositivos como tablets).
+grid-template-columns: repeat(2, 1fr): En pantallas más grandes, el main se adapta a dos columnas.
+ */
+
+
+
+
+/* 
+@media (min-width: 768px)
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width: 768px): Este bloque aplica estilos si el ancho de la pantalla es de al menos 768px (en dispositivos como computadoras de escritorio).
+grid-template-columns: repeat(3, 1fr): En pantallas más grandes, el main se adapta a tres columnas. */
+
+
+
+
+
+
+/* #boton-nuevo
+
+#boton-nuevo {
+    grid-row: span 3;
+    color: #007bff;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    transition: all 0.3s;
+}
+grid-row: span 3: El botón ocupará tres filas dentro de la cuadrícula.
+color: #007bff: El texto del botón será de color azul.
+width: 100px; height: 100px: Define un tamaño fijo de 100x100 píxeles para el botón.
+margin: auto: Centra el botón horizontal y verticalmente dentro de su contenedor.
+transition: all 0.3s: Aplica una transición suave de 0.3 segundos a cualquier cambio de propiedad en el botón. */
+
+
+
+
+
+
+
+/* #boton-nuevo:hover
+
+#boton-nuevo:hover {
+    transform: scale(1.3);
+}
+transform: scale(1.3): Cuando el usuario pasa el cursor sobre el botón, este aumenta de tamaño un 30% (escala de 1.3). */
+
+
+
+
+
+
+/* 
+#boton-nuevo:active
+
+#boton-nuevo:active {
+    transform: scale(0.8);
+}
+transform: scale(0.8): Cuando el botón es presionado (evento active), su tamaño se reduce al 80%. */
+
+
+
+
+
+/* article
+
+article {
+    grid-row: span 3;
+    padding: 15px;
+    width: 100%;
+    background-color: antiquewhite;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: subgrid;
+}
+grid-row: span 3: El artículo ocupa tres filas dentro de la cuadrícula.
+padding: 15px: Añade 15px de espacio interior.
+width: 100%: El artículo ocupará el 100% del ancho disponible.
+
+
+background-color: antiquewhite: Establece un fondo de color antiquewhite.
+display: grid: Utiliza CSS Grid para organizar su contenido.
+
+
+justify-content: start: Alinea el contenido de izquierda a derecha.
+
+
+align-items: center: Centra el contenido verticalmente.
+
+
+grid-template-columns: 1fr: Define una columna para el artículo.
+
+
+grid-template-rows: subgrid: Utiliza un subgrid para las filas. */

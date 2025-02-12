@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,500;1,700&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel='preload' href='css/formulario.css' as='style'>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <header>
+        <h1 class="cabecera para">Curso de aplicaciones web <span>academia Épsilon</span></h1>
+    </header>
+
+    <div class="nav-fondo">
+        <nav class="nav-cabecera contenedor">
+            <a class="inicio" href="index.html">inicio</a>
+            <a class="mas-cursos" href="mas-cursos.html">más cursos</a>
+            <a class="instalaciones" href="instalaciones.html">instalaciones</a>
+            <a class="nosotros" href="nosotros.html">nosotros</a>
+            <a class="blog" href="blog.html">blog</a>
+            <a class="contacto" href="#formulario">contacto</a>
+        </nav>
+    </div>
+
+    <section class="cabecera_fondo">
+        <div class="cabecera_contenido">
+            <h2>ACADEMIA ÉPSILON</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
+                <path d="M3 21l18 0"></path>
+                <path d="M5 21v-14l8 -4v18"></path>
+                <path d="M19 21v-10l-6 -4"></path>
+                <path d="M9 9l0 .01"></path>
+                <path d="M9 12l0 .01"></path>
+                <path d="M9 15l0 .01"></path>
+                <path d="M9 18l0 .01"></path>
+            </svg> <!-- building-skyscraper stroke:2 size:48 -->
+            <P>Fuengirola, Málaga</P>
+            <a class="boton" href="#formulario">Contactar</a>
+        </div>
+    </section>
+
+    <main class="contenedor sombra para">
+        <h2>Módulos formativos</h2>
+        <div class="modformativos">
+            <section class="modformativo">
+                <h3>Programación web en el entorno cliente Programación web en el entorno cliente</h3>
+                <div class="icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                        <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4"></path>
+                        <path d="M2 21v-6"></path>
+                        <path d="M5 15v6"></path>
+                        <path d="M2 18h3"></path>
+                        <path d="M20 15v6h2"></path>
+                        <path d="M13 21v-6l2 3l2 -3v6"></path>
+                        <path d="M7.5 15h3"></path>
+                        <path d="M9 15v6"></path>
+                    </svg> <!-- file-type-html stroke:2 size:44 -->
+                </div>
+                <p>urus sed, placerat erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus lacinia molestie lacinia. Curabitur mollis auctor diam in bibendum. Donec semper, ar</p>
+                <p class="horas">150 horas</p>
+            </section>
+
+        </div>
+
+        <section>
+            <h2 id="formulario" class="para">Formulario de contacto</h2>
+            <form action="" class="formulario">
+                <fieldset>
+                    <legend>Solicitanos información enviando este formulario</legend>
+                    <div class="campo-formulario">
+                        <label for="nombre">nombre</label>
+                        <input id="nombre" class="input-formulario" name="nombre" type="text" placeholder="escribe tu nombre">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="email">email</label>
+                        <input id="email" class="input-formulario" name="email" type="email" placeholder="escribe tu correo">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="telefono">teléfono</label>
+                        <input id="telefono" class="input-formulario" name="telefono" type="tel" placeholder="escribe tu teléfono">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="estalabo">estado laboral</label>
+                        <input id="estalabo" list="labos" class="input-formulario" name="estalabo" type="text" placeholder="escribe si estas trabajando o desempleado...">
+                        <datalist id="labos">
+                            <option value="Desempleado">
+                            <option value="Trabajo Fijo">
+                            <option value="Trabajo Temporal">
+                            <option value="Trabajo fijo-discontinuo">
+                        </datalist>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="tipoinfo">Tipo de información</label>
+                        <select name="tipoinfo" id="tipoinfo" class="input-formulario">
+                            <option value="" disabled selected>pincha aquí para seleccionar una opción</option>
+                            <optgroup label="Cursos">
+                                <option value="encurso">Curso Comenzado</option>
+                                <option value="nocurso">Próximo Curso</option>
+                            </optgroup>
+                            <optgroup label="Trabajo">
+                                <option value="soltrabajo">Solicitud de Tabajo</option>
+                                <option value="practicas">Interesado Prácticas</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="campo-formulario">
+                        <label>Selecciona preferencia para contactarte</label>
+                        <div class="prefes">
+                            <input type="radio" id="prtel" name="contacto" value="prtel">
+                            <label for="prtel">Teléfono</label>
+                            <input type="radio" id="premail" name="contacto" value="premail">
+                            <label for="premail">Email</label>
+                        </div>
+                    </div>
+                    <div class="campo-formulario">
+                        <label>selecciona tus campos de interés</label>
+                        <div class="interes">
+                            <input type="checkbox" id="ofimatica" name="ofimatica">
+                            <label for="ofimatica">Ofimática</label>
+                            <input type="checkbox" id="contabilidad" name="contabilidad">
+                            <label for="contabilidad">Contabilida</label>
+                            <input type="checkbox" id="hosteleria" name="hosteleria">
+                            <label for="hosteleria">Hosteleria</label>
+                            <input type="checkbox" id="seguridad" name="seguridad">
+                            <label for="seguridad">Seguridad</label>
+                        </div>
+                    </div>
+                    <div class="campo-formulario">
+                        <textarea name="mensaje" id="mensaje" placeholder="Escribe cualquier cosa que quieras añadir"></textarea>
+                    </div>
+                    <div class="flex derecha">
+                        <input type="submit" class="boton" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="para">
+        <p>Todos los derechos reservados Academia Épsilon 2024</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

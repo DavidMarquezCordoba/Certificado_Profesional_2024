@@ -1,0 +1,482 @@
+:root {
+    --primario: #000000;
+    --blanco: #fff;
+    --fondo-claro: #f4f4f4;
+    --fondo-oscuro: #2c3e50;
+    --fondo-verde: #1e8449;
+    --fondo-boton-naranja1: #e74c3c;
+    --fondo-boton-naranja2: #c0392b;
+    --fondo-boton-verde: #27ae60;
+
+    /* Fuentes */
+    --fuente-principal: Arial, sans-serif;
+    --forma-principal: 400; /* 400 normal. 700 negrita */
+    --forma-negrita: 700; /* 400 normal. 700 negrita */
+    --estilo-principal: normal; /* normal o italic */
+
+}
+
+html {
+    font-size:62.5%; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    font-size: 16px; /* 1rem = 1rem */
+    color: var(--primario);
+    font-family: var(--fuente-principal);
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo-claro);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    background-color: var(--fondo-oscuro);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    padding-top: 6rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+
+.contenedor {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr)); 
+    /* auto-fill no dá un número de columnas, sino las que quepa */ 
+    /*minmax: cada columna tendrá 25rem como mínimo y 1fr como máximo */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.producto {
+    background-color: var(--blanco);
+    width: 100%;
+    color: var(--primario);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0.8rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.div-busqueda {
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.busqueda {
+    font-size: 2rem;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.agregar {
+  background-color: var(--fondo-boton-verde);
+  color: var(--blanco);
+  border: none;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.agregar:hover {
+  background-color: var(--fondo-verde);
+}
+
+#carrito {
+    overflow: scroll;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 6rem;
+    background-color: var(--blanco);
+    width: min(100%, 50rem);
+    padding: 2rem;
+    background-color: var(--fondo-oscuro);
+    color: var(--blanco);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: transform 1s ease-in-out;
+}
+
+
+.eliminar {
+    background-color: var(--fondo-boton-naranja1);
+    color: var(--blanco);
+    border: none;
+    padding: 1rem 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.5 ease-in-out;
+}
+
+.eliminar:hover {
+    background-color: var(--fondo-boton-naranja2);
+}
+
+footer {
+  background-color: var(--fondo-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.vacio {
+    font-size: 3rem;
+    font-weight: var(--forma-negrita);
+    color: var(--fondo-boton-naranja1);
+}
+
+.oculto {
+  transform: translateX(100%);
+}
+
+@media (max-width:480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    nav{
+        align-self:flex-end;
+    }
+    #carrito {
+        top: 14rem;
+    }
+}
+
+.temblar{
+        animation: temblor .5s 1;
+}
+@keyframes temblor{
+    0%{-webkit-transform:translate(0px,0px);}
+    10%{-webkit-transform:translate(10px,0px);}
+    20%{-webkit-transform:translate(0px,0px);}
+    30%{-webkit-transform:translate(10px,0px);}
+    40%{-webkit-transform:translate(0px,0px);}
+    50%{-webkit-transform:translate(10px,0px);}
+    60%{-webkit-transform:translate(0px,0px);}
+    70%{-webkit-transform:translate(10px,0px);}
+    80%{-webkit-transform:translate(0px,0px);}
+    90%{-webkit-transform:translate(10px,0px);}
+    100%{-webkit-transform:translate(0px,0px);}
+}
+
+.verde {
+    background-color: var(--fondo-boton-verde);
+}
+
+.borrar{
+    animation: borra 0.5s ease-in;
+}
+@keyframes borra {
+    0% {
+        transform: translateX(0%);
+        background-color: var(--blanco);
+    }
+    100% {
+        transform: translateX(-100%);
+        background-color: red;
+    }
+}
+
+.nuevo{
+    animation: nuevo 0.5s ease-in;
+}
+@keyframes nuevo {
+    0% {
+        transform: translateX(100%);
+        background-color: var(--fondo-boton-verde);
+    }
+    100% {
+        transform: translateX(0%);
+        background-color: var(--blanco);
+    }
+}
+
+
+
+
+
+ 
+
+/* EXPLICACION PASO A PASO
+
+
+Variables CSS (:root) */
+
+/* :root {
+    --primario: #000000;
+    --blanco: #fff;
+    --fondo-claro: #f4f4f4;
+    --fondo-oscuro: #2c3e50;
+    --fondo-verde: #1e8449;
+    --fondo-boton-naranja1: #e74c3c;
+    --fondo-boton-naranja2: #c0392b;
+    --fondo-boton-verde: #27ae60;
+
+    /* Fuentes */
+    /* --fuente-principal: Arial, sans-serif; */
+    /* --forma-principal: 400; 400 normal, 700 negrita */
+    /* --forma-negrita: 700; 400 normal, 700 negrita */
+    /* --estilo-principal: normal; normal o italic
+} */
+/* Explicación:
+Define variables de color y fuente que se usan en toda la hoja de estilos.
+Ventaja: Si se quiere cambiar un color o fuente, basta con modificar las variables sin cambiar cada regla CSS manualmente.
+Ejemplo de uso: color: var(--primario); usará el color negro definido en --primario. */
+
+ 
+
+
+
+
+/* Estilos globales
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+Explicación:
+font-size: 62.5%; → Hace que 1rem = 10px en lugar de 16px, facilitando cálculos de tamaño de fuente.
+box-sizing: border-box; → Asegura que width y height incluyan padding y border en los cálculos.
+scroll-behavior: smooth; → Hace que el desplazamiento al hacer clic en enlaces internos sea suave.
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+Asegura que todos los elementos usen el mismo box-sizing, incluyendo los ::before y ::after.
+ */
+
+
+
+
+/* Estilos del body
+
+body {
+    font-size: 16px; 
+    color: var(--primario);
+    font-family: var(--fuente-principal);
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo-claro);
+}
+Explicación:
+Define la fuente y el color de texto predeterminado.
+Elimina los márgenes y paddings por defecto.
+Usa un fondo claro (#f4f4f4).
+ */
+
+
+
+
+
+/* Header (Encabezado)
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    background-color: var(--fondo-oscuro);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+Explicación:
+position: fixed; → Mantiene el header fijo en la parte superior.
+width: 100%; → Ocupa todo el ancho de la pantalla.
+display: flex; justify-content: space-between; → Alinea los elementos a los extremos.
+background-color: var(--fondo-oscuro); → Usa el color de fondo oscuro definido. */
+
+
+
+
+
+/* Main (Cuerpo principal)
+
+main {
+    padding-top: 6rem;
+}
+Evita que el contenido quede oculto detrás del header, ya que este es fijo.
+css
+Copiar
+Editar
+h1 {
+    margin: 0;
+}
+Elimina el margen superior e inferior del h1 para evitar espacios no deseados.
+
+ */
+
+
+
+
+/* Contenedor de productos
+
+.contenedor {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+Explicación:
+Usa display: grid; para organizar los productos en columnas.
+repeat(auto-fill, minmax(45rem, 1fr)):
+auto-fill → Crea automáticamente el número de columnas que caben en la pantalla.
+minmax(45rem, 1fr) → Cada columna tendrá al menos 45rem de ancho y se expandirá hasta 1fr si hay espacio.
+ */
+
+
+
+
+/* Tarjetas de productos
+
+.producto {
+    background-color: var(--blanco);
+    width: 100%;
+    color: var(--primario);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0.8rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+Fondo blanco y texto oscuro.
+Bordes redondeados (border-radius: 0.8rem).
+Sombra (box-shadow) para efecto elevado. */
+
+
+
+ /* Barra de búsqueda
+
+.div-busqueda {
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+
+Usa flexbox para alinear la barra de búsqueda con el icono.
+
+.busqueda {
+    font-size: 2rem;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    height: 100%;
+}
+Fuente grande y borde redondeado.
+ */
+
+
+
+/* Botones de agregar y eliminar
+
+.agregar {
+    background-color: var(--fondo-boton-verde);
+    color: var(--blanco);
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.agregar:hover {
+    background-color: var(--fondo-verde);
+} */
+
+
+
+
+/* Botón verde con efecto hover más oscuro.
+
+.eliminar {
+    background-color: var(--fondo-boton-naranja1);
+    color: var(--blanco);
+    border: none;
+    padding: 1rem 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.5s ease-in-out;
+}
+.eliminar:hover {
+    background-color: var(--fondo-boton-naranja2);
+}
+Botón rojo con transición suave.
+ */
+
+
+/* Carrito de compras
+
+#carrito {
+    overflow: scroll;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 6rem;
+    background-color: var(--blanco);
+    width: min(100%, 50rem);
+    padding: 2rem;
+    background-color: var(--fondo-oscuro);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+}
+Fijo a la derecha, con overflow: scroll si hay muchos productos.
+Transición suave (transform 1s ease-in-out) para animaciones. */
+
+
+
+ /* Animaciones
+1. Temblor (Al agregar un producto)
+
+.temblar {
+    animation: temblor 0.5s 1;
+}
+@keyframes temblor {
+    0%, 20%, 40%, 60%, 80%, 100% { transform: translate(0px, 0px); }
+    10%, 30%, 50%, 70%, 90% { transform: translate(10px, 0px); }
+}
+Hace vibrar el botón cuando se agrega un producto.
+2. Eliminación (Al borrar un producto)
+
+.borrar {
+    animation: borra 0.5s ease-in;
+}
+@keyframes borra {
+    100% { transform: translateX(-100%); background-color: red; }
+}
+Desliza el producto fuera del carrito y lo vuelve rojo antes de desaparecer */ 

@@ -1,0 +1,93 @@
+
+
+<!-- Explicación general:
+
+Este código HTML corresponde a la estructura de una página web que muestra información sobre varios cursos ofrecidos por la Academia Épsilon. 
+La página está dividida en varias secciones importantes:
+
+Encabezado (<head>):
+
+Establece metadatos sobre la página, como la codificación de caracteres y la configuración para dispositivos móviles.
+También se vinculan recursos externos como fuentes de Google Fonts (Kanit y Roboto) y archivos CSS para estilizar la página.
+Cuerpo (<body>):
+
+Contiene la estructura visual de la página, que incluye:
+Un encabezado con el nombre de la academia.
+Una barra de navegación (<nav>) con enlaces a diferentes páginas de la web.
+Una sección principal (<main>) con información sobre los cursos, incluyendo imágenes de los cursos y aulas de la academia.
+Un pie de página con derechos de autor.
+Recursos multimedia:
+
+Imágenes de los cursos y aulas de la academia se incluyen mediante la etiqueta <img>. Asegúrate de que los archivos de imagen 
+estén bien ubicados en el servidor o directorio.
+Propósitos de las secciones y elementos:
+<meta charset="UTF-8">: Para asegurar que los caracteres especiales, como acentos y eñes, se visualicen correctamente en todos 
+los navegadores.
+<link rel="stylesheet">: Para vincular hojas de estilo que definen la apariencia de la página.
+<nav>: Define la barra de navegación y sus enlaces para facilitar la navegación del sitio.
+<img>: Muestra imágenes de los cursos y las aulas. Es importante usar el atributo alt para accesibilidad, permitiendo que las 
+personas con discapacidades visuales comprendan el contenido.
+Este código muestra cómo estructurar una página web básica utilizando HTML, con énfasis en la organización de contenido en 
+secciones y el uso de imágenes como recursos visuales. -->
+
+
+<!DOCTYPE html> <!-- Declara que el documento es de tipo HTML5, especificando que este es un archivo HTML. Esto ayuda a los navegadores a entender cómo procesar el archivo correctamente -->
+<html lang="es"> <!-- Abre el documento HTML y define que el contenido está en español, lo que es importante para la accesibilidad y los motores de búsqueda -->
+<head> <!-- Comienza la sección de cabecera del documento, que contiene metadatos y enlaces a recursos externos -->
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8, que incluye caracteres de todos los idiomas, asegurando que los caracteres especiales se muestren correctamente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define la ventana de visualización para dispositivos móviles, asegurando que la página se ajuste correctamente en pantallas pequeñas (escala inicial 1.0) -->
+    <title>App2</title> <!-- Especifica el título de la página que aparecerá en la pestaña del navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preestablece una conexión anticipada con los servidores de Google Fonts para acelerar la carga de las fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preestablece una conexión con los servidores de Google Fonts para cargar las fuentes, utilizando 'crossorigin' para compartir recursos entre orígenes -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,500;1,700&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet"> <!-- Vincula las hojas de estilo para las fuentes Kanit y Roboto desde Google Fonts -->
+    <link rel="preload" href="css/normalize.css" as="style"> <!-- Carga anticipada del archivo de estilo normalize.css, que normaliza el estilo entre diferentes navegadores -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Enlaza el archivo normalize.css, aplicando estilos consistentes en todos los navegadores -->
+    <link rel="preload" href="css/styles.css" as="style"> <!-- Carga anticipada del archivo de estilos principales 'styles.css' para mejorar el rendimiento -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Enlaza el archivo 'styles.css' que contiene los estilos personalizados de la página -->
+    <link rel="preload" href="css/mas-cursos_grid.css" as="style"> <!-- Carga anticipada del archivo de estilos 'mas-cursos_grid.css' que controla el diseño de la sección 'otros cursos' -->
+    <link rel="stylesheet" href="css/mas-cursos_grid.css"> <!-- Enlaza el archivo de estilos para la grilla de cursos adicionales -->
+</head>
+<body> <!-- Comienza el cuerpo del documento HTML, donde se coloca el contenido visible de la página -->
+
+    <header> <!-- Inicia la sección del encabezado de la página -->
+        <h1 class="cabecera">Curso de aplicaciones web <span>academia Épsilon</span></h1> <!-- Título principal de la página, con una parte estilizada con la etiqueta <span> -->
+    </header>
+
+    <div class="nav-fondo"> <!-- Contenedor para el fondo de la barra de navegación -->
+        <nav class="nav-cabecera contenedor"> <!-- Barra de navegación dentro de un contenedor para alinearla correctamente -->
+            <a class="inicio" href="index.html">inicio</a> <!-- Enlace de navegación a la página principal -->
+            <a class="mas-cursos" href="mas-cursos.html">más cursos</a> <!-- Enlace a la página con más cursos -->
+            <a class="instalaciones" href="instalaciones.html">instalaciones</a> <!-- Enlace a la página de instalaciones -->
+            <a class="nosotros" href="nosotros.html">nosotros</a> <!-- Enlace a la página 'nosotros' -->
+            <a class="blog" href="blog.html">blog</a> <!-- Enlace al blog -->
+            <a class="contacto" href="index.html#formulario">contacto</a> <!-- Enlace a la sección de contacto dentro de la misma página -->
+        </nav>
+    </div>
+
+    <main class="contenedor"> <!-- Comienza la sección principal de contenido de la página -->
+        <h2>Otros cursos</h2> <!-- Título de la sección que lista otros cursos -->
+        <div class="otros-cursos"> <!-- Contenedor de los cursos -->
+            <img class="imagen1" src="img/cursos/curso1.png" alt="foto curso operaciones básicas de comunicación"> <!-- Imagen del primer curso con descripción alternativa -->
+            <img class="imagen1" src="img/cursos/curso2.png" alt="foto curso habilitación para la docencia"> <!-- Imagen del segundo curso con descripción alternativa -->
+            <img class="imagen1" src="img/cursos/curso3.png" alt="foto curso operaciones auxiliares de servicio"> <!-- Imagen del tercer curso con descripción alternativa -->
+            <img class="imagen1" src="img/cursos/curso4.png" alt="foto curso "> <!-- Imagen del cuarto curso con descripción alternativa -->
+            <img class="aula1" src="img/cursos/aula1.png" alt="foto curso "> <!-- Imagen del aula de un curso con descripción alternativa -->
+            <img class="imagen2" src="img/cursos/curso5.png" alt="foto curso "> <!-- Imagen del curso 5 -->
+            <img class="imagen2" src="img/cursos/curso6.png" alt="foto curso "> <!-- Imagen del curso 6 -->
+            <img class="imagen2" src="img/cursos/curso7.png" alt="foto curso "> <!-- Imagen del curso 7 -->
+            <img class="aula2" src="img/cursos/aula2.png" alt="foto curso "> <!-- Imagen del aula 2 -->
+            <img class="imagen2-3" src="img/cursos/curso8.png" alt="foto curso "> <!-- Imagen del curso 8 -->
+            <img class="imagen3" src="img/cursos/curso9.png" alt="foto curso "> <!-- Imagen del curso 9 -->
+            <img class="imagen3" src="img/cursos/curso10.png" alt="foto curso "> <!-- Imagen del curso 10 -->
+            <img class="imagen3" src="img/cursos/curso11.png" alt="foto curso "> <!-- Imagen del curso 11 -->
+            <img class="imagen3" src="img/cursos/curso12.png" alt="foto curso "> <!-- Imagen del curso 12 -->
+            <img class="aula3" src="img/cursos/aula3.png" alt="foto curso "> <!-- Imagen del aula 3 -->
+        </div>
+    </main>
+    
+    <footer> <!-- Pie de página del sitio -->
+        <p>Todos los derechos reservados Academia Épsilon 2024</p> <!-- Información sobre los derechos de autor de la página -->
+    </footer>
+
+</body>
+</html>

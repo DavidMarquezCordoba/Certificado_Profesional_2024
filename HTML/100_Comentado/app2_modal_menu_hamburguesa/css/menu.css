@@ -1,0 +1,77 @@
+/* Resumen:
+Este código CSS define los estilos para:
+
+Ícono de hamburguesa:
+
+Se oculta por defecto (display: none) y solo se muestra en pantallas pequeñas (max-width: 768px).
+
+Se posiciona de forma fija en la parte superior de la pantalla.
+
+Menú de navegación:
+
+En pantallas pequeñas, el menú se oculta fuera de la pantalla (transform: translateX(-100%)).
+
+Al añadir la clase .nav-mostrar, el menú se muestra moviéndose a su posición original (transform: translateX(0%)).
+
+Interacciones:
+
+El ícono de hamburguesa cambia de color al hacer clic (:active), proporcionando retroalimentación visual al usuario. */
+
+
+
+/* ==================================================
+   Estilos generales para el ícono de hamburguesa
+   ================================================== */
+   .hamburguesa {
+    display: none; /* Oculta el ícono de hamburguesa por defecto. */
+}
+
+/* ==================================================
+   Estilos para pantallas pequeñas (hasta 768px de ancho)
+   ================================================== */
+@media (max-width: 768px) {
+    /* Ajustes para el header en pantallas pequeñas */
+    header {
+        padding-top: 40px; /* Añade un padding superior de 40px al header. */
+    }
+
+    /* Estilos para el fondo del menú de navegación */
+    .nav-fondo {
+        padding-top: 50px; /* Añade un padding superior de 50px al menú. */
+        position: fixed; /* Fija el menú en la pantalla. */
+        top: 0px; /* Alinea el menú en la parte superior. */
+        left: 0px; /* Alinea el menú a la izquierda. */
+        z-index: 99; /* Asegura que el menú esté por encima de otros elementos. */
+        width: 100%; /* Ocupa el 100% del ancho de la pantalla. */
+        height: 100%; /* Ocupa el 100% de la altura de la pantalla. */
+        opacity: 0.95; /* Aplica una opacidad del 95% al fondo del menú. */
+        transform: translateX(-100%); /* Oculta el menú moviéndolo fuera de la pantalla hacia la izquierda. */
+        transition: transform 1s ease-in-out; /* Aplica una transición suave de 1 segundo al mostrar/ocultar el menú. */
+    }
+
+    /* Clase para mostrar el menú */
+    .nav-mostrar {
+        transform: translateX(0%); /* Muestra el menú moviéndolo a su posición original (visible). */
+    }
+
+    /* Estilos para el ícono de hamburguesa en pantallas pequeñas */
+    .hamburguesa {
+        display: block; /* Muestra el ícono de hamburguesa. */
+        position: fixed; /* Fija el ícono en la pantalla. */
+        left: 0px; /* Alinea el ícono a la izquierda. */
+        top: 0px; /* Alinea el ícono en la parte superior. */
+        width: 100%; /* Ocupa el 100% del ancho de la pantalla. */
+        background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente blanco. */
+    }
+
+    /* Estilos para el SVG dentro del ícono de hamburguesa */
+    .hamburguesa svg {
+        width: 35px; /* Define el ancho del ícono. */
+    }
+
+    /* Estilos para el SVG cuando está activo (al hacer clic) */
+    .hamburguesa svg:active {
+        background-color: var(--secundario); /* Cambia el fondo al color secundario definido en las variables CSS. */
+        border-radius: 5px; /* Aplica bordes redondeados. */
+    }
+}
