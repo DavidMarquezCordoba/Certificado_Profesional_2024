@@ -1,0 +1,141 @@
+:root {
+    --numColumnas: 5;
+    --colorVerde: #009e12;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+header {
+    background-color: var(--colorVerde);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(var(--numColumnas), 1fr);
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a:hover {
+    /* text-decoration: underline; */
+    color: yellow;
+    border-bottom: 1px solid yellow;
+}
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /*  grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+
+*/
+}
+
+.div-tareas {
+    overflow-y: scroll; /* sacado de google: https://es.stackoverflow.com/questions/418868/div-con-scroll-vertical-y-m%C3%A1ximo-n%C3%BAmero-de-filas-a-mostrar */
+    text-transform: uppercase;
+
+    /*     max-height: 50%; esto genera el scroll pero si lo pongo se rompe el tamaño del contenedor*/
+}
+.form {
+    display: flex;
+    margin: 5px;
+}
+button {
+    background-color: var(--colorVerde);
+    color: white;
+    border-radius: 5px;
+}
+
+p {
+    background-color: rgb(216, 213, 213);
+    padding: 5px;
+    margin: 3px;
+    border-radius: 3px;
+    margin-right: 0;
+    font-size: smaller;
+    text-align: start;
+}
+
+input,
+button {
+    padding: 5px;
+    font-size: smaller;
+    text-align: start;
+}
+input:focus {
+    border-radius: 5px;
+}
+
+/* ANIMACIONES */
+.nuevo {
+    animation: nuevo 0.3s ease-in-out;
+}
+@keyframes nuevo {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+        background-color: var(--colorVerde);
+    }
+}
+
+.desaparecer {
+    opacity: 0;
+    transform: translateX(-100%); /* se mueve a la derecha */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    background-color: red;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 480px) {
+    nav {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    main {
+        align-items: end;
+        height: 70vh;
+    }
+}

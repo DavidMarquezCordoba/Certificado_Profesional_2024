@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Pre-examen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accesibilidad.css">
+    <link rel="stylesheet" href="css/contextmenu.css">
+</head>
+<body>
+    <header>
+        <h1 aria-describedby="Este es el título de mi web, Mi Blog, aquí muestro cosas de mi interés">Mi Blog</h1>
+        <nav>
+            <a aria-describedby="Inicio del blog" href="#" class="seleccionado">Mi Blog</a>
+            <a aria-describedby="Enlace a noticias del blog" href="#">Noticias</a>
+            <a aria-describedby="Enlace para iniciar sesión" href="#">Login</a>
+            <a aria-describedby="Enlace para registrarse" href="#">Registro</a>
+        </nav>
+    </header>
+    <main>
+        <svg id="boton-nuevo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="2">
+            <path aria-describedby="Pulsa para añadir una nueva entrada al blog" d="M12 5l0 14"></path>
+            <path aria-describedby="Pulsa para añadir una nueva entrada al blog" d="M5 12l14 0"></path>
+        </svg>
+    </main>
+    <dialog id="nueva-entrada" aria-describedby="Cuadro de dialogo para añadir una nueva entrada al blog"> <!-- añadir atributo open para hacer visible el dialog -->
+        <div>
+            <label for="titulo">Título</label>
+            <input type="text" placeholder="Escribe un título" id="titulo">
+        </div>
+        <div>
+            <label for="texto">Texto</label>
+            <textarea type="text" placeholder="Escribe un texto" id="texto"></textarea>
+        </div>
+        <form method="dialog"><button id="agregar">Agregar</button><button id="cancelar">Cancelar</button></form>
+
+    </dialog>
+    <script src="js/index.js"></script>
+    <script src="js/accesibilidad.js"></script>
+    <script src="js/contextmenu.js"></script>
+</body>
+</html>
