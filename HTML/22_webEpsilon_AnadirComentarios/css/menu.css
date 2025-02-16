@@ -1,0 +1,40 @@
+.hamburguesa {
+    display: none;
+}
+
+@media (max-width: 768px) { /* Pantalla pequeña */
+    header {
+        padding-top: 40px;
+    }
+
+    .nav-fondo {
+        padding-top: 50px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        opacity: 0.95;
+        transform: translateX(-100%);
+        transition: transform 1s ease-in-out;
+    }
+    .nav-mostrar {
+        transform: translateX(0%);
+    }
+    .hamburguesa {
+        display: block;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    .hamburguesa svg {
+        width: 35px;
+    }
+    .hamburguesa svg:active {
+        background-color: var(--secundario);
+        border-radius: 5px;
+    }
+}
