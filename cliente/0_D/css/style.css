@@ -1,0 +1,113 @@
+:root {
+  --numColumnas: 5; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1da43f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0 0 10px 0; 
+  font-size: 30px;
+}
+
+nav {
+  /* display: flex; */ /* esta línea para el navegador con flex y así si se mueven los enlaces cuando hover */ 
+
+  display: grid;/* estas 2 líneas para el navegador con grid y así no se mueven los enlaces cuando hover */ 
+  grid-template-columns: repeat(var(--numColumnas), 1fr);/* estas 2 líneas para el navegador con grid y así no se mueven los enlaces cuando hover */ 
+
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+a:hover {
+  /* font-size: 1.5rem; */
+  /* text-decoration:underline; */
+  border-bottom: 1px solid yellow;
+  color: yellow;
+}
+
+main {
+  display: grid;
+
+  /* Establezco el 50% de la pantalla como altura del main */
+  height: 50vh;
+
+  /* Centramos el section en el centro y alineamos verticalmente */
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  /* Activamos grid */
+  display: grid;
+
+  /* Alineamos en el centro todo */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: white;
+  /* Dejamos espacio por todos los lados */
+  padding: 15px;
+
+  /* Damos borde y sombra al recuadro*/
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#boton-agregar{
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+}
+
+input, button{
+  /* font-size: smaller; */
+  padding: 5px;
+}
+
+input:focus{
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+ul{
+  list-style:none;
+}
+
+li{
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 5px;
+  text-transform: uppercase;
+  text-align: start;
+  padding: 3px;
+  font-weight: lighter;
+  font-size: 15px;
+}
