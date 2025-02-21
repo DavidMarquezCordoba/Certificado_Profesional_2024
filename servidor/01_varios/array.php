@@ -158,5 +158,94 @@
         $resultado = array_filter($productos, "funcionFiltro");
         var_dump($resultado);
     ?></pre>
+
+    <h2>Sort</h2>
+
+    <pre>SORT<?php 
+        echo("<br>");
+        $precios = [20,12,82,6];
+        var_dump($precios);
+        sort($precios);
+        var_dump($precios);
+    ?></pre>
+
+    <pre>RSORT<?php 
+        echo("<br>");
+        $precios = [20,12,82,6];
+        var_dump($precios);
+        rsort($precios);
+        var_dump($precios);
+    ?></pre>
+
+    <pre>SORT ORDENA EL ARRAY $MIARRAY POR ORDEN ALFABÉTICO<?php 
+        echo("<br>");
+        // Ordena por orden alfabético a través de su COD ASCII
+        // $precios = [20,12,82,6];
+        var_dump($miArray);
+        sort($miArray);
+        var_dump($miArray);
+    ?></pre>
+
+    <pre>RSORT ORDENA EL ARRAY $MIARRAY POR ORDEN ALFABÉTICO INVERSO<?php 
+        echo("<br>");
+        // Ordena por orden alfabético a través de su COD ASCII
+        // $precios = [20,12,82,6];
+        var_dump($miArray);
+        rsort($miArray);
+        var_dump($miArray);
+    ?></pre>
+
+    <pre>ASORT ORDENA EL ARRAY ASOCIATIVO $MIARRAY POR ORDEN ALFABÉTICO (precio)<?php 
+        echo("<br>");
+        $precios = [
+            'manzanas' => 12,
+            'cerezas' => 20,
+            'Plátanos' => 15
+        ];
+
+        var_dump($precios);
+        asort($precios);
+        var_dump($precios);
+    ?></pre>
+
+    <pre>ARSORT ORDENA EL ARRAY ASOCIATIVO $MIARRAY POR ORDEN ALFABÉTICO INVERSO(precio)<?php 
+        echo("<br>");
+        // $precios = [
+        //     'manzanas' => 12,
+        //     'cerezas' => 20,
+        //     'Plátanos' => 15
+        // ];
+
+        var_dump($precios);
+        arsort($precios);
+        var_dump($precios);
+    ?></pre>
+
+        <!-- AK SORT -->
+    <pre>KSORT ORDENA EL ARRAY ASOCIATIVO $MIARRAY POR KEY (precio)<?php 
+        echo("<br>");
+        // $precios = [
+        //     'manzanas' => 12,
+        //     'cerezas' => 20,
+        //     'Plátanos' => 15
+        // ];
+
+        var_dump($precios);
+        ksort($precios);
+        var_dump($precios);
+    ?></pre>
+
+    <pre>KRSORT ORDENA EL ARRAY ASOCIATIVO $MIARRAY POR KEY INVERSO(precio)<?php 
+        echo("<br>");
+        // $precios = [
+        //     'manzanas' => 12,
+        //     'cerezas' => 20,
+        //     'Plátanos' => 15
+        // ];
+
+        var_dump($precios);
+        krsort($precios);
+        var_dump($precios);
+    ?></pre>
 </body>
 </html>
