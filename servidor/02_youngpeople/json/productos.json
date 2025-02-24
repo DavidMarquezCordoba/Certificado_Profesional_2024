@@ -1,0 +1,1752 @@
+[
+    {
+        "nombre": "Camiseta Oversize Skate",
+        "unidades_disponibles": 10,
+        "categoría": "Camisetas",
+        "precio": 19.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://www.xtreme-skate.com/10706-home_default/powell-peralta-camiseta-skateboard-skeleton-ii-navy.jpg",
+        "codigo_barras": "4940001505973",
+        "descripcion": "Una camiseta oversize inspirada en el estilo skater, confeccionada con algodón suave y transpirable. Su diseño amplio brinda comodidad y libertad de movimiento."
+    },
+    {
+        "nombre": "Sudadera Vintage Urban",
+        "unidades_disponibles": 11,
+        "categoría": "Sudaderas",
+        "precio": 21.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://urban-soul.es/wp-content/uploads/SUDADERAS__URBANSOUL4.jpg",
+        "codigo_barras": "5233008488496",
+        "descripcion": "Sudadera vintage de corte relajado con capucha ajustable y bolsillo tipo canguro. Hecha de felpa gruesa, perfecta para los días más fríos."
+    },
+    {
+        "nombre": "Jeans Skinny Ripped",
+        "unidades_disponibles": 12,
+        "categoría": "Pantalones",
+        "precio": 22.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ1aEx0cEFi-EIXPeCVvTO3TEWXclwQ3u0KRNah_3ZsoOeYuD6dTch1N4RQaqTespx4OiqaDt_lq1uc70hv5HNBRVlcktffsv6LRiSB7GnBXs8I9l6L9YzRK7c",
+        "codigo_barras": "5696404359930",
+        "descripcion": "Jeans skinny con efecto desgastado y detalles rasgados estratégicos. Su ajuste ceñido resalta la figura sin comprometer la comodidad."
+    },
+    {
+        "nombre": "Falda Plisada Preppy",
+        "unidades_disponibles": 13,
+        "categoría": "Faldas",
+        "precio": 24.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRsn3-znX3-L2S-fJ_ld_EJWg-vVeUpO6XGyEqTSwcijC8i0TAHKzRDc_PrUBKLKCuhelRb_Bed7sXueoZrBnWim4OlH7SpyauvjW9b0Fkp5qDFxrN2J0XBiYg",
+        "codigo_barras": "4764795086925",
+        "descripcion": "Falda plisada con cintura alta elástica y un toque preppy. Su tejido ligero la hace ideal para combinar con blusas o camisetas."
+    },
+    {
+        "nombre": "Zapatillas Chunky",
+        "unidades_disponibles": 14,
+        "categoría": "Chaquetas",
+        "precio": 25.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://martinvalen.com/34265-thickbox_default/zapatillas-chunky-blancas-para-mujer-con-linea-negra.jpg",
+        "codigo_barras": "6090782555574",
+        "descripcion": "Zapatillas chunky con suela gruesa y diseño moderno. Perfectas para quienes buscan un calzado cómodo con un estilo urbano atrevido."
+    },
+    {
+        "nombre": "Chaqueta Denim Classic",
+        "unidades_disponibles": 15,
+        "categoría": "Calzado",
+        "precio": 27.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKr51iLAywFi2_YOvjZQwDZlxjCJVSHadDA&s",
+        "codigo_barras": "9880292394829",
+        "descripcion": "Chaqueta denim clásica con botones metálicos y ajuste regular. Un básico atemporal que combina con cualquier outfit."
+    },
+    {
+        "nombre": "Gorra Streetwear",
+        "unidades_disponibles": 16,
+        "categoría": "Accesorios",
+        "precio": 28.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://y2k-streetwear.com/cdn/shop/files/S3a54113ff3a64332ab203992b25bd1edh_720x.jpg?v=1716559757",
+        "codigo_barras": "7406428021534",
+        "descripcion": "Gorra de algodón con visera curva y diseño minimalista. Un accesorio imprescindible para protegerse del sol con estilo."
+    },
+    {
+        "nombre": "Bolso Cruzado Minimalista",
+        "unidades_disponibles": 17,
+        "categoría": "Camisetas",
+        "precio": 30.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://ae01.alicdn.com/kf/S458fd0e9974145199150755d52dee7811.jpg_640x640q90.jpg",
+        "codigo_barras": "2749414090902",
+        "descripcion": "Bolso cruzado con correa ajustable y varios compartimentos. Su diseño compacto lo hace ideal para el día a día."
+    },
+    {
+        "nombre": "Camisa Casual Rayada",
+        "unidades_disponibles": 18,
+        "categoría": "Sudaderas",
+        "precio": 31.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrmOQZeHlr706n4d2fjpPIcEo66CuX_zsf1Q&s",
+        "codigo_barras": "3371688595794",
+        "descripcion": "Camisa de manga larga con estampado de rayas y corte relajado. Un look clásico que nunca pasa de moda."
+    },
+    {
+        "nombre": "Pantalón Cargo Urbano",
+        "unidades_disponibles": 19,
+        "categoría": "Pantalones",
+        "precio": 33.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://cdn.0brandcommerce.com/tucanourbano/110789_L.jpg",
+        "codigo_barras": "3495829925360",
+        "descripcion": "Pantalón cargo con bolsillos laterales amplios y ajuste cómodo. Ideal para un estilo urbano y funcional."
+    },
+    {
+        "nombre": "Vestido Casual Verano",
+        "unidades_disponibles": 20,
+        "categoría": "Faldas",
+        "precio": 34.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://www.confeccionescastillo.com/7041-thickbox_default/vestido-sin-mangas-azul-blanco-y-rosa.jpg",
+        "codigo_barras": "7417822308865",
+        "descripcion": "Vestido ligero y fresco, ideal para los días soleados. Su diseño sin mangas y su tela transpirable garantizan comodidad durante todo el día. Perfecto para combinar con sandalias o zapatillas para un look relajado."
+    },
+    {
+        "nombre": "Bermuda Relaxed Fit",
+        "unidades_disponibles": 21,
+        "categoría": "Chaquetas",
+        "precio": 36.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://images.hugoboss.com/is/image/boss/hbeu50531422_121_100?$re_fullPageZoom$&qlt=85&fit=crop,1&align=1,1&bgcolor=ebebeb&lastModified=1738262726000&wid=1200&hei=1818",
+        "codigo_barras": "1823639047680",
+        "descripcion": "Bermuda de corte relajado con tejido suave y cómodo. Su diseño versátil la hace perfecta para el día a día o para un look informal. Incluye bolsillos laterales para mayor funcionalidad."
+    },
+    {
+        "nombre": "Botas Urbanas Unisex",
+        "unidades_disponibles": 22,
+        "categoría": "Calzado",
+        "precio": 37.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://tiendamoteros.com/2704-large_default/bota-sd-bc7-urban-unisex-.jpg",
+        "codigo_barras": "2729706192133",
+        "descripcion": "Botas resistentes y modernas, ideales para el día a día en la ciudad. Su suela antideslizante y su diseño ergonómico ofrecen comodidad y estilo a partes iguales."
+    },
+    {
+        "nombre": "Jersey Suave Algodón",
+        "unidades_disponibles": 23,
+        "categoría": "Accesorios",
+        "precio": 39.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://donalgodon.com/wp-content/uploads/2024/09/8435474244360_JERSEY-OVERSIZE-EXTRA-SUAVE-AZUL-1-600x745.jpg",
+        "codigo_barras": "4511972740103",
+        "descripcion": "Jersey de algodón ultra suave, perfecto para los días fríos. Su diseño clásico y corte oversize lo hacen ideal para combinar con jeans o pantalones casuales."
+    },
+    {
+        "nombre": "Gafas de Sol Retro",
+        "unidades_disponibles": 24,
+        "categoría": "Camisetas",
+        "precio": 40.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://planeta-steampunk.com/wp-content/uploads/2023/06/gafas-de-sol-retro-vintage-hombre-5.jpeg",
+        "codigo_barras": "6817358531854",
+        "descripcion": "Gafas de sol con diseño retro, inspiradas en la moda vintage. Su montura ligera y lentes de protección UV garantizan estilo y seguridad bajo el sol."
+    },
+    {
+        "nombre": "Cinturón de Cuero Moderno",
+        "unidades_disponibles": 25,
+        "categoría": "Sudaderas",
+        "precio": 42.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://www.fantinipelletteria.es/wp-content/uploads/2020/12/cinturon-hombre-burdeos.jpg",
+        "codigo_barras": "5917667237602",
+        "descripcion": "Cinturón de cuero genuino con hebilla metálica, diseñado para aportar un toque elegante a cualquier outfit. Perfecto para looks formales o casuales."
+    },
+    {
+        "nombre": "Shorts Deportivos Ligero",
+        "unidades_disponibles": 26,
+        "categoría": "Pantalones",
+        "precio": 43.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://i.etsystatic.com/8222962/r/il/24eaeb/2172711567/il_570xN.2172711567_klvh.jpg",
+        "codigo_barras": "6482144811016",
+        "descripcion": "Shorts deportivos ultraligeros, ideales para entrenamientos o actividades al aire libre. Confeccionados con tela de secado rápido para mayor comodidad."
+    },
+    {
+        "nombre": "Abrigo Largo Elegante",
+        "unidades_disponibles": 27,
+        "categoría": "Faldas",
+        "precio": 45.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://francescadarcy.com/cdn/shop/files/Imagen_de_WhatsApp_2024-11-13_a_las_19.10.21_47ffcdd2_65828640-9845-4f96-bc0c-58201233db70.jpg?v=1731522439",
+        "codigo_barras": "1178168762019",
+        "descripcion": "Abrigo largo con un diseño sofisticado y moderno. Su corte estructurado y tela de alta calidad lo convierten en una prenda imprescindible para el invierno."
+    },
+    {
+        "nombre": "Sudadera Crop Top",
+        "unidades_disponibles": 28,
+        "categoría": "Chaquetas",
+        "precio": 46.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://camisetasbailongas.com/wp-content/uploads/2023/05/sudadera-crop-beige-frontal-1.jpg",
+        "codigo_barras": "8616154578707",
+        "descripcion": "Sudadera corta de estilo moderno, perfecta para looks urbanos y casuales. Su tela suave y ajuste relajado ofrecen comodidad y versatilidad."
+    },
+    {
+        "nombre": "Pantalones Jogger Street",
+        "unidades_disponibles": 29,
+        "categoría": "Calzado",
+        "precio": 48.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://media.atmosferasport.es/439856-large_default/pantalones-largo-joma-street-generation-beige-mujer.jpg",
+        "codigo_barras": "5332526863869",
+        "descripcion": "Joggers cómodos con corte moderno y ajuste perfecto. Ideales para un estilo relajado sin perder el toque urbano."
+    },
+    {
+        "nombre": "Vestido Midi Casual",
+        "unidades_disponibles": 30,
+        "categoría": "Accesorios",
+        "precio": 49.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://lopezientos.es/wp-content/uploads/2025/02/11022025165752.IMG_0019-thumbnail-2000x2000-1.png",
+        "codigo_barras": "6375275104690",
+        "descripcion": "Vestido midi de corte elegante y versátil. Confeccionado en tela ligera y fluida, ideal para eventos casuales o salidas diarias. Su ajuste cómodo realza la silueta sin comprometer la movilidad."
+    },
+    {
+        "nombre": "Zapatillas Running Fashion",
+        "unidades_disponibles": 31,
+        "categoría": "Camisetas",
+        "precio": 51.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://m.media-amazon.com/images/I/61aWb+kVdkL._AC_UY580_.jpg",
+        "codigo_barras": "6352299694906",
+        "descripcion": "Zapatillas deportivas con diseño moderno y ergonómico. Incorporan una suela de amortiguación avanzada que proporciona máxima comodidad y soporte en cada paso. Perfectas para entrenamientos o uso diario."
+    },
+    {
+        "nombre": "Bufanda de Lana Clásica",
+        "unidades_disponibles": 32,
+        "categoría": "Sudaderas",
+        "precio": 52.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://m.media-amazon.com/images/I/61gMHz0TI+L._AC_UY580_.jpg",
+        "codigo_barras": "4889826086374",
+        "descripcion": "Bufanda tejida en lana de alta calidad, diseñada para brindar calidez en los días fríos. Su diseño clásico y textura suave la convierten en un accesorio esencial para cualquier outfit invernal."
+    },
+    {
+        "nombre": "Camisa de Cuadros Vintage",
+        "unidades_disponibles": 33,
+        "categoría": "Pantalones",
+        "precio": 54.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://m.media-amazon.com/images/I/81YkERj075L._AC_UY580_.jpg",
+        "codigo_barras": "9140079806606",
+        "descripcion": "Camisa de cuadros con un estilo vintage atemporal. Hecha de algodón transpirable, ideal para looks informales y combinable con jeans o chaquetas."
+    },
+    {
+        "nombre": "Chaqueta Bomber Urbana",
+        "unidades_disponibles": 34,
+        "categoría": "Faldas",
+        "precio": 55.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://m.media-amazon.com/images/I/71rNXIxLKHL.jpg",
+        "codigo_barras": "6674641897282",
+        "descripcion": "Chaqueta bomber con un diseño moderno y urbano. Su corte ajustado y materiales resistentes la hacen ideal para un look casual con un toque sofisticado."
+    },
+    {
+        "nombre": "Leggins Deportivos Fit",
+        "unidades_disponibles": 35,
+        "categoría": "Chaquetas",
+        "precio": 57.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://m.media-amazon.com/images/I/61hDC+k4YmL._AC_UY580_.jpg",
+        "codigo_barras": "3949565191331",
+        "descripcion": "Leggins de alto rendimiento diseñados para entrenamientos intensos. Confeccionados con tela elástica y transpirable que se adapta al cuerpo y proporciona libertad de movimiento."
+    },
+    {
+        "nombre": "Sombrero Casual Verano",
+        "unidades_disponibles": 36,
+        "categoría": "Calzado",
+        "precio": 58.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://sombrereriamil.com/1457-home_default/sombrero-panama-leatherband-citysport-sombrereria-mil-online.jpg",
+        "codigo_barras": "4447441539934",
+        "descripcion": "Sombrero ligero y transpirable con diseño casual, ideal para protegerse del sol con estilo. Su ala ancha ofrece una excelente cobertura y sombra en días soleados."
+    },
+    {
+        "nombre": "Bolsa Tote Casual",
+        "unidades_disponibles": 37,
+        "categoría": "Accesorios",
+        "precio": 60.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://media.catchalot.es/77863-large_default/bolso-tote-bag-nylon-acolchado-dmr-touch-valls.jpg",
+        "codigo_barras": "8814615012250",
+        "descripcion": "Bolsa tote espaciosa y elegante, perfecta para llevar objetos esenciales en el día a día. Confeccionada en material resistente y con asas reforzadas para mayor comodidad."
+    },
+    {
+        "nombre": "Pantalón Chino Slim Fit",
+        "unidades_disponibles": 38,
+        "categoría": "Camisetas",
+        "precio": 61.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://images.jackjones.com/12150158/2993748/001/jackjones-jpstmarcobowiesablacknoos-negra.png?v=73f878cee598d52efdd7e08f40c95a0c",
+        "codigo_barras": "1104538518699",
+        "descripcion": "Pantalón chino de corte slim fit, ideal para looks formales e informales. Su tejido suave y ligero brinda un ajuste cómodo y favorecedor."
+    },
+    {
+        "nombre": "Blusa Satinada Elegante",
+        "unidades_disponibles": 39,
+        "categoría": "Sudaderas",
+        "precio": 63.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://cdn.shopify.com/s/files/1/0702/1802/3207/files/98b1b2cf988c9b6ce8f789324179ad56.jpg",
+        "codigo_barras": "5497397541752",
+        "descripcion": "Blusa satinada con acabado brillante y corte elegante. Perfecta para ocasiones especiales o para dar un toque sofisticado a cualquier atuendo."
+    },
+    {
+        "nombre": "Chamarra de Cuero Negra",
+        "unidades_disponibles": 40,
+        "categoría": "Pantalones",
+        "precio": 64.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://i.etsystatic.com/28827645/r/il/78fc02/3198775404/il_570xN.3198775404_g80b.jpg",
+        "codigo_barras": "4206489045825",
+        "descripcion": "Chamarra de cuero negro con un diseño clásico y atemporal. Su confección en materiales de alta calidad ofrece resistencia y estilo en cualquier ocasión."
+    },
+    {
+        "nombre": "Mocasines Casual",
+        "unidades_disponibles": 41,
+        "categoría": "Faldas",
+        "precio": 66.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://peralimonerashop.com/38578-home_default/mocasines-tela-casual-jeans-hey-dude.jpg",
+        "codigo_barras": "5553550673697",
+        "descripcion": "Mocasines de diseño casual, hechos con materiales cómodos y flexibles. Ideales para combinar con outfits relajados sin perder el toque sofisticado."
+    },
+    {
+        "nombre": "Pantalones Cortos Estampados",
+        "unidades_disponibles": 42,
+        "categoría": "Chaquetas",
+        "precio": 67.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhW_ckQub_uQbvyx46EINr-oFPiGdhV5sNCA&s",
+        "codigo_barras": "7146046608175",
+        "descripcion": "Pantalones cortos con estampado vibrante y llamativo. Perfectos para un look desenfadado y cómodo en días cálidos."
+    },
+    {
+        "nombre": "Jersey de Punto Oversize",
+        "unidades_disponibles": 43,
+        "categoría": "Calzado",
+        "precio": 69.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://cottoncrown.net/wp-content/uploads/Jersey-Pico-Mostaza_sombra-1.jpg",
+        "codigo_barras": "9787529415718",
+        "descripcion": "Jersey de punto con ajuste oversize, ideal para looks cómodos y modernos. Su tejido suave brinda calidez sin ser pesado."
+    },
+    {
+        "nombre": "Sneakers Deportivos Urbanos",
+        "unidades_disponibles": 44,
+        "categoría": "Accesorios",
+        "precio": 70.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://cdn.vanessacalzados.es/182796-main_product/vvnn-sneakers-deportivo-casual-urbano.jpg",
+        "codigo_barras": "6045407744533",
+        "descripcion": "Sneakers modernos con diseño urbano y suela amortiguada. Combinan funcionalidad y estilo para un calzado cómodo en el día a día."
+    },
+    {
+        "nombre": "Top Deportivo Corte Fit",
+        "unidades_disponibles": 45,
+        "categoría": "Camisetas",
+        "precio": 72.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://m.media-amazon.com/images/I/51f-3T4JNQL._AC_UY350_.jpg",
+        "codigo_barras": "3742407261648",
+        "descripcion": "Top deportivo ajustado con tecnología de secado rápido. Brinda soporte y comodidad durante actividades físicas intensas."
+    },
+    {
+        "nombre": "Mono Largo Estampado",
+        "unidades_disponibles": 46,
+        "categoría": "Sudaderas",
+        "precio": 73.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://cortefiel.com/on/demandware.static/-/Sites-gc-ctf-master-catalog/default/dwb3969571/images/hi-res/P_644824498D8.jpg",
+        "codigo_barras": "2860180668201",
+        "descripcion": "Mono largo con estampado llamativo y tela ligera. Ideal para un look fresco y cómodo en cualquier ocasión."
+    },
+    {
+        "nombre": "Chaleco Acolchado Casual",
+        "unidades_disponibles": 47,
+        "categoría": "Pantalones",
+        "precio": 75.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://tuclaboral.com/wp-content/uploads/1102_09007_F-600x900.jpg",
+        "codigo_barras": "2881801099405",
+        "descripcion": "Chaleco acolchado con diseño ligero y versátil. Su tejido resistente brinda protección contra el frío sin sacrificar movilidad."
+    },
+    {
+        "nombre": "Falda Vaquera Desgastada",
+        "unidades_disponibles": 48,
+        "categoría": "Faldas",
+        "precio": 76.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzwOHrdiCC60dJ0_8wyoq6KTzYJE1c_hMLg&s",
+        "codigo_barras": "1454712673279",
+        "descripcion": "Falda de mezclilla con efecto desgastado y corte moderno. Perfecta para combinar con zapatillas o botines y crear un look casual."
+    },
+    {
+        "nombre": "Camiseta Básica Algodón",
+        "unidades_disponibles": 49,
+        "categoría": "Chaquetas",
+        "precio": 78.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://printcopy.es/1179-superlarge_default/camiseta-blanca-de-algodon.jpg",
+        "codigo_barras": "4991058075717",
+        "descripcion": "Camiseta básica de algodón suave y transpirable. Un imprescindible en cualquier guardarropa por su versatilidad y comodidad."
+    },
+    {
+        "nombre": "Sudadera con Capucha Neutra",
+        "unidades_disponibles": 50,
+        "categoría": "Calzado",
+        "precio": 79.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://cdna.lystit.com/520/650/n/photos/miinto/67605e6e/bomboogie-Beige-Sudadera-Con-Capucha-De-Algodon-Tricot-Comoda-Mujer-Talla.jpeg",
+        "codigo_barras": "4663416327018",
+        "descripcion": "Sudadera con capucha y diseño neutro, ideal para looks relajados. Su tela gruesa proporciona abrigo en días fríos."
+    },
+    {
+        "nombre": "Pantalón Recto de Lino",
+        "unidades_disponibles": 51,
+        "categoría": "Accesorios",
+        "precio": 81.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://www.vilebrequin.com/dw/image/v2/BBRG_PRD/on/demandware.static/-/Sites-vilebrequin-catalog-master/default/dw08cb8449/images/PAHE9U01-010/PAHE9U01-010-back-3920x3920.png?sw=316&sh=316&sm=fit",
+        "codigo_barras": "3788649356154",
+        "descripcion": "Pantalón de lino de corte recto, fresco y ligero. Ideal para climas cálidos y ocasiones informales."
+    },
+    {
+        "nombre": "Vestido Floral Romántico",
+        "unidades_disponibles": 52,
+        "categoría": "Camisetas",
+        "precio": 82.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://www.nkn.es/cdnassets/GF.MAUIadl.jpg",
+        "codigo_barras": "4925001959106",
+        "descripcion": "Vestido con estampado floral y corte romántico. Su diseño femenino y fluido lo hace perfecto para eventos especiales o salidas casuales."
+    },
+    {
+        "nombre": "Tenis Skateboarding Classic",
+        "unidades_disponibles": 53,
+        "categoría": "Sudaderas",
+        "precio": 84.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://www.medinapiel.es/93586-large_default/deportivo-mujer-mustang-joggo-classic-60441-c56411-lainy-sand.jpg",
+        "codigo_barras": "9549877730634",
+        "descripcion": "Tenis diseñados para skateboarding con suela adherente y materiales resistentes. Proporcionan estabilidad y comodidad para el uso diario."
+    },
+    {
+        "nombre": "Camisa Blanca Minimalista",
+        "unidades_disponibles": 54,
+        "categoría": "Pantalones",
+        "precio": 85.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://www.ikks.com/dw/image/v2/BFQN_PRD/on/demandware.static/-/Sites-ikks_master_v0/default/dwa3a4579e/produits/MW12163-01/IKKS-CHEMISE~SLIM~BLANCHE~~~IMPRIME~MINIMALISTE~HOMME-MW12163-01_8.jpg?sw=736&sh=947",
+        "codigo_barras": "4258488910255",
+        "descripcion": "Camisa blanca de diseño minimalista y corte elegante. Perfecta para ocasiones formales o combinaciones casuales sofisticadas."
+    },
+    {
+        "nombre": "Parka Impermeable Invierno",
+        "unidades_disponibles": 55,
+        "categoría": "Faldas",
+        "precio": 87.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://m.media-amazon.com/images/I/61+Axj5L1RL._AC_UY580_.jpg",
+        "codigo_barras": "7706610940615",
+        "descripcion": "Parka impermeable con forro térmico, ideal para protegerse del frío y la lluvia. Su diseño funcional ofrece múltiples bolsillos y un ajuste cómodo."
+    },
+    {
+        "nombre": "Pantalón Palazzo Fluido",
+        "unidades_disponibles": 56,
+        "categoría": "Chaquetas",
+        "precio": 88.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx4-WlpS02IFTjD80WdBGP9AIs9B9Fp5MYkw&s",
+        "codigo_barras": "4276007065148",
+        "descripcion": "Pantalón palazzo con caída fluida y diseño sofisticado. Su cintura alta estiliza la figura y brinda comodidad."
+    },
+    {
+        "nombre": "Body Ajustado Manga Larga",
+        "unidades_disponibles": 57,
+        "categoría": "Calzado",
+        "precio": 90.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://m.media-amazon.com/images/I/51+RPMd+zfL.jpg",
+        "codigo_barras": "1234400732307",
+        "descripcion": "Body de manga larga y ajuste ceñido al cuerpo. Perfecto para looks elegantes o combinaciones con jeans de cintura alta."
+    },
+    {
+        "nombre": "Shorts Denim de Verano",
+        "unidades_disponibles": 58,
+        "categoría": "Accesorios",
+        "precio": 91.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://images.napali.app/global/rvca-products/all/default/xlarge/avyds00100_rvca,f_brl0_frt1.jpg",
+        "codigo_barras": "5521481065495",
+        "descripcion": "Shorts de mezclilla con corte moderno y ajuste cómodo. Ideales para el verano y fáciles de combinar con cualquier tipo de top."
+    },
+    {
+        "nombre": "Blazer Casual Moderno",
+        "unidades_disponibles": 59,
+        "categoría": "Camisetas",
+        "precio": 93.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://www.mundodeportivo.com/elrecomendador/comparativas/wp-content/uploads/2023/04/B01EFDH136-1.jpg",
+        "codigo_barras": "5195232160912",
+        "descripcion": "Blazer de corte moderno y diseño versátil. Perfecto para atuendos formales o casuales elegantes."
+    },
+    {
+        "nombre": "Vestido de Noche Elegante",
+        "unidades_disponibles": 60,
+        "categoría": "Sudaderas",
+        "precio": 19.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://www.pronovias.com/media/catalog/product/e/s/essential_2431_b.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=747&width=560&canvas=560:747",
+        "codigo_barras": "1752194341006",
+        "descripcion": "Vestido largo y elegante con detalles sofisticados. Ideal para eventos formales y ocasiones especiales."
+    },
+    {
+        "nombre": "Zapatillas Chunky Blancas",
+        "unidades_disponibles": 61,
+        "categoría": "Pantalones",
+        "precio": 21.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://oechsle.vteximg.com.br/arquivos/ids/3195361-1000-1000/image-fbf1e8b70e664c79a8623b7e8b1f50c0.jpg",
+        "codigo_barras": "2653469510521",
+        "descripcion": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+    },
+    {
+        "nombre": "Jersey Cuello Alto Suave",
+        "unidades_disponibles": 62,
+        "categoría": "Faldas",
+        "precio": 22.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://m.media-amazon.com/images/I/61NEJgdxLRL._AC_UF894,1000_QL80_.jpg",
+        "codigo_barras": "3476265221343",
+        "descripcion": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión."
+    },
+    {
+        "nombre": "Chaqueta Acolchada Ligera",
+        "unidades_disponibles": 63,
+        "categoría": "Chaquetas",
+        "precio": 24.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://www.77onlineshop.es/$WS/77onlineshop/websale8_shop-77onlineshop/produkte/medien/bilder/normal/21120504_1.jpg",
+        "codigo_barras": "5067775684826",
+        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+    },
+    {
+        "nombre": "Camisa Oversize de Lino",
+        "unidades_disponibles": 64,
+        "categoría": "Calzado",
+        "precio": 25.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7zkETNBbfjQ1jdQb4dWuBbloHNXmZnVc9jA&s",
+        "codigo_barras": "4791756189491",
+        "descripcion": "Camisa Oversize de Lino diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Botas de Montaña Resistentes",
+        "unidades_disponibles": 65,
+        "categoría": "Accesorios",
+        "precio": 27.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://media.planas.pro/product/botas-de-montana-trekking-de-serraje-y-lona-800x800_40PAtol.jpg",
+        "codigo_barras": "6403963689650",
+        "descripcion": "Botas de Montaña Resistentes diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Leggins con Bolsillos Deportivos",
+        "unidades_disponibles": 66,
+        "categoría": "Camisetas",
+        "precio": 28.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://m.media-amazon.com/images/I/51kve33VbbL._AC_UY580_.jpg",
+        "codigo_barras": "8542105682265",
+        "descripcion": "Leggins con Bolsillos Deportivos diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Blusa de Encaje Fina",
+        "unidades_disponibles": 67,
+        "categoría": "Sudaderas",
+        "precio": 30.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://myspringfield.com/dw/image/v2/AAYL_PRD/on/demandware.static/-/Sites-gc-spf-master-catalog/default/dw86f3ad72/images/hi-res/P_902005001D9.jpg?sw=600&sh=900&sm=fit",
+        "codigo_barras": "2009423969866",
+        "descripcion": "Blusa de Encaje Fina diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Gabardina Clásica Beige",
+        "unidades_disponibles": 68,
+        "categoría": "Pantalones",
+        "precio": 31.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://capitansiroco.com/cdn/shop/files/W4YL13WGAI0-F11M_1_-3_800x.jpg?v=1739618449",
+        "codigo_barras": "3816685208653",
+        "descripcion": "Gabardina Clásica Beige diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Gorra Vintage Bordada",
+        "unidades_disponibles": 69,
+        "categoría": "Faldas",
+        "precio": 33.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://img.joomcdn.net/1048c64569950c5616501dcc9ff942e50612d65e_original.jpeg",
+        "codigo_barras": "3687299032236",
+        "descripcion": "Gorra Vintage Bordada con diseño moderno y ajustable. Ideal para complementar cualquier look casual y protegerse del sol."
+    },
+    {
+        "nombre": "Pantalón Jogger Cargo",
+        "unidades_disponibles": 70,
+        "categoría": "Chaquetas",
+        "precio": 34.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://static.lefties.com/assets/public/760e/bf58/fb4d4000b9ed/ffa06c3a4689/05921531710-P/05921531710-P.jpg?ts=1725624455913&w=405&f=auto",
+        "codigo_barras": "2030582820353",
+        "descripcion": "Pantalón Jogger Cargo con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada."
+    },
+    {
+        "nombre": "Suéter de Lana Grueso",
+        "unidades_disponibles": 71,
+        "categoría": "Calzado",
+        "precio": 36.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://m.media-amazon.com/images/I/811O3Kj6aHL._AC_UY580_.jpg",
+        "codigo_barras": "9461396859272",
+        "descripcion": "Suéter de Lana Grueso diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Chamarra de Mezclilla Azul",
+        "unidades_disponibles": 72,
+        "categoría": "Accesorios",
+        "precio": 37.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://m.media-amazon.com/images/I/51uJbq-5FjL._AC_.jpg",
+        "codigo_barras": "2733526245457",
+        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+    },
+    {
+        "nombre": "Camiseta Tie-Dye Estilosa",
+        "unidades_disponibles": 73,
+        "categoría": "Camisetas",
+        "precio": 39.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/TieDyeShirtMpegMan.jpg/800px-TieDyeShirtMpegMan.jpg",
+        "codigo_barras": "8529207567262",
+        "descripcion": "Camiseta Tie-Dye Estilosa de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+    },
+    {
+        "nombre": "Bikini con Estampado Floral",
+        "unidades_disponibles": 74,
+        "categoría": "Sudaderas",
+        "precio": 40.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://www.anahidalgo.es/wp-content/uploads/2022/06/IMG-20220620-WA010138161.jpg",
+        "codigo_barras": "3976238232441",
+        "descripcion": "Bikini con Estampado Floral diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Sudadera Unisex Bordada",
+        "unidades_disponibles": 75,
+        "categoría": "Pantalones",
+        "precio": 42.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJKOxmsCHIb9igvokmn7RvBf_Ay08UDLU1Hg&s",
+        "codigo_barras": "1490546078350",
+        "descripcion": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión."
+    },
+    {
+        "nombre": "Chaleco de Punto Retro",
+        "unidades_disponibles": 76,
+        "categoría": "Faldas",
+        "precio": 43.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://m.media-amazon.com/images/I/71WSh1bzXVL._AC_UF894,1000_QL80_.jpg",
+        "codigo_barras": "3097378089599",
+        "descripcion": "Chaleco de Punto Retro diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Pantalones de Algodón Relaxed",
+        "unidades_disponibles": 77,
+        "categoría": "Chaquetas",
+        "precio": 45.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://www.cos.com/static-images/products/assets/001/9f/e6/9fe67d4e830bfb76a6b9da5aa90da6b0cad2627a_xxl-1.jpg?imwidth=2160",
+        "codigo_barras": "8540225418906",
+        "descripcion": "Pantalones de Algodón Relaxed diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Top con Hombros Descubiertos",
+        "unidades_disponibles": 78,
+        "categoría": "Calzado",
+        "precio": 46.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://img1.shopcider.com/product/1670476868000-BYK2FE.jpg?x-oss-process=image/resize,w_1050,m_lfit/quality,Q_60/interlace,1",
+        "codigo_barras": "6218083016524",
+        "descripcion": "Top con Hombros Descubiertos de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+    },
+    {
+        "nombre": "Shorts Cargo Multi Bolsillos",
+        "unidades_disponibles": 79,
+        "categoría": "Accesorios",
+        "precio": 48.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://m.media-amazon.com/images/I/81UBRvCIEbL._AC_UY580_.jpg",
+        "codigo_barras": "3883723586300",
+        "descripcion": "Shorts Cargo Multi Bolsillos diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Botines Chelsea Cuero",
+        "unidades_disponibles": 80,
+        "categoría": "Camisetas",
+        "precio": 49.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://media.catchalot.es/79136-pdt_640/botines-chelsea-cuero-mujer-catchalot-ib-2397.jpg",
+        "codigo_barras": "3721436159575",
+        "descripcion": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+    },
+    {
+        "nombre": "Chamarra de Invierno Puffer",
+        "unidades_disponibles": 81,
+        "categoría": "Sudaderas",
+        "precio": 51.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://img01.ztat.net/article/spp-media-p1/030ad0e9c59346f08efc62e868498eb7/3c89bb311fda4ef0967544fc968bc873.jpg?imwidth=762&filter=packshot",
+        "codigo_barras": "5270322370612",
+        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+    },
+    {
+        "nombre": "Camiseta Vintage Rock Band",
+        "unidades_disponibles": 82,
+        "categoría": "Pantalones",
+        "precio": 52.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBalXrNR_Vl6F-a_XI10Dnf9q5xuVLRTqKag&s",
+        "codigo_barras": "9949363097798",
+        "descripcion": "Camiseta Vintage Rock Band de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+    },
+    {
+        "nombre": "Jeans Mom Fit Rasgados",
+        "unidades_disponibles": 83,
+        "categoría": "Faldas",
+        "precio": 54.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://static.pullandbear.net/assets/public/515b/0552/901c4cdf83f9/ca8cf656bf21/03685336428-A6M/03685336428-A6M.jpg?ts=1721685116728&w=1082&f=auto",
+        "codigo_barras": "1159002773274",
+        "descripcion": "Jeans Mom Fit Rasgados con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada."
+    },
+    {
+        "nombre": "Vestido Largo con Volantes",
+        "unidades_disponibles": 84,
+        "categoría": "Chaquetas",
+        "precio": 55.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://mundobgb.com/wp-content/uploads/2022/04/6r76r67.jpg",
+        "codigo_barras": "9147856257860",
+        "descripcion": "Vestido Largo con Volantes con diseño sofisticado y tela ligera. Perfecto para eventos especiales o para un look casual con un toque de elegancia."
+    },
+    {
+        "nombre": "Gafas de Sol Modernas",
+        "unidades_disponibles": 85,
+        "categoría": "Calzado",
+        "precio": 57.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/08/04/16596249364662.jpg",
+        "codigo_barras": "7603401708907",
+        "descripcion": "Gafas de Sol Modernas diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Jersey Estampado Colorido",
+        "unidades_disponibles": 86,
+        "categoría": "Accesorios",
+        "precio": 58.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://m.media-amazon.com/images/I/7190il2h1WL._AC_UY580_.jpg",
+        "codigo_barras": "9951679336921",
+        "descripcion": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión."
+    },
+    {
+        "nombre": "Chaqueta Casual Oversized",
+        "unidades_disponibles": 87,
+        "categoría": "Camisetas",
+        "precio": 60.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://m.media-amazon.com/images/I/61Y489dbsML._AC_UF894,1000_QL80_.jpg",
+        "codigo_barras": "9021990966599",
+        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+    },
+    {
+        "nombre": "Falda Midi con Pliegues",
+        "unidades_disponibles": 88,
+        "categoría": "Sudaderas",
+        "precio": 61.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://cdn1.chcarolinaherrera.com/wcscontent/photos/CH/2025/51/CM/51CM481100642/51CM481100642_01_1x1.jpg",
+        "codigo_barras": "7118047412964",
+        "descripcion": "Falda elegante y femenina, confeccionada con materiales ligeros y cómodos. Ideal para looks sofisticados o casuales."
+    },
+    {
+        "nombre": "Camisa Clásica de Algodón",
+        "unidades_disponibles": 89,
+        "categoría": "Pantalones",
+        "precio": 63.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://safetop.net/web/3459-large_default/biville-camisa-100-algodon-clasica-tallas-s2xl.jpg",
+        "codigo_barras": "6838360718421",
+        "descripcion": "Camisa Clásica de Algodón diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Zapatillas Negras de Cuero",
+        "unidades_disponibles": 90,
+        "categoría": "Faldas",
+        "precio": 64.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://www.zapatodirecto.com/67246-large_default/zapatillas-de-vestir-mujer-comodas-negras-mod-clara-ne.jpg",
+        "codigo_barras": "7796596044612",
+        "descripcion": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+    },
+    {
+        "nombre": "Chamarra con Estampado",
+        "unidades_disponibles": 91,
+        "categoría": "Chaquetas",
+        "precio": 66.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://images.napali.app/global/element-products/all/default/xlarge/f3jka7elf2_element,f_4709_bck1.jpg",
+        "codigo_barras": "4152104096311",
+        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+    },
+    {
+        "nombre": "Pantalones de Vestir Slim",
+        "unidades_disponibles": 92,
+        "categoría": "Calzado",
+        "precio": 67.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://mundotextil.com/tienda/474-large_default/pantalon-camarero-monza-4791.jpg",
+        "codigo_barras": "5443194942391",
+        "descripcion": "Pantalones de Vestir Slim diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Blusa Boho con Bordados",
+        "unidades_disponibles": 93,
+        "categoría": "Accesorios",
+        "precio": 69.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://www.korner.es/uploads/media/images/PL304262_803_1.jpg",
+        "codigo_barras": "3889278540651",
+        "descripcion": "Blusa Boho con Bordados diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Polo Deportivo de Secado Rápido",
+        "unidades_disponibles": 94,
+        "categoría": "Camisetas",
+        "precio": 70.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://m.media-amazon.com/images/I/61Qs5v+D6QL._AC_UY580_.jpg",
+        "codigo_barras": "3650769809195",
+        "descripcion": "Polo Deportivo de Secado Rápido diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Bermudas de Playa Ligeras",
+        "unidades_disponibles": 95,
+        "categoría": "Sudaderas",
+        "precio": 72.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://m.media-amazon.com/images/I/71Xg-gJjgbL._AC_UF894,1000_QL80_.jpg",
+        "codigo_barras": "7884078708629",
+        "descripcion": "Bermudas de Playa Ligeras diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Camiseta Blanca con Estampado",
+        "unidades_disponibles": 96,
+        "categoría": "Pantalones",
+        "precio": 73.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://www.tuctuc.com/es/118596-medium_default/camiseta-manga-larga-blanca-con-estampado-wild-darkness-para-nina-coleccion-dark-and-roses.jpg",
+        "codigo_barras": "3102971352248",
+        "descripcion": "Camiseta Blanca con Estampado de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+    },
+    {
+        "nombre": "Sudadera Color Block",
+        "unidades_disponibles": 97,
+        "categoría": "Faldas",
+        "precio": 75.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJb0mv_GaLoavNiw546p2pitxuoS3U2y-gg&s",
+        "codigo_barras": "2205443586753",
+        "descripcion": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión."
+    },
+    {
+        "nombre": "Sneakers de Plataforma Altos",
+        "unidades_disponibles": 98,
+        "categoría": "Chaquetas",
+        "precio": 76.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://m.media-amazon.com/images/I/61mC2zxaJaL._AC_UY580_.jpg",
+        "codigo_barras": "7007550390033",
+        "descripcion": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+    },
+    {
+        "nombre": "Vestido de Fiesta Satinado",
+        "unidades_disponibles": 99,
+        "categoría": "Calzado",
+        "precio": 78.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://zapaka.es/cdn/shop/products/DSC02994.jpg?v=1607493218",
+        "codigo_barras": "9953281047345",
+        "descripcion": "Vestido de Fiesta Satinado con diseño sofisticado y tela ligera. Perfecto para eventos especiales o para un look casual con un toque de elegancia."
+    },
+    {
+        "nombre": "Gorra con Visera Plana",
+        "unidades_disponibles": 100,
+        "categoría": "Accesorios",
+        "precio": 79.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://surfmonkey.b-cdn.net/1325-large_default/gorra-plana-gris.jpg",
+        "codigo_barras": "2861739547958",
+        "descripcion": "Gorra con Visera Plana con diseño moderno y ajustable. Ideal para complementar cualquier look casual y protegerse del sol."
+    },
+    {
+        "nombre": "Pantalón Slim de Gabardina",
+        "unidades_disponibles": 101,
+        "categoría": "Camisetas",
+        "precio": 81.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://aspesi.com/cdn/shop/files/pantalone-slim-in-gabardina-di-cotone-w4-g-0171-e729-85218-ce689f763ca5c90adf7564489cf3378b_1880x.jpg?v=1721864224",
+        "codigo_barras": "2028143339254",
+        "descripcion": "Pantalón Slim de Gabardina con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada."
+    },
+    {
+        "nombre": "Top de Encaje para Fiesta",
+        "unidades_disponibles": 102,
+        "categoría": "Sudaderas",
+        "precio": 82.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://s.alicdn.com/@sc04/kf/H8d62055168604b668375650d7d85c4353.jpeg_720x720q50.jpg",
+        "codigo_barras": "3977547641325",
+        "descripcion": "Top de Encaje para Fiesta de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+    },
+    {
+        "nombre": "Bolso de Mano Elegante",
+        "unidades_disponibles": 103,
+        "categoría": "Pantalones",
+        "precio": 84.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://www.eljardindeldeseo.es/45727-thickbox_default/bolsos-de-fiesta-fucsias-tipo-cartera-de-mano-muy-elegantes.jpg",
+        "codigo_barras": "9143792198318",
+        "descripcion": "Accesorio esencial para complementar cualquier atuendo. Diseñado con materiales de alta calidad para mayor durabilidad y estilo."
+    },
+    {
+        "nombre": "Camiseta Crop Top Lisa",
+        "unidades_disponibles": 104,
+        "categoría": "Faldas",
+        "precio": 85.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://m.media-amazon.com/images/I/51o4J7UdM6L._AC_UY580_.jpg",
+        "codigo_barras": "9156203410932",
+        "descripcion": "Camiseta Crop Top Lisa de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+    },
+    {
+        "nombre": "Jumpsuit Largo de Algodón",
+        "unidades_disponibles": 105,
+        "categoría": "Chaquetas",
+        "precio": 87.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://cottoncrown.net/wp-content/uploads/Mono-Algodo%CC%81n-Largo-Verde-1-1.jpg",
+        "codigo_barras": "7285031383967",
+        "descripcion": "Jumpsuit Largo de Algodón diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Pantalones Cortos de Lino",
+        "unidades_disponibles": 106,
+        "categoría": "Calzado",
+        "precio": 88.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://fiftyoutlet.com/dw/image/v2/AAYL_PRD/on/demandware.static/-/Sites-gc-spf-master-catalog/default/dw9e8fbfc8/images/hi-res/P_611535599FM.jpg?sw=600&sh=900&sm=fit",
+        "codigo_barras": "4957759797350",
+        "descripcion": "Pantalones Cortos de Lino diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+    },
+    {
+        "nombre": "Botines de Gamuza Casual",
+        "unidades_disponibles": 107,
+        "categoría": "Accesorios",
+        "precio": 90.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://http2.mlstatic.com/D_NQ_NP_789056-MLM50264496031_062022-O.webp",
+        "codigo_barras": "9466461797906",
+        "descripcion": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+    },
+    {
+        "nombre": "Blazer con Diseño Moderno",
+        "unidades_disponibles": 108,
+        "categoría": "Camisetas",
+        "precio": 91.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://invitadisima.com/54139-thickbox_default/blazer-fucsia-de-diseno-asimetrico-con-hombrera.jpg",
+        "codigo_barras": "9137937270952",
+        "descripcion": "Chaqueta de corte formal, hecha de lana, para usar con atuendos casuales y formales."
+    },
+    {
+        "nombre": "Chaqueta Universitaria Vintage",
+        "unidades_disponibles": 109,
+        "categoría": "Sudaderas",
+        "precio": 93.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Hombre",
+        "foto": "https://i.etsystatic.com/18757116/r/il/3e022f/5372599164/il_570xN.5372599164_dw71.jpg",
+        "codigo_barras": "3233093241461",
+        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+    }
+]
