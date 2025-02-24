@@ -1,0 +1,107 @@
+[
+    {
+        "nombre": "Camiseta Oversize Skate",
+        "unidades_disponibles": 10,
+        "categoría": "Camisetas",
+        "precio": 19.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Hombre",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXaxJU0ips-5q52aMLaF5lpDb8aT-augPQxw&s",
+        "codigo_barras": "4940001505973",
+        "descripcion": "Una camiseta oversize inspirada en el estilo skater, confeccionada con algodón suave y transpirable. Su diseño amplio brinda comodidad y libertad de movimiento."
+    },
+    {
+        "nombre": "Sudadera Vintage Urban",
+        "unidades_disponibles": 11,
+        "categoría": "Sudaderas",
+        "precio": 21.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://urban-soul.es/wp-content/uploads/SUDADERAS__URBANSOUL4.jpg",
+        "codigo_barras": "5233008488496",
+        "descripcion": "Sudadera vintage de corte relajado con capucha ajustable y bolsillo tipo canguro. Hecha de felpa gruesa, perfecta para los días más fríos."
+    },
+    {
+        "nombre": "Jeans Skinny Ripped",
+        "unidades_disponibles": 12,
+        "categoría": "Pantalones",
+        "precio": 22.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Unisex",
+        "foto": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ1aEx0cEFi-EIXPeCVvTO3TEWXclwQ3u0KRNah_3ZsoOeYuD6dTch1N4RQaqTespx4OiqaDt_lq1uc70hv5HNBRVlcktffsv6LRiSB7GnBXs8I9l6L9YzRK7c",
+        "codigo_barras": "5696404359930",
+        "descripcion": "Jeans skinny con efecto desgastado y detalles rasgados estratégicos. Su ajuste ceñido resalta la figura sin comprometer la comodidad."
+    },
+    {
+        "nombre": "Falda Plisada Preppy",
+        "unidades_disponibles": 13,
+        "categoría": "Faldas",
+        "precio": 24.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Mujer",
+        "foto": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRsn3-znX3-L2S-fJ_ld_EJWg-vVeUpO6XGyEqTSwcijC8i0TAHKzRDc_PrUBKLKCuhelRb_Bed7sXueoZrBnWim4OlH7SpyauvjW9b0Fkp5qDFxrN2J0XBiYg",
+        "codigo_barras": "4764795086925",
+        "descripcion": "Falda plisada con cintura alta elástica y un toque preppy. Su tejido ligero la hace ideal para combinar con blusas o camisetas."
+    },
+    {
+        "nombre": "Zapatillas Chunky",
+        "unidades_disponibles": 14,
+        "categoría": "Chaquetas",
+        "precio": 25.99,
+        "tallas_disponibles": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "genero": "Mujer",
+        "foto": "https://martinvalen.com/34265-thickbox_default/zapatillas-chunky-blancas-para-mujer-con-linea-negra.jpg",
+        "codigo_barras": "6090782555574",
+        "descripcion": "Zapatillas chunky con suela gruesa y diseño moderno. Perfectas para quienes buscan un calzado cómodo con un estilo urbano atrevido."
+    },
+    {
+        "nombre": "Chaqueta Denim Classic",
+        "unidades_disponibles": 15,
+        "categoría": "Calzado",
+        "precio": 27.49,
+        "tallas_disponibles": [
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42"
+        ],
+        "genero": "Unisex",
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKr51iLAywFi2_YOvjZQwDZlxjCJVSHadDA&s",
+        "codigo_barras": "9880292394829",
+        "descripcion": "Chaqueta denim clásica con botones metálicos y ajuste regular. Un básico atemporal que combina con cualquier outfit."
+    }
+]

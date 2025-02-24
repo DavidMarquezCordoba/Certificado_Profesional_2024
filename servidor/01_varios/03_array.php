@@ -6,153 +6,246 @@
     <title>Array</title>
 </head>
 <body>
-    <h1>Array Indexado</h1>
-    <pre>crear un Array => <?php 
-        $miArray = ["Javascript", "HTML"];  // Dos formas de crear un array
-        $miArray2 = array("Javascript", "HTML");
-        var_dump($miArray);
-        var_dump($miArray2);
-    ?></pre>
-    <h3>elemento 1 de miArray => <?php
-        echo $miArray[1];  
-    ?></h3>
-    <pre>añadimos un elemento más al Array en la posición 2=> <?php 
-        $miArray[2] = "CSS";
-        var_dump($miArray);
-    ?></pre>
-    <pre>añadimos un elemento al final del Array => <?php 
-        array_push($miArray, "PHP");
-        var_dump($miArray);
-    ?></pre>
-    <pre>añadimos un elemento al inicio del Array => <?php 
-        array_unshift($miArray, "WEB");
-        var_dump($miArray);
-    ?></pre>
+    <h2>Array</h2>
+    <h3>Creación de arrays</h3>
+
+    <pre>
+        <?php
+            // Forma 1
+            $miArray = ["HTML", "CSS"];
+            // Forma 2
+            $miArray2 = array("HTML", "CSS");
+            // Mostramos
+            var_dump($miArray2);
+        ?>
+    </pre>
+
     <hr>
 
-    <h2>Array Asociativo</h2>
-    <pre>crear un Array => <?php 
-        $miArrayAsociativo = [
-            'curso' => 'Aplicaciones WEB',
-            'horas' => 540,
-            'temas' => ['HTML', 'CSS', 'Javascript'],
-            'horasPorTema' => [
-                'HTML' => 60,
-                'CSS' => 30,
-                'Javascript' => 90
+    <h4> Extraemos "HTML" del array dependiendo de la posición:
+        <?php 
+        echo $miArray[0];
+        ?>
+    </h4>
+
+    <h4>Añadimos elemento al final de un array:
+        <?php 
+        var_dump($miArray);
+        // Push
+        array_push($miArray,"Javascript");
+        var_dump($miArray);
+        ?>
+    </h4>
+
+    <h4>Añadimos elemento al principio de un array:
+        <?php 
+        var_dump($miArray);
+        // Unshift
+        array_unshift($miArray,"Javascript");
+        var_dump($miArray);
+        ?>
+    </h4>
+
+    <!-- ARRAY ASOCIATIVO -->
+    <h2>Array Asociativo (Objetos en Javascript)</h2>
+    <pre><?php 
+        $miarrayAsociativo = [
+            'nombre' => 'pepe',
+            'edad' => 15,
+            'direccion' => [
+                'calle' => 'avda andalucia',
+                'numero' => 8,
+                'ciudad' => 'mijas'
             ]
-        ]; // Podemos añadir cualquier tipo de variable en cada elemento del Array
-        var_dump($miArrayAsociativo);
-    ?></pre>
-    <h3>valor del elemento curso de miArrayAsociativo => <?php
-        echo $miArrayAsociativo['curso'];  
-    ?></h3>
-    <h3>valor del elemento horasPorTema de HTML de miArrayAsociativo => <?php
-        echo $miArrayAsociativo['horasPorTema']['HTML'];  
-    ?></h3>
-    <pre>Añadimos un elemento a miArrayAsociativo, si la propiedad no existe, se crea, si existe, se modifica => <?php
-        $miArrayAsociativo['comenzado'] = true;
-        var_dump($miArrayAsociativo);  
-    ?></pre>
-    <hr>
-
-    <h2>función empty(), si un array está vacío</h2>
-    <h3>preguntamos si el array miArrayNuevo = []; está vacío => <?php
-        $miArrayNuevo = [];
-        var_dump(empty($miArrayNuevo));  
-    ?></h3>
-    <h3>preguntamos si el array miArrayAsociativo está vacío => <?php
-        var_dump(empty($miArrayAsociativo));  
-    ?></h3>
-    <hr>
-
-    <h2>función isset() mirar si una array existe o una propiedad está definida</h2>
-    <h3>preguntamos si el array miArraySincrear; existe => <?php
-        var_dump(isset($miArraySincrear));  
-    ?></h3>
-    <h3>preguntamos si el array miArrayAsociativo existe => <?php
-        var_dump(isset($miArrayAsociativo));  
-    ?></h3>
-    <h3>preguntamos si la propiedad "profesor" del array miArrayAsociativo existe => <?php
-        var_dump(isset($miArrayAsociativo['profesor']));  
-    ?></h3>
-    <hr>
-
-    <!-- Clase viernes 21  -->
-    <h2>función in_array() buscar elementos en un array</h2>
-    <h3>buscamos el valor "CSS" en miArray y nos contesta si está => <?php
-        var_dump(in_array('CSS', $miArray));  
-    ?></h3>
-    <hr>
-
-    <h2>función array_column() y array_search() buscar un valor en un array de arrays semanticos (de objetos)</h2>
-    <pre>
-    <?php      
-        $menu = [ 
-            ['nombre' => 'Inicio', 'href' => 'index.php'], 
-            ['nombre' => 'Tienda', 'href' => 'tienda.php'], 
-            ['nombre' => 'Contacto', 'href' => 'contacto.php'],
-            ['nombre' => 'Iniciar Sesión', 'href' => 'login.php'] 
         ];
-        var_dump($menu);    // Este es nuestro array de arrays semanticos
-    ?>
-    </pre>
-    <h3>creamos un array solamente con la propiedad que vamos a analizar => </h3>
-    <pre>
-    <?php      
-        $columnaNombre = array_column($menu, 'nombre'); // Creamos un array solo con los nombres
-        var_dump($columnaNombre);    
-    ?>
-    </pre>
-    <h3>buscamos la posición del array que sea igual a "Tienda" e imprimimos esa posición del array $menu> </h3>
-    <pre>
-    <?php
-        $indice = array_search('Tienda', $columnaNombre); // Buscamos la posición en el array que está la palabra "Tienda"
-        var_dump($menu[$indice]);  // Presentamos el objeto encontrado
+        var_dump($miarrayAsociativo['nombre']);
+        var_dump($miarrayAsociativo['direccion']);
+        var_dump($miarrayAsociativo['direccion']['ciudad']);
+        $miarrayAsociativo['apellido'] = 'Moreno';
+        $miarrayAsociativo['direccion']['codpostal'] = '29650';
+        var_dump($miarrayAsociativo);
     ?></pre>
-    <hr>
 
-    <h2>función sort() ordenar elementos en un array</h2>
-    <pre>sort Ordenar el array de menor a mayor => <?php
-        $precios = [20, 12, 82, 6];
+    <pre><?php 
+        var_dump(empty($miarrayAsociativo)); //si un array esta vacio
+        var_dump(isset($miarrayAsociativo['apellido']));
+        var_dump(isset($miarrayAsociativo['codpostal']));
+        var_dump(isset($miarrayAsociativo['direccion']['codpostal'])); //te responde true o false dependiendo si existe o no la propiedad codpostal dentro de direccion en mi arrayasociativo
+    ?></pre>
+
+    <h2>funcion in_array() buscar elementos en un array</h2>
+    <h3>¿esta pepe?<?php 
+        var_dump(in_array("pepe", $miarrayAsociativo))
+    ?></h3>
+    <h3>¿esta mijas?<?php 
+        var_dump(in_array("mijas", $miarrayAsociativo));
+        var_dump(in_array("mijas", $miarrayAsociativo['direccion']));
+    ?></h3>
+
+    <hr>
+    
+    <h2>Función array_colum() y array_search()</h2>
+        
+    <pre><?php 
+        $menu = [
+            ['nombre' => 'inicio', 'href' => 'index.php'],
+            ['nombre' => 'tienda', 'href' => 'tienda.php'],
+            ['nombre' => 'contacto', 'href' => 'contacto.php'],
+            ['nombre' => 'iniciar sesioón', 'href' => 'login.php'],
+            
+        ];
+
+        var_dump($menu);
+    ?></pre>
+
+    <pre>array_column() crea un array con una propiedad del array padre<?php 
+        
+        $nombres = array_column($menu, 'nombre');
+        
+        var_dump($nombres);
+    ?></pre>
+
+    <pre>array_searh() busca en un array <?php 
+        
+        $indice = array_search('contacto', $nombres);
+        $indice = array_search('contacto', $menu[$indice]);
+        
+        var_dump($indice);
+    ?></pre>
+
+    <pre>array_filter() Te genera un array con todas las coincidencias <?php 
+        
+        // $buscar = "cer";
+        $buscar = 18;
+        $productos = [
+            ['nombre' => 'Manzana',
+                'Categoria' => 'frutas',
+                'precio' => 20],
+            ['nombre' => 'Cerezas',
+                'Categoria' => 'frutas',
+                'precio' => 12],
+            ['nombre' => 'Agua',
+                'Categoria' => 'bebidas',
+                'precio' => 12],
+            ['nombre' => 'Cerveza',
+                'Categoria' => 'bebidas',
+                'precio' => 52]
+        ];
+        
+        echo($buscar);
+
+    ?></pre>
+
+    <!-- FORMA 1 -->
+    <pre><?php 
+        $filtro = strtolower($buscar);
+        $resultado = array_filter($productos, function($producto) use ($filtro){
+            return (strpos(strtolower($producto['nombre']), $filtro) !== false) || (strpos(strtolower($producto['Categoria']), $filtro) !== false); //str
+        });
+
+        var_dump($resultado);
+    ?></pre>
+
+    <!-- FORMA 2 -->
+    <h3>array_filter() usando una función externa</h3>
+    <pre><?php 
+        function funcionFiltro($producto){
+            global $buscar;
+            return $producto['precio'] > $buscar;
+
+        }
+
+        $resultado = array_filter($productos, "funcionFiltro");
+        var_dump($resultado);
+    ?></pre>
+
+    <h2>Sort</h2>
+
+    <pre>SORT<?php 
+        echo("<br>");
+        $precios = [20,12,82,6];
         var_dump($precios);
-        sort($precios);  // Igual que en Javascript ordena el mismo array, no hay que igualar a nada
+        sort($precios);
         var_dump($precios);
     ?></pre>
-    <pre>rsort Ordenar el array de mayor a menor => <?php
+
+    <pre>RSORT<?php 
+        echo("<br>");
+        $precios = [20,12,82,6];
         var_dump($precios);
-        rsort($precios);  // Igual que en Javascript ordena el mismo array, no hay que igualar a nada
+        rsort($precios);
         var_dump($precios);
     ?></pre>
-    <pre>sort Ordenar el array $miArray por orden alfabético => <?php
+
+    <pre>SORT ORDENA EL ARRAY $MIARRAY POR ORDEN ALFABÉTICO<?php 
+        echo("<br>");
+        // Ordena por orden alfabético a través de su COD ASCII
+        // $precios = [20,12,82,6];
         var_dump($miArray);
-        sort($miArray);  // Igual que en Javascript ordena el mismo array, no hay que igualar a nada
+        sort($miArray);
         var_dump($miArray);
     ?></pre>
-    <pre>rsort Ordenar el array $miArray a la inversa => <?php
+
+    <pre>RSORT ORDENA EL ARRAY $MIARRAY POR ORDEN ALFABÉTICO INVERSO<?php 
+        echo("<br>");
+        // Ordena por orden alfabético a través de su COD ASCII
+        // $precios = [20,12,82,6];
         var_dump($miArray);
-        rsort($miArray);  // Igual que en Javascript ordena el mismo array, no hay que igualar a nada
+        rsort($miArray);
         var_dump($miArray);
     ?></pre>
-    <pre>asort Ordenar el array asociativo $miArrayAsociativo['horasPorTema'] por valores no por llaves => <?php
-        var_dump($miArrayAsociativo['horasPorTema']);
-        asort($miArrayAsociativo['horasPorTema']);  // Igual que en Javascript ordena el mismo array, no hay que igualar a nada
-        var_dump($miArrayAsociativo['horasPorTema']);
+
+    <pre>ASORT ORDENA EL ARRAY ASOCIATIVO $MIARRAY POR ORDEN ALFABÉTICO (precio)<?php 
+        echo("<br>");
+        $precios = [
+            'manzanas' => 12,
+            'cerezas' => 20,
+            'Plátanos' => 15
+        ];
+
+        var_dump($precios);
+        asort($precios);
+        var_dump($precios);
     ?></pre>
-    <pre>arsort Ordenar el array asociativo $miArrayAsociativo['horasPorTema'] por valores no por llaves pero de z...a => <?php
-        var_dump($miArrayAsociativo['horasPorTema']);
-        arsort($miArrayAsociativo['horasPorTema']);  // Igual que en Javascript ordena el mismo array, no hay que igualar a nada
-        var_dump($miArrayAsociativo['horasPorTema']);
+
+    <pre>ARSORT ORDENA EL ARRAY ASOCIATIVO $MIARRAY POR ORDEN ALFABÉTICO INVERSO(precio)<?php 
+        echo("<br>");
+        // $precios = [
+        //     'manzanas' => 12,
+        //     'cerezas' => 20,
+        //     'Plátanos' => 15
+        // ];
+
+        var_dump($precios);
+        arsort($precios);
+        var_dump($precios);
     ?></pre>
-    <pre>ksort Ordenar el array asociativo $miArrayAsociativo['horasPorTema'] por llaves no por valores => <?php
-        var_dump($miArrayAsociativo['horasPorTema']);
-        ksort($miArrayAsociativo['horasPorTema']);  // Igual que en Javascript ordena el mismo array, no hay que igualar a nada
-        var_dump($miArrayAsociativo['horasPorTema']);
+
+        <!-- AK SORT -->
+    <pre>KSORT ORDENA EL ARRAY ASOCIATIVO $MIARRAY POR KEY (precio)<?php 
+        echo("<br>");
+        // $precios = [
+        //     'manzanas' => 12,
+        //     'cerezas' => 20,
+        //     'Plátanos' => 15
+        // ];
+
+        var_dump($precios);
+        ksort($precios);
+        var_dump($precios);
     ?></pre>
-    <pre>krsort Ordenar el array asociativo $miArrayAsociativo['horasPorTema'] por llaves no por valores pero de z...a => <?php
-        var_dump($miArrayAsociativo['horasPorTema']);
-        krsort($miArrayAsociativo['horasPorTema']);  // Igual que en Javascript ordena el mismo array, no hay que igualar a nada
-        var_dump($miArrayAsociativo['horasPorTema']);
+
+    <pre>KRSORT ORDENA EL ARRAY ASOCIATIVO $MIARRAY POR KEY INVERSO(precio)<?php 
+        echo("<br>");
+        // $precios = [
+        //     'manzanas' => 12,
+        //     'cerezas' => 20,
+        //     'Plátanos' => 15
+        // ];
+
+        var_dump($precios);
+        krsort($precios);
+        var_dump($precios);
     ?></pre>
 </body>
 </html>
