@@ -1,7 +1,7 @@
 
 
 <?php 
-$pagina = "index"; //Variable local que afecta a todos los include
+$pagina = "index.php"; //Variable local que afecta a todos los include
 
 // Vamos llamando poco a poco a cada una de las "partes" de la web
 

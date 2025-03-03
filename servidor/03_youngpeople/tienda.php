@@ -1,7 +1,7 @@
 
 
 <?php 
-$pagina = "tienda";
+$pagina = "tienda.php";
 include "templates/head.php";
 ?>
 
