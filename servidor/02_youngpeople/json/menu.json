@@ -1,7 +1,0 @@
-[
-    {"nombre":"Inicio", "href":"index.php"},
-    {"nombre":"Tienda", "href":"tienda.php"},
-    {"nombre":"Contacto", "href":"contacto.php"},
-    {"nombre":"Iniciar Sesión", "href":"login.php"},
-    {"nombre":"Carrito", "href":"login.php"}
-]

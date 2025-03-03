@@ -1,9 +1,0 @@
-
-<?php 
-// Dicha variable es global y afecta a todos los include
-$pagina = "Inicio";
-include "templates/head.php";
-include "templates/header.php";
-include "templates/inicio.php";
-include "templates/footer.php";
-?>
