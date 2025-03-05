@@ -14,10 +14,12 @@
     <!-- Importamos el estilo -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <!-- Importamos el script con el atributo DEFER -->
     <!-- DEFER: importa el script un poco antes de terminar el DOM y se puede poner al principio en el HEAD -->
     <script defer src="../js/index.js"></script>
+    <script defer src="../js/header.js"></script>
     
 
 

@@ -60,9 +60,9 @@ header{
     width: 80%;
 }
 
-/* Hamburguesa */
+/******** Hamburguesa ********/
 .boton-menu{
-    display: block;
+    display: none;
     width: 5rem;
     height: 5rem;
     text-align: center;
@@ -70,7 +70,7 @@ header{
     color: var(--blanco);
     cursor: pointer;
 }
-/* *********** */
+/* ************************ */
 
 .enlaces-menu{
     list-style: none;
@@ -83,6 +83,44 @@ header{
 
 .enlaces-menu li .seleccionado {
     border-bottom: 2px solid var(--blanco);
+}
+
+@media (max-width: 768px) {
+    .enlaces-menu{
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        position: fixed; /* Saca la lista "fuera" desplazandolo en el eje z */
+        top: 6rem;  /*  */
+        right: 2rem;/*  */
+        /*  */
+        
+        height: auto; /*  */
+        background-color: var(--secundario);
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .enlaces-menu.ver{
+        display: flex;
+        animation: entra-menu 1s ease-in-out;
+    }
+
+    .boton-menu{
+        display: block;
+    }
+
+}
+
+/* Previamente con la propiedad */
+@keyframes entra-menu {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 /* NOTAS */

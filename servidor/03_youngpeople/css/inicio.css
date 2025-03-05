@@ -1,0 +1,49 @@
+.hero{
+    /* Le damos vh y vw para darle una altura, la de la pantalla */
+    height: 100vh;
+    width: 100vw;
+
+    display: block;
+    position: relative;
+}
+
+.hero video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Aquí si sepone % porque el padre ya tiene una altura y anchura*/
+    height: 100%;
+    width: 100%;
+}
+
+.oscurece-fondo{
+    background-color: var(--fondo-oscuro);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Aquí si sepone % porque el padre ya tiene una altura y anchura*/
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contenido{
+    /* display: flex; */
+    text-align: center;
+    color: var(--blanco);
+}
+
+.hero-contenido h1 {
+    font-size: 5rem;
+}
+
+.hero-contenido h2 {
+    margin: 1rem; /* Anula el espacio que se le dio de 10rem en el style.css */
+    font-size: 3rem;
+}
