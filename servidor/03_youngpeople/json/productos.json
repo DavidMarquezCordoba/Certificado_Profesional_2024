@@ -2,7 +2,7 @@
     {
         "nombre": "Camiseta Oversize Skate",
         "unidades_disponibles": 10,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 19.99,
         "tallas_disponibles": [
             "XS",
@@ -19,7 +19,7 @@
     {
         "nombre": "Sudadera Vintage Urban",
         "unidades_disponibles": 11,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 21.49,
         "tallas_disponibles": [
             "37",
@@ -37,7 +37,7 @@
     {
         "nombre": "Jeans Skinny Ripped",
         "unidades_disponibles": 12,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 22.99,
         "tallas_disponibles": [
             "XS",
@@ -54,7 +54,7 @@
     {
         "nombre": "Falda Plisada Preppy",
         "unidades_disponibles": 13,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 24.49,
         "tallas_disponibles": [
             "37",
@@ -72,7 +72,7 @@
     {
         "nombre": "Zapatillas Chunky",
         "unidades_disponibles": 14,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 25.99,
         "tallas_disponibles": [
             "XS",
@@ -89,7 +89,7 @@
     {
         "nombre": "Chaqueta Denim Classic",
         "unidades_disponibles": 15,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 27.49,
         "tallas_disponibles": [
             "37",
@@ -107,7 +107,7 @@
     {
         "nombre": "Gorra Streetwear",
         "unidades_disponibles": 16,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 28.99,
         "tallas_disponibles": [
             "XS",
@@ -124,7 +124,7 @@
     {
         "nombre": "Bolso Cruzado Minimalista",
         "unidades_disponibles": 17,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 30.49,
         "tallas_disponibles": [
             "37",
@@ -142,7 +142,7 @@
     {
         "nombre": "Camisa Casual Rayada",
         "unidades_disponibles": 18,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 31.99,
         "tallas_disponibles": [
             "XS",
@@ -159,7 +159,7 @@
     {
         "nombre": "Pantalón Cargo Urbano",
         "unidades_disponibles": 19,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 33.49,
         "tallas_disponibles": [
             "37",
@@ -177,7 +177,7 @@
     {
         "nombre": "Vestido Casual Verano",
         "unidades_disponibles": 20,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 34.99,
         "tallas_disponibles": [
             "XS",
@@ -194,7 +194,7 @@
     {
         "nombre": "Bermuda Relaxed Fit",
         "unidades_disponibles": 21,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 36.49,
         "tallas_disponibles": [
             "37",
@@ -212,7 +212,7 @@
     {
         "nombre": "Botas Urbanas Unisex",
         "unidades_disponibles": 22,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 37.99,
         "tallas_disponibles": [
             "XS",
@@ -229,7 +229,7 @@
     {
         "nombre": "Jersey Suave Algodón",
         "unidades_disponibles": 23,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 39.49,
         "tallas_disponibles": [
             "37",
@@ -247,7 +247,7 @@
     {
         "nombre": "Gafas de Sol Retro",
         "unidades_disponibles": 24,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 40.99,
         "tallas_disponibles": [
             "XS",
@@ -264,7 +264,7 @@
     {
         "nombre": "Cinturón de Cuero Moderno",
         "unidades_disponibles": 25,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 42.49,
         "tallas_disponibles": [
             "37",
@@ -282,7 +282,7 @@
     {
         "nombre": "Shorts Deportivos Ligero",
         "unidades_disponibles": 26,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 43.99,
         "tallas_disponibles": [
             "XS",
@@ -299,7 +299,7 @@
     {
         "nombre": "Abrigo Largo Elegante",
         "unidades_disponibles": 27,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 45.49,
         "tallas_disponibles": [
             "37",
@@ -317,7 +317,7 @@
     {
         "nombre": "Sudadera Crop Top",
         "unidades_disponibles": 28,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 46.99,
         "tallas_disponibles": [
             "XS",
@@ -334,7 +334,7 @@
     {
         "nombre": "Pantalones Jogger Street",
         "unidades_disponibles": 29,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 48.49,
         "tallas_disponibles": [
             "37",
@@ -352,7 +352,7 @@
     {
         "nombre": "Vestido Midi Casual",
         "unidades_disponibles": 30,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 49.99,
         "tallas_disponibles": [
             "XS",
@@ -369,7 +369,7 @@
     {
         "nombre": "Zapatillas Running Fashion",
         "unidades_disponibles": 31,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 51.49,
         "tallas_disponibles": [
             "37",
@@ -387,7 +387,7 @@
     {
         "nombre": "Bufanda de Lana Clásica",
         "unidades_disponibles": 32,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 52.99,
         "tallas_disponibles": [
             "XS",
@@ -404,7 +404,7 @@
     {
         "nombre": "Camisa de Cuadros Vintage",
         "unidades_disponibles": 33,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 54.49,
         "tallas_disponibles": [
             "37",
@@ -422,7 +422,7 @@
     {
         "nombre": "Chaqueta Bomber Urbana",
         "unidades_disponibles": 34,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 55.99,
         "tallas_disponibles": [
             "XS",
@@ -439,7 +439,7 @@
     {
         "nombre": "Leggins Deportivos Fit",
         "unidades_disponibles": 35,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 57.49,
         "tallas_disponibles": [
             "37",
@@ -457,7 +457,7 @@
     {
         "nombre": "Sombrero Casual Verano",
         "unidades_disponibles": 36,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 58.99,
         "tallas_disponibles": [
             "XS",
@@ -474,7 +474,7 @@
     {
         "nombre": "Bolsa Tote Casual",
         "unidades_disponibles": 37,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 60.49,
         "tallas_disponibles": [
             "37",
@@ -492,7 +492,7 @@
     {
         "nombre": "Pantalón Chino Slim Fit",
         "unidades_disponibles": 38,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 61.99,
         "tallas_disponibles": [
             "XS",
@@ -509,7 +509,7 @@
     {
         "nombre": "Blusa Satinada Elegante",
         "unidades_disponibles": 39,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 63.49,
         "tallas_disponibles": [
             "37",
@@ -527,7 +527,7 @@
     {
         "nombre": "Chamarra de Cuero Negra",
         "unidades_disponibles": 40,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 64.99,
         "tallas_disponibles": [
             "XS",
@@ -544,7 +544,7 @@
     {
         "nombre": "Mocasines Casual",
         "unidades_disponibles": 41,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 66.49,
         "tallas_disponibles": [
             "37",
@@ -562,7 +562,7 @@
     {
         "nombre": "Pantalones Cortos Estampados",
         "unidades_disponibles": 42,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 67.99,
         "tallas_disponibles": [
             "XS",
@@ -579,7 +579,7 @@
     {
         "nombre": "Jersey de Punto Oversize",
         "unidades_disponibles": 43,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 69.49,
         "tallas_disponibles": [
             "37",
@@ -597,7 +597,7 @@
     {
         "nombre": "Sneakers Deportivos Urbanos",
         "unidades_disponibles": 44,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 70.99,
         "tallas_disponibles": [
             "XS",
@@ -614,7 +614,7 @@
     {
         "nombre": "Top Deportivo Corte Fit",
         "unidades_disponibles": 45,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 72.49,
         "tallas_disponibles": [
             "37",
@@ -632,7 +632,7 @@
     {
         "nombre": "Mono Largo Estampado",
         "unidades_disponibles": 46,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 73.99,
         "tallas_disponibles": [
             "XS",
@@ -649,7 +649,7 @@
     {
         "nombre": "Chaleco Acolchado Casual",
         "unidades_disponibles": 47,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 75.49,
         "tallas_disponibles": [
             "37",
@@ -667,7 +667,7 @@
     {
         "nombre": "Falda Vaquera Desgastada",
         "unidades_disponibles": 48,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 76.99,
         "tallas_disponibles": [
             "XS",
@@ -684,7 +684,7 @@
     {
         "nombre": "Camiseta Básica Algodón",
         "unidades_disponibles": 49,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 78.49,
         "tallas_disponibles": [
             "37",
@@ -702,7 +702,7 @@
     {
         "nombre": "Sudadera con Capucha Neutra",
         "unidades_disponibles": 50,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 79.99,
         "tallas_disponibles": [
             "XS",
@@ -719,7 +719,7 @@
     {
         "nombre": "Pantalón Recto de Lino",
         "unidades_disponibles": 51,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 81.49,
         "tallas_disponibles": [
             "37",
@@ -737,7 +737,7 @@
     {
         "nombre": "Vestido Floral Romántico",
         "unidades_disponibles": 52,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 82.99,
         "tallas_disponibles": [
             "XS",
@@ -754,7 +754,7 @@
     {
         "nombre": "Tenis Skateboarding Classic",
         "unidades_disponibles": 53,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 84.49,
         "tallas_disponibles": [
             "37",
@@ -772,7 +772,7 @@
     {
         "nombre": "Camisa Blanca Minimalista",
         "unidades_disponibles": 54,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 85.99,
         "tallas_disponibles": [
             "XS",
@@ -789,7 +789,7 @@
     {
         "nombre": "Parka Impermeable Invierno",
         "unidades_disponibles": 55,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 87.49,
         "tallas_disponibles": [
             "37",
@@ -807,7 +807,7 @@
     {
         "nombre": "Pantalón Palazzo Fluido",
         "unidades_disponibles": 56,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 88.99,
         "tallas_disponibles": [
             "XS",
@@ -824,7 +824,7 @@
     {
         "nombre": "Body Ajustado Manga Larga",
         "unidades_disponibles": 57,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 90.49,
         "tallas_disponibles": [
             "37",
@@ -842,7 +842,7 @@
     {
         "nombre": "Shorts Denim de Verano",
         "unidades_disponibles": 58,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 91.99,
         "tallas_disponibles": [
             "XS",
@@ -859,7 +859,7 @@
     {
         "nombre": "Blazer Casual Moderno",
         "unidades_disponibles": 59,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 93.49,
         "tallas_disponibles": [
             "37",
@@ -877,7 +877,7 @@
     {
         "nombre": "Vestido de Noche Elegante",
         "unidades_disponibles": 60,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 19.99,
         "tallas_disponibles": [
             "XS",
@@ -894,7 +894,7 @@
     {
         "nombre": "Zapatillas Chunky Blancas",
         "unidades_disponibles": 61,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 21.49,
         "tallas_disponibles": [
             "37",
@@ -912,7 +912,7 @@
     {
         "nombre": "Jersey Cuello Alto Suave",
         "unidades_disponibles": 62,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 22.99,
         "tallas_disponibles": [
             "XS",
@@ -929,7 +929,7 @@
     {
         "nombre": "Chaqueta Acolchada Ligera",
         "unidades_disponibles": 63,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 24.49,
         "tallas_disponibles": [
             "37",
@@ -947,7 +947,7 @@
     {
         "nombre": "Camisa Oversize de Lino",
         "unidades_disponibles": 64,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 25.99,
         "tallas_disponibles": [
             "XS",
@@ -964,7 +964,7 @@
     {
         "nombre": "Botas de Montaña Resistentes",
         "unidades_disponibles": 65,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 27.49,
         "tallas_disponibles": [
             "37",
@@ -982,7 +982,7 @@
     {
         "nombre": "Leggins con Bolsillos Deportivos",
         "unidades_disponibles": 66,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 28.99,
         "tallas_disponibles": [
             "XS",
@@ -999,7 +999,7 @@
     {
         "nombre": "Blusa de Encaje Fina",
         "unidades_disponibles": 67,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 30.49,
         "tallas_disponibles": [
             "37",
@@ -1017,7 +1017,7 @@
     {
         "nombre": "Gabardina Clásica Beige",
         "unidades_disponibles": 68,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 31.99,
         "tallas_disponibles": [
             "XS",
@@ -1034,7 +1034,7 @@
     {
         "nombre": "Gorra Vintage Bordada",
         "unidades_disponibles": 69,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 33.49,
         "tallas_disponibles": [
             "37",
@@ -1052,7 +1052,7 @@
     {
         "nombre": "Pantalón Jogger Cargo",
         "unidades_disponibles": 70,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 34.99,
         "tallas_disponibles": [
             "XS",
@@ -1069,7 +1069,7 @@
     {
         "nombre": "Suéter de Lana Grueso",
         "unidades_disponibles": 71,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 36.49,
         "tallas_disponibles": [
             "37",
@@ -1087,7 +1087,7 @@
     {
         "nombre": "Chamarra de Mezclilla Azul",
         "unidades_disponibles": 72,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 37.99,
         "tallas_disponibles": [
             "XS",
@@ -1104,7 +1104,7 @@
     {
         "nombre": "Camiseta Tie-Dye Estilosa",
         "unidades_disponibles": 73,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 39.49,
         "tallas_disponibles": [
             "37",
@@ -1122,7 +1122,7 @@
     {
         "nombre": "Bikini con Estampado Floral",
         "unidades_disponibles": 74,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 40.99,
         "tallas_disponibles": [
             "XS",
@@ -1139,7 +1139,7 @@
     {
         "nombre": "Sudadera Unisex Bordada",
         "unidades_disponibles": 75,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 42.49,
         "tallas_disponibles": [
             "37",
@@ -1157,7 +1157,7 @@
     {
         "nombre": "Chaleco de Punto Retro",
         "unidades_disponibles": 76,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 43.99,
         "tallas_disponibles": [
             "XS",
@@ -1174,7 +1174,7 @@
     {
         "nombre": "Pantalones de Algodón Relaxed",
         "unidades_disponibles": 77,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 45.49,
         "tallas_disponibles": [
             "37",
@@ -1192,7 +1192,7 @@
     {
         "nombre": "Top con Hombros Descubiertos",
         "unidades_disponibles": 78,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 46.99,
         "tallas_disponibles": [
             "XS",
@@ -1209,7 +1209,7 @@
     {
         "nombre": "Shorts Cargo Multi Bolsillos",
         "unidades_disponibles": 79,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 48.49,
         "tallas_disponibles": [
             "37",
@@ -1227,7 +1227,7 @@
     {
         "nombre": "Botines Chelsea Cuero",
         "unidades_disponibles": 80,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 49.99,
         "tallas_disponibles": [
             "XS",
@@ -1244,7 +1244,7 @@
     {
         "nombre": "Chamarra de Invierno Puffer",
         "unidades_disponibles": 81,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 51.49,
         "tallas_disponibles": [
             "37",
@@ -1262,7 +1262,7 @@
     {
         "nombre": "Camiseta Vintage Rock Band",
         "unidades_disponibles": 82,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 52.99,
         "tallas_disponibles": [
             "XS",
@@ -1279,7 +1279,7 @@
     {
         "nombre": "Jeans Mom Fit Rasgados",
         "unidades_disponibles": 83,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 54.49,
         "tallas_disponibles": [
             "37",
@@ -1297,7 +1297,7 @@
     {
         "nombre": "Vestido Largo con Volantes",
         "unidades_disponibles": 84,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 55.99,
         "tallas_disponibles": [
             "XS",
@@ -1314,7 +1314,7 @@
     {
         "nombre": "Gafas de Sol Modernas",
         "unidades_disponibles": 85,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 57.49,
         "tallas_disponibles": [
             "37",
@@ -1332,7 +1332,7 @@
     {
         "nombre": "Jersey Estampado Colorido",
         "unidades_disponibles": 86,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 58.99,
         "tallas_disponibles": [
             "XS",
@@ -1349,7 +1349,7 @@
     {
         "nombre": "Chaqueta Casual Oversized",
         "unidades_disponibles": 87,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 60.49,
         "tallas_disponibles": [
             "37",
@@ -1367,7 +1367,7 @@
     {
         "nombre": "Falda Midi con Pliegues",
         "unidades_disponibles": 88,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 61.99,
         "tallas_disponibles": [
             "XS",
@@ -1384,7 +1384,7 @@
     {
         "nombre": "Camisa Clásica de Algodón",
         "unidades_disponibles": 89,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 63.49,
         "tallas_disponibles": [
             "37",
@@ -1402,7 +1402,7 @@
     {
         "nombre": "Zapatillas Negras de Cuero",
         "unidades_disponibles": 90,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 64.99,
         "tallas_disponibles": [
             "XS",
@@ -1419,7 +1419,7 @@
     {
         "nombre": "Chamarra con Estampado",
         "unidades_disponibles": 91,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 66.49,
         "tallas_disponibles": [
             "37",
@@ -1437,7 +1437,7 @@
     {
         "nombre": "Pantalones de Vestir Slim",
         "unidades_disponibles": 92,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 67.99,
         "tallas_disponibles": [
             "XS",
@@ -1454,7 +1454,7 @@
     {
         "nombre": "Blusa Boho con Bordados",
         "unidades_disponibles": 93,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 69.49,
         "tallas_disponibles": [
             "37",
@@ -1472,7 +1472,7 @@
     {
         "nombre": "Polo Deportivo de Secado Rápido",
         "unidades_disponibles": 94,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 70.99,
         "tallas_disponibles": [
             "XS",
@@ -1489,7 +1489,7 @@
     {
         "nombre": "Bermudas de Playa Ligeras",
         "unidades_disponibles": 95,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 72.49,
         "tallas_disponibles": [
             "37",
@@ -1507,7 +1507,7 @@
     {
         "nombre": "Camiseta Blanca con Estampado",
         "unidades_disponibles": 96,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 73.99,
         "tallas_disponibles": [
             "XS",
@@ -1524,7 +1524,7 @@
     {
         "nombre": "Sudadera Color Block",
         "unidades_disponibles": 97,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 75.49,
         "tallas_disponibles": [
             "37",
@@ -1542,7 +1542,7 @@
     {
         "nombre": "Sneakers de Plataforma Altos",
         "unidades_disponibles": 98,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 76.99,
         "tallas_disponibles": [
             "XS",
@@ -1559,7 +1559,7 @@
     {
         "nombre": "Vestido de Fiesta Satinado",
         "unidades_disponibles": 99,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 78.49,
         "tallas_disponibles": [
             "37",
@@ -1577,7 +1577,7 @@
     {
         "nombre": "Gorra con Visera Plana",
         "unidades_disponibles": 100,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 79.99,
         "tallas_disponibles": [
             "XS",
@@ -1594,7 +1594,7 @@
     {
         "nombre": "Pantalón Slim de Gabardina",
         "unidades_disponibles": 101,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 81.49,
         "tallas_disponibles": [
             "37",
@@ -1612,7 +1612,7 @@
     {
         "nombre": "Top de Encaje para Fiesta",
         "unidades_disponibles": 102,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 82.99,
         "tallas_disponibles": [
             "XS",
@@ -1629,7 +1629,7 @@
     {
         "nombre": "Bolso de Mano Elegante",
         "unidades_disponibles": 103,
-        "categoría": "Pantalones",
+        "categoria": "Pantalones",
         "precio": 84.49,
         "tallas_disponibles": [
             "37",
@@ -1647,7 +1647,7 @@
     {
         "nombre": "Camiseta Crop Top Lisa",
         "unidades_disponibles": 104,
-        "categoría": "Faldas",
+        "categoria": "Faldas",
         "precio": 85.99,
         "tallas_disponibles": [
             "XS",
@@ -1664,7 +1664,7 @@
     {
         "nombre": "Jumpsuit Largo de Algodón",
         "unidades_disponibles": 105,
-        "categoría": "Chaquetas",
+        "categoria": "Chaquetas",
         "precio": 87.49,
         "tallas_disponibles": [
             "37",
@@ -1682,7 +1682,7 @@
     {
         "nombre": "Pantalones Cortos de Lino",
         "unidades_disponibles": 106,
-        "categoría": "Calzado",
+        "categoria": "Calzado",
         "precio": 88.99,
         "tallas_disponibles": [
             "XS",
@@ -1699,7 +1699,7 @@
     {
         "nombre": "Botines de Gamuza Casual",
         "unidades_disponibles": 107,
-        "categoría": "Accesorios",
+        "categoria": "Accesorios",
         "precio": 90.49,
         "tallas_disponibles": [
             "37",
@@ -1717,7 +1717,7 @@
     {
         "nombre": "Blazer con Diseño Moderno",
         "unidades_disponibles": 108,
-        "categoría": "Camisetas",
+        "categoria": "Camisetas",
         "precio": 91.99,
         "tallas_disponibles": [
             "XS",
@@ -1734,7 +1734,7 @@
     {
         "nombre": "Chaqueta Universitaria Vintage",
         "unidades_disponibles": 109,
-        "categoría": "Sudaderas",
+        "categoria": "Sudaderas",
         "precio": 93.49,
         "tallas_disponibles": [
             "37",
