@@ -4,6 +4,19 @@
     $textoMenu = '';    //Creamos la variable local para que se pueda reutilizar
     $menu = [];
 
+    $idiomaDefault = 'es';
+    $idiomasDisponibles = ['es', 'en'];
+    $lang = $idiomaDefault;
+    
+    if (isset($_GET['lang'])) {
+        $lang = $_GET['lang'];
+    } else {
+        // substr : Se queda con el trozo que le indiques
+        $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); //Recoge el lang del navegador
+    }
+
+    $lang = (in_array($lang, $idiomasDisponibles))? $lang : $idiomaDefault; //Comprueba si el lang
+
     if (file_exists($archivoMenu)) {                    //file_exist -> Si existe ese fichero (boolean)
         $textoMenu = file_get_contents($archivoMenu); //Lee el contenido del archivo menu.json SOLO TEXTO
     } else {

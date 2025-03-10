@@ -1,7 +1,7 @@
 [
-    {"nombre": "Inicio", "href": "index.php"},              
-    {"nombre": "Tienda", "href": "tienda.php"},
-    {"nombre": "Contacto", "href": "contacto.php"},
-    {"nombre": "Iniciar Sesión", "href": "login.php"},
-    {"nombre": "Carrito", "href": "carrito.php"}
+    {"nombre": {"es":"Inicio", "en":"Home"}, "href": "index.php"},              
+    {"nombre": {"es":"Tienda", "en":"Store"}, "href": "tienda.php"},
+    {"nombre": {"es":"Contacto", "en":"Contact"}, "href": "contacto.php"},
+    {"nombre": {"es":"Inicio Sesión", "en":"Login"}, "href": "login.php"},
+    {"nombre": {"es":"Carrito", "en":"Basket"}, "href": "carrito.php"}
 ]
