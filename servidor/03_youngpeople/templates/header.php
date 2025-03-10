@@ -68,7 +68,7 @@
                 <?php foreach($menu as $enlace) {
                     // Si al recorrer el json [href] es distinto de carrito.php
                     if (($enlace['href'] != 'carrito.php') || ($pagina == 'tienda.php')) {?>
-                        <li><a class="<?php echo ($pagina == $enlace['href'])?'seleccionado':''; ?>" href="<?php echo $enlace['href']; ?>"><?php echo $enlace['nombre']; ?></a></li>
+                        <li><a class="<?php echo ($pagina == $enlace['href'])?'seleccionado':''; ?>" href="<?php echo $enlace['href']; ?>"><?php echo $enlace['nombre'][$lang]; ?></a></li>
                     <?php }
                 } ?>
             </ul>

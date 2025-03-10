@@ -1,10 +1,23 @@
 <!-- Variables super globales que cea PHP de forma interna en la raíz -->
+
+
 <?php 
+
+session_start();
+
+session_regenerate_id();
+
+
 $nombre = "nombre";
 $valor = "pepe";
 setcookie($nombre,$valor, [
-    'expires' => time()+15
-] );
+    'expires' => time() +86400 * 365,  // La cookie expira en un año
+    'path' => '/',  // La cookie es accesible desde mi dominio
+    // 'domain' => 'pepe.com'
+    'secure' => true, // Solo enviarán las cookies si está en un protocolo seguro (https)
+    'httponly' => true, //Evita que JS o cualquier lenguaje de front pueda leer esas cookies
+    'samesite' => 'none' //strict, lax, none
+]);
 ?>
 
 <!DOCTYPE html>
@@ -122,7 +135,26 @@ setcookie($nombre,$valor, [
 
     <pre><?php var_dump($_POST)?></pre>
 
+
+    <hr>
+    <hr>
+
+    <!-- CLASE 10/03/2025 COOKIES-->
     <h2>$_COOKIE: Es un array con las variables recibidas como cookies</h2>
     <pre><?php var_dump($_COOKIE)?></pre>
+
+    <h2>$_SESSION: Es un array con las variables de sesión creadas</h2>
+    <?php $_SESSION['lang'] = $lang; ?>
+    <pre><?php var_dump($_SESSION)?></pre>
+
+    <?php 
+    
+    if (isset($_SESSION['usuario'])) {
+        echo 'Bienvenido' . $_SESSION['usuario']; ?>
+        <br><a href="08_cerrarsesion.php" target="blank">Cerrar Sesión</a>
+    <?php } else {
+        echo 'No hay sesión activa';?>
+        <br><a href="08_abrirsesion.php" target="_blank" rel="noopener noreferrer">Iniciar Sesión</a>
+    <?php } ?>
 </body>
 </html>
