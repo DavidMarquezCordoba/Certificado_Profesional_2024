@@ -9,6 +9,7 @@
     $resultado = array_filter($productos, function($producto) use ($filtro) { // Aquí filtramos de nuestro array de $productos usando la varible $filtro - use ($filtro) - es para incorporar la variable global $filtro dentro de la función
         return empty($filtro)   || (strpos(strtolower($producto['nombre']), $filtro) !== false)
                                 || (strpos(strtolower($producto['categoria']), $filtro) !== false)
+                                || (strpos(strtolower($producto['genero']), $filtro) !== false)
                                 || (strpos(strtolower($producto['descripcion']), $filtro) !== false);
         // la función se ejecuta una vez por cada elemento del array $productos, si devuelve true, ese producto se incorpora al array $resultado, sino no.
     }); // Recordad que la función array_filter devuelve un array asociativo donde la key es el indice que tenía en el array $productos el valor introducido en $resultado 
