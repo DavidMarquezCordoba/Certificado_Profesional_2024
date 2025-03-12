@@ -29,4 +29,7 @@ function buscaBandera(e) {
             }
         });
     })
+    .catch(error => {
+        console.log("error: " + error);
+    });
 }
