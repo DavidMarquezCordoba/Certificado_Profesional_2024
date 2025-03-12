@@ -17,6 +17,7 @@
     //         PROTEGER API        //
     // *************************** //
 
+    // Generamos el código de 64 char
     $_SESSION['key'] = bin2hex(random_bytes(32));   //Genera una key aleatoria de 64 carácteres
 
     // **************************
@@ -75,6 +76,7 @@
                 </label>
     
                 <input type="search" name="busqueda" id="busqueda" class="busqueda" placeholder="Buscar...">
+                <input type="hidden" id="key" value="<?php echo $_SESSION['key']; ?>">
             </div>
         <?php } ?>
         <!-- ********************* -->

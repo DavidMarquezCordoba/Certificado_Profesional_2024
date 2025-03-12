@@ -1,1 +1,3 @@
-<h1>Tienda</h1>
+<main>
+    <section id="productos-contenedor">Tienda</section>
+</main>
