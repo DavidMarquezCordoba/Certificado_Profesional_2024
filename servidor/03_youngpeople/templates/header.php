@@ -1,7 +1,27 @@
 <!-- PRECARGAMOS EL JSON -->
 <?php 
-    $archivoMenu = 'json/menu.json'; //Ruta del JSON
-    $textoMenu = '';    //Creamos la variable local para que se pueda reutilizar
+
+    // *************************** //
+    //     VARIABLES DE SESIÓN     //
+    // *************************** //
+    session_start();
+    
+    // Seguridad de la web, si ha pasado 30sg desde la última pág quevisitó se regenera la id evitando que la copien
+    if (isset($_SESSION['time']) && (time() - $_SESSION['time'] > 30)) {
+        session_regenerate_id();
+    }
+    
+    $_SESSION['time'] = time();
+    
+    // *************************** //
+    //         PROTEGER API        //
+    // *************************** //
+
+    $_SESSION['key'] = bin2hex(random_bytes(32));   //Genera una key aleatoria de 64 carácteres
+
+    // **************************
+    $archivoMenu = 'json/menu.json';                //Ruta del JSON
+    $textoMenu = '';                                //Creamos la variable local para que se pueda reutilizar
     $menu = [];
 
     $idiomaDefault = 'es';
@@ -17,17 +37,18 @@
 
     $lang = (in_array($lang, $idiomasDisponibles))? $lang : $idiomaDefault; //Comprueba si el lang
 
-    if (file_exists($archivoMenu)) {                    //file_exist -> Si existe ese fichero (boolean)
+    if (file_exists($archivoMenu)) {                  //file_exist -> Si existe ese fichero (boolean)
         $textoMenu = file_get_contents($archivoMenu); //Lee el contenido del archivo menu.json SOLO TEXTO
     } else {
         echo "No exite el archivo";
     }
     
     if (json_validate($textoMenu)) {
-        $menu = json_decode($textoMenu, true);  //True -> para mantener el array asociativo
-                                                //json_decode -> Convierte un string en formato JSON
+        $menu = json_decode($textoMenu, true);      //True -> para mantener el array asociativo
+                                                    //json_decode -> Convierte un string en formato JSON
     }
 ?>
+
 <!-- *************************** -->
 
 </head>
