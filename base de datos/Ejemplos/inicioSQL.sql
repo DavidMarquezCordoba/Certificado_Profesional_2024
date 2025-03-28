@@ -117,6 +117,12 @@ ALTER TABLE productos ADD categoria VARCHAR(15) NOT NULL;
 
 ALTER TABLE productos CHANGE categoria categorias VARCHAR(20) NOT NULL;
 
+-- Diferencias:
+    -- Modify cambia el tipo
+    -- Change cambia nombre y tipo
+ALTER TABLE clientes MODIFY telefono INT;
+ALTER TABLE clientes CHANGE telefono telefono INT;
+
 
 -- 13º Eliminar una columna
 
