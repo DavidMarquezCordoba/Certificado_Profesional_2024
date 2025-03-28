@@ -118,10 +118,12 @@ ALTER TABLE productos ADD categoria VARCHAR(15) NOT NULL;
 ALTER TABLE productos CHANGE categoria categorias VARCHAR(20) NOT NULL;
 
 -- Diferencias:
-    -- Modify cambia el tipo
     -- Change cambia nombre y tipo
-ALTER TABLE clientes MODIFY telefono INT;
 ALTER TABLE clientes CHANGE telefono telefono INT;
+    -- Cambiamos solamente el nombre de una columna con RENAME
+ALTER TABLE productos RENAME COLUMN codigo TO codigos;
+    -- Modify cambia el tipo
+ALTER TABLE clientes MODIFY telefono INT;
 
 
 -- 13º Eliminar una columna
@@ -130,3 +132,91 @@ ALTER TABLE productos DROP COLUMN categorias;
 
 -- Eliminar una tabla
 DROP TABLE productos;
+
+-- --------- --
+-- FUNCIONES --
+-- --------- --
+
+-- ALIAS --
+AS loquequieras
+
+-- 1º Contar
+SELECT COUNT(nombre) FROM productos WHERE genero = "Mujer";
+SELECT COUNT(nombre) AS "Productos para mujeres" FROM productos WHERE genero = "Mujer";
+
+-- 2º Contar productos agrupados por género
+SELECT genero, COUNT(nombre) FROM productos GROUP BY genero;
+
+-- 3º Contar productos agrupados por categoria
+SELECT categoria, COUNT(nombre) FROM productos GROUP BY categoria;
+
+-- 4º Contar los productos agrupados por género que tengan más de 30 prodcutos
+SELECT genero , COUNT(nombre) AS cantidad FROM productos GROUP BY genero HAVING cantidad > 30;
+
+-- 5º Muestra todos los géneros que son distintos de productos
+SELECT DISTINCT genero FROM productos;
+
+-- 6º Muestra los 10 primeros productos después de saltarnos los 20 primeros
+SELECT id, nombre, precio FROM productos LIMIT 20,10;
+
+-- 7º Lee los 10 primeros productos pero que añada Euro al precio
+SELECT id, nombre, CONCAT(precio, " Euro") AS Precio FROM productos LIMIT 20,10;
+
+-- 8º Sumar los valores de una columna
+SELECT SUM(precio) AS "Precio total" FROM productos;
+
+-- 9º Sumar los precios de productos de hombre
+SELECT SUM(precio) AS "Precio total" FROM productos WHERE genero= "Hombre";
+
+-- 10º Promedio del precio de los productos
+SELECT CONCAT(AVG(precio), " Euros") AS "Precio promedio" FROM productos;
+
+-- 11º Prodcutos con el precio por encima del precio promedio
+SELECT id, nombre, precio FROM productos WHERE precio > (SELECT AVG(precio) FROM productos);
+
+-- 12º Producto más barato/Caro de mis productos
+SELECT MIN(precio) AS "Más barato" FROM productos;
+SELECT MAX(precio) AS "Más caro" FROM productos;
+
+-- 13º Primer producto con el precio más barato
+SELECT id, nombre, precio FROM productos ORDER BY precio LIMIT 1;
+
+-- 14º Producto con el precio más barato y CARO
+SELECT id, nombre, precio FROM productos WHERE precio = (SELECT MIN(precio) FROM productos);
+SELECT id, nombre, precio FROM productos WHERE precio = (SELECT MAX(precio) FROM productos);
+
+-- 15º Productos con el nombre "Blazer Casual Moderno"
+SELECT id, nombre, precio FROM productos WHERE nombre = "Blazer Casual Moderno";
+
+-- El like se usa cuando se utiliza el comodín %
+
+-- 16º Productos con el nombre que comience por Blazer
+SELECT id, nombre, precio FROM productos WHERE nombre LIKE "Blazer%";
+
+-- 17º Productos con el nombre que termine por "Moderno"
+SELECT id, nombre, precio FROM productos WHERE nombre LIKE "%Moderno";
+
+-- 18º Productos con el nombre que contiene "Cuero"
+SELECT id, nombre, precio FROM productos WHERE nombre LIKE "%Cuero%";
+
+-- 19º Productos con el nombre que contiene "Cuero" y "Moderno"
+SELECT id, nombre, precio FROM productos WHERE nombre LIKE "%Cuero%Moderno%";
+
+-- 20º Productos con el nombre que contiene "Cuero" y "Moderno sin importar el orden"
+SELECT id, nombre, precio FROM productos WHERE (nombre LIKE "%Cuero%") AND (nombre LIKE "%Moderno%");
+
+-- 21º Productos con el nombre que contiene "Cuero" O "Moderno sin importar el orden"
+SELECT id, nombre, precio FROM productos WHERE (nombre LIKE "%Cuero%") OR (nombre LIKE "%Moderno%");
+
+-- 22º Productos con el nombre que contiene "Cuero" O "Moderno pero no los dos"
+SELECT id, nombre, precio FROM productos WHERE (nombre LIKE "%Cuero%") XOR (nombre LIKE "%Moderno%");
+
+-- Búsqueda de un código con códigos numéricos
+SELECT id, nombre, precio, codigos FROM productos WHERE codigos REGEXP '[0-9]';
+-- Búsqueda de un código con códigos NO numéricos
+SELECT id, nombre, precio, codigos FROM productos WHERE codigos REGEXP '[^0-9]';
+
+-- ***************** --
+-- Vamos a cambiar un código para ver si funciona
+UPDATE productos SET codigos = "111-222" WHERE id = 99;
+UPDATE productos SET codigos = "9137937270952" WHERE id = 99;
