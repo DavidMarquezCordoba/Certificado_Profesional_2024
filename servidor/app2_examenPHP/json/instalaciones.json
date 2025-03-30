@@ -1,0 +1,20 @@
+[
+    {"titulo":"Academia Épsilon"
+    ,"foto":"epsilon"
+    ,"texto1":"Centro de Formación Homologado"
+    ,"texto2":"Cursos subvencionados por la Junta de Andalucía y el SEPE"
+    ,"direccion":"Calle Palangre, 3, 29640 Fuengirola, Málaga"
+    ,"telefono":"672280553"
+    ,"email":"info@academiaepsilon.es"
+    ,"web":"https://academiaepsilon.es"
+    },
+    {"titulo":"RN Formación"
+    ,"foto":"rnformacion"
+    ,"texto1":"Centro de Formación Homologado"
+    ,"texto2":"Cursos subvencionados por la Junta de Andalucía y el SEPE"
+    ,"direccion":"Calle San Pedro, 7, 29651 Las Lagunas de Mijas, Málaga"
+    ,"telefono":"951917947"
+    ,"email":"info@academiaepsilon.es"
+    ,"web":"https://academiaepsilon.es"
+    }
+]

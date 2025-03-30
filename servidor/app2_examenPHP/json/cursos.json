@@ -1,0 +1,108 @@
+[
+    { 
+        "clase" : "imagen1",
+        "imagen" : "curso1",
+        "alt" : "foto curso operaciones básicas de comunicación",
+        "nivel" : 1,
+        "nombre" : "Operaciones básicas de comunicación"
+    },
+    { 
+        "clase" : "imagen1",
+        "imagen" : "curso2",
+        "alt" : "foto curso habilitación para la docencia",
+        "nivel" : 3,
+        "nombre" : "Habilitación para la docencia grados A, B y C del sistema de formación profesional"
+    },
+    { 
+        "clase" : "imagen1",
+        "imagen" : "curso3",
+        "alt" : "foto curso operaciones auxiliares de servicio",
+        "nivel" : 1,
+        "nombre" : "Operaciones auxiliares de servicios administrativos y generales"
+    },
+    { 
+        "clase" : "imagen1",
+        "imagen" : "curso4",
+        "alt" : "foto curso ",
+        "nivel" : 1,
+        "nombre" : "Defensa personal"
+    },
+    { 
+        "clase" : "aula1",
+        "imagen" : "aula1",
+        "alt" : "foto curso ",
+        "nivel" : 9,
+        "nombre" : "aula1"
+    },
+    { 
+        "clase" : "imagen2",
+        "imagen" : "curso5",
+        "alt" : "foto curso ",
+        "nivel" : 2,
+        "nombre" : "Actividades admnistrativas en la relación con el cliente"
+    },
+    { 
+        "clase" : "imagen2",
+        "imagen" : "curso6",
+        "alt" : "foto curso ",
+        "nivel" : 1,
+        "nombre" : "Diseño del montaje de escaparates"
+    },
+    { 
+        "clase" : "imagen2",
+        "imagen" : "curso7",
+        "alt" : "foto curso ",
+        "nivel" : 2,
+        "nombre" : "Actividades de gestión administrativa"
+    },
+    { 
+        "clase" : "aula2",
+        "imagen" : "aula2",
+        "alt" : "foto curso ",
+        "nivel" : 9,
+        "nombre" : "aula2"
+    },
+    { 
+        "clase" : "imagen2-3",
+        "imagen" : "curso8",
+        "alt" : "foto curso ",
+        "nivel" : 1,
+        "nombre" : "Reproducción y archivo"
+    },
+    { 
+        "clase" : "imagen3",
+        "imagen" : "curso9",
+        "alt" : "foto curso ",
+        "nivel" : 2,
+        "nombre" : "Inglés profesional para servicios de restauración"
+    },
+    { 
+        "clase" : "imagen3",
+        "imagen" : "curso10",
+        "alt" : "foto curso ",
+        "nivel" : 3,
+        "nombre" : "Gestión contable y gestión administrativa para auditoría"
+    },
+    { 
+        "clase" : "imagen3",
+        "imagen" : "curso11",
+        "alt" : "foto curso ",
+        "nivel" : 1,
+        "nombre" : "Técnicas administrativas básicas de oficina"
+    },
+    { 
+        "clase" : "imagen3",
+        "imagen" : "curso12",
+        "alt" : "foto curso ",
+        "nivel" : 3,
+        "nombre" : "Desarrollo de aplicaciones con tecnologías web"
+    },
+    { 
+        "clase" : "aula3",
+        "imagen" : "aula3",
+        "alt" : "foto curso ",
+        "nivel" : 9,
+        "nombre" : "aula3"
+    }
+
+]

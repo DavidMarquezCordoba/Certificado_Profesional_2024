@@ -1,0 +1,249 @@
+:root {
+    --primario: #000000;
+    --secundario: #b4b4e8;
+    --blanco: #fff;
+    --secundario-oscuro: #0A3981;
+    --claro: #E38E49;
+    --negro-trans: rgba(0, 0, 0, 0.7);
+    --seleccionado: yellow;
+
+    /* Fuentes */
+    --fuente-principal: "Kanit", sans-serif;
+    --forma-principal: 400; /* 400 normal. 700 negrita */
+    --forma-negrita: 700; /* 400 normal. 700 negrita */
+    --estilo-principal: normal; /* normal o italic */
+
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primario: #ffffff;
+        --blanco: #000;
+        --negro-trans: rgba(255, 255, 255, 0.2);
+        --secundario-oscuro: #b4b4e8;
+        --secundario: #0A3981;
+    }
+}
+
+html{
+    font-size:62.5%; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    font-size: 16px; /* 1rem = 10px */
+
+    font-family: var(--fuente-principal);
+    font-weight: var(--tamaño-principal);
+    font-style: var(--estilo-principal);
+
+    background-image: linear-gradient(to top, var(--secundario) 0%,var(--blanco) 80%);
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+  
+.para {
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+}
+
+.cabecera{
+    text-align: center;
+    text-transform:uppercase;
+    color: var(--primario);
+    margin: 10px;
+
+    font-weight: 700;
+    font-style: italic;
+}
+
+.cabecera span{
+    font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 120rem; /*1200px*/
+    margin: 0 auto;
+}
+
+.sombra {
+    background-color: var(--blanco);
+    -webkit-box-shadow: 0px 4px 18px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 4px 18px -1px rgba(0,0,0,1);
+    box-shadow: 0px 4px 18px -1px rgba(0,0,0,1);
+
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color:var(--primario);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    /* a partir de aqui es para que se vea mejor en un dispositivo movil para poder tocar con el dedo que tenemos menos precisión*/
+    width: 80%;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: var(--secundario-oscuro);
+    color:var(--blanco);
+}
+
+/* Este media query es para que se vea bien en un dispositivo grande */
+@media (min-width:768px) {
+    .boton{
+        width: auto;
+    }
+}
+
+.nav-fondo {
+    background-color: var(--secundario);
+}
+
+.nav-cabecera {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-cabecera a{
+    font-size: 1.4rem;
+    color: var(--primario);
+    font-weight: var(--forma-negrita);
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    text-transform:uppercase;
+}
+
+.nav-cabecera a:hover{
+    background-color: var(--secundario-oscuro);
+    color: var(--blanco);
+    font-size: 1.8rem;
+}
+
+@media (min-width:768px) {
+    .nav-cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-cabecera a{
+        width: 20%; /* para que no se ilumine solamente el alrededor del texto sino una parte más grande */
+    }
+}
+
+.cabecera_fondo {
+    background-image: url(../img/programando.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    position: relative;
+
+    margin-bottom: 2rem;
+}
+
+.cabecera_contenido {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--negro-trans);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecera_contenido h2,
+.cabecera_contenido p {
+    color: var(--blanco);
+}
+
+.cabecera_contenido svg{
+    color: var(--secundario);
+}
+.cabecera_contenido h2{
+    font-size: 4rem;
+}
+
+@media (min-width:750px) {
+    .modformativos {
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto 1fr auto auto;
+    }
+}
+@media (min-width:1140px) {
+    .modformativos {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.modformativo {
+    grid-row: span 4;
+    display: grid;
+    grid-template-rows: subgrid;
+    align-items: start;
+}
+
+.modformativo h3 {
+    color: var(--secundario-oscuro);
+    font-weight: normal;
+}
+.modformativo .icono {
+    margin: 1rem auto;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--secundario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modformativo .icono svg{
+    width: 8rem;
+    height: 8rem;
+    transition: all 0.3s ease-in-out;
+}
+.modformativo .icono:hover svg{     /* añadido para ampliar el icono cuando estamos sobre el div con clase icono */
+    width: 12rem;
+    height: 12rem;
+}
+.modformativo p {
+    line-height: 2;
+    text-align: center;
+}
+.modformativo .horas {
+    margin: 0;
+    text-align: start;
+}
+
+
+footer {
+    text-align: center;
+}

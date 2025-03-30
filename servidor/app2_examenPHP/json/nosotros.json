@@ -1,0 +1,26 @@
+[
+    {
+        "departamento":"Dirección",
+        "foto":"direccion",
+        "nombre":"Óliver",
+        "puesto":"Director Academia Épsilon",
+        "telefono":"672280553",
+        "email":"direccion@academiaepsilon.es"
+    },
+    {
+        "departamento":"Formación",
+        "foto":"formacion",
+        "nombre":"Cristina",
+        "puesto":"Responsable del equipo de formadores",
+        "telefono":"672280553",
+        "email":"formacion@academiaepsilon.es"
+    },
+    {
+        "departamento":"Recepción",
+        "foto":"recepcion",
+        "nombre":"Jimena",
+        "puesto":"Atención al alumno",
+        "telefono":"672280553",
+        "email":"info@academiaepsilon.es"
+    }
+]

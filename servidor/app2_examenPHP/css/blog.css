@@ -1,0 +1,79 @@
+.blog {
+    color: yellow;
+}
+.nav-cabecera .blog {
+    color: var(--seleccionado);
+}
+
+.miblog img {
+    width: 100%;
+}
+
+.miblog p {
+    text-align: justify;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+li {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.cursos-comenzados,
+.objetivo,
+.experiencias {
+    width: 90%;
+    margin: 5rem auto;
+}
+
+@media (min-width:768px) {
+    .des-objetivo,
+    .arti-experiencias  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 2rem;
+    }
+}
+
+@media (min-width:1140px) {
+    .miblog {
+        width: 95%;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: 0.8fr 3fr 0.8fr;
+        column-gap: 2rem;
+        grid-template-areas: "objetivo cursos experiencias";
+        justify-content: space-between;
+    }
+
+    .des-objetivo,
+    .arti-experiencias  {
+        display: block;
+    }
+
+    .cursos-comenzados,
+    .objetivo,
+    .experiencias {
+        width: 100%;
+    }
+
+    .cursos-comenzados {
+        grid-area: cursos;
+        margin-top: 0;
+    }
+    .objetivo {
+        grid-area: objetivo;
+    }
+    .experiencias {
+        grid-area: experiencias;
+    }
+}
+
+.experiencias h3 {
+    color: var(--secundario-oscuro);
+}
