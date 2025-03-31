@@ -1,0 +1,17 @@
+[
+    {
+        "titulo":"Cursos Comenzados",
+        "foto":"curso-app",
+        "texto":"¿Que haremos durante el curso?:",
+        "temario":[
+            "Aprenderemos HTML5 (es mucho más que HTML, la última versión de HTML es un punto a parte de las anteriores, tanto en procedimento a la hora de programar como de potencia).",
+            "Aprenderemos CSS3 (igual que HTML, esta última versión de CSS ha dado un paso de gigante y nos ofrecen opciones que antes no teniamos).",
+            "Aprenderemos SCSS (es un CSS pero con algo de magia a la hora de programar)",
+            "Aprenderemos Javascript, es el lenguaje que le dá dinamismo a nuestra página web",
+            "Aprenderemos a Construir una Aplicación con tecnología Web, la cual usa la flexibilidad de una página Web para poderse usar en cualquier dispositivo, instalables como una aplicación normal desde la misma web.",
+            "Aprenderemos a programar de forma que nuestra página/aplicación se adaptará no solamente a diferentes tamaños de pantalla sino a navegadores accesibles para usuarios ciegos o con problemas visuales.",
+            "Aprenderemos a conectarnos a servidores de servicios y a generar esos servidores de servicios.",
+            "Aprenderemos a conectarnos a desde nuestras aplicaciones a aparatos electrónicos para que se usen o configuren desde nuestra Aplicación web."
+        ]
+    }
+]
