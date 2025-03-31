@@ -75,6 +75,81 @@ ALTER TABLE productos RENAME COLUMN genero TO generoId;
 
 ALTER TABLE productos MODIFY generoId INT;
 
+-- ********************************************************************* --
+-- **            RELACIONAR TABLAS (PRODUCTOS Y CATEGORIAS)           ** --
+-- ********************************************************************* --
+
+-- Relacionamos la tabla productos-->categorias
+
+ALTER TABLE productos
+ADD CONSTRAINT categoriaFK
+FOREIGN KEY (categoriaId)
+REFERENCES categorias(id);
+
+-- Relacionamos la tabla productos-->generos
+
+ALTER TABLE productos
+ADD CONSTRAINT generoFK
+FOREIGN KEY (generoId)
+REFERENCES generos(id);
 
 
+-- ***************************************************** --
+                -- TIPOS DE JOIN
+-- ***************************************************** --
 
+-- Te dice que tablas están relacionadas y (es un describe avanzado)
+SHOW CREATE TABLE productos;
+
+-- Para quitar el NULL, modificar su tipo es con la siguiente
+ALTER TABLE productos MODIFY COLUMN categoriaId INT NULL;
+
+-- Cambiar el valor categoriaId del producto con un id= 100 a NULL
+UPDATE productos SET categoriaId = NULL WHERE id = 100;
+
+-- Insertamos un nuevo valor a nuestra tabla categorias;
+INSERT INTO categorias (id, nombre) VALUES (8, "Varios");
+
+-- Nos muestra todos los productos que tengan alguna relación con la tabla categorias
+-- En este caso 99 productos porque el producto con el id=100 tiene como categoriaId=NULL
+SELECT productos.nombre, categorias.nombre FROM productos
+INNER JOIN categorias ON productos.categoriaId = categorias.id;
+
+-- NOS MUESTRA TODOS LOS PRODUCTOS, TENGAN O NO RELACIÓN CON EL ID DE LA TABLA CATEGORIAS
+-- EN LOS PRODUCTOS QUE NO ENCUENTRE SU CORRESPONDENCIA EN LA TABLA CATEGORIAS, NOS PONDRÁ NULL
+SELECT productos.nombre, categorias.nombre FROM productos
+LEFT JOIN categorias ON productos.categoriaId = categorias.id;
+
+-- NOS MUESTRA TODOS LOS PRODUCTOS QUE TIENEN UNA CORRESPONDENCIA CON LA TABLA CATEGORIAS
+-- Y TAMBIÉN TODAS LAS CATEGORIAS QUE NO TIENEN CORRESPONDENCIA EN LA TABLA PRODUCTOS
+SELECT productos.nombre, categorias.nombre FROM productos
+RIGHT JOIN categorias ON productos.categoriaId = categorias.id;
+
+-- *********** restauramos ************ --
+UPDATE productos SET categoriaId = 2 WHERE id = 100;
+ALTER TABLE productos MODIFY COLUMN categoriaId INT NOT NULL;
+DELETE FROM categorias WHERE id = 8;
+
+
+-- LEER EL NOMBRE DE UN PRODUCTO
+SELECT nombre FROM productos WHERE nombre LIKE "camisa%";
+
+
+-- LEER EL NOMBRE DE UN PRODUCTO y GENERO
+SELECT productos.nombre AS "Nombre de producto", generos.nombre AS "Género" FROM productos
+JOIN generos ON productos.generoId = generos.id
+WHERE productos.nombre LIKE "camisa%";
+
+
+-- LEER EL NOMBRE, GENERO Y CATEGORIA DE UN PRODUCTO
+SELECT productos.nombre AS "Nombre de producto", categorias.nombre AS "Categorías", generos.nombre AS "Género" FROM productos
+JOIN categorias ON productos.categoriaId = categorias.id
+JOIN generos ON productos.generoId = generos.id
+WHERE productos.nombre LIKE "camisa%";
+
+
+-- LEER EL NOMBRE, GENERO Y CATEGORIA DE UN PRODUCTO usando pseudónimos
+SELECT p.nombre AS "Nombre de producto", c.nombre AS "Categorías", g.nombre AS "Género" FROM productos p
+JOIN categorias c ON p.categoriaId = c.id
+JOIN generos g ON p.generoId = g.id
+WHERE p.nombre LIKE "camisa%";
