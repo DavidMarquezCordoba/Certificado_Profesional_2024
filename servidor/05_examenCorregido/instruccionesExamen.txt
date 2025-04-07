@@ -1,0 +1,38 @@
+1.- (1.5) Trocear los archivos para evitar repetición de código en los diferentes archivos php principales
+   y Los trozos llamados se guardarán en la carpeta template
+
+2.- (1) Construirémos el menú desde el archivo menu.json guardado en la carpeta "json"
+
+3.- (0.5) Cada apartado del menú será visible en todas las páginas menos en la propia página
+
+4.- Se usarán los archivo json: 
+        (0.5) modulos-formativos.json
+        (0.5) instalaciones.json
+        (0.5) nosotros.json
+        (0.5) objetivos.json
+        (0.5) blog.json
+        (0.5) experiencias.json
+    para construir los apartados correspondientes a cada array usando PHP y foreach
+5.- (1) Construiremos un servicio llamado "api-cursos.php" para que nos sirva los cursos guardados en el archivo cursos.json
+
+6.- (1) Añadiremos una variable de sesión llamada "k" que servirá para que nuestro servicio solamente sea usable por nuestra página
+    la variable será modificada cada vez que refresquemos la página "mas-cursos.php", no al refrescar todas,
+    nuestro servicio api-cursos.php solamente nos contestará si le enviamos correctamente una key por GET que coincida con la
+    variable de sesión "k". 
+    No olvidar incluir en el archivo mas-cursos.php un elemento input con id="mikey" y value la variable de sesión "k" para que el
+    archivo pide-cursos.js (ya terminado y que no hay que tocar) pueda extraer su value para enviarselo al api-cursos.php
+
+7.- (1) Construiremos un servicio llamado "api-busca.php" (sin protección con variable de sesión) para que nos sirva los cursos 
+    guardados en el archivo cursos.json pero filtrados por nombre: 
+    A través del navegador escribiremos https://localhost:3000/servicios/api-busca.php?bus=cu 
+    - nos devolverá todos los cursos que en su nombre contenga la palabra "cu" y así con cualquier palabra que pongamos
+    - si no ponemos ninguna palabra o no hay cursos encontrados nos devolverá una frase que diga "no hay cursos con su búsqueda"
+    - si no ponemos ?bus= no nos devuelve nada
+
+8.- (1) Construiremos un servicio llamado "api-nivel.php" (sin protección con variable de sesión) para que nos sirva los cursos 
+    guardados en el archivo cursos.json pero filtrados por nivel: 
+    A través del navegador escribiremos https://localhost:3000/servicios/api-nivel.php?nivel=2 
+    - nos devolverá todos los cursos su nivel sea 2 o menos y así con cualquier nivel que pongamos
+    - si no encuentra ningún curso nos devolverá una frase que diga "no hay cursos con su búsqueda"
+    - si no ponemos ningún nivel o ponemos un número superior a 3 nos devolverá una frase que diga "no hay cursos con su búsqueda"
+    - si no ponemos ?nivel= no nos devuelve nada

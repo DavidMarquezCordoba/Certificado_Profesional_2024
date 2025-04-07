@@ -1,0 +1,32 @@
+[
+    {
+        "nombre":"inicio",
+        "href":"index.php",
+        "clase":"inicio"
+    },
+    {
+        "nombre":"más cursos",
+        "href":"mas-cursos.php",
+        "clase":"mas-cursos"
+    },
+    {
+        "nombre":"instalaciones",
+        "href":"instalaciones.php",
+        "clase":"instalaciones"
+    },
+    {
+        "nombre":"nosotros",
+        "href":"nosotros.php",
+        "clase":"nosotros"
+    },
+    {
+        "nombre":"blog",
+        "href":"blog.php",
+        "clase":"blog"
+    },
+    {
+        "nombre":"contacto",
+        "href":"index.php#formulario",
+        "clase":"contacto"
+    }
+]
