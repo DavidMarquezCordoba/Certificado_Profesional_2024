@@ -2,31 +2,43 @@
     {
         "username": "pepe@pepe.com",
         "nombre": "",
-        "foto": "",
-        "password": "$2y$10$ItKE5p9rSILR1A2QhH.3Lu307WE1w\/ZmM4uM9ca0lQ6GtQ7IX\/BNe"
+        "foro": "",
+        "password": "$2y$10$9LQrNjRjQoZydc.zYPPICeTwF16i94.4fp4T43vQZCASF7vERrL7m"
     },
     {
         "username": "juan@juan.com",
         "nombre": "",
-        "foto": "",
-        "password": "$2y$10$KQ.\/WrhCjXZK2GHI8vyOZu2bmEV2EEpDssejxfE2bQQa6XHFRD1A."
+        "foro": "",
+        "password": "$2y$10$iS4LosUhAc13PyxTQ2imFeJFxZkN9KWxtPFAhA\/ZiQ1cw0y5VPF3y"
     },
     {
-        "username": "pepi@pepe.com",
+        "username": "vicky@vicky.com",
         "nombre": "",
-        "foto": "",
-        "password": "$2y$10$5qfzP81vHi4tY3xqoGRA3e3kE7ZnpF6YBF2EGvmLyr1phsWUZX80a"
+        "foro": "",
+        "password": "$2y$10$pNp8s4n1dwQZmYjoYzqY2eDjha1Rp1b5im0t.ba.jV8Cg2hKDyfKu"
     },
     {
-        "username": "yo@yo.com",
+        "username": "clarita@clarita.com",
         "nombre": "",
-        "foto": "",
-        "password": "$2y$10$JKo\/0OgR2UPTgM0fPGnT0ukfX5HmEzYskoOLGjzItV1G.iwOHMG2C"
+        "foro": "",
+        "password": "$2y$10$xr6P\/m8lJsP4rcXshJe2geFDpfl9LHcZzgcRRcJOYVTSVVCCyogN."
     },
     {
-        "username": "yoa@yo.com",
+        "username": "hola@hola.com",
         "nombre": "",
-        "foto": "",
-        "password": "$2y$10$hSBO7gN7bjZu9p6hvl.uuudCgtR2rNoDSzwzrSqmW2VYdWxvNqpX."
+        "foro": "",
+        "password": "$2y$10$zQx.nMT9rPDlfrMsjO6buOHXlTDHxBK36KnnkGUPV4NWky842EF4O"
+    },
+    {
+        "username": "chau@hola.com",
+        "nombre": "",
+        "foro": "",
+        "password": "$2y$10$e7Q63zUf2Qht4xy2V4q2Me.t4RWh7tKhiTS82TZu4CWNoni0dTMga"
+    },
+    {
+        "username": "holaa@hola.com",
+        "nombre": "",
+        "foro": "",
+        "password": "$2y$10$gkAAIv8VQxr.\/1Fpkmu7y.gPe60Ru40x1hXCh9pGPndcfunfAA4Cq"
     }
 ]

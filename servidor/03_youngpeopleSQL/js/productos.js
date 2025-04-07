@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function cargarProductos( filtro = "" ) {
-    const url = `servicios/apiProductos.php?k=${mikey}&buscar=${filtro}`;
+    //const url = `servicios/apiProductos.php?k=${mikey}&buscar=${filtro}`;
+    const url = `servicios/apiProductosClases.php?k=${mikey}&buscar=${filtro}`;
     fetch(url)
     .then(response => response.json())
     .then(productos => {
@@ -30,7 +31,8 @@ function cargarProductos( filtro = "" ) {
             productos.forEach(producto => { 
                 let div = document.createElement("div");
                 div.classList.add("producto");
-                div.dataset.producto = JSON.stringify(producto);
+                // div.dataset.producto = JSON.stringify(producto); // aca le metemos el producto en texto
+                div.dataset.codigo_barras = producto.codigo_barras; // aca le metemos el producto en texto
                 const imgProducto = document.createElement("img");
                 imgProducto.setAttribute("loading", "lazy"); // comentar esta línea
                 imgProducto.src = producto.foto;

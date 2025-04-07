@@ -25,9 +25,8 @@
         $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
     }
     $lang = (in_array($lang, $idiomasDisponibles))? $lang : $idiomaPorDefecto;
+
     $_SESSION['lang'] = $lang;
-
-
 
     if(file_exists($archivoMenu)){
         $textoMenu = file_get_contents($archivoMenu);

@@ -9,6 +9,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     mikey = document.querySelector("#key").value;
-    console.log(mikey);
-    
 });

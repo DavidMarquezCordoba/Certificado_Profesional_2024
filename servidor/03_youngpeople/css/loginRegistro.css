@@ -4,11 +4,11 @@ main {
 
 .login-contenedor {
     background-color: var(--blanco);
-    padding: 2rem;
-    box-shadow: 0 0 1rem var(--fondo-oscuro);
+    padding: 20px;
+    box-shadow: 0 0 10px var(--fondo-oscuro);
     text-align: center;
-    border-radius: 0.8rem;
-    margin: 10rem auto 2rem;
+    border-radius: 8px;
+    margin: 100px auto 20px;
     width: min(40rem, 90%);
 }
 
@@ -41,32 +41,32 @@ main {
 }
 
 .mostrar {
-    animation: hola 500ms ease-in-out;
+    animation: hola 0.5s ease-in-out;
 }
 
 .ocultar {
-    animation: adios 500ms ease-in-out;
+    animation: adios 0.5s ease-in-out;
 }
 
 .div-pass {
     position: relative;
 }
 
-.div-pass label{
+.div-pass label {
     position: absolute;
     right: 0;
-    bottom: 0.2rem;
+    bottom: 0.1rem;
     font-size: 3rem;
     cursor: pointer;
 }
 
 @keyframes hola {
     0% {
-        opacity: 0;
+        opacity: 0; /*0 significa invisible*/
         transform: translateX(-100%);
     }
     100% {
-        opacity: 1;
+        opacity: 1; 
         transform: translateX(0%);
     }
 }
@@ -77,7 +77,7 @@ main {
         transform: translateX(0%);
     }
     100% {
-        opacity: 0;
+        opacity: 0; 
         transform: translateX(100%);
     }
 }

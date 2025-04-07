@@ -2,49 +2,41 @@
 require_once 'Producto.php';
 
 class Productos {
-    private $productos;
+    private $productos; //aqui dentro se van a meter todos los productos
 
-    // Constructor
-    public function __construct($archivo_json)
-    {
-        $this-> productos = [];
+    public function __construct($archivo_json) { //lo que yo reciba de la variable que instancie
+        $this->productos = []; //el this lleva $ y NO la variable, eso significa que es una variable interna
         if(file_exists($archivo_json)) {
             $productos_json = file_get_contents($archivo_json);
-            if (json_validate($productos_json)) {
-                $this -> productos = json_decode($productos_json, true);
+            if(json_validate($productos_json)){
+                $this->productos = json_decode($productos_json, true);
             }
         }
     }
 
-    // Métodos
-
-    // Obtener productos
-    public function obtenerProductos($idioma = 'es'){
-        $resultado = array_map(function($producto) use ($idioma){
-            $miProducto = new Producto($producto, $idioma);
-            return $miProducto -> reducido();
-        }, $this -> productos);
+    public function obtenerProductos($idioma = 'es') { //pongo public porque quiero usar este metodo fuera de la clase, si no me envian el idioma, me garantizo que lo ponga en español (la clase viene preparada por defecto con un idoma)
+        $resultado = array_map(function($producto) use ($idioma) { //aqui primero la funcion y despues el array / lo que se guarda en resultado es el resultado de la funcion
+            $miProducto = new Producto($producto, $idioma); //una instancia de la clase producto, y le envio producto e idioma
+            return $miProducto->reducido(); //por cada producto, que me envie el metodo reducido (nombre en su idioma, precio, foto y codigo de barra)
+        }, $this->productos); //de productos va a coger cada trocito (producto)
 
         return json_encode($resultado, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     }
 
-    // Buscar por código de barras
-    public function buscarPorCodigoBarras($codigo, $idioma = 'es'){
-        foreach ($this -> productos as $producto) {
-            if ($producto['codigo_barras'] == $codigo) {
-                $miProducto = new Producto($producto, $idioma);
-                return json_encode($miProducto->obtenerDetalles(), JSON_UNESCAPED_UNICODE);
+    public function buscarPorCodigoBarras($codigo, $idioma = 'es') {
+        foreach ($this->productos as $producto) {
+            if($producto['codigo_barras'] == $codigo){
+                $miProducto = new Producto($producto, $idioma); //mi producto es un objeto de la clase producto, y al constructor le voy a enviar todo el producto completo mas el idioma
+                return json_encode($miProducto->obtenerDetalles(), JSON_UNESCAPED_UNICODE); //para acceder a propierdades o metodos tenemos que usar: ->
             }
         }
-        return json_encode(['error' => 'Producto no encontrado'], JSON_UNESCAPED_UNICODE);
+        return json_encode(['error' => 'Producto no encontrado'], JSON_UNESCAPED_UNICODE); //para que no de errores, la respuesta es un array asociativo
     }
 
-    // Buscar por nombre
-
-    public function buscarPorNombre ($palabra, $idioma = 'es'){
+    public function buscarPorNombre($palabra, $idioma = 'es') {
         $filtro = strtolower($palabra);
-        $resultado = array_filter($this->productos, function($producto) use ($filtro, $idioma) {
-            return empty($filtro) ||
+        $resultado = array_filter($this->productos, function($producto) use ($filtro, $idioma) { //aqui primero el array y despues la funcion
+            return empty($filtro) || 
                 strpos(strtolower($producto['nombre'][$idioma]), $filtro) !== false;
         });
 
@@ -52,8 +44,7 @@ class Productos {
             $miProducto = new Producto($producto, $idioma);
             return $miProducto->reducido();
         }, $resultado);
-
-        return json_encode($resultadoObjetos, JSON_UNESCAPED_UNICODE);
+        return json_encode(array_values($resultadoObjetos), JSON_UNESCAPED_UNICODE);
     }
 }
 ?>
