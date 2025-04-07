@@ -1,12 +1,6 @@
-/* *********************************** */
-/*            CSS HEADER               */
-/* *********************************** */
-
-/* Fixed: No se mueve aunque bajes */
-
-header{
-    overflow: hidden; /* Evita el scroll en eje "X e Y" y no se ven los desbordamientos */
-    position: fixed;    /* Explicación más abajo*/
+header {
+    overflow: hidden;
+    position: fixed;
     z-index: 10;
     left: 0;
     top: 0;
@@ -14,54 +8,47 @@ header{
     height: 8rem;
     padding: 5px;
     background-color: transparent;
-
-    /* FLEX */
     display: flex;
     gap: 5px;
     justify-content: space-between;
     align-items: center;
 }
 
-.fondo{
+.fondo {
     background-color: var(--secundario);
 }
 
 .logo {
-    width: 5rem; /*Equivalente a 50px*/
+    width: 5rem;
     height: 5rem;
     background-image: url(../img/logo.png);
-    background-size: contain;   /* Para que la imagen se adapte al contenedor padre */
+    background-size: contain;
     background-repeat: no-repeat;
-    /*  */
 }
 
 .div-busqueda {
     color: var(--blanco);
-    position: relative; /* ESTO HAY QUE PONERLO para que posteriormente digamos absolute a uno de los hijos, digamos que es un Nodo, o keyframe*/
-    height: 100%; /* 100% respecto al padre */
-    
-    /* Flex para centrar lupa y cajón */
+    position: relative;
+    height: 100%;
     display: flex;
     align-items: center;
 }
 
 .div-busqueda label {
     position: absolute;
-    left: 5px;
-    bottom: 18px;
+    left: 0;
     color: var(--secundario);
 }
 
-.busqueda{
+.busqueda {
     padding: 0.3rem 1rem 0.3rem 4rem;
     font-size: 2.5rem;
     border-radius: 8px;
-    height: 50%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
 }
 
-/******** Hamburguesa ********/
-.boton-menu{
+.boton-menu {
     display: none;
     width: 5rem;
     height: 5rem;
@@ -70,12 +57,10 @@ header{
     color: var(--blanco);
     cursor: pointer;
 }
-/* ************************ */
 
-.enlaces-menu{
+.enlaces-menu {
     list-style: none;
-    height: 5rem; /* Se pone 5rem para que estén los enlaces a la misma altura que la altura del logo*/
-    
+    height: 5rem;
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -85,69 +70,45 @@ header{
     border-bottom: 2px solid var(--blanco);
 }
 
-@media (max-width: 768px) {
-    .enlaces-menu{
+.enlaces-menu img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.enlaces-menu img:hover {
+    border: 2px solid var(--seleccionado);
+}
+
+@media (max-width:768px) {
+    .enlaces-menu {
         display: none;
-        /* display: flex; */
         flex-direction: column;
-        position: fixed; /* Saca la lista "fuera" desplazandolo en el eje z */
-        top: 6rem;  /*  */
-        right: 2rem;/*  */
-        /*  */
-        
-        height: auto; /*  */
+        position: fixed;
+        top: 6rem;
+        right: 2rem;
+        height: auto;
         background-color: var(--secundario);
         padding: 1rem;
         border-radius: 0.5rem;
     }
-
-    .enlaces-menu.ver{
+    
+    .enlaces-menu.ver {
         display: flex;
         animation: entra-menu 1s ease-in-out;
     }
 
-    .boton-menu{
+    .boton-menu {
         display: block;
     }
-
 }
 
-/* Previamente con la propiedad */
 @keyframes entra-menu {
     0% {
         transform: translateX(100%);
     }
-
     100% {
         transform: translateX(0%);
     }
 }
-
-/* NOTAS */
-
-/* 
-    1. position: fixed
-        * Un elemento con position: fixed se posiciona relativo a la ventana del navegador, 
-        es decir, siempre se mantiene en la misma posición en la pantalla incluso cuando 
-        se hace scroll.
-
-        * No afecta a otros elementos en la página.
-
-        * Por ejemplo, si un elemento tiene top: 0 y left: 0, se quedará en la esquina superior izquierda de la ventana, sin importar el desplazamiento del contenido.
-*/
-
-/* 
-    2. position: absolute
-
-        * Un elemento con position: absolute se posiciona relativo a su contenedor más cercano con position: relative, absolute, o fixed. Si no hay ninguno, se posiciona en relación al body o al contenedor raíz.
-        * El elemento no afecta a los otros elementos en la página (no genera espacio para ellos).
-        * Se utiliza para mover el elemento dentro de un contenedor o en la página sin que sea afectado por el flujo normal de los elementos.
-*/
-
-/* 
-    3. position: relative
-        * Un elemento con position: relative se posiciona relativo a su posición original en el flujo del documento.
-        * Aunque se puede mover con las propiedades top, right, bottom, left, sigue ocupando el mismo espacio en el diseño que tendría sin los desplazamientos.
-        * Esto significa que no afecta al layout de los otros elementos, pero sí cambia su posición visualmente.
-*/
-

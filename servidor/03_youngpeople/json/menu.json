@@ -1,7 +1,7 @@
 [
-    {"nombre": {"es":"Inicio", "en":"Home"}, "href": "index.php"},              
-    {"nombre": {"es":"Tienda", "en":"Store"}, "href": "tienda.php"},
-    {"nombre": {"es":"Contacto", "en":"Contact"}, "href": "contacto.php"},
-    {"nombre": {"es":"Inicio Sesión", "en":"Login"}, "href": "login.php"},
-    {"nombre": {"es":"Carrito", "en":"Basket"}, "href": "carrito.php"}
+    {"nombre": {"es":"Inicio","en":"Home","br":"Começar","ar":"Inicio"}, "href": "index.php"},        
+    {"nombre": {"es":"Tienda","en":"Store","br":"Loja","ar":"Tienda"}, "href": "tienda.php"},       
+    {"nombre": {"es":"Contacto","en":"Contact","br":"Contatar","ar":"Contactanos"}, "href": "contacto.php"},   
+    {"nombre": {"es":"Iniciar Sesión","en":"Login","br":"Conecte-se","ar":"Iniciar Sesión"}, "href": "login.php"},
+    {"nombre": {"es":"Carrito","en":"Basket","br":"Cesta","ar":"Carrito"}, "href": "carrito.php"}  
 ]

@@ -4,12 +4,44 @@
 $pagina = "login.php";
 include "templates/head.php";
 ?>
-
-<!-- Importamos el estilo de la tienda -->
-<link rel="stylesheet" href="../css/tienda.css">
-
+<link rel="stylesheet" href="css/loginRegistro.css">
+<script defer src="js/loginRegistro.js"></script>
 <?php
 include "templates/header.php";
-include "templates/productos.php";
+?>
+<main>
+    <section id="registrarse" class="login-contenedor oculto">
+        <h2>Registro</h2>
+        <form action="servicios/apiRegistro.php" method="POST">
+            <input type="email" name="username" placeholder="E-mail" id="luser" required autocomplete="username">
+            <div class="div-pass">
+                <label id="l-lpass1" for="lpass1">&#129763;</label>
+                <input type="password" name="password" placeholder="Contraseña" id="lpass1" required autocomplete="new-password">
+            </div>
+            <div class="div-pass">
+                <label id="l-lpass2" for="lpass2">&#129763;</label>
+                <input type="password" name="password2" placeholder="Repite tu contraseña" id="lpass2" required autocomplete="new-password">
+            </div>
+            <input type="hidden" name="k" id="k1" value="<?php echo $_SESSION['key']; ?>">
+            <input type="submit" class="boton" value="Enviar" id="boton-registra">
+        </form>
+        <p>¿Tienes ya cuenta? <a href="#">Inicia Sesión</a></p>
+    </section>
+
+    <section id="loguearse" class="login-contenedor">
+        <h2>Inicio de Sesión</h2>
+        <form action="servicios/apiLogin.php" method="POST">
+            <input type="email" name="username" placeholder="E-mail" id="ruser" required autocomplete="username">
+            <div class="div-pass">
+                <label id="l-rpass1" for="rpass1">&#129763;</label>
+                <input type="password" name="password" placeholder="Contraseña" id="rpass1" required autocomplete="new-password">
+            </div>
+            <input type="hidden" name="k" id="k2" value="<?php echo $_SESSION['key']; ?>">
+            <input type="submit" class="boton" value="Enviar" id="boton-loguea">
+        </form>
+        <p>¿No tienes cuenta? <a href="#">Regístrate</a></p>
+    </section>
+</main>
+<?php
 include "templates/footer.php";
 ?>

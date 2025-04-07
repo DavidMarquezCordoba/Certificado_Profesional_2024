@@ -35,15 +35,27 @@ WHERE pedidosProductos.pedidoId = 1;
 
 - 14. Mostrar el total gastado por cada cliente
 
-
+SELECT clientes.nombre AS cliente, SUM(productos.precio * pedidosProductos.cantidad) AS "Total gastado" FROM clientes
+JOIN pedidos ON pedidos.clienteId = clientes.id
+JOIN pedidosProductos ON pedidosProductos.pedidoId = pedidos.id
+JOIN productos ON productos.id = pedidosProductos.productoId
+GROUP BY clientes.id;
 
 - 15. Listar los productos de más vendidos a menos con su cantidad total
 
-
+SELECT productos.nombre, productos.precio, SUM(pedidosProductos.cantidad) AS masVendidos FROM productos
+JOIN pedidosProductos ON productos.id = pedidosProductos.productoId
+GROUP BY productos.id
+ORDER BY masVendidos DESC;
 
 - 16. Registrar un pedido para el cliente id = 2 con un total de 400 y mostrar sus pedidos
 
+INSERT INTO pedidos (clienteId, total)
+VALUES (2, 400);
 
+SELECT clientes.nombre, pedidos.id, pedidos.total FROM clientes
+JOIN pedidos ON clientes.id = pedidos.clienteId
+WHERE clientes.id = 2;
 
 - 17. Añadir 2 unidades de los productos con id 8 y 2 al pedido id 2 y mostrar los productos del pedido
 

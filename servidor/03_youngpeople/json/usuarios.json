@@ -1,0 +1,32 @@
+[
+    {
+        "username": "pepe@pepe.com",
+        "nombre": "",
+        "foto": "",
+        "password": "$2y$10$ItKE5p9rSILR1A2QhH.3Lu307WE1w\/ZmM4uM9ca0lQ6GtQ7IX\/BNe"
+    },
+    {
+        "username": "juan@juan.com",
+        "nombre": "",
+        "foto": "",
+        "password": "$2y$10$KQ.\/WrhCjXZK2GHI8vyOZu2bmEV2EEpDssejxfE2bQQa6XHFRD1A."
+    },
+    {
+        "username": "pepi@pepe.com",
+        "nombre": "",
+        "foto": "",
+        "password": "$2y$10$5qfzP81vHi4tY3xqoGRA3e3kE7ZnpF6YBF2EGvmLyr1phsWUZX80a"
+    },
+    {
+        "username": "yo@yo.com",
+        "nombre": "",
+        "foto": "",
+        "password": "$2y$10$JKo\/0OgR2UPTgM0fPGnT0ukfX5HmEzYskoOLGjzItV1G.iwOHMG2C"
+    },
+    {
+        "username": "yoa@yo.com",
+        "nombre": "",
+        "foto": "",
+        "password": "$2y$10$hSBO7gN7bjZu9p6hvl.uuudCgtR2rNoDSzwzrSqmW2VYdWxvNqpX."
+    }
+]

@@ -1,8 +1,6 @@
-.hero{
-    /* Le damos vh y vw para darle una altura, la de la pantalla */
+.hero {
     height: 100vh;
-    width: 100vw;
-
+    width: 100%;
     display: block;
     position: relative;
 }
@@ -12,19 +10,15 @@
     position: absolute;
     top: 0;
     left: 0;
-
-    /* Aquí si sepone % porque el padre ya tiene una altura y anchura*/
     height: 100%;
     width: 100%;
 }
 
-.oscurece-fondo{
+.oscurece-fondo {
     background-color: var(--fondo-oscuro);
     position: absolute;
     top: 0;
     left: 0;
-
-    /* Aquí si sepone % porque el padre ya tiene una altura y anchura*/
     height: 100%;
     width: 100%;
 
@@ -33,8 +27,7 @@
     align-items: center;
 }
 
-.hero-contenido{
-    /* display: flex; */
+.hero-contenido {
     text-align: center;
     color: var(--blanco);
 }
@@ -44,6 +37,6 @@
 }
 
 .hero-contenido h2 {
-    margin: 1rem; /* Anula el espacio que se le dio de 10rem en el style.css */
+    margin: 1rem;
     font-size: 3rem;
 }

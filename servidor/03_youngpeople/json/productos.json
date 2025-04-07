@@ -1,1583 +1,2888 @@
 [
     {
-        "nombre": "Camiseta Oversize Skate",
+        "nombre": {
+            "es": "Camiseta Oversize Skate",
+            "en": "Oversize Skate T-shirt",
+            "br": "Camiseta Oversize Skate",
+            "ar": "Remera Oversize Skate"
+        },
         "unidades_disponibles": 10,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 19.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Hombre",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://www.xtreme-skate.com/10706-home_default/powell-peralta-camiseta-skateboard-skeleton-ii-navy.jpg",
         "codigo_barras": "4940001505973",
-        "descripcion": "Una camiseta oversize inspirada en el estilo skater, confeccionada con algodón suave y transpirable. Su diseño amplio brinda comodidad y libertad de movimiento."
+        "descripcion": {
+            "es": "Una camiseta oversize inspirada en el estilo skater, confeccionada con algodón suave y transpirable. Su diseño amplio brinda comodidad y libertad de movimiento.",
+            "en": "An oversize t-shirt inspired by the skater style, made of soft and breathable cotton. Its loose design offers comfort and freedom of movement.",
+            "br": "Uma camiseta oversize inspirada no estilo skater, feita com algodão macio e respirável. Seu design solto oferece conforto e liberdade de movimento.",
+            "ar": "Una remera oversize inspirada en el estilo skater, hecha con algodón suave y fresquito. Su diseño suelto te da una facha y comodidad tremenda."
+        }
     },
     {
-        "nombre": "Sudadera Vintage Urban",
+        "nombre": {
+            "es": "Sudadera Vintage Urban",
+            "en": "Vintage Urban Hoodie",
+            "br": "Moletom Vintage Urban",
+            "ar": "Buzo Vintage Urban"
+        },
         "unidades_disponibles": 11,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Hoodies",
+            "br": "Moletom",
+            "ar": "Buzos"
+        },
         "precio": 21.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://urban-soul.es/wp-content/uploads/SUDADERAS__URBANSOUL4.jpg",
         "codigo_barras": "5233008488496",
-        "descripcion": "Sudadera vintage de corte relajado con capucha ajustable y bolsillo tipo canguro. Hecha de felpa gruesa, perfecta para los días más fríos."
+        "descripcion": {
+            "es": "Sudadera vintage de corte relajado con capucha ajustable y bolsillo tipo canguro. Hecha de felpa gruesa, perfecta para los días más fríos.",
+            "en": "Vintage hoodie with a relaxed fit, adjustable hood, and kangaroo pocket. Made of thick fleece, perfect for the colder days.",
+            "br": "Moletom vintage de corte relaxado com capô ajustável e bolso canguru. Feito de felpa grossa, perfeito para os dias mais frios.",
+            "ar": "Buzo vintage con capucha ajustable y bolsillo canguro. Hecho de tela bien abrigada, ideal para el fresquete."
+        }
     },
     {
-        "nombre": "Jeans Skinny Ripped",
+        "nombre": {
+            "es": "Jeans Skinny Ripped",
+            "en": "Skinny Ripped Jeans",
+            "br": "Jeans Skinny Rasgados",
+            "ar": "Jean Skinny Roto"
+        },
         "unidades_disponibles": 12,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 22.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ1aEx0cEFi-EIXPeCVvTO3TEWXclwQ3u0KRNah_3ZsoOeYuD6dTch1N4RQaqTespx4OiqaDt_lq1uc70hv5HNBRVlcktffsv6LRiSB7GnBXs8I9l6L9YzRK7c",
         "codigo_barras": "5696404359930",
-        "descripcion": "Jeans skinny con efecto desgastado y detalles rasgados estratégicos. Su ajuste ceñido resalta la figura sin comprometer la comodidad."
+        "descripcion": {
+            "es": "Jeans skinny con efecto desgastado y detalles rasgados estratégicos. Su ajuste ceñido resalta la figura sin comprometer la comodidad.",
+            "en": "Skinny jeans with a distressed effect and strategically placed rips. Its tight fit highlights the figure without compromising comfort.",
+            "br": "Jeans skinny com efeito desgastado e detalhes rasgados estratégicos. Seu ajuste apertado destaca a figura sem comprometer o conforto.",
+            "ar": "Jean skinny bien ajustado, con roturas copadas y facha total. Resalta la silueta sin perder la comodidad."
+        }
     },
     {
-        "nombre": "Falda Plisada Preppy",
+        "nombre": {
+            "es": "Falda Plisada Preppy",
+            "en": "Preppy Pleated Skirt",
+            "br": "Saia Plissada Preppy",
+            "ar": "Pollera Plisada Preppy"
+        },
         "unidades_disponibles": 13,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saia",
+            "ar": "Polleras"
+        },
         "precio": 24.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRsn3-znX3-L2S-fJ_ld_EJWg-vVeUpO6XGyEqTSwcijC8i0TAHKzRDc_PrUBKLKCuhelRb_Bed7sXueoZrBnWim4OlH7SpyauvjW9b0Fkp5qDFxrN2J0XBiYg",
         "codigo_barras": "4764795086925",
-        "descripcion": "Falda plisada con cintura alta elástica y un toque preppy. Su tejido ligero la hace ideal para combinar con blusas o camisetas."
+        "descripcion": {
+            "es": "Falda plisada con cintura alta elástica y un toque preppy. Su tejido ligero la hace ideal para combinar con blusas o camisetas.",
+            "en": "Pleated skirt with high elastic waist and a preppy touch. Its light fabric makes it ideal for pairing with blouses or t-shirts.",
+            "br": "Saia plissada com cintura alta elástica e um toque preppy. Seu tecido leve a torna ideal para combinar com blusas ou camisetas.",
+            "ar": "Pollera plisada con cintura alta y un toque preppy. Es livianita, ideal para combinar con blusas o remeras."
+        }
     },
     {
-        "nombre": "Zapatillas Chunky",
+        "nombre": {
+            "es": "Zapatillas Chunky",
+            "en": "Chunky Sneakers",
+            "br": "Tênis Chunky",
+            "ar": "Zapas Chunky"
+        },
         "unidades_disponibles": 14,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Camperas"
+        },
         "precio": 25.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://martinvalen.com/34265-thickbox_default/zapatillas-chunky-blancas-para-mujer-con-linea-negra.jpg",
         "codigo_barras": "6090782555574",
-        "descripcion": "Zapatillas chunky con suela gruesa y diseño moderno. Perfectas para quienes buscan un calzado cómodo con un estilo urbano atrevido."
+        "descripcion": {
+            "es": "Zapatillas chunky con suela gruesa y diseño moderno. Perfectas para quienes buscan un calzado cómodo con un estilo urbano atrevido.",
+            "en": "Chunky sneakers with thick soles and a modern design. Perfect for those looking for comfortable shoes with bold urban style.",
+            "br": "Tênis chunky com solado grosso e design moderno. Perfeito para quem procura um calçado confortável com estilo urbano ousado.",
+            "ar": "Zapas chunky con suela alta y diseño fachero. Ideales para un look urbano con onda."
+        }
     },
     {
-        "nombre": "Chaqueta Denim Classic",
+        "nombre": {
+            "es": "Chaqueta Denim Classic",
+            "en": "Classic Denim Jacket",
+            "br": "Jaqueta Denim Clássica",
+            "ar": "Campera de Jean Clásica"
+        },
         "unidades_disponibles": 15,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçado",
+            "ar": "Zapatos"
+        },
         "precio": 27.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKr51iLAywFi2_YOvjZQwDZlxjCJVSHadDA&s",
         "codigo_barras": "9880292394829",
-        "descripcion": "Chaqueta denim clásica con botones metálicos y ajuste regular. Un básico atemporal que combina con cualquier outfit."
+        "descripcion": {
+            "es": "Chaqueta denim clásica con botones metálicos y ajuste regular. Un básico atemporal que combina con cualquier outfit.",
+            "en": "Classic denim jacket with metal buttons and a regular fit. A timeless basic that pairs with any outfit.",
+            "br": "Jaqueta denim clássica com botões metálicos e ajuste regular. Um básico atemporal que combina com qualquer look.",
+            "ar": "Campera de jean clásica con botones metálicos y un corte piola. Va con cualquier facha."
+        }
     },
     {
-        "nombre": "Gorra Streetwear",
+        "nombre": {
+            "es": "Gorra Streetwear",
+            "en": "Streetwear Cap",
+            "br": "Boné Streetwear",
+            "ar": "Gorra Streetwear"
+        },
         "unidades_disponibles": 16,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 28.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Hombre",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://y2k-streetwear.com/cdn/shop/files/S3a54113ff3a64332ab203992b25bd1edh_720x.jpg?v=1716559757",
         "codigo_barras": "7406428021534",
-        "descripcion": "Gorra de algodón con visera curva y diseño minimalista. Un accesorio imprescindible para protegerse del sol con estilo."
+        "descripcion": {
+            "es": "Gorra de algodón con visera curva y diseño minimalista. Un accesorio imprescindible para protegerse del sol con estilo.",
+            "en": "Cotton cap with a curved visor and minimalist design. A must-have accessory to protect yourself from the sun with style.",
+            "br": "Boné de algodão com visera curva e design minimalista. Um acessório essencial para se proteger do sol com estilo.",
+            "ar": "Gorra de algodón con visera curva, bien canchera para bancar el sol."
+        }
     },
     {
-        "nombre": "Bolso Cruzado Minimalista",
+        "nombre": {
+            "es": "Bolso Cruzado Minimalista",
+            "en": "Minimalist Crossbody Bag",
+            "br": "Bolsa Crossbody Minimalista",
+            "ar": "Bandolera Minimalista"
+        },
         "unidades_disponibles": 17,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 30.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://ae01.alicdn.com/kf/S458fd0e9974145199150755d52dee7811.jpg_640x640q90.jpg",
         "codigo_barras": "2749414090902",
-        "descripcion": "Bolso cruzado con correa ajustable y varios compartimentos. Su diseño compacto lo hace ideal para el día a día."
+        "descripcion": {
+            "es": "Bolso cruzado con correa ajustable y varios compartimentos. Su diseño compacto lo hace ideal para el día a día.",
+            "en": "Crossbody bag with adjustable strap and multiple compartments. Its compact design makes it perfect for everyday use.",
+            "br": "Bolsa crossbody com alça ajustável e vários compartimentos. Seu design compacto a torna ideal para o dia a dia.",
+            "ar": "Bandolera con correa regulable y varios bolsillos. Chiquita pero rendidora, ideal para todos los días."
+        }
     },
     {
-        "nombre": "Camisa Casual Rayada",
+        "nombre": {
+            "es": "Camisa Casual Rayada",
+            "en": "Striped Casual Shirt",
+            "br": "Camisa Casual Listrada",
+            "ar": "Camisa Rayada Casual"
+        },
         "unidades_disponibles": 18,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweaters",
+            "br": "Suéteres",
+            "ar": "Buzos"
+        },
         "precio": 31.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrmOQZeHlr706n4d2fjpPIcEo66CuX_zsf1Q&s",
         "codigo_barras": "3371688595794",
-        "descripcion": "Camisa de manga larga con estampado de rayas y corte relajado. Un look clásico que nunca pasa de moda."
+        "descripcion": {
+            "es": "Camisa de manga larga con estampado de rayas y corte relajado. Un look clásico que nunca pasa de moda.",
+            "en": "Long-sleeve shirt with striped pattern and relaxed fit. A classic look that never goes out of style.",
+            "br": "Camisa de manga longa com estampa de listras e corte relaxado. Um look clássico que nunca sai de moda.",
+            "ar": "Camisa de manga larga, rayada y con una onda relajada. Un clásico que siempre queda piola."
+        }
     },
     {
-        "nombre": "Pantalón Cargo Urbano",
+        "nombre": {
+            "es": "Pantalón Cargo Urbano",
+            "en": "Urban Cargo Pants",
+            "br": "Calças Cargo Urbanas",
+            "ar": "Pantalón Cargo Urbano"
+        },
         "unidades_disponibles": 19,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 33.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Hombre",
-        "foto": "https://cdn.0brandcommerce.com/tucanourbano/110789_L.jpg",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
+        "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmnwR2RsGbgBNMQ7TmELOTVYaQE7_g_NZkkQ&s",
         "codigo_barras": "3495829925360",
-        "descripcion": "Pantalón cargo con bolsillos laterales amplios y ajuste cómodo. Ideal para un estilo urbano y funcional."
+        "descripcion": {
+            "es": "Pantalón cargo con bolsillos laterales amplios y ajuste cómodo. Ideal para un estilo urbano y funcional.",
+            "en": "Cargo pants with wide side pockets and a comfortable fit. Perfect for an urban and functional style.",
+            "br": "Calças cargo com bolsos laterais amplos e ajuste confortável. Ideal para um estilo urbano e funcional.",
+            "ar": "Pantalón cargo con bolsillos grandes y corte cómodo. Perfecto para un look urbano con onda."
+        }
     },
     {
-        "nombre": "Vestido Casual Verano",
+        "nombre": {
+            "es": "Vestido Casual Verano",
+            "en": "Casual Summer Dress",
+            "br": "Vestido Casual de Verão",
+            "ar": "Vestido Casual de Verano"
+        },
         "unidades_disponibles": 20,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saia",
+            "ar": "Polleras"
+        },
         "precio": 34.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://www.confeccionescastillo.com/7041-thickbox_default/vestido-sin-mangas-azul-blanco-y-rosa.jpg",
         "codigo_barras": "7417822308865",
-        "descripcion": "Vestido ligero y fresco, ideal para los días soleados. Su diseño sin mangas y su tela transpirable garantizan comodidad durante todo el día. Perfecto para combinar con sandalias o zapatillas para un look relajado."
+        "descripcion": {
+            "es": "Vestido ligero y fresco, ideal para los días soleados. Su diseño sin mangas y su tela transpirable garantizan comodidad durante todo el día. Perfecto para combinar con sandalias o zapatillas para un look relajado.",
+            "en": "Light and fresh dress, ideal for sunny days. Its sleeveless design and breathable fabric guarantee comfort all day long. Perfect for pairing with sandals or sneakers for a relaxed look.",
+            "br": "Vestido leve e fresco, ideal para dias ensolarados. Seu design sem mangas e tecido respirável garantem conforto o dia todo. Perfeito para combinar com sandálias ou tênis para um look descontraído.",
+            "ar": "Vestido livianito y fresco, ideal para el veranito. Sin mangas y bien cómodo, queda genial con sandalias o zapas."
+        }
     },
     {
-        "nombre": "Bermuda Relaxed Fit",
+        "nombre": {
+            "es": "Bermuda Relaxed Fit",
+            "en": "Relaxed Fit Bermuda",
+            "br": "Bermuda Relaxed Fit",
+            "ar": "Bermuda Corte Relajado"
+        },
         "unidades_disponibles": 21,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Camperas"
+        },
         "precio": 36.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://images.hugoboss.com/is/image/boss/hbeu50531422_121_100?$re_fullPageZoom$&qlt=85&fit=crop,1&align=1,1&bgcolor=ebebeb&lastModified=1738262726000&wid=1200&hei=1818",
         "codigo_barras": "1823639047680",
-        "descripcion": "Bermuda de corte relajado con tejido suave y cómodo. Su diseño versátil la hace perfecta para el día a día o para un look informal. Incluye bolsillos laterales para mayor funcionalidad."
+        "descripcion": {
+            "es": "Bermuda de corte relajado con tejido suave y cómodo. Su diseño versátil la hace perfecta para el día a día o para un look informal. Incluye bolsillos laterales para mayor funcionalidad.",
+            "en": "Relaxed fit bermuda made of soft and comfortable fabric. Its versatile design makes it perfect for everyday use or a casual look. Includes side pockets for added functionality.",
+            "br": "Bermuda de corte relaxado feita de tecido suave e confortável. Seu design versátil a torna perfeita para o uso diário ou para um look casual. Inclui bolsos laterais para maior funcionalidade.",
+            "ar": "Bermuda cómoda y canchera, hecha de tela suave. Ideal para el día a día o para un look relajado, con bolsillos piolas al costado."
+        }
     },
     {
-        "nombre": "Botas Urbanas Unisex",
+        "nombre": {
+            "es": "Botas Urbanas Unisex",
+            "en": "Unisex Urban Boots",
+            "br": "Botas Urbanas Unissex",
+            "ar": "Botas Urbanas Unisex"
+        },
         "unidades_disponibles": 22,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçado",
+            "ar": "Zapatos"
+        },
         "precio": 37.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Hombre",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://tiendamoteros.com/2704-large_default/bota-sd-bc7-urban-unisex-.jpg",
         "codigo_barras": "2729706192133",
-        "descripcion": "Botas resistentes y modernas, ideales para el día a día en la ciudad. Su suela antideslizante y su diseño ergonómico ofrecen comodidad y estilo a partes iguales."
+        "descripcion": {
+            "es": "Botas resistentes y modernas, ideales para el día a día en la ciudad. Su suela antideslizante y su diseño ergonómico ofrecen comodidad y estilo a partes iguales.",
+            "en": "Durable and modern boots, perfect for everyday use in the city. Its non-slip sole and ergonomic design offer comfort and style in equal measure.",
+            "br": "Botas resistentes e modernas, ideais para o uso diário na cidade. Sua sola antiderrapante e design ergonômico oferecem conforto e estilo igualmente.",
+            "ar": "Botas facheras y resistentes, perfectas para patear la ciudad. Cómodas, cancheras y con buena onda."
+        }
     },
     {
-        "nombre": "Jersey Suave Algodón",
+        "nombre": {
+            "es": "Jersey Suave Algodón",
+            "en": "Soft Cotton Sweater",
+            "br": "Suéter de Algodão Macio",
+            "ar": "Buzo de Algodón Suave"
+        },
         "unidades_disponibles": 23,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 39.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://donalgodon.com/wp-content/uploads/2024/09/8435474244360_JERSEY-OVERSIZE-EXTRA-SUAVE-AZUL-1-600x745.jpg",
         "codigo_barras": "4511972740103",
-        "descripcion": "Jersey de algodón ultra suave, perfecto para los días fríos. Su diseño clásico y corte oversize lo hacen ideal para combinar con jeans o pantalones casuales."
+        "descripcion": {
+            "es": "Jersey de algodón ultra suave, perfecto para los días fríos. Su diseño clásico y corte oversize lo hacen ideal para combinar con jeans o pantalones casuales.",
+            "en": "Ultra-soft cotton sweater, perfect for cold days. Its classic design and oversize fit make it ideal to pair with jeans or casual pants.",
+            "br": "Jersey de algodão ultra macio, perfeito para dias frios. Seu design clássico e corte oversize o tornam ideal para combinar com jeans ou calças casuais.",
+            "ar": "Buzo de algodón super suave, perfecto para el fresquete. Queda joya con jeans o pantalones tranqui."
+        }
     },
     {
-        "nombre": "Gafas de Sol Retro",
+        "nombre": {
+            "es": "Gafas de Sol Retro",
+            "en": "Retro Sunglasses",
+            "br": "Óculos de Sol Retrô",
+            "ar": "Lentes de Sol Retro"
+        },
         "unidades_disponibles": 24,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-Shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 40.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unisex",
+            "ar": "Unisex"
+        },
         "foto": "https://planeta-steampunk.com/wp-content/uploads/2023/06/gafas-de-sol-retro-vintage-hombre-5.jpeg",
         "codigo_barras": "6817358531854",
-        "descripcion": "Gafas de sol con diseño retro, inspiradas en la moda vintage. Su montura ligera y lentes de protección UV garantizan estilo y seguridad bajo el sol."
+        "descripcion": {
+            "es": "Gafas de sol con diseño retro, inspiradas en la moda vintage. Su montura ligera y lentes de protección UV garantizan estilo y seguridad bajo el sol.",
+            "en": "Sunglasses with a retro design, inspired by vintage fashion. Their lightweight frame and UV protection lenses ensure style and safety under the sun.",
+            "br": "Óculos de sol com design retrô, inspirados na moda vintage. Sua armação leve e lentes de proteção UV garantem estilo e segurança sob o sol.",
+            "ar": "Lentes de sol con onda retro, bien livianitas y con protección UV. Ideales para bancar el sol con toda la facha."
+        }
     },
     {
-        "nombre": "Cinturón de Cuero Moderno",
+        "nombre": {
+            "es": "Cinturón de Cuero Moderno",
+            "en": "Modern Leather Belt",
+            "br": "Cinto de Couro Moderno",
+            "ar": "Cinturón de Cuero Fachero"
+        },
         "unidades_disponibles": 25,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Suedadeiras",
+            "ar": "Buzos"
+        },
         "precio": 42.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Hombre",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://www.fantinipelletteria.es/wp-content/uploads/2020/12/cinturon-hombre-burdeos.jpg",
         "codigo_barras": "5917667237602",
-        "descripcion": "Cinturón de cuero genuino con hebilla metálica, diseñado para aportar un toque elegante a cualquier outfit. Perfecto para looks formales o casuales."
+        "descripcion": {
+            "es": "Cinturón de cuero genuino con hebilla metálica, diseñado para aportar un toque elegante a cualquier outfit. Perfecto para looks formales o casuales.",
+            "en": "Genuine leather belt with a metal buckle, designed to add an elegant touch to any outfit. Perfect for formal or casual looks.",
+            "br": "Cinto de couro genuíno com fivela metálica, projetado para adicionar um toque elegante a qualquer look. Perfeito para looks formais ou casuais.",
+            "ar": "Cinturón de cuero posta con hebilla metálica. Le da un toque elegante a cualquier pinta, ya sea formal o más relajada."
+        }
     },
     {
-        "nombre": "Shorts Deportivos Ligero",
+        "nombre": {
+            "es": "Shorts Deportivos Ligero",
+            "en": "Light Sports Shorts",
+            "br": "Shorts Esportivos Leves",
+            "ar": "Short Deportivo Liviano"
+        },
         "unidades_disponibles": 26,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 43.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://i.etsystatic.com/8222962/r/il/24eaeb/2172711567/il_570xN.2172711567_klvh.jpg",
         "codigo_barras": "6482144811016",
-        "descripcion": "Shorts deportivos ultraligeros, ideales para entrenamientos o actividades al aire libre. Confeccionados con tela de secado rápido para mayor comodidad."
+        "descripcion": {
+            "es": "Shorts deportivos ultraligeros, ideales para entrenamientos o actividades al aire libre. Confeccionados con tela de secado rápido para mayor comodidad.",
+            "en": "Ultralight sports shorts, ideal for training or outdoor activities. Made with quick-drying fabric for added comfort.",
+            "br": "Shorts esportivos ultraleves, ideais para treinos ou atividades ao ar livre. Confeccionados com tecido de secagem rápida para maior conforto.",
+            "ar": "Short deportivo liviano, perfecto para entrenar o salir a correr. Hecho con tela de secado rápido, así no te clavas el frío."
+        }
     },
     {
-        "nombre": "Abrigo Largo Elegante",
+        "nombre": {
+            "es": "Abrigo Largo Elegante",
+            "en": "Elegant Long Coat",
+            "br": "Casaco Longo Elegante",
+            "ar": "Abrigo Largo Elegante"
+        },
         "unidades_disponibles": 27,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Polleras"
+        },
         "precio": 45.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unisex",
+            "ar": "Unisex"
+        },
         "foto": "https://francescadarcy.com/cdn/shop/files/Imagen_de_WhatsApp_2024-11-13_a_las_19.10.21_47ffcdd2_65828640-9845-4f96-bc0c-58201233db70.jpg?v=1731522439",
         "codigo_barras": "1178168762019",
-        "descripcion": "Abrigo largo con un diseño sofisticado y moderno. Su corte estructurado y tela de alta calidad lo convierten en una prenda imprescindible para el invierno."
+        "descripcion": {
+            "es": "Abrigo largo con un diseño sofisticado y moderno. Su corte estructurado y tela de alta calidad lo convierten en una prenda imprescindible para el invierno.",
+            "en": "Long coat with a sophisticated and modern design. Its structured cut and high-quality fabric make it an essential winter piece.",
+            "br": "Casaco longo com um design sofisticado e moderno. Seu corte estruturado e tecido de alta qualidade fazem dele uma peça essencial para o inverno.",
+            "ar": "Abrigo largo con un diseño sofisticado y moderno. Su corte estructurado y tela de alta calidad lo convierten en una prenda imprescindible para el invierno."
+        }
     },
     {
-        "nombre": "Sudadera Crop Top",
+        "nombre": {
+            "es": "Sudadera Crop Top",
+            "en": "Crop Top Sweatshirt",
+            "br": "Moletom Cropped",
+            "ar": "Buzo Crop Top"
+        },
         "unidades_disponibles": 28,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Buzos"
+        },
         "precio": 46.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://camisetasbailongas.com/wp-content/uploads/2023/05/sudadera-crop-beige-frontal-1.jpg",
         "codigo_barras": "8616154578707",
-        "descripcion": "Sudadera corta de estilo moderno, perfecta para looks urbanos y casuales. Su tela suave y ajuste relajado ofrecen comodidad y versatilidad."
+        "descripcion": {
+            "es": "Sudadera corta de estilo moderno, perfecta para looks urbanos y casuales. Su tela suave y ajuste relajado ofrecen comodidad y versatilidad.",
+            "en": "Short sweatshirt with a modern style, perfect for urban and casual looks. Its soft fabric and relaxed fit offer comfort and versatility.",
+            "br": "Moletom cropped de estilo moderno, perfeito para looks urbanos e casuais. Seu tecido macio e ajuste relaxado oferecem conforto e versatilidade.",
+            "ar": "Buzo corta de estilo moderno, ideal para looks urbanos y casuales. Su tela suave y ajuste relajado ofrecen comodidad y versatilidad."
+        }
     },
     {
-        "nombre": "Pantalones Jogger Street",
+        "nombre": {
+            "es": "Pantalones Jogger Street",
+            "en": "Street Jogger Pants",
+            "br": "Calças Jogger Street",
+            "ar": "Pantalones Jogger Street"
+        },
         "unidades_disponibles": 29,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 48.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://media.atmosferasport.es/439856-large_default/pantalones-largo-joma-street-generation-beige-mujer.jpg",
         "codigo_barras": "5332526863869",
-        "descripcion": "Joggers cómodos con corte moderno y ajuste perfecto. Ideales para un estilo relajado sin perder el toque urbano."
+        "descripcion": {
+            "es": "Joggers cómodos con corte moderno y ajuste perfecto. Ideales para un estilo relajado sin perder el toque urbano.",
+            "en": "Comfortable joggers with a modern cut and perfect fit. Ideal for a relaxed style without losing the urban touch.",
+            "br": "Joggers confortáveis com corte moderno e ajuste perfeito. Ideais para um estilo relaxado sem perder o toque urbano.",
+            "ar": "Joggers cómodos con corte moderno y ajuste perfecto. Ideales para un estilo relajado sin perder el toque urbano."
+        }
     },
     {
-        "nombre": "Vestido Midi Casual",
+        "nombre": {
+            "es": "Vestido Midi Casual",
+            "en": "Casual Midi Dress",
+            "br": "Vestido Midi Casual",
+            "ar": "Vestido Midi Casual"
+        },
         "unidades_disponibles": 30,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 49.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unisex",
+            "ar": "Unisex"
+        },
         "foto": "https://lopezientos.es/wp-content/uploads/2025/02/11022025165752.IMG_0019-thumbnail-2000x2000-1.png",
         "codigo_barras": "6375275104690",
-        "descripcion": "Vestido midi de corte elegante y versátil. Confeccionado en tela ligera y fluida, ideal para eventos casuales o salidas diarias. Su ajuste cómodo realza la silueta sin comprometer la movilidad."
+        "descripcion": {
+            "es": "Vestido midi de corte elegante y versátil. Confeccionado en tela ligera y fluida, ideal para eventos casuales o salidas diarias. Su ajuste cómodo realza la silueta sin comprometer la movilidad.",
+            "en": "Midi dress with an elegant and versatile cut. Made from lightweight and flowing fabric, perfect for casual events or daily outings. Its comfortable fit enhances the silhouette without compromising mobility.",
+            "br": "Vestido midi com corte elegante e versátil. Confeccionado em tecido leve e fluido, ideal para eventos casuais ou saídas diárias. Seu ajuste confortável realça a silhueta sem comprometer a mobilidade.",
+            "ar": "Vestido midi de corte elegante y versátil. Confeccionado en tela ligera y fluida, ideal para eventos casuales o salidas diarias. Su ajuste cómodo realza la silueta sin comprometer la movilidad."
+        }
     },
     {
-        "nombre": "Zapatillas Running Fashion",
+        "nombre": {
+            "es": "Zapatillas Running Fashion",
+            "en": "Fashion Running Shoes",
+            "br": "Tênis de Corrida Fashion",
+            "ar": "Zapas Running Fashion"
+        },
         "unidades_disponibles": 31,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-Shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 51.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://m.media-amazon.com/images/I/61aWb+kVdkL._AC_UY580_.jpg",
         "codigo_barras": "6352299694906",
-        "descripcion": "Zapatillas deportivas con diseño moderno y ergonómico. Incorporan una suela de amortiguación avanzada que proporciona máxima comodidad y soporte en cada paso. Perfectas para entrenamientos o uso diario."
+        "descripcion": {
+            "es": "Zapatillas deportivas con diseño moderno y ergonómico. Incorporan una suela de amortiguación avanzada que proporciona máxima comodidad y soporte en cada paso. Perfectas para entrenamientos o uso diario.",
+            "en": "Sporty shoes with a modern and ergonomic design. They feature an advanced cushioning sole that provides maximum comfort and support with every step. Perfect for training or daily use.",
+            "br": "Tênis esportivos com design moderno e ergonômico. Possuem uma sola de amortecimento avançada que oferece máximo conforto e suporte a cada passo. Perfeito para treinos ou uso diário.",
+            "ar": "Zapas deportivas con diseño moderno y ergonómico. Incorporan una suela de amortiguación avanzada que proporciona máxima comodidad y soporte en cada paso. Perfectas para entrenamientos o uso diario."
+        }
     },
     {
-        "nombre": "Bufanda de Lana Clásica",
+        "nombre": {
+            "es": "Bufanda de Lana Clásica",
+            "en": "Classic Wool Scarf",
+            "br": "Cachecol de Lã Clássico",
+            "ar": "Bufanda de Lana Clásica"
+        },
         "unidades_disponibles": 32,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Suedadeiras",
+            "ar": "Buzos"
+        },
         "precio": 52.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://m.media-amazon.com/images/I/61gMHz0TI+L._AC_UY580_.jpg",
         "codigo_barras": "4889826086374",
-        "descripcion": "Bufanda tejida en lana de alta calidad, diseñada para brindar calidez en los días fríos. Su diseño clásico y textura suave la convierten en un accesorio esencial para cualquier outfit invernal."
+        "descripcion": {
+            "es": "Bufanda tejida en lana de alta calidad, diseñada para brindar calidez en los días fríos. Su diseño clásico y textura suave la convierten en un accesorio esencial para cualquier outfit invernal.",
+            "en": "High-quality wool scarf designed to provide warmth on cold days. Its classic design and soft texture make it an essential accessory for any winter outfit.",
+            "br": "Cachecol de lã de alta qualidade, projetado para fornecer calor nos dias frios. Seu design clássico e textura suave fazem dele um acessório essencial para qualquer look de inverno.",
+            "ar": "Bufanda tejida en lana de alta calidad, diseñada para brindar calidez en los días fríos. Su diseño clásico y textura suave la convierten en un accesorio esencial para cualquier conjunto invernal."
+        }
     },
     {
-        "nombre": "Camisa de Cuadros Vintage",
+        "nombre": {
+            "es": "Camisa de Cuadros Vintage",
+            "en": "Vintage Checkered Shirt",
+            "br": "Camisa Xadrez Vintage",
+            "ar": "Camisa de Cuadros Vintage"
+        },
         "unidades_disponibles": 33,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 54.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unisex",
+            "ar": "Unisex"
+        },
         "foto": "https://m.media-amazon.com/images/I/81YkERj075L._AC_UY580_.jpg",
         "codigo_barras": "9140079806606",
-        "descripcion": "Camisa de cuadros con un estilo vintage atemporal. Hecha de algodón transpirable, ideal para looks informales y combinable con jeans o chaquetas."
+        "descripcion": {
+            "es": "Camisa de cuadros con un estilo vintage atemporal. Hecha de algodón transpirable, ideal para looks informales y combinable con jeans o chaquetas.",
+            "en": "Checkered shirt with a timeless vintage style. Made from breathable cotton, perfect for casual looks and can be paired with jeans or jackets.",
+            "br": "Camisa xadrez com estilo vintage atemporal. Feita de algodão respirável, ideal para looks casuais e pode ser combinada com jeans ou jaquetas.",
+            "ar": "Camisa a cuadros con un estilo vintage que nunca pasa de moda. Hecha de algodón fresco, ideal para looks casuales y fácil de combinar con jeans o camperas."
+        }
     },
     {
-        "nombre": "Chaqueta Bomber Urbana",
+        "nombre": {
+            "es": "Chaqueta Bomber Urbana",
+            "en": "Urban Bomber Jacket",
+            "br": "Jaqueta Bomber Urbana",
+            "ar": "Campera Bomber Urbana"
+        },
         "unidades_disponibles": 34,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Polleras"
+        },
         "precio": 55.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://m.media-amazon.com/images/I/71rNXIxLKHL.jpg",
         "codigo_barras": "6674641897282",
-        "descripcion": "Chaqueta bomber con un diseño moderno y urbano. Su corte ajustado y materiales resistentes la hacen ideal para un look casual con un toque sofisticado."
+        "descripcion": {
+            "es": "Chaqueta bomber con un diseño moderno y urbano. Su corte ajustado y materiales resistentes la hacen ideal para un look casual con un toque sofisticado.",
+            "en": "Bomber jacket with a modern and urban design. Its slim fit and durable materials make it perfect for a casual look with a sophisticated touch.",
+            "br": "Jaqueta bomber com design moderno e urbano. Seu corte ajustado e materiais resistentes fazem dela ideal para um look casual com um toque sofisticado.",
+            "ar": "Campera bomber con un diseño moderno y urbano. Su corte ajustado y materiales resistentes la hacen ideal para un look casual con un toque de onda."
+        }
     },
     {
-        "nombre": "Leggins Deportivos Fit",
+        "nombre": {
+            "es": "Leggins Deportivos Fit",
+            "en": "Fit Sports Leggings",
+            "br": "Leggings Esportivos Fit",
+            "ar": "Leggings Deportivos Fit"
+        },
         "unidades_disponibles": 35,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Buzos"
+        },
         "precio": 57.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Woman",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://m.media-amazon.com/images/I/61hDC+k4YmL._AC_UY580_.jpg",
         "codigo_barras": "3949565191331",
-        "descripcion": "Leggins de alto rendimiento diseñados para entrenamientos intensos. Confeccionados con tela elástica y transpirable que se adapta al cuerpo y proporciona libertad de movimiento."
+        "descripcion": {
+            "es": "Leggins de alto rendimiento diseñados para entrenamientos intensos. Confeccionados con tela elástica y transpirable que se adapta al cuerpo y proporciona libertad de movimiento.",
+            "en": "High-performance leggings designed for intense training. Made with elastic and breathable fabric that adapts to the body and provides freedom of movement.",
+            "br": "Leggings de alto desempenho projetados para treinos intensos. Confeccionados com tecido elástico e respirável que se adapta ao corpo e oferece liberdade de movimento.",
+            "ar": "Leggings de alto rendimiento diseñados para entrenamientos intensos. Hechos con tela elástica y respirable que se adapta al cuerpo y te da libertad de movimiento."
+        }
     },
     {
-        "nombre": "Sombrero Casual Verano",
+        "nombre": {
+            "es": "Sombrero Casual Verano",
+            "en": "Casual Summer Hat",
+            "br": "Chapéu Casual de Verão",
+            "ar": "Sombrero Casual de Verano"
+        },
         "unidades_disponibles": 36,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 58.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://sombrereriamil.com/1457-home_default/sombrero-panama-leatherband-citysport-sombrereria-mil-online.jpg",
         "codigo_barras": "4447441539934",
-        "descripcion": "Sombrero ligero y transpirable con diseño casual, ideal para protegerse del sol con estilo. Su ala ancha ofrece una excelente cobertura y sombra en días soleados."
+        "descripcion": {
+            "es": "Sombrero ligero y transpirable con diseño casual, ideal para protegerse del sol con estilo. Su ala ancha ofrece una excelente cobertura y sombra en días soleados.",
+            "en": "Lightweight and breathable hat with a casual design, ideal for sun protection with style. Its wide brim provides excellent coverage and shade on sunny days.",
+            "br": "Chapéu leve e respirável com design casual, ideal para proteção solar com estilo. Sua aba larga oferece excelente cobertura e sombra em dias ensolarados.",
+            "ar": "Sombrero liviano y fresquito, con un diseño bien canchero. Perfecto para no sufrir el sol y, al mismo tiempo, lucir con onda. Su ala ancha te cubre de diez cuando el sol pega fuerte."
+        }
     },
     {
-        "nombre": "Bolsa Tote Casual",
+        "nombre": {
+            "es": "Bolsa Tote Casual",
+            "en": "Casual Tote Bag",
+            "br": "Bolsa Tote Casual",
+            "ar": "Bolsa Tote Casual"
+        },
         "unidades_disponibles": 37,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 60.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Hombre",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Hombre",
+            "en": "Man",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://media.catchalot.es/77863-large_default/bolso-tote-bag-nylon-acolchado-dmr-touch-valls.jpg",
         "codigo_barras": "8814615012250",
-        "descripcion": "Bolsa tote espaciosa y elegante, perfecta para llevar objetos esenciales en el día a día. Confeccionada en material resistente y con asas reforzadas para mayor comodidad."
+        "descripcion": {
+            "es": "Bolsa tote espaciosa y elegante, perfecta para llevar objetos esenciales en el día a día. Confeccionada en material resistente y con asas reforzadas para mayor comodidad.",
+            "en": "Spacious and elegant tote bag, perfect for carrying everyday essentials. Made of durable material with reinforced handles for extra comfort.",
+            "br": "Bolsa tote espaçosa e elegante, perfeita para carregar itens essenciais do dia a dia. Feita de material durável com alças reforçadas para maior conforto.",
+            "ar": "Bolsa tote amplia, canchera y súper práctica. Ideal para cargar todo lo necesario para tu día a día. Con un material bien resistente y con asas reforzadas para que no te duelan los hombros."
+        }
     },
     {
-        "nombre": "Pantalón Chino Slim Fit",
+        "nombre": {
+            "es": "Pantalón Chino Slim Fit",
+            "en": "Slim Fit Chino Pants",
+            "br": "Calça Chino Slim Fit",
+            "ar": "Pantalón Chino Slim Fit"
+        },
         "unidades_disponibles": 38,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-Shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 61.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Woman",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://images.jackjones.com/12150158/2993748/001/jackjones-jpstmarcobowiesablacknoos-negra.png?v=73f878cee598d52efdd7e08f40c95a0c",
         "codigo_barras": "1104538518699",
-        "descripcion": "Pantalón chino de corte slim fit, ideal para looks formales e informales. Su tejido suave y ligero brinda un ajuste cómodo y favorecedor."
+        "descripcion": {
+            "es": "Pantalón chino de corte slim fit, ideal para looks formales e informales. Su tejido suave y ligero brinda un ajuste cómodo y favorecedor.",
+            "en": "Slim-fit chino pants, ideal for formal and casual looks. The soft and lightweight fabric provides a comfortable and flattering fit.",
+            "br": "Calça chino slim fit, ideal para looks formais e casuais. Seu tecido suave e leve proporciona um ajuste confortável e favorecedor.",
+            "ar": "Pantalón chino slim fit, ideal tanto para ocasiones más formales como para un look más relajado. Con un tejido suave y liviano que te queda justo y con onda."
+        }
     },
     {
-        "nombre": "Blusa Satinada Elegante",
+        "nombre": {
+            "es": "Blusa Satinada Elegante",
+            "en": "Elegant Satin Blouse",
+            "br": "Blusa Satinada Elegante",
+            "ar": "Blusa Satinada Elegante"
+        },
         "unidades_disponibles": 39,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Moletom",
+            "ar": "Buzos"
+        },
         "precio": 63.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://cdn.shopify.com/s/files/1/0702/1802/3207/files/98b1b2cf988c9b6ce8f789324179ad56.jpg",
         "codigo_barras": "5497397541752",
-        "descripcion": "Blusa satinada con acabado brillante y corte elegante. Perfecta para ocasiones especiales o para dar un toque sofisticado a cualquier atuendo."
+        "descripcion": {
+            "es": "Blusa satinada con acabado brillante y corte elegante. Perfecta para ocasiones especiales o para dar un toque sofisticado a cualquier atuendo.",
+            "en": "Satin blouse with a shiny finish and elegant cut. Perfect for special occasions or to add a sophisticated touch to any outfit.",
+            "br": "Blusa satinada com acabamento brilhante e corte elegante. Perfeita para ocasiões especiais ou para adicionar um toque sofisticado a qualquer look.",
+            "ar": "Blusa satinada con un acabado brillante, ideal para esos momentos en los que querés brillar. Perfecta para una ocasión especial o para darle un toque más sofisticado a cualquier conjunto."
+        }
     },
     {
-        "nombre": "Chamarra de Cuero Negra",
+        "nombre": {
+            "es": "Chamarra de Cuero Negra",
+            "en": "Black Leather Jacket",
+            "br": "Jaqueta de Couro Preta",
+            "ar": "Campera de Cuero Negra"
+        },
         "unidades_disponibles": 40,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 64.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Woman",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://i.etsystatic.com/28827645/r/il/78fc02/3198775404/il_570xN.3198775404_g80b.jpg",
         "codigo_barras": "4206489045825",
-        "descripcion": "Chamarra de cuero negro con un diseño clásico y atemporal. Su confección en materiales de alta calidad ofrece resistencia y estilo en cualquier ocasión."
+        "descripcion": {
+            "es": "Chamarra de cuero negro con un diseño clásico y atemporal. Su confección en materiales de alta calidad ofrece resistencia y estilo en cualquier ocasión.",
+            "en": "Black leather jacket with a classic and timeless design. Made with high-quality materials, it offers durability and style for any occasion.",
+            "br": "Jaqueta de couro preta com design clássico e atemporal. Feita com materiais de alta qualidade, oferece durabilidade e estilo para qualquer ocasião.",
+            "ar": "Campera de cuero negra, un clásico que no pasa de moda. Hecha con materiales de alta calidad, te da resistencia y onda en cualquier ocasión."
+        }
     },
     {
-        "nombre": "Mocasines Casual",
+        "nombre": {
+            "es": "Mocasines Casual",
+            "en": "Casual Moccasins",
+            "br": "Mocassim Casual",
+            "ar": "Mocasines Casual"
+        },
         "unidades_disponibles": 41,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Polleras"
+        },
         "precio": 66.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Woman",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://peralimonerashop.com/38578-home_default/mocasines-tela-casual-jeans-hey-dude.jpg",
         "codigo_barras": "5553550673697",
-        "descripcion": "Mocasines de diseño casual, hechos con materiales cómodos y flexibles. Ideales para combinar con outfits relajados sin perder el toque sofisticado."
+        "descripcion": {
+            "es": "Mocasines de diseño casual, hechos con materiales cómodos y flexibles. Ideales para combinar con outfits relajados sin perder el toque sofisticado.",
+            "en": "Casual moccasins made with comfortable and flexible materials. Perfect for pairing with relaxed outfits without losing the sophisticated touch.",
+            "br": "Mocassim casual feito com materiais confortáveis e flexíveis. Perfeito para combinar com looks descontraídos sem perder o toque sofisticado.",
+            "ar": "Mocasines súper cómodos, ideales para un look relajado pero con estilo. Con materiales flexibles y livianos que te permiten estar cómoda todo el día sin perder la sofisticación."
+        }
     },
     {
-        "nombre": "Pantalones Cortos Estampados",
+        "nombre": {
+            "es": "Pantalones Cortos Estampados",
+            "en": "Printed Shorts",
+            "br": "Shorts Estampados",
+            "ar": "Shorts Estampados"
+        },
         "unidades_disponibles": 42,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Buzos"
+        },
         "precio": 67.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhW_ckQub_uQbvyx46EINr-oFPiGdhV5sNCA&s",
         "codigo_barras": "7146046608175",
-        "descripcion": "Pantalones cortos con estampado vibrante y llamativo. Perfectos para un look desenfadado y cómodo en días cálidos."
+        "descripcion": {
+            "es": "Pantalones cortos con estampado vibrante y llamativo. Perfectos para un look desenfadado y cómodo en días cálidos.",
+            "en": "Shorts with vibrant and eye-catching print. Perfect for a relaxed and comfortable look on warm days.",
+            "br": "Shorts com estampa vibrante e chamativa. Perfeito para um look descontraído e confortável em dias quentes.",
+            "ar": "Shorts con estampado súper canchero, ideales para los días más cálidos. Te van a dar un look relajado y fresco, sin perder el estilo."
+        }
     },
     {
-        "nombre": "Jersey de Punto Oversize",
+        "nombre": {
+            "es": "Jersey de Punto Oversize",
+            "en": "Oversized Knit Sweater",
+            "br": "Suéter de Tricô Oversize",
+            "ar": "Jersey de Punto Oversize"
+        },
         "unidades_disponibles": 43,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 69.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Hombre",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Hombre",
+            "en": "Man",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://cottoncrown.net/wp-content/uploads/Jersey-Pico-Mostaza_sombra-1.jpg",
         "codigo_barras": "9787529415718",
-        "descripcion": "Jersey de punto con ajuste oversize, ideal para looks cómodos y modernos. Su tejido suave brinda calidez sin ser pesado."
+        "descripcion": {
+            "es": "Jersey de punto con ajuste oversize, ideal para looks cómodos y modernos. Su tejido suave brinda calidez sin ser pesado.",
+            "en": "Knit sweater with an oversized fit, perfect for comfortable and modern looks. Its soft fabric provides warmth without being heavy.",
+            "br": "Suéter de tricô com ajuste oversize, ideal para looks confortáveis e modernos. Seu tecido macio proporciona calor sem ser pesado.",
+            "ar": "Jersey de punto oversize, perfecto para un look relajado y moderno. Te mantiene abrigado sin ser pesado, ideal para esos días frescos."
+        }
     },
     {
-        "nombre": "Sneakers Deportivos Urbanos",
+        "nombre": {
+            "es": "Sneakers Deportivos Urbanos",
+            "en": "Urban Sports Sneakers",
+            "br": "Tênis Esportivos Urbanos",
+            "ar": "Zapas Deportivas Urbanas"
+        },
         "unidades_disponibles": 44,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 70.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Woman",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://cdn.vanessacalzados.es/182796-main_product/vvnn-sneakers-deportivo-casual-urbano.jpg",
         "codigo_barras": "6045407744533",
-        "descripcion": "Sneakers modernos con diseño urbano y suela amortiguada. Combinan funcionalidad y estilo para un calzado cómodo en el día a día."
+        "descripcion": {
+            "es": "Sneakers modernos con diseño urbano y suela amortiguada. Combinan funcionalidad y estilo para un calzado cómodo en el día a día.",
+            "en": "Modern sneakers with an urban design and cushioned sole. Combining functionality and style for comfortable footwear every day.",
+            "br": "Tênis modernos com design urbano e sola acolchoada. Combinando funcionalidade e estilo para calçados confortáveis no dia a dia.",
+            "ar": "Zapas urbanas con diseño moderno y suela amortiguada. Perfectas para todo el día, combinan confort y estilo sin esfuerzo."
+        }
     },
     {
-        "nombre": "Top Deportivo Corte Fit",
+        "nombre": {
+            "es": "Top Deportivo Corte Fit",
+            "en": "Fit Cut Sports Top",
+            "br": "Top Esportivo Corte Fit",
+            "ar": "Top Deportivo Corte Fit"
+        },
         "unidades_disponibles": 45,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-Shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 72.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://m.media-amazon.com/images/I/51f-3T4JNQL._AC_UY350_.jpg",
         "codigo_barras": "3742407261648",
-        "descripcion": "Top deportivo ajustado con tecnología de secado rápido. Brinda soporte y comodidad durante actividades físicas intensas."
+        "descripcion": {
+            "es": "Top deportivo ajustado con tecnología de secado rápido. Brinda soporte y comodidad durante actividades físicas intensas.",
+            "en": "Fitted sports top with quick-drying technology. Provides support and comfort during intense physical activities.",
+            "br": "Top esportivo ajustado com tecnologia de secagem rápida. Oferece suporte e conforto durante atividades físicas intensas.",
+            "ar": "Top deportivo con ajuste perfecto y tecnología de secado rápido. Ideal para entrenamientos intensos, te da el soporte y la comodidad que necesitas."
+        }
     },
     {
-        "nombre": "Mono Largo Estampado",
+        "nombre": {
+            "es": "Mono Largo Estampado",
+            "en": "Long Printed Jumpsuit",
+            "br": "Macacão Longo Estampado",
+            "ar": "Mono Largo Estampado"
+        },
         "unidades_disponibles": 46,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Camisetas",
+            "ar": "Buzos"
+        },
         "precio": 73.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://cortefiel.com/on/demandware.static/-/Sites-gc-ctf-master-catalog/default/dwb3969571/images/hi-res/P_644824498D8.jpg",
         "codigo_barras": "2860180668201",
-        "descripcion": "Mono largo con estampado llamativo y tela ligera. Ideal para un look fresco y cómodo en cualquier ocasión."
+        "descripcion": {
+            "es": "Mono largo con estampado llamativo y tela ligera. Ideal para un look fresco y cómodo en cualquier ocasión.",
+            "en": "Long jumpsuit with a striking print and lightweight fabric. Ideal for a fresh and comfortable look on any occasion.",
+            "br": "Macacão longo com estampa chamativa e tecido leve. Ideal para um look fresco e confortável em qualquer ocasião.",
+            "ar": "Mono largo con estampado vibrante y tela liviana, perfecto para el calor. Ideal para un look relajado y cómodo en cualquier ocasión."
+        }
     },
     {
-        "nombre": "Chaleco Acolchado Casual",
+        "nombre": {
+            "es": "Chaleco Acolchado Casual",
+            "en": "Casual Quilted Vest",
+            "br": "Colete Acolchoado Casual",
+            "ar": "Chaleco Acolchado Casual"
+        },
         "unidades_disponibles": 47,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 75.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://tuclaboral.com/wp-content/uploads/1102_09007_F-600x900.jpg",
         "codigo_barras": "2881801099405",
-        "descripcion": "Chaleco acolchado con diseño ligero y versátil. Su tejido resistente brinda protección contra el frío sin sacrificar movilidad."
+        "descripcion": {
+            "es": "Chaleco acolchado con diseño ligero y versátil. Su tejido resistente brinda protección contra el frío sin sacrificar movilidad.",
+            "en": "Quilted vest with a lightweight and versatile design. Its durable fabric provides protection against the cold without sacrificing mobility.",
+            "br": "Colete acolchoado com design leve e versátil. Seu tecido resistente oferece proteção contra o frio sem sacrificar a mobilidade.",
+            "ar": "Chaleco acolchado, perfecto para el entretiempo. Su diseño liviano y versátil te mantiene abrigada sin restarte libertad de movimiento."
+        }
     },
     {
-        "nombre": "Falda Vaquera Desgastada",
+        "nombre": {
+            "es": "Falda Vaquera Desgastada",
+            "en": "Distressed Denim Skirt",
+            "br": "Saia Jeans Desgastada",
+            "ar": "Pollera Vaquera Desgastada"
+        },
         "unidades_disponibles": 48,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Polleras"
+        },
         "precio": 76.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzwOHrdiCC60dJ0_8wyoq6KTzYJE1c_hMLg&s",
         "codigo_barras": "1454712673279",
-        "descripcion": "Falda de mezclilla con efecto desgastado y corte moderno. Perfecta para combinar con zapatillas o botines y crear un look casual."
+        "descripcion": {
+            "es": "Falda de mezclilla con efecto desgastado y corte moderno. Perfecta para combinar con zapatillas o botines y crear un look casual.",
+            "en": "Denim skirt with a distressed effect and modern cut. Perfect for pairing with sneakers or boots for a casual look.",
+            "br": "Saia de jeans com efeito desgastado e corte moderno. Perfeita para combinar com tênis ou botas e criar um look casual.",
+            "ar": "Pollera de mezclilla con un toque desgastado, ideal para crear un look casual y cómodo. Perfecta para combinar con zapatillas o botas."
+        }
     },
     {
-        "nombre": "Camiseta Básica Algodón",
+        "nombre": {
+            "es": "Camiseta Básica Algodón",
+            "en": "Basic Cotton T-shirt",
+            "br": "Camiseta Básica de Algodão",
+            "ar": "Remera Básica de Algodón"
+        },
         "unidades_disponibles": 49,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Buzos"
+        },
         "precio": 78.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Hombre",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://printcopy.es/1179-superlarge_default/camiseta-blanca-de-algodon.jpg",
         "codigo_barras": "4991058075717",
-        "descripcion": "Camiseta básica de algodón suave y transpirable. Un imprescindible en cualquier guardarropa por su versatilidad y comodidad."
+        "descripcion": {
+            "es": "Camiseta básica de algodón suave y transpirable. Un imprescindible en cualquier guardarropa por su versatilidad y comodidad.",
+            "en": "Basic cotton t-shirt, soft and breathable. A wardrobe essential for its versatility and comfort.",
+            "br": "Camiseta básica de algodão macia e respirável. Um item essencial no guarda-roupa pela sua versatilidade e conforto.",
+            "ar": "Remera básica de algodón, ideal para el día a día. Suave y fresca, imprescindible para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Sudadera con Capucha Neutra",
+        "nombre": {
+            "es": "Sudadera con Capucha Neutra",
+            "en": "Neutral Hoodie",
+            "br": "Moletom com Capô Neutro",
+            "ar": "Buzo con Capucha Neutra"
+        },
         "unidades_disponibles": 50,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 79.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://cdna.lystit.com/520/650/n/photos/miinto/67605e6e/bomboogie-Beige-Sudadera-Con-Capucha-De-Algodon-Tricot-Comoda-Mujer-Talla.jpeg",
         "codigo_barras": "4663416327018",
-        "descripcion": "Sudadera con capucha y diseño neutro, ideal para looks relajados. Su tela gruesa proporciona abrigo en días fríos."
+        "descripcion": {
+            "es": "Sudadera con capucha y diseño neutro, ideal para looks relajados. Su tela gruesa proporciona abrigo en días fríos.",
+            "en": "Hoodie with a neutral design, ideal for relaxed looks. Its thick fabric provides warmth on cold days.",
+            "br": "Moletom com capô e design neutro, ideal para looks descontraídos. Seu tecido grosso proporciona calor em dias frios.",
+            "ar": "Buzo con capucha de diseño neutro. Ideal para esos días fríos, cómoda y versátil para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Pantalón Recto de Lino",
+        "nombre": {
+            "es": "Pantalón Recto de Lino",
+            "en": "Straight Linen Pants",
+            "br": "Calça Reta de Linho",
+            "ar": "Pantalón Recto de Lino"
+        },
         "unidades_disponibles": 51,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 81.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://www.vilebrequin.com/dw/image/v2/BBRG_PRD/on/demandware.static/-/Sites-vilebrequin-catalog-master/default/dw08cb8449/images/PAHE9U01-010/PAHE9U01-010-back-3920x3920.png?sw=316&sh=316&sm=fit",
         "codigo_barras": "3788649356154",
-        "descripcion": "Pantalón de lino de corte recto, fresco y ligero. Ideal para climas cálidos y ocasiones informales."
+        "descripcion": {
+            "es": "Pantalón de lino de corte recto, fresco y ligero. Ideal para climas cálidos y ocasiones informales.",
+            "en": "Straight linen pants, fresh and lightweight. Ideal for warm climates and casual occasions.",
+            "br": "Calça reta de linho, fresca e leve. Ideal para climas quentes e ocasiões casuais.",
+            "ar": "Pantalón de lino fresco y ligero, ideal para los días de calor. Perfecto para un look relajado y casual."
+        }
     },
     {
-        "nombre": "Vestido Floral Romántico",
+        "nombre": {
+            "es": "Vestido Floral Romántico",
+            "en": "Romantic Floral Dress",
+            "br": "Vestido Floral Romântico",
+            "ar": "Vestido Floral Romántico"
+        },
         "unidades_disponibles": 52,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 82.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://www.nkn.es/cdnassets/GF.MAUIadl.jpg",
         "codigo_barras": "4925001959106",
-        "descripcion": "Vestido con estampado floral y corte romántico. Su diseño femenino y fluido lo hace perfecto para eventos especiales o salidas casuales."
+        "descripcion": {
+            "es": "Vestido con estampado floral y corte romántico. Su diseño femenino y fluido lo hace perfecto para eventos especiales o salidas casuales.",
+            "en": "Dress with floral print and romantic cut. Its feminine and flowy design makes it perfect for special events or casual outings.",
+            "br": "Vestido com estampa floral e corte romântico. Seu design feminino e fluido o torna perfeito para eventos especiais ou saídas casuais.",
+            "ar": "Vestido con estampado floral, ideal para eventos especiales o para un look romántico y fresco. Su diseño fluido lo hace perfecto para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Tenis Skateboarding Classic",
+        "nombre": {
+            "es": "Tenis Skateboarding Classic",
+            "en": "Classic Skateboarding Sneakers",
+            "br": "Tênis Clássico para Skateboarding",
+            "ar": "Zapatillas Clásicas para Skate"
+        },
         "unidades_disponibles": 53,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Camisetas",
+            "ar": "Buzos"
+        },
         "precio": 84.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://www.medinapiel.es/93586-large_default/deportivo-mujer-mustang-joggo-classic-60441-c56411-lainy-sand.jpg",
         "codigo_barras": "9549877730634",
-        "descripcion": "Tenis diseñados para skateboarding con suela adherente y materiales resistentes. Proporcionan estabilidad y comodidad para el uso diario."
+        "descripcion": {
+            "es": "Tenis diseñados para skateboarding con suela adherente y materiales resistentes. Proporcionan estabilidad y comodidad para el uso diario.",
+            "en": "Sneakers designed for skateboarding with grippy soles and durable materials. They provide stability and comfort for daily use.",
+            "br": "Tênis desenhados para skate com solas aderentes e materiais duráveis. Oferecem estabilidade e conforto para uso diário.",
+            "ar": "Zapas diseñadas para skate con suela que se banca todo y materiales re piolas. Te dan estabilidad y facha para el día a día."
+        }
     },
     {
-        "nombre": "Camisa Blanca Minimalista",
+        "nombre": {
+            "es": "Camisa Blanca Minimalista",
+            "en": "Minimalist White Shirt",
+            "br": "Camisa Branca Minimalista",
+            "ar": "Camisa Blanca Minimalista"
+        },
         "unidades_disponibles": 54,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 85.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://www.ikks.com/dw/image/v2/BFQN_PRD/on/demandware.static/-/Sites-ikks_master_v0/default/dwa3a4579e/produits/MW12163-01/IKKS-CHEMISE~SLIM~BLANCHE~~~IMPRIME~MINIMALISTE~HOMME-MW12163-01_8.jpg?sw=736&sh=947",
         "codigo_barras": "4258488910255",
-        "descripcion": "Camisa blanca de diseño minimalista y corte elegante. Perfecta para ocasiones formales o combinaciones casuales sofisticadas."
+        "descripcion": {
+            "es": "Camisa blanca de diseño minimalista y corte elegante. Perfecta para ocasiones formales o combinaciones casuales sofisticadas.",
+            "en": "White shirt with minimalist design and elegant cut. Perfect for formal occasions or sophisticated casual combinations.",
+            "br": "Camisa branca com design minimalista e corte elegante. Perfeita para ocasiões formais ou combinações casuais sofisticadas.",
+            "ar": "Camisa blanca con onda minimalista y corte fachero. Ideal para una salida elegante o un look casual con toda la onda."
+        }
     },
     {
-        "nombre": "Parka Impermeable Invierno",
+        "nombre": {
+            "es": "Parka Impermeable Invierno",
+            "en": "Winter Waterproof Parka",
+            "br": "Parka Impermeável de Inverno",
+            "ar": "Parka Impermeable de Invierno"
+        },
         "unidades_disponibles": 55,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Polleras"
+        },
         "precio": 87.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Hombre",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://m.media-amazon.com/images/I/61+Axj5L1RL._AC_UY580_.jpg",
         "codigo_barras": "7706610940615",
-        "descripcion": "Parka impermeable con forro térmico, ideal para protegerse del frío y la lluvia. Su diseño funcional ofrece múltiples bolsillos y un ajuste cómodo."
+        "descripcion": {
+            "es": "Parka impermeable con forro térmico, ideal para protegerse del frío y la lluvia. Su diseño funcional ofrece múltiples bolsillos y un ajuste cómodo.",
+            "en": "Waterproof parka with thermal lining, ideal for protecting against cold and rain. Its functional design offers multiple pockets and a comfortable fit.",
+            "br": "Parka impermeável com forro térmico, ideal para proteção contra o frio e chuva. Seu design funcional oferece vários bolsos e um ajuste confortável.",
+            "ar": "Parka impermeable con forro térmico, ideal para protegerse del frío y la lluvia. Su diseño funcional tiene múltiples bolsillos y un ajuste cómodo."
+        }
     },
     {
-        "nombre": "Pantalón Palazzo Fluido",
+        "nombre": {
+            "es": "Pantalón Palazzo Fluido",
+            "en": "Fluid Palazzo Pants",
+            "br": "Calça Palazzo Fluida",
+            "ar": "Pantalón Palazzo Fluido"
+        },
         "unidades_disponibles": 56,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Camperas"
+        },
         "precio": 88.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx4-WlpS02IFTjD80WdBGP9AIs9B9Fp5MYkw&s",
         "codigo_barras": "4276007065148",
-        "descripcion": "Pantalón palazzo con caída fluida y diseño sofisticado. Su cintura alta estiliza la figura y brinda comodidad."
+        "descripcion": {
+            "es": "Pantalón palazzo con caída fluida y diseño sofisticado. Su cintura alta estiliza la figura y brinda comodidad.",
+            "en": "Fluid palazzo pants with a sophisticated design. The high waist flatters the figure and offers comfort.",
+            "br": "Calça palazzo com caimento fluido e design sofisticado. A cintura alta valoriza a figura e proporciona conforto.",
+            "ar": "Pantalón palazzo con caída fluida y diseño sofisticado. La cintura alta estiliza la figura y brinda comodidad."
+        }
     },
     {
-        "nombre": "Body Ajustado Manga Larga",
+        "nombre": {
+            "es": "Body Ajustado Manga Larga",
+            "en": "Fitted Long Sleeve Bodysuit",
+            "br": "Body Justo de Manga Longa",
+            "ar": "Body Ajustado Manga Larga"
+        },
         "unidades_disponibles": 57,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 90.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://m.media-amazon.com/images/I/51+RPMd+zfL.jpg",
         "codigo_barras": "1234400732307",
-        "descripcion": "Body de manga larga y ajuste ceñido al cuerpo. Perfecto para looks elegantes o combinaciones con jeans de cintura alta."
+        "descripcion": {
+            "es": "Body de manga larga y ajuste ceñido al cuerpo. Perfecto para looks elegantes o combinaciones con jeans de cintura alta.",
+            "en": "Long sleeve bodysuit with a fitted design. Perfect for elegant looks or combinations with high-waisted jeans.",
+            "br": "Body de manga longa e ajuste justo ao corpo. Perfeito para looks elegantes ou combinações com jeans de cintura alta.",
+            "ar": "Body de manga larga y ajuste ceñido al cuerpo. Perfecto para looks elegantes o combinaciones con jeans de tiro alto."
+        }
     },
     {
-        "nombre": "Shorts Denim de Verano",
+        "nombre": {
+            "es": "Shorts Denim de Verano",
+            "en": "Summer Denim Shorts",
+            "br": "Shorts de Denim para o Verão",
+            "ar": "Shorts de Jean de Verano"
+        },
         "unidades_disponibles": 58,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 91.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Hombre",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://images.napali.app/global/rvca-products/all/default/xlarge/avyds00100_rvca,f_brl0_frt1.jpg",
         "codigo_barras": "5521481065495",
-        "descripcion": "Shorts de mezclilla con corte moderno y ajuste cómodo. Ideales para el verano y fáciles de combinar con cualquier tipo de top."
+        "descripcion": {
+            "es": "Shorts de mezclilla con corte moderno y ajuste cómodo. Ideales para el verano y fáciles de combinar con cualquier tipo de top.",
+            "en": "Denim shorts with a modern cut and comfortable fit. Perfect for summer and easy to pair with any type of top.",
+            "br": "Shorts de jeans com corte moderno e ajuste confortável. Perfeito para o verão e fácil de combinar com qualquer tipo de blusa.",
+            "ar": "Shorts de jean con corte moderno y ajuste cómodo. Ideales para el verano y fáciles de combinar con cualquier tipo de remera."
+        }
     },
     {
-        "nombre": "Blazer Casual Moderno",
+        "nombre": {
+            "es": "Blazer Casual Moderno",
+            "en": "Modern Casual Blazer",
+            "br": "Blazer Casual Moderno",
+            "ar": "Blazer Casual Moderno"
+        },
         "unidades_disponibles": 59,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 93.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://www.mundodeportivo.com/elrecomendador/comparativas/wp-content/uploads/2023/04/B01EFDH136-1.jpg",
         "codigo_barras": "5195232160912",
-        "descripcion": "Blazer de corte moderno y diseño versátil. Perfecto para atuendos formales o casuales elegantes."
+        "descripcion": {
+            "es": "Blazer de corte moderno y diseño versátil. Perfecto para atuendos formales o casuales elegantes.",
+            "en": "Blazer with a modern cut and versatile design. Perfect for formal or smart-casual outfits.",
+            "br": "Blazer com corte moderno e design versátil. Perfeito para looks formais ou casuais elegantes.",
+            "ar": "Blazer de corte moderno y diseño versátil. Perfecto para atuendos formales o casuales elegantes."
+        }
     },
     {
-        "nombre": "Vestido de Noche Elegante",
+        "nombre": {
+            "es": "Vestido de Noche Elegante",
+            "en": "Elegant Evening Dress",
+            "br": "Vestido de Noite Elegante",
+            "ar": "Vestido de Noche Elegante"
+        },
         "unidades_disponibles": 60,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Moletom",
+            "ar": "Sweaters"
+        },
         "precio": 19.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://www.pronovias.com/media/catalog/product/e/s/essential_2431_b.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=747&width=560&canvas=560:747",
         "codigo_barras": "1752194341006",
-        "descripcion": "Vestido largo y elegante con detalles sofisticados. Ideal para eventos formales y ocasiones especiales."
+        "descripcion": {
+            "es": "Vestido largo y elegante con detalles sofisticados. Ideal para eventos formales y ocasiones especiales.",
+            "en": "Long and elegant dress with sophisticated details. Ideal for formal events and special occasions.",
+            "br": "Vestido longo e elegante com detalhes sofisticados. Ideal para eventos formais e ocasiões especiais.",
+            "ar": "Vestido largo y elegante con detalles sofisticados. Ideal para eventos formales y ocasiones especiales."
+        }
     },
     {
-        "nombre": "Zapatillas Chunky Blancas",
+        "nombre": {
+            "es": "Zapatillas Chunky Blancas",
+            "en": "White Chunky Sneakers",
+            "br": "Tênis Chunky Brancos",
+            "ar": "Zapatillas Chunky Blancas"
+        },
         "unidades_disponibles": 61,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 21.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://oechsle.vteximg.com.br/arquivos/ids/3195361-1000-1000/image-fbf1e8b70e664c79a8623b7e8b1f50c0.jpg",
         "codigo_barras": "2653469510521",
-        "descripcion": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+        "descripcion": {
+            "es": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos.",
+            "en": "Comfortable and stylish footwear, designed to provide support and comfort throughout the day. Perfect to pair with urban and sporty outfits.",
+            "br": "Calçado confortável e estiloso, projetado para oferecer suporte e conforto durante o dia todo. Perfeito para combinar com looks urbanos e esportivos.",
+            "ar": "Zapatillas cómodas y estilizadas, diseñadas para ofrecer soporte y confort durante todo el día. Perfectas para combinar con atuendos urbanos y deportivos."
+        }
     },
     {
-        "nombre": "Jersey Cuello Alto Suave",
+        "nombre": {
+            "es": "Jersey Cuello Alto Suave",
+            "en": "Soft High Neck Sweater",
+            "br": "Suéter de Gola Alta Macio",
+            "ar": "Suéter de Cuello Alto Suave"
+        },
         "unidades_disponibles": 62,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Faldas"
+        },
         "precio": 22.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://m.media-amazon.com/images/I/61NEJgdxLRL._AC_UF894,1000_QL80_.jpg",
         "codigo_barras": "3476265221343",
-        "descripcion": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión."
+        "descripcion": {
+            "es": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión.",
+            "en": "Comfortable and cozy sweatshirt, perfect for cold days. Its modern design and relaxed fit make it ideal for any occasion.",
+            "br": "Suéter confortável e aconchegante, perfeito para dias frios. Seu design moderno e ajuste relaxado o torna ideal para qualquer ocasião.",
+            "ar": "Suéter cómodo y abrigado, perfecto para los días fríos. Su diseño moderno y ajuste relajado lo hacen ideal para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Chaqueta Acolchada Ligera",
+        "nombre": {
+            "es": "Chaqueta Acolchada Ligera",
+            "en": "Light Quilted Jacket",
+            "br": "Jaqueta Leve Acolchoada",
+            "ar": "Campera Acolchonada Ligera"
+        },
         "unidades_disponibles": 63,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Camperas"
+        },
         "precio": 24.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Unisex",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://www.77onlineshop.es/$WS/77onlineshop/websale8_shop-77onlineshop/produkte/medien/bilder/normal/21120504_1.jpg",
         "codigo_barras": "5067775684826",
-        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+        "descripcion": {
+            "es": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits.",
+            "en": "Modern and functional jacket, designed to provide style and comfort in any weather. Perfect to pair with multiple outfits.",
+            "br": "Jaqueta moderna e funcional, projetada para oferecer estilo e conforto em qualquer clima. Perfeita para combinar com vários looks.",
+            "ar": "Campera moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Ideal para combinar con múltiples conjuntos."
+        }
     },
     {
-        "nombre": "Camisa Oversize de Lino",
+        "nombre": {
+            "es": "Camisa Oversize de Lino",
+            "en": "Oversize Linen Shirt",
+            "br": "Camisa de Linho Oversize",
+            "ar": "Camisa Oversize de Lino"
+        },
         "unidades_disponibles": 64,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 25.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7zkETNBbfjQ1jdQb4dWuBbloHNXmZnVc9jA&s",
         "codigo_barras": "4791756189491",
-        "descripcion": "Camisa Oversize de Lino diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Camisa Oversize de Lino diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Oversize linen shirt made with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Camisa de linho oversize feita com materiais de alta qualidade e estilo versátil. Perfeita para qualquer ocasião.",
+            "ar": "Camisa Oversize de Lino hecha con materiales de alta calidad y un estilo versátil. Perfecta para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Botas de Montaña Resistentes",
+        "nombre": {
+            "es": "Botas de Montaña Resistentes",
+            "en": "Durable Mountain Boots",
+            "br": "Botas de Montanha Duráveis",
+            "ar": "Botas de Montaña Resistentes"
+        },
         "unidades_disponibles": 65,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 27.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://media.planas.pro/product/botas-de-montana-trekking-de-serraje-y-lona-800x800_40PAtol.jpg",
         "codigo_barras": "6403963689650",
-        "descripcion": "Botas de Montaña Resistentes diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Botas de Montaña Resistentes diseñadas con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Durable mountain boots made with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Botas de montanha duráveis feitas com materiais de alta qualidade e estilo versátil. Perfeitas para qualquer ocasião.",
+            "ar": "Botas de montaña resistentes, hechas con materiales de alta calidad y un estilo versátil. Perfectas para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Leggins con Bolsillos Deportivos",
+        "nombre": {
+            "es": "Leggins con Bolsillos Deportivos",
+            "en": "Sporty Leggings with Pockets",
+            "br": "Legging Esportivo com Bolsos",
+            "ar": "Leggings con Bolsillos Deportivos"
+        },
         "unidades_disponibles": 66,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 28.99,
-        "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["XS", "S", "M", "L", "XL"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://m.media-amazon.com/images/I/51kve33VbbL._AC_UY580_.jpg",
         "codigo_barras": "8542105682265",
-        "descripcion": "Leggins con Bolsillos Deportivos diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Leggins con Bolsillos Deportivos diseñados con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Sporty leggings with pockets, designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Legging esportivo com bolsos, projetado com materiais de alta qualidade e estilo versátil. Perfeito para qualquer ocasião.",
+            "ar": "Leggings con Bolsillos Deportivos, diseñados con materiales de alta calidad y un estilo versátil. Perfectos para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Blusa de Encaje Fina",
+        "nombre": {
+            "es": "Blusa de Encaje Fina",
+            "en": "Fine Lace Blouse",
+            "br": "Blusa de Renda Fina",
+            "ar": "Blusa de Encaje Fina"
+        },
         "unidades_disponibles": 67,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Moletom",
+            "ar": "Sweaters"
+        },
         "precio": 30.49,
-        "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
-        ],
-        "genero": "Mujer",
+        "tallas_disponibles": ["37", "38", "39", "40", "41", "42"],
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://myspringfield.com/dw/image/v2/AAYL_PRD/on/demandware.static/-/Sites-gc-spf-master-catalog/default/dw86f3ad72/images/hi-res/P_902005001D9.jpg?sw=600&sh=900&sm=fit",
         "codigo_barras": "2009423969866",
-        "descripcion": "Blusa de Encaje Fina diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Blusa de Encaje Fina diseñada con materiales de alta calidad y un estilo versátil. Perfecta para cualquier ocasión.",
+            "en": "Fine lace blouse designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Blusa de Encaje Fina diseñada con materiales de alta calidad y un estilo versátil. Perfecta para cualquier ocasión.",
+            "ar": "Blusa de Encaje Fina, diseñada con materiales de alta calidad y un estilo versátil. Perfecta para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Gabardina Clásica Beige",
+        "nombre": {
+            "es": "Gabardina Clásica Beige",
+            "en": "Classic Beige Trench Coat",
+            "br": "Trench Coat Clássico Bege",
+            "ar": "Gabardina Clásica Beige"
+        },
         "unidades_disponibles": 68,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 31.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://capitansiroco.com/cdn/shop/files/W4YL13WGAI0-F11M_1_-3_800x.jpg?v=1739618449",
         "codigo_barras": "3816685208653",
-        "descripcion": "Gabardina Clásica Beige diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Gabardina Clásica Beige diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Classic Beige Trench Coat designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Trench Coat Clássico Bege, projetado com materiais de alta qualidade e estilo versátil. Perfeito para qualquer ocasião.",
+            "ar": "Gabardina Clásica Beige, diseñada con materiales de alta calidad y un estilo versátil. Perfecta para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Gorra Vintage Bordada",
+        "nombre": {
+            "es": "Gorra Vintage Bordada",
+            "en": "Embroidered Vintage Hat",
+            "br": "Boné Vintage Bordado",
+            "ar": "Gorra Vintage Bordada"
+        },
         "unidades_disponibles": 69,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Faldas"
+        },
         "precio": 33.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://img.joomcdn.net/1048c64569950c5616501dcc9ff942e50612d65e_original.jpeg",
         "codigo_barras": "3687299032236",
-        "descripcion": "Gorra Vintage Bordada con diseño moderno y ajustable. Ideal para complementar cualquier look casual y protegerse del sol."
+        "descripcion": {
+            "es": "Gorra Vintage Bordada con diseño moderno y ajustable. Ideal para complementar cualquier look casual y protegerse del sol.",
+            "en": "Embroidered Vintage Hat with a modern and adjustable design. Perfect to complement any casual look and protect from the sun.",
+            "br": "Boné Vintage Bordado com design moderno e ajustável. Perfeito para complementar qualquer look casual e se proteger do sol.",
+            "ar": "Gorra Vintage Bordada con diseño moderno y ajustable. Ideal para complementar cualquier look casual y protegerte del sol."
+        }
     },
     {
-        "nombre": "Pantalón Jogger Cargo",
+        "nombre": {
+            "es": "Pantalón Jogger Cargo",
+            "en": "Cargo Jogger Pants",
+            "br": "Calça Jogger Cargo",
+            "ar": "Pantalón Jogger Cargo"
+        },
         "unidades_disponibles": 70,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Camperas"
+        },
         "precio": 34.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://static.lefties.com/assets/public/760e/bf58/fb4d4000b9ed/ffa06c3a4689/05921531710-P/05921531710-P.jpg?ts=1725624455913&w=405&f=auto",
         "codigo_barras": "2030582820353",
-        "descripcion": "Pantalón Jogger Cargo con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada."
+        "descripcion": {
+            "es": "Pantalón Jogger Cargo con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada.",
+            "en": "Cargo Jogger Pants with a comfortable fit and versatile design. Perfect for a casual and modern style in any season.",
+            "br": "Calça Jogger Cargo com ajuste confortável e design versátil. Perfeito para um estilo casual e moderno em qualquer estação.",
+            "ar": "Pantalón Jogger Cargo con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada."
+        }
     },
     {
-        "nombre": "Suéter de Lana Grueso",
+        "nombre": {
+            "es": "Suéter de Lana Grueso",
+            "en": "Thick Wool Sweater",
+            "br": "Suéter de Lã Grosso",
+            "ar": "Suéter de Lana Grueso"
+        },
         "unidades_disponibles": 71,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 36.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://m.media-amazon.com/images/I/811O3Kj6aHL._AC_UY580_.jpg",
         "codigo_barras": "9461396859272",
-        "descripcion": "Suéter de Lana Grueso diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Suéter de Lana Grueso diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Thick Wool Sweater designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Suéter de Lã Grosso, projetado com materiais de alta qualidade e estilo versátil. Perfeito para qualquer ocasião.",
+            "ar": "Suéter de Lana Grueso diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Chamarra de Mezclilla Azul",
+        "nombre": {
+            "es": "Chamarra de Mezclilla Azul",
+            "en": "Blue Denim Jacket",
+            "br": "Jaqueta de Jeans Azul",
+            "ar": "Chamarra de Mezclilla Azul"
+        },
         "unidades_disponibles": 72,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 37.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://m.media-amazon.com/images/I/51uJbq-5FjL._AC_.jpg",
         "codigo_barras": "2733526245457",
-        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+        "descripcion": {
+            "es": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits.",
+            "en": "Modern and functional jacket designed to provide style and comfort in any weather. Perfect for pairing with multiple outfits.",
+            "br": "Jaqueta moderna e funcional, projetada para oferecer estilo e conforto em qualquer clima. Perfeita para combinar com vários looks.",
+            "ar": "Campera moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples looks."
+        }
     },
     {
-        "nombre": "Camiseta Tie-Dye Estilosa",
+        "nombre": {
+            "es": "Camiseta Tie-Dye Estilosa",
+            "en": "Stylish Tie-Dye Shirt",
+            "br": "Camiseta Estilosa Tie-Dye",
+            "ar": "Remera Tie-Dye Estilosa"
+        },
         "unidades_disponibles": 73,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-Shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 39.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/TieDyeShirtMpegMan.jpg/800px-TieDyeShirtMpegMan.jpg",
         "codigo_barras": "8529207567262",
-        "descripcion": "Camiseta Tie-Dye Estilosa de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        "descripcion": {
+            "es": "Camiseta Tie-Dye Estilosa de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual.",
+            "en": "Stylish Tie-Dye Shirt made of high-quality cotton, soft and breathable. Ideal for pairing with any casual outfit.",
+            "br": "Camiseta Estilosa Tie-Dye feita de algodão de alta qualidade, macia e respirável. Ideal para combinar com qualquer look casual.",
+            "ar": "Remera Tie-Dye Estilosa de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        }
     },
     {
-        "nombre": "Bikini con Estampado Floral",
+        "nombre": {
+            "es": "Bikini con Estampado Floral",
+            "en": "Floral Print Bikini",
+            "br": "Biquíni com Estampa Floral",
+            "ar": "Bikini con Estampado Floral"
+        },
         "unidades_disponibles": 74,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Camisetas de Moletom",
+            "ar": "Buzos"
+        },
         "precio": 40.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://www.anahidalgo.es/wp-content/uploads/2022/06/IMG-20220620-WA010138161.jpg",
         "codigo_barras": "3976238232441",
-        "descripcion": "Bikini con Estampado Floral diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Bikini con Estampado Floral diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Floral Print Bikini designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Biquíni com Estampa Floral, projetado com materiais de alta qualidade e estilo versátil. Perfeito para qualquer ocasião.",
+            "ar": "Bikini con Estampado Floral diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Sudadera Unisex Bordada",
+        "nombre": {
+            "es": "Sudadera Unisex Bordada",
+            "en": "Embroidered Unisex Sweatshirt",
+            "br": "Camiseta de Moletom Unissex Bordada",
+            "ar": "Buzo Unisex Bordada"
+        },
         "unidades_disponibles": 75,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 42.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJKOxmsCHIb9igvokmn7RvBf_Ay08UDLU1Hg&s",
         "codigo_barras": "1490546078350",
-        "descripcion": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión."
+        "descripcion": {
+            "es": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión.",
+            "en": "Comfortable and warm sweatshirt, perfect for cold days. Its modern design and relaxed fit make it ideal for any occasion.",
+            "br": "Camiseta de Moletom confortável e aquecida, perfeita para dias frios. Seu design moderno e ajuste relaxado a tornam ideal para qualquer ocasião.",
+            "ar": "Buzo cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Chaleco de Punto Retro",
+        "nombre": {
+            "es": "Chaleco de Punto Retro",
+            "en": "Retro Knit Vest",
+            "br": "Colete de Tricô Retrô",
+            "ar": "Chaleco de Punto Retro"
+        },
         "unidades_disponibles": 76,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Faldas"
+        },
         "precio": 43.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://m.media-amazon.com/images/I/71WSh1bzXVL._AC_UF894,1000_QL80_.jpg",
         "codigo_barras": "3097378089599",
-        "descripcion": "Chaleco de Punto Retro diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Chaleco de Punto Retro diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Retro Knit Vest designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Colete de Tricô Retrô, projetado com materiais de alta qualidade e estilo versátil. Perfeito para qualquer ocasião.",
+            "ar": "Chaleco de Punto Retro diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Pantalones de Algodón Relaxed",
+        "nombre": {
+            "es": "Pantalones de Algodón Relaxed",
+            "en": "Relaxed Cotton Pants",
+            "br": "Calça de Algodão Relaxed",
+            "ar": "Pantalones de Algodón Relaxed"
+        },
         "unidades_disponibles": 77,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Camperas"
+        },
         "precio": 45.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://www.cos.com/static-images/products/assets/001/9f/e6/9fe67d4e830bfb76a6b9da5aa90da6b0cad2627a_xxl-1.jpg?imwidth=2160",
         "codigo_barras": "8540225418906",
-        "descripcion": "Pantalones de Algodón Relaxed diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Pantalones de Algodón Relaxed diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Relaxed Cotton Pants designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Calça de Algodão Relaxed, projetado com materiais de alta qualidade e estilo versátil. Perfeito para qualquer ocasião.",
+            "ar": "Pantalones de Algodón Relaxed diseñados con materiales de alta calidad y un estilo versátil. Perfectos para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Top con Hombros Descubiertos",
+        "nombre": {
+            "es": "Top con Hombros Descubiertos",
+            "en": "Off-Shoulder Top",
+            "br": "Blusa com Ombros Descobertos",
+            "ar": "Top con Hombros Descubiertos"
+        },
         "unidades_disponibles": 78,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 46.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://img1.shopcider.com/product/1670476868000-BYK2FE.jpg?x-oss-process=image/resize,w_1050,m_lfit/quality,Q_60/interlace,1",
         "codigo_barras": "6218083016524",
-        "descripcion": "Top con Hombros Descubiertos de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        "descripcion": {
+            "es": "Top con Hombros Descubiertos de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual.",
+            "en": "Off-Shoulder Top made of high-quality cotton, soft and breathable. Ideal for pairing with any casual outfit.",
+            "br": "Blusa com Ombros Descobertos feita de algodão de alta qualidade, macia e respirável. Ideal para combinar com qualquer look casual.",
+            "ar": "Top con Hombros Descubiertos de alta calidad, confeccionado en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        }
     },
     {
-        "nombre": "Shorts Cargo Multi Bolsillos",
+        "nombre": {
+            "es": "Shorts Cargo Multi Bolsillos",
+            "en": "Multi Pocket Cargo Shorts",
+            "br": "Bermuda Cargo Multi Bolsos",
+            "ar": "Shorts Cargo Multi Bolsillos"
+        },
         "unidades_disponibles": 79,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 48.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://m.media-amazon.com/images/I/81UBRvCIEbL._AC_UY580_.jpg",
         "codigo_barras": "3883723586300",
-        "descripcion": "Shorts Cargo Multi Bolsillos diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Shorts Cargo Multi Bolsillos diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Multi Pocket Cargo Shorts designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Bermuda Cargo Multi Bolsos, projetado com materiais de alta qualidade e estilo versátil. Perfeito para qualquer ocasião.",
+            "ar": "Shorts Cargo Multi Bolsillos diseñados con materiales de alta calidad y un estilo versátil. Perfectos para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Botines Chelsea Cuero",
+        "nombre": {
+            "es": "Botines Chelsea Cuero",
+            "en": "Leather Chelsea Boots",
+            "br": "Botas Chelsea de Couro",
+            "ar": "Botines Chelsea Cuero"
+        },
         "unidades_disponibles": 80,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 49.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://media.catchalot.es/79136-pdt_640/botines-chelsea-cuero-mujer-catchalot-ib-2397.jpg",
         "codigo_barras": "3721436159575",
-        "descripcion": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+        "descripcion": {
+            "es": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos.",
+            "en": "Comfortable and stylish footwear, designed to offer support and comfort throughout the day. Perfect for pairing with urban and sporty outfits.",
+            "br": "Calçado confortável e estiloso, projetado para oferecer suporte e conforto durante todo o dia. Perfeito para combinar com looks urbanos e esportivos.",
+            "ar": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+        }
     },
     {
-        "nombre": "Chamarra de Invierno Puffer",
+        "nombre": {
+            "es": "Chamarra de Invierno Puffer",
+            "en": "Puffer Winter Jacket",
+            "br": "Jaqueta Puffer de Inverno",
+            "ar": "Campera de Invierno Puffer"
+        },
         "unidades_disponibles": 81,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Camisetas de Moletom",
+            "ar": "Buzos"
+        },
         "precio": 51.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://img01.ztat.net/article/spp-media-p1/030ad0e9c59346f08efc62e868498eb7/3c89bb311fda4ef0967544fc968bc873.jpg?imwidth=762&filter=packshot",
         "codigo_barras": "5270322370612",
-        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+        "descripcion": {
+            "es": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits.",
+            "en": "Modern and functional jacket, designed to provide style and comfort in any weather. Perfect for pairing with multiple outfits.",
+            "br": "Jaqueta moderna e funcional, projetada para oferecer estilo e conforto em qualquer clima. Perfeita para combinar com vários looks.",
+            "ar": "Campera moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+        }
     },
     {
-        "nombre": "Camiseta Vintage Rock Band",
+        "nombre": {
+            "es": "Camiseta Vintage Rock Band",
+            "en": "Vintage Rock Band T-shirt",
+            "br": "Camiseta Vintage Banda de Rock",
+            "ar": "Remera Vintage Banda de Rock"
+        },
         "unidades_disponibles": 82,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 52.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBalXrNR_Vl6F-a_XI10Dnf9q5xuVLRTqKag&s",
         "codigo_barras": "9949363097798",
-        "descripcion": "Camiseta Vintage Rock Band de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        "descripcion": {
+            "es": "Camiseta Vintage Rock Band de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual.",
+            "en": "Vintage Rock Band T-shirt made of high-quality, soft, and breathable cotton. Perfect for pairing with any casual outfit.",
+            "br": "Camiseta Vintage Banda de Rock feita de algodão de alta qualidade, suave e respirável. Perfeita para combinar com qualquer look casual.",
+            "ar": "Remera Vintage Banda de Rock de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        }
     },
     {
-        "nombre": "Jeans Mom Fit Rasgados",
+        "nombre": {
+            "es": "Jeans Mom Fit Rasgados",
+            "en": "Ripped Mom Fit Jeans",
+            "br": "Jeans Mom Fit Rasgados",
+            "ar": "Jeans Mom Fit Rotos"
+        },
         "unidades_disponibles": 83,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Faldas"
+        },
         "precio": 54.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://static.pullandbear.net/assets/public/515b/0552/901c4cdf83f9/ca8cf656bf21/03685336428-A6M/03685336428-A6M.jpg?ts=1721685116728&w=1082&f=auto",
         "codigo_barras": "1159002773274",
-        "descripcion": "Jeans Mom Fit Rasgados con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada."
+        "descripcion": {
+            "es": "Jeans Mom Fit Rasgados con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada.",
+            "en": "Ripped Mom Fit Jeans with a comfortable fit and versatile design. Perfect for a casual and modern style in any season.",
+            "br": "Jeans Mom Fit Rasgados com ajuste confortável e design versátil. Perfeito para um estilo casual e moderno em qualquer estação.",
+            "ar": "Jeans Mom Fit Rotos con ajuste cómodo y diseño versátil. Perfectos para un estilo casual y moderno en cualquier temporada."
+        }
     },
     {
-        "nombre": "Vestido Largo con Volantes",
+        "nombre": {
+            "es": "Vestido Largo con Volantes",
+            "en": "Long Dress with Ruffles",
+            "br": "Vestido Longo com Babados",
+            "ar": "Vestido Largo con Volantes"
+        },
         "unidades_disponibles": 84,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Camperas"
+        },
         "precio": 55.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://mundobgb.com/wp-content/uploads/2022/04/6r76r67.jpg",
         "codigo_barras": "9147856257860",
-        "descripcion": "Vestido Largo con Volantes con diseño sofisticado y tela ligera. Perfecto para eventos especiales o para un look casual con un toque de elegancia."
+        "descripcion": {
+            "es": "Vestido Largo con Volantes con diseño sofisticado y tela ligera. Perfecto para eventos especiales o para un look casual con un toque de elegancia.",
+            "en": "Long Dress with Ruffles, featuring a sophisticated design and lightweight fabric. Perfect for special events or a casual look with a touch of elegance.",
+            "br": "Vestido Longo com Babados, com design sofisticado e tecido leve. Perfeito para eventos especiais ou para um look casual com um toque de elegância.",
+            "ar": "Vestido Largo con Volantes, con diseño sofisticado y tela ligera. Perfecto para eventos especiales o para un look casual con un toque de elegancia."
+        }
     },
     {
-        "nombre": "Gafas de Sol Modernas",
+        "nombre": {
+            "es": "Gafas de Sol Modernas",
+            "en": "Modern Sunglasses",
+            "br": "Óculos de Sol Modernos",
+            "ar": "Gafas de Sol Modernas"
+        },
         "unidades_disponibles": 85,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 57.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/08/04/16596249364662.jpg",
         "codigo_barras": "7603401708907",
-        "descripcion": "Gafas de Sol Modernas diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Gafas de Sol Modernas diseñadas con materiales de alta calidad y un estilo versátil. Perfectas para cualquier ocasión.",
+            "en": "Modern Sunglasses designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Óculos de Sol Modernos, projetados com materiais de alta qualidade e estilo versátil. Perfeitos para qualquer ocasião.",
+            "ar": "Gafas de Sol Modernas diseñadas con materiales de alta calidad y un estilo versátil. Perfectas para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Jersey Estampado Colorido",
+        "nombre": {
+            "es": "Jersey Estampado Colorido",
+            "en": "Colorful Printed Sweater",
+            "br": "Suéter Estampado Colorido",
+            "ar": "Jersey Estampado Colorido"
+        },
         "unidades_disponibles": 86,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 58.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://m.media-amazon.com/images/I/7190il2h1WL._AC_UY580_.jpg",
         "codigo_barras": "9951679336921",
-        "descripcion": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión."
+        "descripcion": {
+            "es": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión.",
+            "en": "Comfortable and warm sweatshirt, perfect for cold days. Its modern design and relaxed fit make it ideal for any occasion.",
+            "br": "Moletom confortável e aquecido, perfeito para dias frios. Seu design moderno e ajuste relaxado o tornam ideal para qualquer ocasião.",
+            "ar": "Jersey cómodo y abrigado, perfecto para los días fríos. Su diseño moderno y ajuste relajado lo hacen ideal para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Chaqueta Casual Oversized",
+        "nombre": {
+            "es": "Chaqueta Casual Oversized",
+            "en": "Casual Oversized Jacket",
+            "br": "Jaqueta Casual Oversized",
+            "ar": "Campera Casual Oversized"
+        },
         "unidades_disponibles": 87,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 60.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://m.media-amazon.com/images/I/61Y489dbsML._AC_UF894,1000_QL80_.jpg",
         "codigo_barras": "9021990966599",
-        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+        "descripcion": {
+            "es": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits.",
+            "en": "Modern and functional jacket, designed to provide style and comfort in any weather. Perfect for pairing with multiple outfits.",
+            "br": "Jaqueta moderna e funcional, projetada para oferecer estilo e conforto em qualquer clima. Perfeita para combinar com vários looks.",
+            "ar": "Campera moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+        }
     },
     {
-        "nombre": "Falda Midi con Pliegues",
+        "nombre": {
+            "es": "Falda Midi con Pliegues",
+            "en": "Pleated Midi Skirt",
+            "br": "Saia Midi com Pregas",
+            "ar": "Falda Midi con Pliegues"
+        },
         "unidades_disponibles": 88,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Camisetas de Moletom",
+            "ar": "Buzos"
+        },
         "precio": 61.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://cdn1.chcarolinaherrera.com/wcscontent/photos/CH/2025/51/CM/51CM481100642/51CM481100642_01_1x1.jpg",
         "codigo_barras": "7118047412964",
-        "descripcion": "Falda elegante y femenina, confeccionada con materiales ligeros y cómodos. Ideal para looks sofisticados o casuales."
+        "descripcion": {
+            "es": "Falda elegante y femenina, confeccionada con materiales ligeros y cómodos. Ideal para looks sofisticados o casuales.",
+            "en": "Elegant and feminine skirt, made with light and comfortable materials. Ideal for sophisticated or casual looks.",
+            "br": "Saia elegante e feminina, confeccionada com materiais leves e confortáveis. Ideal para looks sofisticados ou casuais.",
+            "ar": "Falda elegante y femenina, confeccionada con materiales ligeros y cómodos. Ideal para looks sofisticados o casuales."
+        }
     },
     {
-        "nombre": "Camisa Clásica de Algodón",
+        "nombre": {
+            "es": "Camisa Clásica de Algodón",
+            "en": "Classic Cotton Shirt",
+            "br": "Camisa Clássica de Algodão",
+            "ar": "Camisa Clásica de Algodón"
+        },
         "unidades_disponibles": 89,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 63.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://safetop.net/web/3459-large_default/biville-camisa-100-algodon-clasica-tallas-s2xl.jpg",
         "codigo_barras": "6838360718421",
-        "descripcion": "Camisa Clásica de Algodón diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Camisa Clásica de Algodón diseñada con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Classic Cotton Shirt made with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Camisa Clássica de Algodão feita com materiais de alta qualidade e estilo versátil. Perfeita para qualquer ocasião.",
+            "ar": "Camisa Clásica de Algodón diseñada con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Zapatillas Negras de Cuero",
+        "nombre": {
+            "es": "Zapatillas Negras de Cuero",
+            "en": "Black Leather Sneakers",
+            "br": "Tênis Pretos de Couro",
+            "ar": "Zapatillas Negras de Cuero"
+        },
         "unidades_disponibles": 90,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Faldas"
+        },
         "precio": 64.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://www.zapatodirecto.com/67246-large_default/zapatillas-de-vestir-mujer-comodas-negras-mod-clara-ne.jpg",
         "codigo_barras": "7796596044612",
-        "descripcion": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+        "descripcion": {
+            "es": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos.",
+            "en": "Comfortable and stylish footwear, designed to provide support and comfort throughout the day. Perfect for pairing with urban and sporty outfits.",
+            "br": "Calçado confortável e estiloso, projetado para oferecer suporte e conforto durante todo o dia. Perfeito para combinar com looks urbanos e esportivos.",
+            "ar": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+        }
     },
     {
-        "nombre": "Chamarra con Estampado",
+        "nombre": {
+            "es": "Chamarra con Estampado",
+            "en": "Printed Jacket",
+            "br": "Jaqueta com Estampa",
+            "ar": "Chamarra con Estampado"
+        },
         "unidades_disponibles": 91,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Camperas"
+        },
         "precio": 66.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://images.napali.app/global/element-products/all/default/xlarge/f3jka7elf2_element,f_4709_bck1.jpg",
         "codigo_barras": "4152104096311",
-        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+        "descripcion": {
+            "es": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits.",
+            "en": "Modern and functional jacket, designed to provide style and comfort in any weather. Perfect for pairing with multiple outfits.",
+            "br": "Jaqueta moderna e funcional, projetada para oferecer estilo e conforto em qualquer clima. Perfeita para combinar com vários looks.",
+            "ar": "Campera moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+        }
     },
     {
-        "nombre": "Pantalones de Vestir Slim",
+        "nombre": {
+            "es": "Pantalones de Vestir Slim",
+            "en": "Slim Fit Dress Pants",
+            "br": "Calças Slim de Vestir",
+            "ar": "Pantalones de Vestir Slim"
+        },
         "unidades_disponibles": 92,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 67.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://mundotextil.com/tienda/474-large_default/pantalon-camarero-monza-4791.jpg",
         "codigo_barras": "5443194942391",
-        "descripcion": "Pantalones de Vestir Slim diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Pantalones de Vestir Slim diseñados con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Slim Fit Dress Pants designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Calças Slim de Vestir feitas com materiais de alta qualidade e estilo versátil. Perfeitas para qualquer ocasião.",
+            "ar": "Pantalones de Vestir Slim diseñados con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Blusa Boho con Bordados",
+        "nombre": {
+            "es": "Blusa Boho con Bordados",
+            "en": "Boho Blouse with Embroidery",
+            "br": "Blusa Boho com Bordados",
+            "ar": "Blusa Boho con Bordados"
+        },
         "unidades_disponibles": 93,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 69.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://www.korner.es/uploads/media/images/PL304262_803_1.jpg",
         "codigo_barras": "3889278540651",
-        "descripcion": "Blusa Boho con Bordados diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Blusa Boho con Bordados diseñada con materiales de alta calidad y un estilo versátil. Perfecta para cualquier ocasión.",
+            "en": "Boho blouse with embroidery made with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Blusa Boho com Bordados feita com materiais de alta qualidade e estilo versátil. Perfeita para qualquer ocasião.",
+            "ar": "Blusa Boho con Bordados diseñada con materiales de alta calidad y un estilo versátil. Perfecta para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Polo Deportivo de Secado Rápido",
+        "nombre": {
+            "es": "Polo Deportivo de Secado Rápido",
+            "en": "Quick-Dry Sports Polo",
+            "br": "Polo Esportivo de Secagem Rápida",
+            "ar": "Polo Deportivo de Secado Rápido"
+        },
         "unidades_disponibles": 94,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 70.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://m.media-amazon.com/images/I/61Qs5v+D6QL._AC_UY580_.jpg",
         "codigo_barras": "3650769809195",
-        "descripcion": "Polo Deportivo de Secado Rápido diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Polo Deportivo de Secado Rápido diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Quick-dry sports polo designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Polo Esportivo de Secagem Rápida feito com materiais de alta qualidade e estilo versátil. Perfeito para qualquer ocasião.",
+            "ar": "Polo Deportivo de Secado Rápido diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Bermudas de Playa Ligeras",
+        "nombre": {
+            "es": "Bermudas de Playa Ligeras",
+            "en": "Light Beach Shorts",
+            "br": "Bermudas de Praia Leves",
+            "ar": "Bermudas de Playa Ligeras"
+        },
         "unidades_disponibles": 95,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Camisetas de Moletom",
+            "ar": "Buzos"
+        },
         "precio": 72.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://m.media-amazon.com/images/I/71Xg-gJjgbL._AC_UF894,1000_QL80_.jpg",
         "codigo_barras": "7884078708629",
-        "descripcion": "Bermudas de Playa Ligeras diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Bermudas de Playa Ligeras diseñadas con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Light beach shorts made with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Bermudas de Praia Leves feitas com materiais de alta qualidade e estilo versátil. Perfeitas para qualquer ocasião.",
+            "ar": "Bermudas de Playa Ligeras diseñadas con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Camiseta Blanca con Estampado",
+        "nombre": {
+            "es": "Camiseta Blanca con Estampado",
+            "en": "White T-shirt with Print",
+            "br": "Camiseta Branca com Estampa",
+            "ar": "Remera Blanca con Estampado"
+        },
         "unidades_disponibles": 96,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 73.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Unisex",
+        "genero": {
+            "es": "Unisex",
+            "en": "Unisex",
+            "br": "Unissex",
+            "ar": "Unisex"
+        },
         "foto": "https://www.tuctuc.com/es/118596-medium_default/camiseta-manga-larga-blanca-con-estampado-wild-darkness-para-nina-coleccion-dark-and-roses.jpg",
         "codigo_barras": "3102971352248",
-        "descripcion": "Camiseta Blanca con Estampado de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        "descripcion": {
+            "es": "Camiseta Blanca con Estampado de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual.",
+            "en": "High-quality white printed t-shirt, made from soft and breathable cotton. Ideal for pairing with any casual outfit.",
+            "br": "Camiseta Branca com Estampa de alta qualidade, feita de algodão suave e respirável. Ideal para combinar com qualquer look casual.",
+            "ar": "Remera Blanca con Estampado de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        }
     },
     {
-        "nombre": "Sudadera Color Block",
+        "nombre": {
+            "es": "Sudadera Color Block",
+            "en": "Color Block Sweatshirt",
+            "br": "Moletom Color Block",
+            "ar": "Buzo Color Block"
+        },
         "unidades_disponibles": 97,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Faldas"
+        },
         "precio": 75.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Homem",
+            "ar": "Chabón"
+        },
         "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJb0mv_GaLoavNiw546p2pitxuoS3U2y-gg&s",
         "codigo_barras": "2205443586753",
-        "descripcion": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión."
+        "descripcion": {
+            "es": "Sudadera cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión.",
+            "en": "Comfortable and warm sweatshirt, perfect for cold days. Its modern design and relaxed fit make it ideal for any occasion.",
+            "br": "Moletom confortável e aquecido, perfeito para dias frios. Seu design moderno e ajuste relaxado o tornam ideal para qualquer ocasião.",
+            "ar": "Buzo cómoda y abrigada, perfecta para los días fríos. Su diseño moderno y ajuste relajado la hacen ideal para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Sneakers de Plataforma Altos",
+        "nombre": {
+            "es": "Sneakers de Plataforma Altos",
+            "en": "High Platform Sneakers",
+            "br": "Tênis de Plataforma Alta",
+            "ar": "Sneakers de Plataforma Altos"
+        },
         "unidades_disponibles": 98,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Camperas"
+        },
         "precio": 76.99,
         "tallas_disponibles": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"
+            "XS", "S", "M", "L", "XL"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://m.media-amazon.com/images/I/61mC2zxaJaL._AC_UY580_.jpg",
         "codigo_barras": "7007550390033",
-        "descripcion": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+        "descripcion": {
+            "es": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos.",
+            "en": "Comfortable and stylish footwear, designed to offer support and comfort throughout the day. Perfect for pairing with urban and sporty outfits.",
+            "br": "Calçado confortável e estiloso, projetado para oferecer suporte e conforto durante todo o dia. Perfeito para combinar com looks urbanos e esportivos.",
+            "ar": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+        }
     },
     {
-        "nombre": "Vestido de Fiesta Satinado",
+        "nombre": {
+            "es": "Vestido de Fiesta Satinado",
+            "en": "Satin Party Dress",
+            "br": "Vestido de Festa Satinado",
+            "ar": "Vestido de Fiesta Satinado"
+        },
         "unidades_disponibles": 99,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 78.49,
         "tallas_disponibles": [
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42"
+            "37", "38", "39", "40", "41", "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Mulher",
+            "ar": "Mina"
+        },
         "foto": "https://zapaka.es/cdn/shop/products/DSC02994.jpg?v=1607493218",
         "codigo_barras": "9953281047345",
-        "descripcion": "Vestido de Fiesta Satinado con diseño sofisticado y tela ligera. Perfecto para eventos especiales o para un look casual con un toque de elegancia."
+        "descripcion": {
+            "es": "Vestido de Fiesta Satinado con diseño sofisticado y tela ligera. Perfecto para eventos especiales o para un look casual con un toque de elegancia.",
+            "en": "Satin party dress with a sophisticated design and lightweight fabric. Perfect for special events or a casual look with a touch of elegance.",
+            "br": "Vestido de Festa Satinado com design sofisticado e tecido leve. Perfeito para eventos especiais ou para um look casual com um toque de elegância.",
+            "ar": "Vestido de Fiesta Satinado con diseño sofisticado y tela ligera. Perfecto para eventos especiales o para un look casual con un toque de elegancia."
+        }
     },
     {
-        "nombre": "Gorra con Visera Plana",
+        "nombre": {
+            "es": "Gorra con Visera Plana",
+            "en": "Flat Brim Cap",
+            "br": "Boné com Visor Plano",
+            "ar": "Gorra con Visera Plana"
+        },
         "unidades_disponibles": 100,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 79.99,
         "tallas_disponibles": [
             "XS",
@@ -1586,15 +2891,35 @@
             "L",
             "XL"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Masculino",
+            "ar": "Chabón"
+        },
         "foto": "https://surfmonkey.b-cdn.net/1325-large_default/gorra-plana-gris.jpg",
         "codigo_barras": "2861739547958",
-        "descripcion": "Gorra con Visera Plana con diseño moderno y ajustable. Ideal para complementar cualquier look casual y protegerse del sol."
+        "descripcion": {
+            "es": "Gorra con Visera Plana con diseño moderno y ajustable. Ideal para complementar cualquier look casual y protegerse del sol.",
+            "en": "Flat Brim Cap with a modern, adjustable design. Ideal for complementing any casual look and protecting from the sun.",
+            "br": "Boné com Visor Plano com design moderno e ajustável. Ideal para complementar qualquer look casual e se proteger do sol.",
+            "ar": "Gorra con Visera Plana de diseño moderno y ajustable. Ideal para complementar cualquier look casual y protegerte del sol."
+        }
     },
     {
-        "nombre": "Pantalón Slim de Gabardina",
+        "nombre": {
+            "es": "Pantalón Slim de Gabardina",
+            "en": "Slim Fit Gabardine Pants",
+            "br": "Calça Slim de Gabardine",
+            "ar": "Pantalón Slim de Gabardina"
+        },
         "unidades_disponibles": 101,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-Shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 81.49,
         "tallas_disponibles": [
             "37",
@@ -1604,15 +2929,35 @@
             "41",
             "42"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Masculino",
+            "ar": "Chabón"
+        },
         "foto": "https://aspesi.com/cdn/shop/files/pantalone-slim-in-gabardina-di-cotone-w4-g-0171-e729-85218-ce689f763ca5c90adf7564489cf3378b_1880x.jpg?v=1721864224",
         "codigo_barras": "2028143339254",
-        "descripcion": "Pantalón Slim de Gabardina con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada."
+        "descripcion": {
+            "es": "Pantalón Slim de Gabardina con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada.",
+            "en": "Slim Fit Gabardine Pants with a comfortable fit and versatile design. Perfect for a casual, modern style in any season.",
+            "br": "Calça Slim de Gabardine com ajuste confortável e design versátil. Perfeita para um estilo casual e moderno em qualquer estação.",
+            "ar": "Pantalón Slim de Gabardina con ajuste cómodo y diseño versátil. Perfecto para un estilo casual y moderno en cualquier temporada."
+        }
     },
     {
-        "nombre": "Top de Encaje para Fiesta",
+        "nombre": {
+            "es": "Top de Encaje para Fiesta",
+            "en": "Lace Party Top",
+            "br": "Top de Renda para Festa",
+            "ar": "Top de Encaje para Fiesta"
+        },
         "unidades_disponibles": 102,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Sweatshirts",
+            "ar": "Buzos"
+        },
         "precio": 82.99,
         "tallas_disponibles": [
             "XS",
@@ -1621,15 +2966,35 @@
             "L",
             "XL"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Feminino",
+            "ar": "Mina"
+        },
         "foto": "https://s.alicdn.com/@sc04/kf/H8d62055168604b668375650d7d85c4353.jpeg_720x720q50.jpg",
         "codigo_barras": "3977547641325",
-        "descripcion": "Top de Encaje para Fiesta de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        "descripcion": {
+            "es": "Top de Encaje para Fiesta de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual.",
+            "en": "Lace Party Top made from high-quality, soft, breathable cotton. Perfect to pair with any casual outfit.",
+            "br": "Top de Renda para Festa feito com algodão de alta qualidade, macio e respirável. Perfeito para combinar com qualquer roupa casual.",
+            "ar": "Top de Encaje para Fiesta de alta calidad, confeccionado en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        }
     },
     {
-        "nombre": "Bolso de Mano Elegante",
+        "nombre": {
+            "es": "Bolso de Mano Elegante",
+            "en": "Elegant Handbag",
+            "br": "Bolsa de Mão Elegante",
+            "ar": "Bolso de Mano Elegante"
+        },
         "unidades_disponibles": 103,
-        "categoria": "Pantalones",
+        "categoria": {
+            "es": "Pantalones",
+            "en": "Pants",
+            "br": "Calças",
+            "ar": "Pantalones"
+        },
         "precio": 84.49,
         "tallas_disponibles": [
             "37",
@@ -1639,15 +3004,35 @@
             "41",
             "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Feminino",
+            "ar": "Mina"
+        },
         "foto": "https://www.eljardindeldeseo.es/45727-thickbox_default/bolsos-de-fiesta-fucsias-tipo-cartera-de-mano-muy-elegantes.jpg",
         "codigo_barras": "9143792198318",
-        "descripcion": "Accesorio esencial para complementar cualquier atuendo. Diseñado con materiales de alta calidad para mayor durabilidad y estilo."
+        "descripcion": {
+            "es": "Accesorio esencial para complementar cualquier atuendo. Diseñado con materiales de alta calidad para mayor durabilidad y estilo.",
+            "en": "Essential accessory to complement any outfit. Designed with high-quality materials for durability and style.",
+            "br": "Acessório essencial para complementar qualquer roupa. Projetado com materiais de alta qualidade para durabilidade e estilo.",
+            "ar": "Accesorio esencial para complementar cualquier atuendo. Diseñado con materiales de alta calidad para mayor durabilidad y estilo."
+        }
     },
     {
-        "nombre": "Camiseta Crop Top Lisa",
+        "nombre": {
+            "es": "Camiseta Crop Top Lisa",
+            "en": "Plain Crop Top T-Shirt",
+            "br": "Camiseta Crop Top Lisa",
+            "ar": "Remera Crop Top Lisa"
+        },
         "unidades_disponibles": 104,
-        "categoria": "Faldas",
+        "categoria": {
+            "es": "Faldas",
+            "en": "Skirts",
+            "br": "Saias",
+            "ar": "Faldas"
+        },
         "precio": 85.99,
         "tallas_disponibles": [
             "XS",
@@ -1656,15 +3041,35 @@
             "L",
             "XL"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Feminino",
+            "ar": "Mina"
+        },
         "foto": "https://m.media-amazon.com/images/I/51o4J7UdM6L._AC_UY580_.jpg",
         "codigo_barras": "9156203410932",
-        "descripcion": "Camiseta Crop Top Lisa de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        "descripcion": {
+            "es": "Camiseta Crop Top Lisa de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual.",
+            "en": "Plain Crop Top T-Shirt made from high-quality, soft, breathable cotton. Ideal for pairing with any casual outfit.",
+            "br": "Camiseta Crop Top Lisa de alta qualidade, feita de algodão macio e respirável. Ideal para combinar com qualquer roupa casual.",
+            "ar": "Remera Crop Top Lisa de alta calidad, confeccionada en algodón suave y transpirable. Ideal para combinar con cualquier atuendo casual."
+        }
     },
     {
-        "nombre": "Jumpsuit Largo de Algodón",
+        "nombre": {
+            "es": "Jumpsuit Largo de Algodón",
+            "en": "Long Cotton Jumpsuit",
+            "br": "Macacão Longo de Algodão",
+            "ar": "Jumpsuit Largo de Algodón"
+        },
         "unidades_disponibles": 105,
-        "categoria": "Chaquetas",
+        "categoria": {
+            "es": "Chaquetas",
+            "en": "Jackets",
+            "br": "Jaquetas",
+            "ar": "Camperas"
+        },
         "precio": 87.49,
         "tallas_disponibles": [
             "37",
@@ -1674,15 +3079,35 @@
             "41",
             "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Feminino",
+            "ar": "Mina"
+        },
         "foto": "https://cottoncrown.net/wp-content/uploads/Mono-Algodo%CC%81n-Largo-Verde-1-1.jpg",
         "codigo_barras": "7285031383967",
-        "descripcion": "Jumpsuit Largo de Algodón diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Jumpsuit Largo de Algodón diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Long Cotton Jumpsuit designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Macacão Longo de Algodão projetado com materiais de alta qualidade e um estilo versátil. Perfeito para qualquer ocasião.",
+            "ar": "Jumpsuit Largo de Algodón diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Pantalones Cortos de Lino",
+        "nombre": {
+            "es": "Pantalones Cortos de Lino",
+            "en": "Linen Shorts",
+            "br": "Bermuda de Linho",
+            "ar": "Pantalones Cortos de Lino"
+        },
         "unidades_disponibles": 106,
-        "categoria": "Calzado",
+        "categoria": {
+            "es": "Calzado",
+            "en": "Footwear",
+            "br": "Calçados",
+            "ar": "Calzado"
+        },
         "precio": 88.99,
         "tallas_disponibles": [
             "XS",
@@ -1691,15 +3116,35 @@
             "L",
             "XL"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Masculino",
+            "ar": "Chabón"
+        },
         "foto": "https://fiftyoutlet.com/dw/image/v2/AAYL_PRD/on/demandware.static/-/Sites-gc-spf-master-catalog/default/dw9e8fbfc8/images/hi-res/P_611535599FM.jpg?sw=600&sh=900&sm=fit",
         "codigo_barras": "4957759797350",
-        "descripcion": "Pantalones Cortos de Lino diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        "descripcion": {
+            "es": "Pantalones Cortos de Lino diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión.",
+            "en": "Linen Shorts designed with high-quality materials and a versatile style. Perfect for any occasion.",
+            "br": "Bermuda de Linho projetada com materiais de alta qualidade e um estilo versátil. Perfeita para qualquer ocasião.",
+            "ar": "Pantalones Cortos de Lino diseñado con materiales de alta calidad y un estilo versátil. Perfecto para cualquier ocasión."
+        }
     },
     {
-        "nombre": "Botines de Gamuza Casual",
+        "nombre": {
+            "es": "Botines de Gamuza Casual",
+            "en": "Casual Suede Ankle Boots",
+            "br": "Botins de Camurça Casuais",
+            "ar": "Botines de Gamuza Casual"
+        },
         "unidades_disponibles": 107,
-        "categoria": "Accesorios",
+        "categoria": {
+            "es": "Accesorios",
+            "en": "Accessories",
+            "br": "Acessórios",
+            "ar": "Accesorios"
+        },
         "precio": 90.49,
         "tallas_disponibles": [
             "37",
@@ -1709,15 +3154,35 @@
             "41",
             "42"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Feminino",
+            "ar": "Mina"
+        },
         "foto": "https://http2.mlstatic.com/D_NQ_NP_789056-MLM50264496031_062022-O.webp",
         "codigo_barras": "9466461797906",
-        "descripcion": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+        "descripcion": {
+            "es": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos.",
+            "en": "Comfortable and stylish footwear, designed to provide support and comfort all day long. Perfect for pairing with urban and sporty outfits.",
+            "br": "Calçado confortável e estilizado, projetado para oferecer suporte e conforto o dia todo. Perfeito para combinar com roupas urbanas e esportivas.",
+            "ar": "Calzado cómodo y estilizado, diseñado para ofrecer soporte y confort durante todo el día. Perfecto para combinar con atuendos urbanos y deportivos."
+        }
     },
     {
-        "nombre": "Blazer con Diseño Moderno",
+        "nombre": {
+            "es": "Blazer con Diseño Moderno",
+            "en": "Blazer with Modern Design",
+            "br": "Blazer com Design Moderno",
+            "ar": "Blazer con Diseño Moderno"
+        },
         "unidades_disponibles": 108,
-        "categoria": "Camisetas",
+        "categoria": {
+            "es": "Camisetas",
+            "en": "T-Shirts",
+            "br": "Camisetas",
+            "ar": "Remeras"
+        },
         "precio": 91.99,
         "tallas_disponibles": [
             "XS",
@@ -1726,15 +3191,35 @@
             "L",
             "XL"
         ],
-        "genero": "Mujer",
+        "genero": {
+            "es": "Mujer",
+            "en": "Women",
+            "br": "Feminino",
+            "ar": "Mina"
+        },
         "foto": "https://invitadisima.com/54139-thickbox_default/blazer-fucsia-de-diseno-asimetrico-con-hombrera.jpg",
         "codigo_barras": "9137937270952",
-        "descripcion": "Chaqueta de corte formal, hecha de lana, para usar con atuendos casuales y formales."
+        "descripcion": {
+            "es": "Chaqueta de corte formal, hecha de lana, para usar con atuendos casuales y formales.",
+            "en": "Formal cut blazer, made from wool, to wear with casual and formal outfits.",
+            "br": "Blazer de corte formal, feito de lã, para usar com roupas casuais e formais.",
+            "ar": "Campera de corte formal, hecha de lana, para usar con atuendos casuales y formales."
+        }
     },
     {
-        "nombre": "Chaqueta Universitaria Vintage",
+        "nombre": {
+            "es": "Chaqueta Universitaria Vintage",
+            "en": "Vintage College Jacket",
+            "br": "Jaqueta Universitária Vintage",
+            "ar": "Campera Universitaria Vintage"
+        },
         "unidades_disponibles": 109,
-        "categoria": "Sudaderas",
+        "categoria": {
+            "es": "Sudaderas",
+            "en": "Sweatshirts",
+            "br": "Sweatshirts",
+            "ar": "Buzos"
+        },
         "precio": 93.49,
         "tallas_disponibles": [
             "37",
@@ -1744,9 +3229,19 @@
             "41",
             "42"
         ],
-        "genero": "Hombre",
+        "genero": {
+            "es": "Hombre",
+            "en": "Men",
+            "br": "Masculino",
+            "ar": "Chabón"
+        },
         "foto": "https://i.etsystatic.com/18757116/r/il/3e022f/5372599164/il_570xN.5372599164_dw71.jpg",
         "codigo_barras": "3233093241461",
-        "descripcion": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+        "descripcion": {
+            "es": "Chaqueta moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits.",
+            "en": "Modern and functional jacket, designed to provide style and comfort in any weather. Perfect for pairing with multiple outfits.",
+            "br": "Jaqueta moderna e funcional, projetada para oferecer estilo e conforto em qualquer clima. Perfeita para combinar com vários looks.",
+            "ar": "Campera moderna y funcional, diseñada para brindar estilo y confort en cualquier clima. Perfecta para combinar con múltiples outfits."
+        }
     }
-]
+]   

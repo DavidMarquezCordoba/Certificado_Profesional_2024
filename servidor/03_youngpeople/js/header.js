@@ -1,4 +1,4 @@
-let miKey;
+let mikey;
 
 document.addEventListener("DOMContentLoaded", function() {
     const menuHamburguesa = document.querySelector(".boton-menu");
@@ -8,5 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         enlacesNavegacion.classList.toggle("ver");
     });
 
-    miKey = document.querySelector("#key").value;
+    mikey = document.querySelector("#key").value;
+    console.log(mikey);
+    
 });

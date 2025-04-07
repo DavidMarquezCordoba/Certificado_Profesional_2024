@@ -1,8 +1,4 @@
-/* *********************************** */
-/*          CSS GENÉRICO               */
-/* *********************************** */
-
-:root{
+:root {
     --primario: #000000;
     --secundario: #3e0091;
     --blanco: #fff;
@@ -18,48 +14,45 @@
     --estilo-principal: normal;
 }
 
-html{
-    
-    font-size: 62.5%;       /* Con esto se convierte el rem en 10px */
-    box-sizing: border-box; /* Para cuando le demos un alto o ancho, incluya el padding */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
     font-family: var(--fuente-principal);
-    user-select: none;      /* Para que no se pueda seleccionar el texto */
+    user-select: none;
 }
 
 * {
-    box-sizing: inherit;    /* Hereda forzosamente de padre a hijo las propiedades */
+    box-sizing: inherit;
 }
 
-
 body {
+    font-size: 16px;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     background-color: var(--fondo-claro);
-    font-size: 16px;        /* El rem dependía del tamaño del html, y ahora definimos el tamaño estándar */
-    overflow-x: hidden;     /* Para evitar la barra de desplazamiento horizontal */
 }
-
 
 span {
     color: var(--seleccionado);
 }
 
-h2{
+h2 {
     margin-top: 10rem;
     text-align: center;
 }
 
-a{
+a {
     font-size: 2rem;
     text-decoration: none;
     color: var(--blanco);
 }
 
-a:hover{
+a:hover {
     color: var(--seleccionado);
 }
 
-.boton{
+.boton {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--secundario);
@@ -68,6 +61,6 @@ a:hover{
     border-radius: 5px;
 }
 
-.boton:hover{
+.boton:hover {
     background-color: var(--fondo-boton-azul);
 }

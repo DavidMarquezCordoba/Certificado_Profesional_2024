@@ -1,62 +1,59 @@
-// let mikey;
-// let filtro;
+let temporizadorBusqueda;
+let tiempoRetardo = 1000;
+let contenedorProductos, inputBuscar;
 
-let contenedorProductos;
-
-// Declaración 1 ////////////////////////////////////////////////////////////
-document.addEventListener("DOMContentLoaded", function () { // Podemos usar el arrow function o escribiendo la función vacía
+document.addEventListener("DOMContentLoaded", function() {
     contenedorProductos = document.querySelector("#productos-contenedor");
-    
+    inputBuscar = document.querySelector("#busqueda");
+
+    inputBuscar.addEventListener("input", pideBuscar);
+
     cargarProductos();
-})
+});
 
-
-// Declaración 2 ////////////////////////////////////////////////////////////
-// document.addEventListener("DOMContentLoaded", () => {
-//     contenedorProductos = document.querySelector("#productos-contenedor");
-
-//     cargarPoductos();
-// })
-
-function cargarProductos(filtro = "") {
+function cargarProductos( filtro = "" ) {
     const url = `servicios/apiProductos.php?k=${mikey}&buscar=${filtro}`;
-
     fetch(url)
     .then(response => response.json())
     .then(productos => {
+        console.log(productos);
         contenedorProductos.innerHTML = "";
-        if (productos.lenght == 0) {
+        if(productos.length == 0){
             const noProductos = document.createElement("h2");
             noProductos.id = "no-productos";
-            noProductos.textContent = "No se encontraron productos";
+            noProductos.textContent = "NO SE HAN ENCONTRADO PRODUCTOS";
             contenedorProductos.appendChild(noProductos);
         } else {
-            if (document.querySelector("#no-productos")) {
+            if(document.querySelector("#no-productos")){
                 document.querySelector("#no-productos").remove();
             }
-
-            productos.forEach(producto => {
+            productos.forEach(producto => { 
                 let div = document.createElement("div");
                 div.classList.add("producto");
                 div.dataset.producto = JSON.stringify(producto);
-
                 const imgProducto = document.createElement("img");
-                imgProducto.setAttribute("loading", "lazy");
+                imgProducto.setAttribute("loading", "lazy"); // comentar esta línea
                 imgProducto.src = producto.foto;
                 imgProducto.alt = producto.nombre;
-
                 const nombreProducto = document.createElement("h2");
                 nombreProducto.textContent = producto.nombre;
-
                 const precioProducto = document.createElement("p");
-                precioProducto.textContent = producto.precio.toFixed(2) + " €";
-
+                precioProducto.textContent = producto.precio.toFixed(2) + "€";
                 div.appendChild(imgProducto);
                 div.appendChild(nombreProducto);
                 div.appendChild(precioProducto);
-
                 contenedorProductos.appendChild(div);
             });
         }
     })
 }
+
+function pideBuscar(e) {
+    clearTimeout(temporizadorBusqueda);     //Anulamos el temporizador que está guardado en "temporizadorBusqueda";
+    temporizadorBusqueda = setTimeout(() => {  // Activa un temporizador y guarda su identificador único en "temporizadorBusqueda"
+        //cargarProductos(e.target.value);
+        cargarProductos(this.value);
+    }, tiempoRetardo);
+    
+}
+
