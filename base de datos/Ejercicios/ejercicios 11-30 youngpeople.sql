@@ -57,21 +57,48 @@ SELECT clientes.nombre, pedidos.id, pedidos.total FROM clientes
 JOIN pedidos ON clientes.id = pedidos.clienteId
 WHERE clientes.id = 2;
 
-- 17. Añadir 2 unidades de los productos con id 8 y 2 al pedido id 2 y mostrar los productos del pedido
+- 17. Añadir:
+        - 2 unidades de los productos con id 8 y 2 al pedido id 2 
+        - mostrar los productos del pedido
 
+INSERT INTO pedidosProductos (productoId, pedidoId, cantidad)
+VALUES (8, 2, 2), (2, 2, 2)
+ON DUPLICATE KEY 
+    UPDATE cantidad = cantidad + VALUES(cantidad);
 
+select productos.nombre, pedidosProductos.cantidad from pedidosProductos 
+join productos on productos.id = pedidosProductos.productoId
+where pedidoId = 2;
 
 - 18. Actualizar la cantidad del producto id 78 en el pedido id 5 a una cantidad de 7 unidades y mostrar los productos de ese pedido
 
+UPDATE pedidosProductos SET cantidad = 7 where productoId = 78 and pedidoId = 5;
+
+select pedidos.id as 'Pedido', 
+        productos.nombre, 
+        pedidosProductos.cantidad from pedidosProductos
+join productos on productos.id = pedidosProductos.productoId
+join pedidos on pedidos.id = pedidosProductos.pedidoId
+where pedidoId = 5;
 
 
 - 19. Mostrar el cliente con más pedidos
 
-
+select clientes.nombre, COUNT(pedidos.id) as cantidadPedidos
+from clientes
+join pedidos on clientes.id = pedidos.clienteId
+group by clientes.id
+order by cantidadPedidos desc 
+limit 1;
 
 - 20. Mostrar el producto más vendido
 
-
+select pedidosProductos.productoId, productos.nombre, SUM(pedidosProductos.cantidad) as cantidadVendida
+from pedidosProductos
+join productos on pedidosProductos.productoId = productos.id
+group by pedidosProductos.productoId
+order by cantidadVendida desc 
+limit 1;
 
 
 - 21. Insertar un nuevo cliente y listar los id y nombres de los clientes con sus pedidos
@@ -94,7 +121,7 @@ WHERE clientes.id = 2;
 
 
 
-- 26. Eliminar el pedido id 3 y listar los pedidos restantes con fecha, total y con el nombre del cliente
+- 26. Eliminar el pedido id 4 y listar los pedidos restantes con fecha, total y con el nombre del cliente
 
 
 
@@ -113,3 +140,6 @@ WHERE clientes.id = 2;
 - 30. Mostrar los nombre de los clientes que han comprado más de 3 productos en total, junto al total de productos que han comprado (no de pedidos realiados)
 
 
+-- select productos.*, categorias.nombre as categoriaNombre, generos.nombre as generoNombre from productos
+-- join generos on generos.id = productos.generoId
+-- join categorias on categorias.id = productos.categoriaId;
