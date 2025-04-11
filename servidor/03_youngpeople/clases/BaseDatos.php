@@ -59,10 +59,10 @@ class BaseDatos {
 
 $conectado = new BaseDatos();
 
-$misResultados = $conectado -> consulta("select productos.*, categorias.nombre as categoria, generos.nombre as genero from productos
-join generos on generos.id = productos.generoId
-join categorias on categorias.id = productos.categoriaId order by productos.precio desc;");
+// $misResultados = $conectado -> consulta("select productos.*, categorias.nombre as categoria, generos.nombre as genero from productos
+// join generos on generos.id = productos.generoId
+// join categorias on categorias.id = productos.categoriaId order by productos.precio desc;");
 
-echo json_encode($misResultados, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+// echo json_encode($misResultados, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
 ?>

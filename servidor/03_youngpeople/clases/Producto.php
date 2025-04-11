@@ -20,7 +20,7 @@ class Producto {
 
         $this->genero = $producto['generoId'];
         $this->foto = $producto['foto'];
-        $this->codigoBarras = $producto['codigo'];
+        $this->codigoBarras = $producto['codigos'];
         $this->descripcion = $producto['descripcion'];
     }
 

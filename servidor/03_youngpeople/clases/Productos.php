@@ -1,20 +1,21 @@
 <?php 
+require_once 'BaseDatos.php';
+
 require_once 'Producto.php';
 
 class Productos {
     private $productos; //aqui dentro se van a meter todos los productos
+    private $misDatos;
 
-    public function __construct($archivo_json) { //lo que yo reciba de la variable que instancie
-        $this->productos = []; //el this lleva $ y NO la variable, eso significa que es una variable interna
-        if(file_exists($archivo_json)) {
-            $productos_json = file_get_contents($archivo_json);
-            if(json_validate($productos_json)){
-                $this->productos = json_decode($productos_json, true);
-            }
-        }
+    public function __construct() { //lo que yo reciba de la variable que instancie
+        $this-> misDatos = new BaseDatos; //el this lleva $ y NO la variable, eso significa que es una variable interna
     }
 
     public function obtenerProductos($idioma = 'es') { //pongo public porque quiero usar este metodo fuera de la clase, si no me envian el idioma, me garantizo que lo ponga en español (la clase viene preparada por defecto con un idoma)
+        $this -> productos = $this -> misDatos -> consulta("select productos.*, categorias.nombre as categoria, generos.nombre as genero from productos
+        join generos on generos.id = productos.generoId
+        join categorias on categorias.id = productos.categoriaId order by productos.precio desc;");
+        
         $resultado = array_map(function($producto) use ($idioma) { //aqui primero la funcion y despues el array / lo que se guarda en resultado es el resultado de la funcion
             $miProducto = new Producto($producto, $idioma); //una instancia de la clase producto, y le envio producto e idioma
             return $miProducto->reducido(); //por cada producto, que me envie el metodo reducido (nombre en su idioma, precio, foto y codigo de barra)
