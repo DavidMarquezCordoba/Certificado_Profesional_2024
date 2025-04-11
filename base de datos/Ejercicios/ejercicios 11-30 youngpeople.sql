@@ -103,43 +103,123 @@ limit 1;
 
 - 21. Insertar un nuevo cliente y listar los id y nombres de los clientes con sus pedidos
 
+INSERT INTO clientes (nombre, usuario, pass) VALUES 
+    ("Nuevo Cliente", "nuevocliente@ejemplo.com", "12-34-56-78");
+
+-- IF NULL si el resultado es NULL, sustituye por el parámetro
+select cl.id, cl.nombre, IFNULL(p.id, 0) as pedidoNumero from clientes cl
+left join pedidos p on cl.id = p.clienteId --El left aparecen todos los resultados, tengan o no coincidencia
+order by pedidoNumero asc;
 
 
-- 22. Registrar un pedido al cliente id 4 con un total de 100 y listar todos los pedidos con id, fecha y total con el nombre del cliente
+
+-- *********************************************************************** --
+- 22. Registrar un pedido al cliente id 4 con un total de 100 y 
+listar todos los pedidos con id, fecha y total con el nombre del cliente
+
+insert into pedidos (clienteId, total) values (4, 100);
+
+select pedidos.id, pedidos.fecha, pedidos.total, clientes.nombre from pedidos
+join clientes on clientes.id = pedidos.clienteId;
 
 
+-- *********************************************************************** --
 
-- 23. Añadir 2 unidades del producto con id 4 y una unidad del producto id 5 al pedido id 3 y mostrar los todos los productos vendidos con información del pedido y cliente que lo ha comprado
+- 23. Añadir 2 unidades del producto con id 4 
+y una unidad del producto id 5 al pedido id 3 
+y mostrar los todos los productos vendidos con información del pedido y cliente que lo ha comprado
+
+insert into pedidosProductos (productoId, pedidoId, cantidad)
+values (4, 3, 2), (5, 3, 1)
+on DUPLICATE KEY -- Duplicate es necesario si 
+update cantidad = cantidad + values(cantidad);
 
 
+select productos.nombre, pedidosProductos.cantidad, clientes.nombre as nombreCliente, pedidos.id as idProducto, pedidos.fecha from pedidos
+join pedidosProductos on pedidos.id = pedidosProductos.pedidoId
+join productos on productos.id = pedidosProductos.productoId
+join clientes on clientes.id = pedidos.clienteId;
 
 - 24. Actualizar a la cantidad = 5 del producto id 4 en el pedido id 3 y mostrar la información completa del pedido con sus productos y cliente
 
+update pedidosProductos set cantidad = 5 where (productoId = 4 and pedidoId = 3);
 
+select productos.id, productos.nombre as "producto", pedidosProductos.cantidad, pedidosProductos.precio, clientes.nombre, pedidos.fecha
+from pedidosProductos
+join productos on productos.id = pedidosProductos.productoId
+join pedidos on pedidos.id = pedidosProductos.pedidoId
+join clientes on pedidos.clienteId = clientes.id
+where pedidoId = 3;
 
 - 25. Actualizar el nombre del cliente id 4 a "Marta" y listar su nombre con sus pedidos y el total de cada pedido
 
+update clientes set nombre = 'Marta' where id = 4;
 
+select clientes.nombre, pedidos.* from clientes
+join pedidos on clientes.id = pedidos.clienteId
+where clientes.id = 4;
 
 - 26. Eliminar el pedido id 4 y listar los pedidos restantes con fecha, total y con el nombre del cliente
 
+delete from pedidos where id = 4;
 
+select pedidos.id, clientes.nombre, pedidos.fecha, pedidos.total from pedidos
+join clientes on pedidos.clienteId = clientes.id;
 
 - 27. Mostrar el cliente que más dinero ha gastado en pedidos
 
-
+select clientes.nombre, SUM(total) as totalCliente from clientes
+join pedidos on clientes.id = pedidos.clienteId
+group by clientes.id
+order by totalCliente desc
+limit 1;
 
 - 28. Mostrar el producto más vendido con su nombre, los id de pedidos donde se han vendido y los clientes de esos pedidos
 
+SELECT 
+    pedidosProductos.productoId, 
+    productos.nombre AS producto,
+    pedidos.id AS pedidoId,
+    clientes.nombre AS cliente,
+    pedidosProductos.cantidad
+FROM pedidosProductos
+JOIN productos ON productos.id = pedidosProductos.productoId
+JOIN pedidos ON pedidos.id = pedidosProductos.pedidoId
+JOIN clientes ON clientes.id = pedidos.clienteId
+WHERE pedidosProductos.productoId = (
+    SELECT productoId
+    FROM pedidosProductos
+    GROUP BY productoId
+    ORDER BY SUM(cantidad) DESC
+    LIMIT 1
+);
 
 
 - 29. Mostrar todos los productos con su id, nombre, unidades (disponibles), precio y total de unidades vendidas. Ordenados de más vendido a menos
 
 
 
+
 - 30. Mostrar los nombre de los clientes que han comprado más de 3 productos en total, junto al total de productos que han comprado (no de pedidos realiados)
 
 
--- select productos.*, categorias.nombre as categoriaNombre, generos.nombre as generoNombre from productos
--- join generos on generos.id = productos.generoId
--- join categorias on categorias.id = productos.categoriaId;
+- 31. - 26. Eliminar el pedido id 3 y listar los pedidos restantes con fecha, total y con el nombre del cliente, eliminando los totales de sus productos
+
+
+- 32. Mostrar el olos clientes con más pedidos.
+
+-- Insertar un nuevo pedido al cliente 3 para que tengamos 2 clientes con el máximo númerop de pedidos.
+insert into pedidos (clienteId, total) values (3, 35);
+
+-- Mostrar el o los clientes con más pedidos.
+select 
+    clientes.nombre,
+    count(pedidos.id) as pedidos
+from clientes
+join pedidos on pedidos.clienteId = clientes.id
+group by clientes.id
+having pedidos = (select count(pedidos.id) as cantidadPedidos
+    from pedidos
+    group by clienteId
+    order by cantidadPedidos desc
+    limit 1);
