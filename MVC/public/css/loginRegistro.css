@@ -1,0 +1,83 @@
+main {
+    min-height: 60vh;
+}
+
+.login-contenedor {
+    background-color: var(--blanco);
+    padding: 20px;
+    box-shadow: 0 0 10px var(--fondo-oscuro);
+    text-align: center;
+    border-radius: 8px;
+    margin: 100px auto 20px;
+    width: min(40rem, 90%);
+}
+
+.login-contenedor h2 {
+    margin: 2rem;
+}
+
+.login-contenedor form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login-contenedor a {
+    color: var(--secundario);
+}
+
+.login-contenedor input {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+
+.login-contenedor input[type="submit"] {
+    cursor: pointer;
+}
+
+.login-contenedor.oculto {
+    display: none;
+}
+
+.mostrar {
+    animation: hola 0.5s ease-in-out;
+}
+
+.ocultar {
+    animation: adios 0.5s ease-in-out;
+}
+
+.div-pass {
+    position: relative;
+}
+
+.div-pass label {
+    position: absolute;
+    right: 0;
+    bottom: 0.1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+@keyframes hola {
+    0% {
+        opacity: 0; /*0 significa invisible*/
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0%);
+    }
+}
+
+@keyframes adios {
+    0% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: 0; 
+        transform: translateX(100%);
+    }
+}
