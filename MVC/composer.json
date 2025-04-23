@@ -17,5 +17,7 @@
             "name": "David"
         }
     ],
-    "require": {}
+    "require": {
+        "matthiasmullie/minify": "^1.3"
+    }
 }

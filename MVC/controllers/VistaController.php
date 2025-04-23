@@ -2,11 +2,19 @@
 
 namespace Controllers;
 
+use MVC\Router;
+
 class VistaController{
 
     
-    public static function incio() {
-        echo 'inicio';
+    public static function inicio(Router $router) {
+        // echo 'inicio';
+        $router->render('inicio', [
+            'pagina' => '/',
+            'navegacion' => '',
+            'busqueda' => '',
+            'scripts' => ''
+        ]);
     }
 
     public static function tienda() {

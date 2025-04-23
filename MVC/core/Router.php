@@ -31,13 +31,27 @@ class Router {
         if ($fn) {
             call_user_func($fn, $this);
         } else {
-            call_user_func('inicio', $this);
+            call_user_func($this->getRoutes['/'], $this); //Nos redirige a la página principal
             // echo 'página no encontrada';
         }
     }
 
     public function render($view, $datos = []){
 
+        // Leer los datos que nos envían
+        foreach ($datos as $key => $value) {
+            // doble dollar, 
+            $$key = $value;
+        }
+
+        // ob_ se guarda en memoria, no se ejecutaría
+        ob_start();
+        include_once __DIR__ . "/../views/$view.php";
+
+        $contenido = ob_get_clean();
+
+
+        include_once __DIR__ . '/../views/layaout.php';
     }
 }
 

@@ -10,6 +10,8 @@ class ComposerStaticInit5eb2182fdb6010360149091ba0b92a61
         'M' => 
         array (
             'Model\\' => 6,
+            'MatthiasMullie\\PathConverter\\' => 29,
+            'MatthiasMullie\\Minify\\' => 22,
             'MVC\\' => 4,
         ),
         'C' => 
@@ -22,6 +24,14 @@ class ComposerStaticInit5eb2182fdb6010360149091ba0b92a61
         'Model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/models',
+        ),
+        'MatthiasMullie\\PathConverter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthiasmullie/path-converter/src',
+        ),
+        'MatthiasMullie\\Minify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthiasmullie/minify/src',
         ),
         'MVC\\' => 
         array (

@@ -7,6 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Model\\' => array($baseDir . '/models'),
+    'MatthiasMullie\\PathConverter\\' => array($vendorDir . '/matthiasmullie/path-converter/src'),
+    'MatthiasMullie\\Minify\\' => array($vendorDir . '/matthiasmullie/minify/src'),
     'MVC\\' => array($baseDir . '/core'),
     'Controllers\\' => array($baseDir . '/controllers'),
 );
