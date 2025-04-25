@@ -3,7 +3,7 @@
         'name' => 'youngpeople/mvc',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '96a8bbec525361fcbf20ac4c01d1dbb285d3a878',
+        'reference' => '5385d64a4b7e2783a93bf064adb0633ee580ad94',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -31,7 +31,7 @@
         'youngpeople/mvc' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '96a8bbec525361fcbf20ac4c01d1dbb285d3a878',
+            'reference' => '5385d64a4b7e2783a93bf064adb0633ee580ad94',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

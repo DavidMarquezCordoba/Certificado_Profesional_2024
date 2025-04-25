@@ -9,7 +9,7 @@ class ComposerStaticInit5eb2182fdb6010360149091ba0b92a61
     public static $prefixLengthsPsr4 = array (
         'M' => 
         array (
-            'Model\\' => 6,
+            'Models\\' => 7,
             'MatthiasMullie\\PathConverter\\' => 29,
             'MatthiasMullie\\Minify\\' => 22,
             'MVC\\' => 4,
@@ -21,7 +21,7 @@ class ComposerStaticInit5eb2182fdb6010360149091ba0b92a61
     );
 
     public static $prefixDirsPsr4 = array (
-        'Model\\' => 
+        'Models\\' => 
         array (
             0 => __DIR__ . '/../..' . '/models',
         ),

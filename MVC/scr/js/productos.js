@@ -12,9 +12,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function cargarProductos( filtro = "" ) {
-    //const url = `servicios/apiProductos.php?k=${mikey}&buscar=${filtro}`;
-    const url = `servicios/apiProductosClases.php?k=${mikey}&buscar=${filtro}`;
-    fetch(url)
+    const url = `api/productos`;
+    
+    if(filtro != ''){
+        url += `?buscar=${filtro}`;
+    }
+    
+    fetch(url, {
+        headers:{
+            'token': mikey
+        }
+    })
     .then(response => response.json())
     .then(productos => {
         console.log(productos);

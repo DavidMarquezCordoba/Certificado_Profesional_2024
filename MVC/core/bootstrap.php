@@ -1,4 +1,4 @@
-<!-- INICIALIZACIÓN -->
+
 
 <?php 
 

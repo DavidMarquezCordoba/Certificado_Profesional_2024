@@ -9,6 +9,7 @@ class Router {
 
     public array $getRoutes = [];
     public array $postRoutes = [];
+    public static $urlActual = '';
 
     public function get($url, $fn) {
         $this-> getRoutes[$url] = $fn;
@@ -19,13 +20,13 @@ class Router {
     }
 
     public function comprobarRutas(){
-        $urlActual = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        self::$urlActual = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $metodo = $_SERVER['REQUEST_METHOD'];
 
         if($metodo === 'GET') {
-            $fn = $this->getRoutes[$urlActual] ?? null;
+            $fn = $this->getRoutes[self::$urlActual] ?? null;
         } else {
-            $fn = $this->postRoutes[$urlActual] ?? null;
+            $fn = $this->postRoutes[self::$urlActual] ?? null;
         }
 
         if ($fn) {

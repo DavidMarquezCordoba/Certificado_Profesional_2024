@@ -26,6 +26,7 @@ class Autorizaciones {
 
 
     public static function getToken(){
+        self::iniciarSesionPHP();
         return $_SESSION['key'];
     }
 

@@ -8,7 +8,7 @@
         "psr-4": {
             "MVC\\": "./core",
             "Controllers\\": "./controllers", 
-            "Model\\": "./models"
+            "Models\\": "./models"
         }
     },
 
