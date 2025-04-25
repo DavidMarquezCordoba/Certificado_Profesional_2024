@@ -23,7 +23,7 @@
 
         <?php echo $busqueda; ?>
         
-        <input id="key" type="hidden" value="<?php echo $_SESSION['key']; ?>">
+        <input id="key" type="hidden" value="<?php echo $sesionkey; ?>">
         <nav>
             <div class="boton-menu">&#9776;</div>
             <ul class="enlaces-menu">

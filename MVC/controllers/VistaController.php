@@ -10,6 +10,7 @@ class VistaController{
     public static function inicio(Router $router) {
         // echo 'inicio';
         $router->render('inicio', [
+            'sesionkey' => $_SESSION['key'],
             'pagina' => '/',
             'navegacion' => '',
             'busqueda' => '',
