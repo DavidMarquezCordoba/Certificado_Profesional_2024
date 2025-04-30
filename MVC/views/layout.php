@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/styles.php">
     <script defer src="js/scripts.php?s=index"></script>
     <script defer src="js/scripts.php?s=header"></script>
+    <script defer src="js/scripts.php?s=popover"></script>
     <?php echo $scripts; ?>
     </head>
 <body>
@@ -29,6 +30,15 @@
     </header>
 
 <?php echo $contenido; ?>
+
+<div popover id="alerta">
+    <h2>Atención!!!</h2>
+    <h3 id="alerta-texto">Esto es un mensaje de alerta</h3>
+</div>
+
+<div id="mensaje">
+    <h2 id="mensaje-texto">Esto es un texto de mensaje</h2>
+</div>
 
 <footer>
     <p>&copy; 2025 young <span>pe</span>o<span>ple</span>. Todos los derechos reservados</p>

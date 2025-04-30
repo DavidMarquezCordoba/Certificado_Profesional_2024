@@ -1,8 +1,21 @@
 <?php 
 
-// añadir columna a tabla clientes
+namespace Controllers;
 
-// foto    | varchar(255) | NO   |     | youngpeople.png
+class LoginController {
 
+
+    public static function registro(){
+        echo json_encode(['ok' => true, 'mensaje' => 'esto es una prueba de registro']);
+    }
+
+
+    public static function login(){
+        echo json_encode(['ok' => false, 'error' => 'esto es una prueba de login']);
+    }
+
+
+
+}
 
 ?>

@@ -29,11 +29,22 @@ class VistaController {
             'scripts' => '<script defer src="js/scripts.php?s=tienda"></script>'
         ]);
     }
+
+
     public static function contacto() {
         echo 'contacto';
     }
-    public static function login() {
-        echo 'login';
+
+
+    public static function login(Router $router) {
+        // echo 'login';
+        $router->render('login', [
+            'sesionkey' => Autorizaciones::getToken(),
+            'pagina' => '/login',
+            'navegacion' => Menu::generar(),
+            'busqueda' => '',
+            'scripts' => '<script defer src="js/scripts.php?s=loginRegistro"></script>'
+        ]);
     }
 
 

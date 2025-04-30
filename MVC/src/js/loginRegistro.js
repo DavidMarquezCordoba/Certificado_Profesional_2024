@@ -66,6 +66,9 @@ async function enviarLoginRegistro(e){
     try {
         const url = e.target.getAttribute("action");
         const response = await fetch(url, {
+            headers: {
+                'token': mikey
+            },
             method: 'POST',
             body: datos_post
         });
@@ -73,9 +76,9 @@ async function enviarLoginRegistro(e){
         console.log(datosRecibidos);
         
         if(datosRecibidos['ok']){  // la solicitud se ha procesado correctamento
-            alert('todo ok: ' + datosRecibidos['mensaje']);
+            mensaje('todo ok: ' + datosRecibidos['mensaje'],"/");
         } else {
-            alert(datosRecibidos['error']);
+            alerta(datosRecibidos['error']);
         }
 
     } catch (error) {
