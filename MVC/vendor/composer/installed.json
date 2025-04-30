@@ -35,7 +35,7 @@
                 "bin/minifyjs"
             ],
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "MatthiasMullie\\Minify\\": "src/"
@@ -98,7 +98,7 @@
             },
             "time": "2019-02-05T23:41:09+00:00",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "MatthiasMullie\\PathConverter\\": "src/"

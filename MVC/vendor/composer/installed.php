@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'youngpeople/mvc',
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
-        'reference' => '5385d64a4b7e2783a93bf064adb0633ee580ad94',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => null,
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => false,
         ),
         'youngpeople/mvc' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '5385d64a4b7e2783a93bf064adb0633ee580ad94',
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => null,
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

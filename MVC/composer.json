@@ -2,19 +2,16 @@
     "name": "youngpeople/mvc",
     "description": "Tienda de ropa para gente joven",
     "type": "project",
-
-    
-    "autoload":{
-        "psr-4": {
+    "autoload": {
+        "psr-4":{
             "MVC\\": "./core",
-            "Controllers\\": "./controllers", 
+            "Controllers\\": "./controllers",
             "Models\\": "./models"
         }
     },
-
     "authors": [
         {
-            "name": "David"
+            "name": "Juan Antonio"
         }
     ],
     "require": {

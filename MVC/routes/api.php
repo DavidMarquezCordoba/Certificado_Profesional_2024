@@ -1,4 +1,5 @@
 <?php 
+
 use Controllers\ProductosController;
 use MVC\Router;
 
@@ -8,4 +9,5 @@ $router->get('/api/productos', [ProductosController::class, 'productos']);
 
 
 $router->comprobarRutas();
+
 ?>

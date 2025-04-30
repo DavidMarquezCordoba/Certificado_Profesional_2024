@@ -1,0 +1,42 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.hero video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.oscurece-fondo {
+    background-color: var(--fondo-oscuro);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contenido {
+    text-align: center;
+    color: var(--blanco);
+}
+
+.hero-contenido h1 {
+    font-size: 5rem;
+}
+
+.hero-contenido h2 {
+    margin: 1rem;
+    font-size: 3rem;
+}

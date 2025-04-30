@@ -1,8 +1,5 @@
 <?php 
 
-// Clase que creará las vistas
-
-
 namespace MVC;
 
 class Router {
@@ -12,16 +9,16 @@ class Router {
     public static $urlActual = '';
 
     public function get($url, $fn) {
-        $this-> getRoutes[$url] = $fn;
+        $this->getRoutes[$url] = $fn;
     }
 
     public function post($url, $fn) {
-        $this-> postRoutes[$url] = $fn;
+        $this->postRoutes[$url] = $fn;
     }
 
-    public function comprobarRutas(){
-        self::$urlActual = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-        $metodo = $_SERVER['REQUEST_METHOD'];
+    public function comprobarRutas() {
+        self::$urlActual = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);  // elimina de la ruta cualquier posible valor enviado por GET
+        $metodo = $_SERVER['REQUEST_METHOD'];   // detectamos si nos envían algo por POST o no
 
         if($metodo === 'GET') {
             $fn = $this->getRoutes[self::$urlActual] ?? null;
@@ -29,32 +26,29 @@ class Router {
             $fn = $this->postRoutes[self::$urlActual] ?? null;
         }
 
-        if ($fn) {
+        if($fn) {
             call_user_func($fn, $this);
         } else {
-            call_user_func($this->getRoutes['/'], $this); //Nos redirige a la página principal
             // echo 'página no encontrada';
+            call_user_func($this->getRoutes['/'], $this); // Nos redirige a la página principal
         }
     }
 
-    public function render($view, $datos = []){
+    public function render($view, $datos = []) {
 
-        // Leer los datos que nos envían
+        // Leer los datos que nos envian
         foreach ($datos as $key => $value) {
-            // doble dollar, 
             $$key = $value;
         }
-
-        // ob_ se guarda en memoria, no se ejecutaría
         ob_start();
         include_once __DIR__ . "/../views/$view.php";
 
         $contenido = ob_get_clean();
-
-
-        include_once __DIR__ . '/../views/layaout.php';
+        include_once __DIR__ . '/../views/layout.php';
     }
-}
 
+
+
+}
 
 ?>

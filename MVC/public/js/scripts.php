@@ -3,7 +3,8 @@
 require __DIR__ . '/../../vendor/autoload.php';
 use MatthiasMullie\Minify;
 
-$carpetaFuente = __DIR__ . '/../../scr/js/';
+$carpetaFuente = __DIR__ . '/../../src/js/';
+
 if((isset($_GET['s']))&&(file_exists($carpetaFuente . $_GET['s'] . '.js'))){
 
     header("Content-Type: application/javascript");
@@ -24,3 +25,5 @@ if((isset($_GET['s']))&&(file_exists($carpetaFuente . $_GET['s'] . '.js'))){
 } else {
     echo "";
 }
+
+?>

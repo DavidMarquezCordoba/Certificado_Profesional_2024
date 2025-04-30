@@ -1,0 +1,23 @@
+{
+    "name": "youngpeople/mvc",
+    "description": "Tienda de ropa para gente joven",
+    "type": "project",
+
+    
+    "autoload":{
+        "psr-4": {
+            "MVC\\": "./core",
+            "Controllers\\": "./controllers", 
+            "Models\\": "./models"
+        }
+    },
+
+    "authors": [
+        {
+            "name": "David"
+        }
+    ],
+    "require": {
+        "matthiasmullie/minify": "^1.3"
+    }
+}
