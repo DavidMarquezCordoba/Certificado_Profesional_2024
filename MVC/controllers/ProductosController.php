@@ -8,7 +8,7 @@ class ProductosController {
 
     public static function productos() {
 
-        // Autorizaciones::checkToken();
+        Autorizaciones::checkToken();
         
         $lang = 'es';
 

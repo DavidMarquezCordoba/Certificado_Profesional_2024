@@ -15,10 +15,10 @@ class Producto {
     public function __construct($producto, $idioma = 'es')
     {
         $this->nombre = $producto['nombre'];
-        $this->categoria = $producto['categoriaId'];
+        $this->categoria = $producto['categoria'];
         $this->precio = $producto['precio'];
         $this->unidadesDisponibles = $producto['unidades'];
-        $this->genero = $producto['generoId'];
+        $this->genero = $producto['genero'];
         $this->foto = $producto['foto'];
         $this->codigoBarras = $producto['codigo'];
         $this->descripcion = $producto['descripcion'];

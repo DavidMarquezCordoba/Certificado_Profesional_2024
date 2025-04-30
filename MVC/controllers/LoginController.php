@@ -1,14 +1,8 @@
 <?php 
 
-// cambiar en header.css
+// añadir columna a tabla clientes
 
-// header {
-//     padding: 1rem 1.5rem 1rem 0.5rem;
-// }
-
-// .div-busqueda label {
-//     font-size: 4rem;
-// }
+// foto    | varchar(255) | NO   |     | youngpeople.png
 
 
 ?>

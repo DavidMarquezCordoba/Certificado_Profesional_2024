@@ -3,7 +3,7 @@
 namespace MVC;
 
 class Autorizaciones {
-
+    static $rutas = 'vacio';
     public static function iniciarSesionPHP() {
 
         if(session_status() === PHP_SESSION_NONE) { // si no está abierta la sesion PHP, la abrimos
@@ -17,8 +17,11 @@ class Autorizaciones {
 
             $ruta = $_SERVER['REQUEST_URI'] ?? '';
 
-            if((!str_starts_with($ruta, '/api'))&&($ruta != '/favicon.ico')){
+            $archivoSalida = __DIR__ . "/rutas.txt";
+            $contenido = file_get_contents($archivoSalida);
+            if((!str_starts_with($ruta, '/api'))&&(!str_contains($ruta,'favicon.ico'))&&(!str_contains($ruta,'.png'))){
                 $_SESSION['key'] = bin2hex(random_bytes(32)); // generar una key aleatoria de 64 caracteres
+
             }
 
         }
@@ -48,6 +51,10 @@ class Autorizaciones {
         if(!isset($_SESSION['key']) || $_SESSION['key'] != $token){
             http_response_code(403);
             echo json_encode(['ok' => false, 'error' => 'Sin Permiso']);
+            // echo json_encode(['ok' => false, 'error' => self::$rutas]);
+            // echo $_SESSION['key'];
+            // echo $token;
+            
             exit;
         }
     }

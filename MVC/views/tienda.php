@@ -2,13 +2,13 @@
     <section id="productos-contenedor">Tienda</section>
 </main>
 
-<!-- Detalle del producto -->
+<!-- detalle del producto -->
 <div id="detalle-modal" class="modal">
     <div id="modal-contenido" class="modal-contenido">
         <span class="close">&times;</span>
         <h2 id="detalle-nombre"></h2>
         <div class="modal-interior">
-            <img src="" alt="" class="detalle-imagen">
+            <img id="detalle-imagen" src="" alt="">
             <div class="modal-detalles">
                 <p>Precio: <span class="detalles" id="detalle-precio"></span></p>
                 <p>Categoría: <span class="detalles" id="detalle-categoria"></span></p>
@@ -17,20 +17,21 @@
                 <img id="detalle-barcode" src="" alt="código de barras">
                 <div class="div-agregar">
                     <input type="hidden" id="detalle-codigo" value="">
-                    <input type="number" value="1" id="detalle-unidades-seleccionadas" min="1">
-                    <button id="detalle-agregar">Agregar al carrito</button>
+                    <input type="number" id="detalle-unidades-seleccionadas" min="1" value="1">
+                    <button id="detalle-agregar">Añadir al carrito</button>
                 </div>
             </div>
         </div>
+        <p id="detalle-descripcion"></p>
     </div>
 </div>
 
-<!-- Carrito -->
-<div id="carrito-modal" class="modal">
+<!-- carrito -->
+ <div id="carrito-modal" class="modal" style="display:none;">
     <div id="carrito-contenido" class="modal-contenido">
         <span class="close">&times;</span>
-        <h2>Carrito compra</h2>
+        <h2>Carrito de Compras</h2>
         <ul id="lista-carrito"></ul>
         <p>Total: <span class="total" id="total-carrito">0.00€</span></p>
     </div>
-</div>
+ </div>

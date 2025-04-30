@@ -59,19 +59,20 @@ function cargarProductos( filtro = "" ) {
     if(filtro != '') {
         url = url + `?buscar=${filtro}`;
     }
+    // console.log(mikey);
     fetch(url, {
         headers: {
             'token': mikey
         }
     })
     .then(response => {
-        //console.log(response.status);
+        // console.log(response.status);
 
         // Esto comentado es para probar que da error si no se pone try...catch da error si no se recibe un json válido
         // const misprod = "shdf" + response;
         // return misprod.json();
         try {
-            //console.log('productos');
+            // console.log(response.text());
             return response.json();
         } catch (e) {
             return [];
@@ -172,7 +173,7 @@ function mostrarDetalle(producto) {
         }
     })
     .then(detallesProducto => {
-        // console.log(detallesProducto);
+        console.log(detallesProducto);
         document.querySelector("#detalle-nombre").textContent = detallesProducto.nombre;
         document.querySelector("#detalle-imagen").src = detallesProducto.foto;
         document.querySelector("#detalle-precio").textContent = detallesProducto.precio + "€";
@@ -192,7 +193,7 @@ function mostrarDetalle(producto) {
             modalContenido.classList.remove("abrir-modal");
         }, 500);
     }).catch(error => {
-        // alerta('Error al cargar los detalles del producto');
+        //alerta('Error al cargar los detalles del producto');
     });
 }
 

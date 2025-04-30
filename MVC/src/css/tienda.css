@@ -1,13 +1,12 @@
 #productos-contenedor {
-  margin: 8rem 0.5rem 0.5rem 0.5rem;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 35rem);
-  justify-content: center;
-  gap: 2rem;
-  grid-template-rows: 1fr auto auto;
+   margin: 8rem 0.5rem 0.5rem 0.5rem;
+   padding: 1rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 35rem);
+   justify-content: center;
+   gap: 2rem;
+   grid-template-rows: 1fr auto auto;
 }
-
 
 .producto {
   width: 100%;
