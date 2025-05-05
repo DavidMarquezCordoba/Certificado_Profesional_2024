@@ -29,13 +29,62 @@ class BaseDatos {
     }
     
     // Función para realizar una consulta a la base de datos, recibe una consulta SQL y devuelve un array con todas las filas recibidas
-    public function consulta( $consultaSQL) {
-        $respuesta = $this->conexion->query($consultaSQL);
+    public function consulta( $consultaSQL, $parametros = []) {
+        $respuesta= $this->realizaConsulta( $consultaSQL, $parametros);
+
+        $this->conexion->query($consultaSQL);
         $resultados = [];
-        while ($resultado = $respuesta -> fetch_array(MYSQLI_ASSOC)){
-            $resultados[] = $this->convertirNumero($resultado); // Esta línea devuelve los valores numéricos como número usando la función "convertirNumero"
+
+        if($respuesta[0]){
+            while ($resultado = $respuesta[1] -> fetch_array(MYSQLI_ASSOC)){
+                $resultados[] = $this->convertirNumero($resultado); // Esta línea devuelve los valores numéricos como número usando la función "convertirNumero"
+            }       
         }
+
         return $resultados;
+    }
+
+    // INSERT y UPDATE
+    public  function guardar ($consultaSQL, $parametros = []){
+        $respuesta= $this->realizaConsulta($consultaSQL, $parametros);
+        if($respuesta[0]){
+            $ultimoId = $this->conexion->insert_id;
+            return [true, $ultimoId];
+        } else {
+            return [false, false];
+        }
+    }
+
+    // Parte común a las dos funciones públicas
+    private function realizaConsulta($consultaSQL, $parametros){
+        $consultaPreparada = $this->conexion->prepare($consultaSQL);
+        if ($consultaPreparada === false) {
+            return [false, false];
+        }
+        if (!empty($parametros)) {
+            $tipos = '';
+            $refs = [];
+            foreach($parametros as $key => $parametro){
+                if(is_int($parametro)){
+                    $tipos .= 'i';
+                } elseif (is_float($parametro)){
+                    $tipos .= 'd';
+                } elseif (is_null($parametro)){
+                    $tipos .= 's';
+                    $parametros[$key] = null;
+                } else {
+                    $tipos .= 's';
+                }
+    
+                // El ampersand es la referencia de dicho valor.
+                $refs[$key] = &$parametros[$key];
+            }
+            array_unshift($refs, $tipos);
+            call_user_func_array([$consultaPreparada, 'bind_param'], $refs);
+        }
+        $resultadoConsulta = $consultaPreparada->execute();
+
+        return [$resultadoConsulta, $consultaPreparada->get_result()];
     }
 
     // Función que revisa una fila devuelta por la base de datos y si tiene algún valor numérico pero que viene en string, lo convierte a numérico

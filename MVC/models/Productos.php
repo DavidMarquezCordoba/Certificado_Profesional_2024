@@ -31,7 +31,7 @@ class Productos {
         $this -> productos = $this -> misDatos -> consulta("SELECT p.*, g.nombre AS genero, c.nombre AS categoria FROM productos p
                                 JOIN categorias c ON c.id = p.categoriaId 
                                 JOIN generos g ON g.id = p.generoId
-                                WHERE p.codigo LIKE '" . $codigo . "';");
+                                WHERE p.codigo LIKE ?", [$codigo]);
 
         if(!empty($this->productos)){
             $miProducto = new Producto($this->productos[0]);
@@ -42,10 +42,14 @@ class Productos {
     }
 
     public function buscarPorNombre($palabra, $idioma = 'es') {
-        $this -> productos = $this -> misDatos -> consulta("SELECT p.*, g.nombre AS genero, c.nombre AS categoria FROM productos p
+        $consulta = "SELECT p.*, g.nombre AS genero, c.nombre AS categoria FROM productos p
                                 JOIN categorias c ON c.id = p.categoriaId 
                                 JOIN generos g ON g.id = p.generoId
-                                WHERE p.nombre LIKE '%" . $palabra . "%';");
+                                WHERE p.nombre LIKE ?";
+        
+        $parametro = "%" . $palabra . "%";
+
+        $this -> productos = $this -> misDatos -> consulta($consulta, [$parametro]);
 
         $resultado = array_map(function($producto) use ($idioma) {
             $miProducto = new Producto($producto, $idioma);
