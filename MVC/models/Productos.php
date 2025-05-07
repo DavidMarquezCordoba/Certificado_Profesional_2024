@@ -46,9 +46,7 @@ class Productos {
                                 JOIN categorias c ON c.id = p.categoriaId 
                                 JOIN generos g ON g.id = p.generoId
                                 WHERE p.nombre LIKE ?";
-        
         $parametro = "%" . $palabra . "%";
-
         $this -> productos = $this -> misDatos -> consulta($consulta, [$parametro]);
 
         $resultado = array_map(function($producto) use ($idioma) {

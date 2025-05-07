@@ -11,7 +11,6 @@
                 <label id="l-lpass2" for="lpass2">&#129763;</label>
                 <input type="password" name="password2" placeholder="Repite tu contraseña" id="lpass2" required autocomplete="new-password">
             </div>
-            
             <input type="submit" class="boton" value="Enviar" id="boton-registra">
         </form>
         <p>¿Tienes ya cuenta? <a href="#">Inicia Sesión</a></p>
@@ -25,7 +24,6 @@
                 <label id="l-rpass1" for="rpass1">&#129763;</label>
                 <input type="password" name="password" placeholder="Contraseña" id="rpass1" required autocomplete="new-password">
             </div>
-            
             <input type="submit" class="boton" value="Enviar" id="boton-loguea">
         </form>
         <p>¿No tienes cuenta? <a href="#">Regístrate</a></p>

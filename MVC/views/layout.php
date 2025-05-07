@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Young People</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.php">
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
     <script defer src="js/scripts.php?s=index"></script>
     <script defer src="js/scripts.php?s=header"></script>
     <script defer src="js/scripts.php?s=popover"></script>
@@ -40,7 +38,7 @@
 </div>
 
 <div id="mensaje">
-    <h2 id="mensaje-texto">Esto es un texto de mensaje</h2>
+    <h2 id="mensaje-texto">Este es un texto de mensaje</h2>
 </div>
 
 <footer>

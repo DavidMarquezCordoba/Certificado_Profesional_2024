@@ -21,7 +21,6 @@ class Autorizaciones {
             $contenido = file_get_contents($archivoSalida);
             if((!str_starts_with($ruta, '/api'))&&(!str_contains($ruta,'favicon.ico'))&&(!str_contains($ruta,'.png'))){
                 $_SESSION['key'] = bin2hex(random_bytes(32)); // generar una key aleatoria de 64 caracteres
-
             }
 
         }

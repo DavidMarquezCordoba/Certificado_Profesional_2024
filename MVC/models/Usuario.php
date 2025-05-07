@@ -9,17 +9,13 @@ class Usuario {
 
     private $usuario;
 
-    private $datosUsuarios;
+    private $datosUsuarios; // esto va a ser la instancia a la bbdd
 
-    public function __construct(string $usuario = ''){
-
+    public function __construct(string $usuario = '') {
         $this->datosUsuarios = new BaseDatos();
-
         $miConsulta = "SELECT * FROM clientes WHERE usuario = ?";
-
         $usuariosRecibidos = $this->datosUsuarios->consulta($miConsulta, [$usuario]);
-
-        if(sizeof($usuariosRecibidos) == 1){
+        if(sizeof($usuariosRecibidos) == 1) {
             $this->usuario = $usuariosRecibidos[0];
         } else {
             $this->usuario = [
@@ -28,27 +24,23 @@ class Usuario {
         }
     }
 
-
-    public function existe(){
+    public function existe() {
         if($this->usuario['usuario'] === false) {
             return false;
         }
-
         return true;
     }
 
-    public function verificaPassword($password){
-
-        if(empty($this->usuario)){
+    public function verificaPassword($password) {
+        if(empty($this->usuario)) {
             return false;
         }
 
-        if($this->usuario['pass'] != $password){
+        if($this->usuario['pass'] != $password) { // nos vamos a la bbdd y miramos en la tabla el nombre que le hayamos puesto a la columna de password
             return false;
         }
 
         Autorizaciones::iniciarSesionPHP();
-        
         $_SESSION['usuario'] = [
             'idusuario' => htmlspecialchars($this->usuario['id']),
             'usuario' => htmlspecialchars($this->usuario['usuario']),
@@ -59,9 +51,7 @@ class Usuario {
 
         return true;
     }
-
-
-
-
+    
 }
+
 ?>

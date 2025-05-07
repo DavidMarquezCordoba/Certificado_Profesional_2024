@@ -67,7 +67,7 @@ async function enviarLoginRegistro(e){
         const url = e.target.getAttribute("action");
         const response = await fetch(url, {
             headers: {
-                'token': mikey
+                'token': mikey //al poner la key aqui, quito de los 2 formularios el input hidden (login.php)
             },
             method: 'POST',
             body: datos_post
