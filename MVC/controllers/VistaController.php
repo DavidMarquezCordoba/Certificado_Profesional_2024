@@ -4,8 +4,7 @@ namespace Controllers;
 use Models\Menu;
 use MVC\Autorizaciones;
 use MVC\Router;
-
-
+use Services\CorreoService;
 
 class VistaController {
 
@@ -29,9 +28,27 @@ class VistaController {
             'scripts' => '<script defer src="js/scripts.php?s=tienda"></script>'
         ]);
     }
+
+
     public static function contacto() {
-        echo 'contacto';
+        // echo 'contacto';
+        $cuerpo = "<h2>Prueba superada</h2><p>Correo de prueba enviado<p>";
+        $asunto = "Correo de prueba";
+        $destinatario = "competenciasdigitales55@gmail.com";
+
+        $correo = new CorreoService();
+        $enviado = $correo->enviarCorreo($destinatario, $asunto, $cuerpo);
+
+        if($enviado){
+            echo "Correo enviado correctamente por David";
+            exit;
+        } else {
+            echo "Correo no enviado por David";
+            exit;
+        }
     }
+
+
     public static function login(Router $router) {
         //echo 'login';
         $router->render('login', [

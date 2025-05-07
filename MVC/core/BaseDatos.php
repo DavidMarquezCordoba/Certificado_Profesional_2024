@@ -3,17 +3,25 @@ namespace MVC;
 
 use mysqli;
 
-require_once __DIR__ . '/config/db.php';
+// require_once __DIR__ . '/config/db.php'; //Usando las variables de entorno no es necesario usar db.php
+
 
 
 class BaseDatos {
     private $conexion;
-    private $servidor = SERVIDOR;
-    private $usuario = USUARIO;
-    private $pass = PASS;
-    private $baseDatos = BASE_DATOS;
+
+    private $servidor;
+    private $usuario;
+    private $pass;
+    private $baseDatos;
 
     function __construct() {
+
+        $this->servidor = $_ENV['DB_SERVIDOR'];
+        $this->usuario = $_ENV['DB_USUARIO'];
+        $this->pass = $_ENV['DB_PASS'];
+        $this->baseDatos = $_ENV['DB_NOMBRE'];
+
         $this->conexion = $this -> conectar();
     }
 

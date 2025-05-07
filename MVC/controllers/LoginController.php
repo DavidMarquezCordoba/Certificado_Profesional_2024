@@ -65,6 +65,7 @@ class LoginController {
         session_destroy(); //Destruimos la sesión PHP
         $_SESSION = [];    //Dejarlas vacías, limpiando nuestro array de variables de sesión
 
+        //Borramos la cookie de id de nuestro navegador
         $parametrosCookie = session_get_cookie_params();
         setcookie(session_name(), '', time() - 5000, 
             $parametrosCookie['path'], $parametrosCookie['domain'],
