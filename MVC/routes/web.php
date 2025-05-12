@@ -5,12 +5,12 @@ use MVC\Router;
 
 $router = new Router();
 
-$router->get('/', [VistaController::class, 'inicio']);
-$router->get('/index.php', [VistaController::class, 'inicio']);
-$router->get('/tienda', [VistaController::class, 'tienda']);
-$router->get('/contacto', [VistaController::class, 'contacto']);
-$router->get('/login', [VistaController::class, 'login']);
-$router->get('/perfil', [VistaController::class, 'perfil']);
+$router->crearRutaGET('/', [VistaController::class, 'inicio']);
+$router->crearRutaGET('/index.php', [VistaController::class, 'inicio']);
+$router->crearRutaGET('/tienda', [VistaController::class, 'tienda']);
+$router->crearRutaGET('/contacto', [VistaController::class, 'contacto']);
+$router->crearRutaGET('/login', [VistaController::class, 'login']);
+$router->crearRutaGET('/perfil', [VistaController::class, 'perfil']);
 
 $router->comprobarRutas();
 

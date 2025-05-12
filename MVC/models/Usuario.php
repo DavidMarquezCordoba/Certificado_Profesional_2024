@@ -1,5 +1,8 @@
 <?php 
 
+// los modelos como son una clase solo pueden hacer una cosa, en este caso USUARIO
+// tienen que tener entidad propia y que como es algo concreto, tiene valor por si mismo
+
 namespace Models;
 
 use MVC\Autorizaciones;

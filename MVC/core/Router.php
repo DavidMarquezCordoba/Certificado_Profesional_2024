@@ -8,11 +8,11 @@ class Router {
     public array $postRoutes = [];
     public static $urlActual = '';
 
-    public function get($url, $fn) {
+    public function crearRutaGET($url, $fn) {
         $this->getRoutes[$url] = $fn;
     }
 
-    public function post($url, $fn) {
+    public function crearRutaPOST($url, $fn) {
         $this->postRoutes[$url] = $fn;
     }
 

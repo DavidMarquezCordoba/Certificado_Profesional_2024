@@ -14,7 +14,7 @@ require_once __DIR__ . '/../core/helpers.php';
 class LoginController {
 
     public static function registro() {
-        mensajeOk('esto es una prueba de registro');
+        mensajeOK('esto es una prueba de registro');
     }
 
     public static function login() {
@@ -27,58 +27,54 @@ class LoginController {
         
         if(empty($usuario) || empty($password)) {
             mensajeError('Falta el usuario o la contraseña');
-            
         }
         
         if(!filter_var($usuario, FILTER_VALIDATE_EMAIL)) {
             mensajeError('No has introducido un email valido');
-            
         }
 
         if(strlen($password) < 8) {
             mensajeError('Tu contraseña tiene que tener como minimo 8 caracteres');
-            
         }
         
         $miUsuario = new Usuario($usuario);
 
         if($miUsuario->existe() === false) {
             mensajeError('El usuario no existe, introduce el usuario correcto');
-            
         }
 
         $logeado = $miUsuario->verificaPassword($password);
 
         if(!$logeado) {
             mensajeError('Contraseña no correcta');
-            
         }
 
-        mensajeOk('Usuario logeado correctamente');
+        mensajeOK('Usuario logeado correctamente');
         
     }
 
-    public static function logout(){
+    public static function logout() {
 
-        Autorizaciones::checkToken();
+        Autorizaciones::checkToken(); // si en mi fetch estoy enviando mikey...
 
-        session_destroy(); //Destruimos la sesión PHP
-        $_SESSION = [];    //Dejarlas vacías, limpiando nuestro array de variables de sesión
+        session_destroy(); // destruimos la sesion PHP 
+        $_SESSION = []; // limpiamos nuestro array de variables de sesion
 
-        //Borramos la cookie de id de nuestro navegador
+        // borramos las cookies:
         $parametrosCookie = session_get_cookie_params();
         setcookie(session_name(), '', time() - 5000, 
             $parametrosCookie['path'], $parametrosCookie['domain'],
-            $parametrosCookie['secure'], $parametrosCookie['httponly']
+            $parametrosCookie['secure'], $parametrosCookie['httponly'],
         );
 
-        mensajeOk('Sesión cerrada correctamente');
+        mensajeOK('Sesion cerrada correctamente');
+
+
     }
+
 
 
 
 
 }
-
-
 ?>

@@ -17,3 +17,11 @@ function mensaje(mitexto, url = ''){
         }, 450);
     }, 2550);
 } 
+
+// ver/ocultar circulo girando
+function mostrarLoader(){
+    document.querySelector('#animacion-carga').classList.add('ver');
+}
+function ocultarLoader(){
+    document.querySelector('#animacion-carga').classList.remove('ver');
+}

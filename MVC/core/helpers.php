@@ -1,14 +1,13 @@
 <?php 
+// aqui van las funciones auxiliares que se pueden usar en cualquier arcivo
 
-// Metemos funciones
-
-function mensajeError($mensaje){
+// envia un mensaje de error desde las api al navegador
+function mensajeError($mensaje) {
     echo json_encode(['ok' => false, 'error' => $mensaje]);
     exit;
 }
-
-
-function mensajeOk($mensaje){
+// envia un mensaje de OK desde las api al navegador
+function mensajeOK($mensaje) {
     echo json_encode(['ok' => true, 'mensaje' => $mensaje]);
     exit;
 }

@@ -60,3 +60,51 @@
         transform: translateY(100%);
     }
 }
+
+/* animacion de espera de carga */
+#animacion-carga {
+    display: none; /*ahora para verlo, luego por defecto:  y con js haremos que aparezca o se oculte*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#animacion-carga.ver {
+    display: flex;
+}
+.svg-carga {
+    width: 48px;
+    height: 48px;
+    animation: rotacion 1s linear infinite;
+}
+.circulo-carga {
+    stroke: var(--seleccionado);
+    stroke-linecap: round;
+    animation: linea-discontinua 1.5s ease-in-out infinite;
+}
+
+@keyframes linea-discontinua {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+@keyframes rotacion {
+    100% {
+        transform: rotate(360deg);
+    }
+}

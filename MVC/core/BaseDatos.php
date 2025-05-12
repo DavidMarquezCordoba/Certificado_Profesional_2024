@@ -3,32 +3,28 @@ namespace MVC;
 
 use mysqli;
 
-// require_once __DIR__ . '/config/db.php'; //Usando las variables de entorno no es necesario usar db.php
-
-
+// require_once __DIR__ . '/config/db.php'; // usando las variables de entorno no necesitamos el archivo db.php (que es donde teniamos las credenciales antes)
+// ya no necesitamos la carpeta config dentro de core (ahora usamos el archivo .env que esta en la carpeta raiz del proyecto)
 
 class BaseDatos {
     private $conexion;
-
     private $servidor;
     private $usuario;
     private $pass;
     private $baseDatos;
 
     function __construct() {
-
         $this->servidor = $_ENV['DB_SERVIDOR'];
         $this->usuario = $_ENV['DB_USUARIO'];
         $this->pass = $_ENV['DB_PASS'];
         $this->baseDatos = $_ENV['DB_NOMBRE'];
-
         $this->conexion = $this -> conectar();
     }
 
     // Función para conectar a una base de datos, las credenciales para la conexión están en un archivo llamado "db.php" dentro de la carpeta "config"
     private function conectar() {
         try {
-            $miconexion = new Mysqli( $this->servidor, $this->usuario, $this->pass, $this->baseDatos); // Mysqli: es una clase que tiene PHP
+            $miconexion = new Mysqli($this->servidor, $this->usuario, $this->pass, $this->baseDatos); // Mysqli: es una clase que tiene PHP
         } catch (\Throwable $th) {
             die('error al conectar con la base de datos');
         }

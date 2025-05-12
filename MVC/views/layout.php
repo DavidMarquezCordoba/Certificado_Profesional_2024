@@ -41,6 +41,12 @@
     <h2 id="mensaje-texto">Este es un texto de mensaje</h2>
 </div>
 
+<div id="animacion-carga">
+    <svg class="svg-carga" viewBox="0 0 50 50">
+        <circle class="circulo-carga" cx="25" cy="25" r="20" fill="none" stroke-width="5"/>
+    </svg>
+</div>
+
 <footer>
     <p>&copy; 2025 young <span>pe</span>o<span>ple</span>. Todos los derechos reservados</p>
     <ul class="footer-enlaces">
