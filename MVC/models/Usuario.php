@@ -44,6 +44,7 @@ class Usuario {
         }
 
         Autorizaciones::iniciarSesionPHP();
+
         $_SESSION['usuario'] = [
             'idusuario' => htmlspecialchars($this->usuario['id']),
             'usuario' => htmlspecialchars($this->usuario['usuario']),
@@ -55,6 +56,27 @@ class Usuario {
         return true;
     }
     
+    public function crear($usuario, $password){
+        $miConsulta = "INSERT INTO clientes (usuario, pass) VALUES (?,?)";
+        $datosRecibidos = $this->datosUsuarios->guardar($miConsulta, [$usuario, $password]);
+
+        if($datosRecibidos[0]){
+            $_SESSION['usuario'] = [
+                'idusuario' => htmlspecialchars($datosRecibidos[1]),
+                'usuario' => htmlspecialchars($usuario),
+                'nombre' => '',
+                'foto' => 'youngpeople.png',
+                'role' => 1
+            ];
+        }
+
+        return $datosRecibidos[0];
+    }
+
+    
+    public static function modificar($nombre, $password1, $nombreImagen){
+
+    }
 }
 
 ?>

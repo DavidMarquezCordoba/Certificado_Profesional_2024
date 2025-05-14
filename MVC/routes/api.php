@@ -3,6 +3,7 @@
 use Controllers\ProductosController;
 use Controllers\LoginController;
 use Controllers\FormularioController;
+use Controllers\UserController;
 
 use MVC\Router;
 
@@ -15,6 +16,7 @@ $router->crearRutaPOST('/api/registro', [LoginController::class, 'registro']);
 $router->crearRutaPOST('/api/logout', [LoginController::class, 'logout']);
 
 $router->crearRutaPOST('/api/info', [FormularioController::class, 'info']);
+$router->crearRutaPOST('/api/update', [UserController::class, 'update']);
 
 $router->comprobarRutas();
 

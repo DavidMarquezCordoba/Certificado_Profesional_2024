@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 async function enviarLoginRegistro(e){
+    mostrarLoader();
     const datos = e.target.querySelectorAll("input");
     const datos_post = new FormData();
     datos.forEach(dato => {
@@ -83,5 +84,7 @@ async function enviarLoginRegistro(e){
 
     } catch (error) {
         console.log(error);
+    } finally {
+        ocultarLoader(); // Siempre se oculta el loader
     }
 }
