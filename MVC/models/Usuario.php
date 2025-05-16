@@ -39,7 +39,8 @@ class Usuario {
             return false;
         }
 
-        if($this->usuario['pass'] != $password) { // nos vamos a la bbdd y miramos en la tabla el nombre que le hayamos puesto a la columna de password
+        // if($this->usuario['pass'] != $password) { 
+        if(!password_verify($password, $this->usuario['pass'])) { // nos vamos a la bbdd y miramos en la tabla el nombre que le hayamos puesto a la columna de password
             return false;
         }
 
@@ -57,8 +58,9 @@ class Usuario {
     }
     
     public function crear($usuario, $password){
+        $miPass = password_hash($password, PASSWORD_DEFAULT);
         $miConsulta = "INSERT INTO clientes (usuario, pass) VALUES (?,?)";
-        $datosRecibidos = $this->datosUsuarios->guardar($miConsulta, [$usuario, $password]);
+        $datosRecibidos = $this->datosUsuarios->guardar($miConsulta, [$usuario, $miPass]);
 
         if($datosRecibidos[0]){
             $_SESSION['usuario'] = [
@@ -74,8 +76,33 @@ class Usuario {
     }
 
     
-    public static function modificar($nombre, $password1, $nombreImagen){
+    public function modificar($nombre, $password1, $nombreImagen){
+        $miPass = $this->usuario['pass'];
+        $miNombre = $this->usuario['nombre'];
+        $miFoto = $this->usuario['foto'];
 
+        $miConsulta = "UPDATE clientes SET nombre = ?, pass = ?, foto = ? WHERE usuario = ?";
+
+        if ($password1 !== '') {
+            $miPass = password_hash($password1, PASSWORD_DEFAULT); //Mi pass será hasheado, es decir, cifrado
+        }
+
+        if ($nombreImagen !== '') {
+            $miFoto = $nombreImagen;
+        }
+
+        if ($nombre !== '') {
+            $miNombre = $nombre;
+        }
+
+        $datosRecibidos = $this->datosUsuarios->guardar($miConsulta, [$miNombre, $miPass, $miFoto, $this->usuario['usuario']]);
+
+        if ($datosRecibidos[0]) {
+            $_SESSION['usuario']['nombre'] = htmlspecialchars($miNombre);
+            $_SESSION['usuario']['foto'] = $miFoto;
+        }
+
+        return $datosRecibidos[0];
     }
 }
 

@@ -73,17 +73,27 @@ class UserController {
             $esImagen = getimagesize($_FILES['miimagen']['tmp_name']);
 
             if($esImagen){
-                $extension = pathinfo($_FILES['miimagen']['tmp_name'], PATHINFO_EXTENSION);
+                $extension = pathinfo($_FILES['miimagen']['name'], PATHINFO_EXTENSION);
                 $nombreUnico = 'yp_' . uniqid() . '.' . strtolower($extension);
                 move_uploaded_file($_FILES['miimagen']['tmp_name'], 'img/avatares/' . $nombreUnico);
                 $nombreImagen = $nombreUnico;
-            }
+                if(!empty($_SESSION['usuario']['foto']) && ($_SESSION['usuario']['foto']) != 'youngpeople.png'){
+                    unlink('img/avatares/' . $_SESSION['usuario']['foto']);
+                } 
+            } else {
+                    mensajeError('El archivo subido no es una imagen válida');
+                }
+
+            // $usuarioModificado = $miUsuario->modificar($nombre, $password1, $nombreImagen);
         }
 
         //Guardar datos en la base de datos
         $usuarioModificado = $miUsuario->modificar($nombre, $password1, $nombreImagen);
-        
-        mensajeOK('Imagen guardada');
+        if ($usuarioModificado) {
+            mensajeOK('Perfil modificado correctamente');
+        } else {
+            mensajeError('No se ha podido guardar los cambios del perfil');
+        }
     }
 }
 

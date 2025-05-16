@@ -68,7 +68,7 @@ class LoginController {
     }
 
     public static function login() {
-        // Autorizaciones::checkToken(); // si el token no existe, o no coincide con mi sesion key, aqui se terminaria porque en checkToken tengo un "exit"
+        Autorizaciones::checkToken(); // si el token no existe, o no coincide con mi sesion key, aqui se terminaria porque en checkToken tengo un "exit"
         
         $usuario = filter_var(trim($_POST['username'] ?? ''), FILTER_SANITIZE_EMAIL); // username: me fijo como se llama en el formulario // cualquier cosa que no puede contener un correo electronico lo elimina
         $password = trim($_POST['password'] ?? ''); // password: me fijo como se llama en el formulario

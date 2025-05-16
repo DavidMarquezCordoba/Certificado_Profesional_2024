@@ -31,7 +31,9 @@ class Menu {
     }
 
     public static function generar($usuario = null) {
+
         $pagina = Router::$urlActual;
+
         $navegacion = '';
 
         foreach(self::$menu as $datos) {
@@ -39,15 +41,25 @@ class Menu {
         }
 
         $logeado = Autorizaciones::checkLogeado();
+
         if($logeado) {
+            
+            if ($logeado['nombre'] != '') {
+                self::$perfil['nombre'] = $logeado['nombre'];
+            }
+            
             $navegacion .= self::menuTexto(self::$perfil, $pagina);
+
+            if($pagina == '/tienda') {
+                $navegacion .= self::menuTexto(self::$carrito, $pagina);
+            }
+            
         } else {
             $navegacion .= self::menuTexto(self::$login, $pagina);
         }
         
-        if($pagina == '/tienda') {
-            $navegacion .= self::menuTexto(self::$carrito, $pagina);
-        }
+
+        
 
         return $navegacion;
     }
