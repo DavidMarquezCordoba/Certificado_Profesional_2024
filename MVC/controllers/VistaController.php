@@ -79,6 +79,10 @@ class VistaController {
             header('Location: /');
             exit;
         }
+
+        if (!file_exists(__DIR__ . '/../public/img/avatares/' . $datosUsuario['foto'])) {
+            $datosUsuario['foto'] = 'youngpeople.png';
+        }
         //echo 'perfil';
         $router->render('perfil', [
             'sesionkey' => Autorizaciones::getToken(),

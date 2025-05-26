@@ -80,6 +80,24 @@ function cargarProductos( filtro = "" ) {
                 imgProducto.setAttribute("loading", "lazy"); // comentar esta línea
                 imgProducto.src = producto.foto;
                 imgProducto.alt = producto.nombre;
+
+                // Método 1
+
+                imgProducto.onerror = function () {
+                    this.onerror = null;
+                    this.src = "img/avatares/img_no_disponible.png";
+                };
+
+                // Método 2 - con addEventListener
+
+                // imgProducto.addEventListener("error", detectarError);
+                
+                // function detectarError(e) { //Debería ir fuera del foreach esta función para que no se repita 100veces
+                //     e.target.src = "img/avatares/img_no_disponible.png";
+                //     e.target.remove
+                // }
+
+
                 const nombreProducto = document.createElement("h2");
                 nombreProducto.textContent = producto.nombre;
                 const precioProducto = document.createElement("p");

@@ -41,7 +41,7 @@ class Menu {
         $logeado = Autorizaciones::checkLogeado();
         if($logeado) {
 
-            if($logeado['foto'] != 'youngpeople.png') {
+            if(($logeado['foto'] != 'youngpeople.png') && (file_exists(__DIR__ . '/../public/img/avatares/' . $logeado['foto']))) {
                 self::$perfil['nombre'] = $logeado['foto'];
                 $navegacion .= self::menuFoto(self::$perfil, $pagina);
             } else {
