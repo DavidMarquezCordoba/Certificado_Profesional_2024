@@ -59,6 +59,7 @@ a:hover {
     color: var(--blanco);
     text-decoration: none;
     border-radius: 5px;
+    height: auto;
 }
 
 .boton:hover {

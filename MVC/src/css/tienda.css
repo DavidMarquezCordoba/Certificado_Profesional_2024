@@ -124,17 +124,61 @@
 #detalle-barcode{
   margin: 30px auto;
 }
+#detalle-descripcion{
+  width: 100%;
+  height: 60px;
+  font-size: 2rem;
+  font-family: var(--fuente-principal);
+}
 .modal-detalles .div-agregar{
   display: grid;
   grid-template-columns: 1fr 10fr;
   gap: 20px;
   height: auto;
-}
-.modal-detalles .div-agregar input{
+ }
+ .modal-detalles .div-agregar input{
   width: 50px;
   height: 3rem;
   margin: 0;
   font-size: 2rem;
+ }
+.input-detalles{
+  width: 100%;
+  height: 5rem;
+  margin: 0;
+  font-size: 2rem;
+  border-radius: 5px;
+  border-color: grey;
+  padding: 0.5rem;
+}
+.rojo{
+  background-color: #ff0000;
+}
+.boton-nuevo {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 64px;
+  height: 64px;
+  background-color: #28a745; /* Verde */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-nuevo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+.boton-nuevo svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
 }
 
 .close {

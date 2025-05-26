@@ -4,6 +4,9 @@ namespace Controllers;
 use MVC\Autorizaciones;
 use Models\Productos;
 
+require_once __DIR__ . '/../core/helpers.php';
+
+
 class ProductosController {
 
     public static function productos() {
@@ -29,7 +32,14 @@ class ProductosController {
 
     }
 
+    public static function editar() {
+        if($_POST['acc'] == 'mod'){
+            mensajeError('No puedes modificar aún');
+        }
+        else if($_POST['acc'] == 'del'){
+            mensajeError('No puedes borrar aún');
+        }
+    }
 
 }
-
 ?>

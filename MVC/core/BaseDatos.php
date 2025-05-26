@@ -3,8 +3,9 @@ namespace MVC;
 
 use mysqli;
 
-// require_once __DIR__ . '/config/db.php'; // usando las variables de entorno no necesitamos el archivo db.php (que es donde teniamos las credenciales antes)
-// ya no necesitamos la carpeta config dentro de core (ahora usamos el archivo .env que esta en la carpeta raiz del proyecto)
+
+// require_once __DIR__ . '/config/db.php'; // usando las variables de entorno no necesitamos el archivo db.php
+// ya no necesitamos la carpeta config dentro de core (ahora usamos el archivo .env que está en la carpeta raiz del proyecto)
 
 class BaseDatos {
     private $conexion;
@@ -24,7 +25,7 @@ class BaseDatos {
     // Función para conectar a una base de datos, las credenciales para la conexión están en un archivo llamado "db.php" dentro de la carpeta "config"
     private function conectar() {
         try {
-            $miconexion = new Mysqli($this->servidor, $this->usuario, $this->pass, $this->baseDatos); // Mysqli: es una clase que tiene PHP
+            $miconexion = new Mysqli( $this->servidor, $this->usuario, $this->pass, $this->baseDatos);
         } catch (\Throwable $th) {
             die('error al conectar con la base de datos');
         }
@@ -34,34 +35,35 @@ class BaseDatos {
     
     // Función para realizar una consulta a la base de datos, recibe una consulta SQL y devuelve un array con todas las filas recibidas
     // SELECT
-    public function consulta($consultaSQL, $parametros = []) {
+    public function consulta( $consultaSQL, $parametros = []) {
         $respuesta = $this->realizaConsulta($consultaSQL, $parametros);
         $resultados = [];
 
-        if($respuesta[0]){  // ha sido correcta la peticion? si es correcta, mete los datos en el array
-            //$respuesta[0] sera true o false dependiendo de si la consulta dio ok o no (sera el $resultadoConsultado que este mas abajo)
-            //$respuesta[1] tendra los datos
-            while ($resultado = $respuesta[1] -> fetch_array(MYSQLI_ASSOC)){ // los datos que me va a dar la bbdd va a recibir un array asociativo 
+        if($respuesta[0]){
+            while ($resultado = $respuesta[1] -> fetch_array(MYSQLI_ASSOC)){
                 $resultados[] = $this->convertirNumero($resultado); // Esta línea devuelve los valores numéricos como número usando la función "convertirNumero"
             }
         }
+
         return $resultados;
     }
 
+
     // INSERT y UPDATE
-    public function guardar($consultaSQL, $parametros = []) {
+    public function guardar( $consultaSQL, $parametros = []) {
         $respuesta = $this->realizaConsulta($consultaSQL, $parametros);
         if($respuesta[0]){
-            $ultimoId = $this->conexion->insert_id; // obtenemos la ultima id creada // insert_id: propiedad publica que tiene conexion (instancia a la bbdd)
+            $ultimoId = $this->conexion->insert_id; // obtenemos la última id creada
             return [true, $ultimoId];
         } else {
-            return [];
+            return [false, false];
         }
     }
 
-    // Parte comun a las dos funciones publicas
+
+    // parte común a las dos funciones públicas
     private function realizaConsulta($consultaSQL, $parametros){
-        $consultaPreparada = $this->conexion->prepare($consultaSQL); // prepare: metodo de Mysqli
+        $consultaPreparada = $this->conexion->prepare($consultaSQL);
         if($consultaPreparada === false){
             return [false, false];
         }
@@ -75,28 +77,32 @@ class BaseDatos {
                     $tipos .= 'd';
                 } elseif (is_null($parametro)){
                     $tipos .= 's';
-                    $parametros[$key] = null; // $key es la posicion del parametro (0,1,2,...)
+                    $parametros[$key] = null;
                 } else {
                     $tipos .= 's';
                 }
-                $refs[$key] = &$parametros[$key]; // &: la referencia a ese valor (a la variable en si, no a su valor) // donde esta esta variable en memoria, voy a detectar el sitio donde esta
+                $refs[$key] = &$parametros[$key];
             }
             array_unshift($refs, $tipos);
-            call_user_func_array([$consultaPreparada, 'bind_param'], $refs);  // bind_param: es una funcion que va a sustituir las "?" por los valores, pero si no es del tipo correcto, no va a funcionar
+            call_user_func_array([$consultaPreparada, 'bind_param'], $refs);
         }
-        $resultadoConsulta = $consultaPreparada->execute(); // cuando lo ejecutamos devuelve true/false // execute: metodo de Mysqli
-        return [$resultadoConsulta, $consultaPreparada->get_result()]; // aqui devuelve true/false, y los resultados
+        $resultadoConsulta = $consultaPreparada->execute();
+        return [$resultadoConsulta, $consultaPreparada->get_result()];
     }
+
+
+
 
     // Función que revisa una fila devuelta por la base de datos y si tiene algún valor numérico pero que viene en string, lo convierte a numérico
     private function convertirNumero($fila) {
         foreach ($fila as $key => $value) {
             if(is_numeric($value)){
-                $fila[$key] = $value + 0; // le +0 para obligarlo que se convierta a numero
+                $fila[$key] = $value + 0;
             }
         }
         return $fila;
     }
+
 
 }
 // $conectado = new BaseDatos();

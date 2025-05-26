@@ -29,7 +29,7 @@ class Router {
         if($fn) {
             call_user_func($fn, $this);
         } else {
-            // echo 'página no encontrada';
+            //echo 'página no encontrada';
             call_user_func($this->getRoutes['/'], $this); // Nos redirige a la página principal
         }
     }
