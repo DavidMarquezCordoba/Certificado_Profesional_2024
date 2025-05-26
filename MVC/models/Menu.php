@@ -41,23 +41,22 @@ class Menu {
         $logeado = Autorizaciones::checkLogeado();
         if($logeado) {
 
-            if($logeado['foto'] != 'youngpeople.png'){
+            if($logeado['foto'] != 'youngpeople.png') {
                 self::$perfil['nombre'] = $logeado['foto'];
                 $navegacion .= self::menuFoto(self::$perfil, $pagina);
             } else {
-                if($logeado['nombre'] != ''){
+                if($logeado['nombre'] != '') {
                     self::$perfil['nombre'] = $logeado['nombre'];
                 }
                 $navegacion .= self::menuTexto(self::$perfil, $pagina);
             }
             
-            if(($pagina == '/tienda')&&($logeado['role']==1)) {
+            if(($pagina == '/tienda')&&($logeado['role'] == 1)) { // agregamos el rol porque solo debe tener carrito el cliente, los demas roles no tienen que tenerlo
                 $navegacion .= self::menuTexto(self::$carrito, $pagina);
             }
         } else {
             $navegacion .= self::menuTexto(self::$login, $pagina);
         }
-        
 
         return $navegacion;
     }

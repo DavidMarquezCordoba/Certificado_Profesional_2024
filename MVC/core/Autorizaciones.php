@@ -19,12 +19,9 @@ class Autorizaciones {
 
             $archivoSalida = __DIR__ . "/rutas.txt";
             $contenido = file_get_contents($archivoSalida);
-            if((!str_starts_with($ruta, '/api'))&&(!str_contains($ruta,'.'))){
+            // if((!str_starts_with($ruta, '/api'))&&(!str_contains($ruta,'favicon.ico'))&&(!str_contains($ruta,'.png'))){
+            if((!str_starts_with($ruta, '/api'))&&(!str_contains($ruta,'.'))){ // si la ruta empieza por /api o hay un archivo con . no cambia la key
                 $_SESSION['key'] = bin2hex(random_bytes(32)); // generar una key aleatoria de 64 caracteres
-                // if (($gestorSalida = fopen($archivoSalida, "w")) !== FALSE) {
-                //     fputs($gestorSalida, $contenido . ' - ' . $ruta);
-                //     fclose($gestorSalida);
-                // }
             }
 
         }
@@ -53,7 +50,6 @@ class Autorizaciones {
 
         if(!isset($_SESSION['key']) || $_SESSION['key'] != $token){
             http_response_code(403);
-            header('Content-Type: application/json');
             echo json_encode(['ok' => false, 'error' => 'Sin Permiso']);
             // echo json_encode(['ok' => false, 'error' => self::$rutas]);
             // echo $_SESSION['key'];

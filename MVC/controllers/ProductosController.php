@@ -6,7 +6,6 @@ use Models\Productos;
 
 require_once __DIR__ . '/../core/helpers.php';
 
-
 class ProductosController {
 
     public static function productos() {
@@ -28,18 +27,16 @@ class ProductosController {
             $resultado = $listaProductos->obtenerProductos($lang);
         }
         echo $resultado;
-
-
     }
 
     public static function editar() {
-        if($_POST['acc'] == 'mod'){
-            mensajeError('No puedes modificar aún');
-        }
-        else if($_POST['acc'] == 'del'){
-            mensajeError('No puedes borrar aún');
-        }
+        if($_POST['acc'] == 'mod') {
+            mensajeError('No puedes modificar aun');
+        } else if($_POST['acc'] == 'del') {
+            mensajeError('No puedes eliminar aun');
+        } 
     }
 
 }
+
 ?>

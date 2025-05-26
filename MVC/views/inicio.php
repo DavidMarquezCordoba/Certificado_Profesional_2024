@@ -11,9 +11,4 @@
             <a href="/tienda" class="boton">Tienda</a>
         </div>
     </div>
-    <div class="onda">
-        <svg viewBox="0 0 1440 320"  preserveAspectRatio="none">
-            <path d="M0,160 C360,0 1080,320 1440,160 L1440,320 L0,320 Z"/>
-        </svg>
-    </div>
 </section>

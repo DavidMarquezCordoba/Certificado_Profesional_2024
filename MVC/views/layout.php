@@ -12,7 +12,8 @@
     <script defer src="js/scripts.php?s=index"></script>
     <script defer src="js/scripts.php?s=header"></script>
     <script defer src="js/scripts.php?s=popover"></script>
-    <?php echo $scripts; ?>
+    <?php echo $scripts; ?> 
+    <!-- hago un echo para los scripts especificos -->
     </head>
 <body>
     <header class="<?php echo ($pagina == '/')?'':'fondo'; ?>">

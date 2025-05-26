@@ -18,7 +18,7 @@ function mensaje(mitexto, url = ''){
     }, 2550);
 } 
 
-// ver/ocultar circulo girando (loader)
+// ver/ocultar circulo girando
 function mostrarLoader(){
     document.querySelector('#animacion-carga').classList.add('ver');
 }

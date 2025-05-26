@@ -131,10 +131,6 @@ async function EnviaActualizacion() {
             body: datos
         });
 
-        // clonamos el response para poder usarlo 2 veces
-        //const datosStr = await response.clone().text();
-        //console.log("recibido:" + datosStr);
-
         let datosRecibido = await response.json();
         if(datosRecibido['ok']){
             mensaje(datosRecibido['mensaje'], "/perfil"); // Enseña un mensaje y redirige la página a "/perfil"

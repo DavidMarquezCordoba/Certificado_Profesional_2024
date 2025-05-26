@@ -114,7 +114,6 @@ async function enviaEdicionProducto(e) {
         let datosRecibido = await response.json();
         if(datosRecibido['ok']){
             mensaje(datosRecibido['mensaje'], "/tienda"); // Enseña un mensaje y recarga los productos"
-        
         } else {
             alerta("No podido actualizar los datos del producto: " + datosRecibido['error']);
         }

@@ -1,7 +1,7 @@
-<?php
+<?php 
 
-use Controllers\LoginController;
 use Controllers\ProductosController;
+use Controllers\LoginController;
 use Controllers\FormularioController;
 use Controllers\PedidoController;
 use Controllers\UserController;

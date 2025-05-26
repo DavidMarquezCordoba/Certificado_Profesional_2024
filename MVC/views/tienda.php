@@ -1,6 +1,8 @@
+<!-- <h2><?php echo $role?></h2> -->
 <main>
     <section id="productos-contenedor">Tienda</section>
 </main>
+
 <?php 
 if($role == 2) {
     require __DIR__ . '/modales/tienda_edicion.php';

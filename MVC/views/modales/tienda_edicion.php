@@ -4,7 +4,7 @@
         <span class="close">&times;</span>
         <input name="nombre" type="text" id="detalle-nombre" value="" required>
         <div class="modal-interior">
-            <img id="detalle-imagen" src="" alt="" title="Haz click para cambiar la imagen">
+            <img id="detalle-imagen" src="" alt="">
             <input type="file" id="imagen-input" name="image" accept="image/*" onchange="previsualizaImagen()">
             <div class="modal-detalles">
                 <p>Precio: <input name="precio" class="input-detalles" type="number" id="detalle-precio" value="" step="0.01"></p>
@@ -39,4 +39,4 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
     </svg>
-</button>
+  </button>
