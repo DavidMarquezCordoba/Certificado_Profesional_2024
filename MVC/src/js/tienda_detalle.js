@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
     
+
     carrito = agregarCarritoFetch() || []; //JSON.parse(localStorage.getItem("carrito")) || [];
 
 });
@@ -93,6 +94,12 @@ function mostrarDetalle(producto) {
         document.querySelector("#detalle-codigo").value = detallesProducto.codigo_barras;
         document.querySelector("#detalle-descripcion").textContent = detallesProducto.descripcion;
         document.querySelector("#detalle-unidades-seleccionadas").value = 1;
+        
+        document.querySelector("#detalle-imagen").onerror = function () {
+            this.onerror = null;
+            this.src = "img/avatares/img_no_disponible.png";
+        };
+    
         modalContenido.classList.add("abrir-modal");
         modal.classList.add("abrir-modal-fondo");
         modal.style.display = "flex";

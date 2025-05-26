@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
     botonModificar.addEventListener("click", enviaEdicionProducto);
     botonEliminar.addEventListener("click", enviaEdicionProducto);
     botonNuevo.addEventListener("click", fichaProducto);
+
+
 });
 
 
@@ -67,6 +69,12 @@ function fichaProducto(datosProducto = []){
     document.querySelector("#detalle-codigo").value = datosProducto.codigo_barras ?? '';
     document.querySelector("#detalle-codigo-oculto").value = datosProducto.codigo_barras ?? '';
     document.querySelector("#detalle-descripcion").textContent = datosProducto.descripcion ?? '';
+
+    document.querySelector("#detalle-imagen").onerror = function () {
+        this.onerror = null;
+        this.src = "img/avatares/img_no_disponible.png";
+    };
+    
     modalContenido.classList.add("abrir-modal");
     modal.classList.add("abrir-modal-fondo");
     modal.style.display = "flex";

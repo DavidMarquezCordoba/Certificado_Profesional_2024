@@ -30,13 +30,61 @@ class ProductosController {
     }
 
     public static function editar() {
-        if($_POST['acc'] == 'mod') {
-            mensajeError('No puedes modificar aun');
-        } else if($_POST['acc'] == 'del') {
-            mensajeError('No puedes eliminar aun');
+
+        $datos = [];
+
+        foreach($_POST as $key => $valor) {
+            $datos[$key] = htmlspecialchars(trim($valor));
+        }
+
+        if((($datos['newcod']) == '') || (!is_numeric($datos['newcod']))){
+            mensajeError('El código de barras tiene que ser numérico y no puede estar vacío');
+        }
+        
+        if ($datos['nombre'] == '') {
+            mensajeError('El nombre no puede estar vacío');
+        }
+        
+        if((($datos['unidades']) == '') || (!is_numeric($datos['unidades']))){
+            mensajeError('Pon un valor correcto');
+        }
+
+        if((intval(($datos['unidades'])) < 0) ){
+            mensajeError('Unidades tiene que ser igual o mayor que 0');
+        }
+
+        if(($datos['precio'] == '') || (!is_numeric($datos['precio']))){
+            mensajeError('El precio no debe estar vacío y debe ser numérico');
+        }
+
+        if(floatval(($datos['precio'])) < 0) {
+            mensajeError('El precio debe ser mayor o igual a 0');
+        }
+
+        if((($datos['categoria']) < 1) || (($datos['categoria']) > 7)) {
+            mensajeError('Pon un valor correcto en la categoría');
+        }
+
+        if((($datos['genero']) < 1) || (($datos['genero']) > 3)) {
+            mensajeError('Pon un valor correcto en el género');
+        }
+
+        $productosModel = new Productos();
+        $resultado = [];
+
+        if($datos['acc'] == 'mod') {
+            if ($datos['codigo'] == '') {
+                // mensajeError('No puedes crear aún');
+                $resultado = $productosModel->nuevoProducto($datos);
+            } else {
+                mensajeError('No puedes modificar aún');
+                $resultado = $productosModel->modificarProducto($datos);
+            }
+        } else if($datos['acc'] == 'del') {
+            mensajeError('No puedes eliminar aún');
+            $resultado = $productosModel->eliminarProducto($datos);
         } 
     }
 
 }
-
 ?>

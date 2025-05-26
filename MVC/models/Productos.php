@@ -55,5 +55,21 @@ class Productos {
         }, $this->productos);
         return json_encode(array_values($resultado), JSON_UNESCAPED_UNICODE);
     }
+
+    public function nuevoProducto($datosRecibidos){
+        
+    }
+
+    public function modificarProducto($datosRecibidos){
+
+    }
+
+    public function eliminarProducto($datosRecibidos){
+
+    }
+
+    private function gestionaFoto($fotoAntigua){
+        
+    }
 }
 ?>
