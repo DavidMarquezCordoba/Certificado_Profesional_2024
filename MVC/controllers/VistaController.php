@@ -7,6 +7,8 @@
 namespace Controllers;
 
 use Models\Menu;
+use Models\Producto;
+use Models\Productos;
 use MVC\Autorizaciones;
 use MVC\Router;
 use Services\CorreoService;
@@ -29,6 +31,9 @@ class VistaController {
         $scripts = ((isset($datosUsuario['role']))&&($datosUsuario['role'] == 2))?'<script defer src="js/scripts.php?s=tienda_edicion"></script>':'<script defer src="js/scripts.php?s=tienda_detalle"></script>';
         $scripts .= '<script defer src="js/scripts.php?s=tienda"></script>';
         
+        $categorias = Productos::buscaCategoria();
+        $generos = Productos::buscaGenero();
+
         $botonCarrito = (!$datosUsuario)?'Inicia Sesión primero':'Añadir al carrito';
         $router->render('tienda', [
             'sesionkey' => Autorizaciones::getToken(),
@@ -37,7 +42,9 @@ class VistaController {
             'busqueda' => '<div class="div-busqueda"><label for="busqueda" id="buscar">&#x1F50D</label><input type="search" name="busqueda" id="busqueda" class="busqueda" placeholder="Buscar..."></div>',
             'scripts' => $scripts,
             'botonCarrito' => $botonCarrito, 
-            'role' => $datosUsuario['role']
+            'role' => $datosUsuario['role'],
+            'categorias' => $categorias,
+            'generos' => $generos
         ]);
     }
     public static function contacto(Router $router) {

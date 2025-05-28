@@ -4,6 +4,8 @@ namespace Controllers;
 
 use MVC\Autorizaciones;
 use Models\Pedido;
+use Models\Producto;
+use Models\Productos;
 
 require_once __DIR__ . '/../core/helpers.php';
 

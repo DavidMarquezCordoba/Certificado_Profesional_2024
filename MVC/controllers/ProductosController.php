@@ -61,12 +61,22 @@ class ProductosController {
             mensajeError('El precio debe ser mayor o igual a 0');
         }
 
-        if((($datos['categoria']) < 1) || (($datos['categoria']) > 7)) {
-            mensajeError('Pon un valor correcto en la categoría');
+        // if((($datos['categoria']) < 1) || (($datos['categoria']) > 7)) {
+        //     mensajeError('Pon un valor correcto en la categoría');
+        // }
+        
+        $busqueda = Productos::buscaCategoria($datos['categoria']);
+        if (empty($busqueda)) {
+            mensajeError('Esa categoría no es válida');
         }
 
-        if((($datos['genero']) < 1) || (($datos['genero']) > 3)) {
-            mensajeError('Pon un valor correcto en el género');
+        // if((($datos['genero']) < 1) || (($datos['genero']) > 3)) {
+        //     mensajeError('Pon un valor correcto en el género');
+        // }
+
+        $busqueda = Productos::buscaGenero($datos['generos']);
+        if (empty($busqueda)) {
+            mensajeError('Ese género no es válido');
         }
 
         $productosModel = new Productos();
@@ -84,6 +94,14 @@ class ProductosController {
             mensajeError('No puedes eliminar aún');
             $resultado = $productosModel->eliminarProducto($datos);
         } 
+    }
+
+    public static function todasCategorias(){
+        echo json_encode(Productos::buscaCategoria());
+    }
+
+    public static function todosGeneros(){
+        echo json_encode(Productos::buscaGenero());
     }
 
 }

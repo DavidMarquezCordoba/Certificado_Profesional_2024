@@ -8,22 +8,23 @@
             <input type="file" id="imagen-input" name="image" accept="image/*" onchange="previsualizaImagen()">
             <div class="modal-detalles">
                 <p>Precio: <input name="precio" class="input-detalles" type="number" id="detalle-precio" value="" step="0.01"></p>
+
                 <p>Categoría: 
                 <select class="input-detalles" type="number" id="detalle-categoria" name="categoria">
-                    <option value="1">Camisetas</option>
-                    <option value="2">Sudaderas</option>
-                    <option value="3">Pantalones</option>
-                    <option value="4">Faldas</option>
-                    <option value="5">Chaquetas</option>
-                    <option value="6">Calzado</option>
-                    <option value="7">Accesorios</option>
+                    <?php  foreach ($categorias as $categoria) { ?>
+                        <option value="<?php echo $categoria['id'] ?>"><?php echo $categoria['nombre']?></option>
+                    <?php }?>
+                    <option value="99">No Válido</option>
                 </select></p>
+                
                 <p>Género: 
-                <select class="input-detalles" type="number" id="detalle-genero" name="genero">
-                    <option value="1">Hombre</option>
-                    <option value="2">Mujer</option>
-                    <option value="3">Unisex</option>
-                </select></p>
+                    <select class="input-detalles" type="number" id="detalle-genero" name="genero">
+                        <?php  foreach ($generos as $genero) { ?>
+                            <option value="<?php echo $genero['id'] ?>"><?php echo $genero['nombre']?></option>
+                        <?php }?>
+                        <option value="99">No Válido</option>
+                        </select></p>
+
                 <p>Unidades disponibles: <input name="unidades" class="input-detalles" type="number" id="detalle-unidades" value=""></p>
                 <p>Código de Barras: <input name="newcod" class="input-detalles" type="number" id="detalle-codigo" value="" required></p>
                 <input type="hidden" id="detalle-codigo-oculto" name="codigo" value="">

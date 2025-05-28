@@ -76,7 +76,9 @@ class UserController {
                 move_uploaded_file($_FILES['miimagen']['tmp_name'], 'img/avatares/' . $nombreUnico); // lo guarda en el disco duro pero no estamos modificando la bbdd
                 $nombreImagen = $nombreUnico;
                 // borramos la foto anterior si existe en el servidor
-                if((!empty($_SESSION['usuario']['foto'])) && ($_SESSION['usuario']['foto'] != 'youngpeople.png')) { 
+                if((!empty($_SESSION['usuario']['foto'])) 
+                    && ($_SESSION['usuario']['foto'] != 'youngpeople.png') 
+                    && (file_exists($_SESSION['usuario']['foto']))) { 
                 // en nuestro caso por defecto le ponemos "youngpeople.png", entonces compruebo que en la bbdd haya foto y luego que no sea la foto por defecto para no eliminarla
                     unlink('img/avatares/' . $_SESSION['usuario']['foto']); // unlink: si el archivo existe, la borra
                 }

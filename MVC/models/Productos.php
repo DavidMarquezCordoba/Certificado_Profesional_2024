@@ -61,15 +61,43 @@ class Productos {
     }
 
     public function modificarProducto($datosRecibidos){
-
+        mensajeOK('Perfecto, modificado correctamente');
     }
 
     public function eliminarProducto($datosRecibidos){
+        // mensajeOK('eliminar');
+        $productoBuscado = $this->buscarPorCodigoBarras($datosRecibidos['codigo']);
+        $productoBuscado = json_decode($productoBuscado, true);
+        if(isset($productoBuscado['error'])){
+            return ['ok' => false, 'error' => 'El producto no existe'];
+        }
+        $consulta="DELETE FROM productos WHERE codigo = ?";
 
+        $productoEliminado = $this->misDatos->guardar($consulta, [$datosRecibidos['codigo']]);
+
+        if($productoEliminado[0] === false){
+            return ['ok' => false, 'error' => 'El producto no se ha podido eliminar'];
+        }
+        
+        return ['ok' => true, 'mensaje' => 'Producto eliminado correctamente'];
     }
 
     private function gestionaFoto($fotoAntigua){
         
+    }
+
+    public static function buscaCategoria ($idCategoria = '%'){
+        $baseDatos = new BaseDatos();
+        $consulta = "SELECT * FROM categorias WHERE id LIKE ?";
+        $categoria = $baseDatos->consulta($consulta, [$idCategoria]);
+        return $categoria;
+    }
+
+    public static function buscaGenero ($idGenero = '%'){
+        $baseDatos = new BaseDatos();
+        $consulta = "SELECT * FROM generos WHERE id LIKE ?";
+        $genero = $baseDatos->consulta($consulta, [$idGenero]);
+        return $genero;
     }
 }
 ?>
