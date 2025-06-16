@@ -1,0 +1,113 @@
+
+.formulario {
+    background-color: var(--secundario);
+    width: min(80rem, 90%);
+    margin: 2rem auto;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: var(--forma-negrita);
+    color: var(--blanco);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.campo-formulario {
+    margin-bottom: 1rem;
+    width: 100%;
+    min-height: 1rem;
+}
+
+.formulario label {
+    text-transform: capitalize;
+    color: var(--blanco);
+    font-weight: var(--forma-negrita);
+    margin-bottom: 0.5rem;
+}
+
+.formulario .campo-formulario > label {
+    display: block;
+}
+
+.campo-formulario .input-formulario {
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    appearance: none;
+}
+
+.prefes,
+.interes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* @media (max-width:768px) {
+    .interes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .interes label {
+        margin: 0;
+    }
+} */
+
+@media (max-width:768px) {
+    .interes {
+        flex-flow: wrap;
+    }
+    .interes label {
+        max-width: 50%;
+        margin: 0;
+    }
+}
+
+.campo-formulario input[type="radio"],
+.campo-formulario input[type="checkbox"] {
+    display: none;
+}
+
+.campo-formulario input[type="radio"]:checked + label,
+.campo-formulario input[type="checkbox"]:checked + label {
+    background-color: var(--seleccionado);
+    color: var(--principal);
+}
+
+.campo-formulario .prefes label,
+.campo-formulario .interes label {
+    color: var(--principal);
+    background-color: var(--blanco);
+    font-weight: var(--forma-principal);
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.campo-formulario textarea {
+    width: 100%;
+    min-height: 10rem;
+    resize: vertical;
+    background-color: var(--blanco);
+    color: var(--principal);
+    font-weight: var(--forma-principal);
+    font-family: var(--fuente-principal);
+    font-size: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+.derecha {
+    justify-content: end;
+}
