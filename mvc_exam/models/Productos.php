@@ -58,7 +58,36 @@ class Productos {
     }
 
     public function nuevoProducto($datosRecibidos) {
+
         // .... Ejercicio1 
+        $buscarProducto = $this->buscarPorCodigoBarras($datosRecibidos['newcod']);
+        $buscarProducto = json_decode($buscarProducto,true);
+        
+        
+        if(!isset($buscarProducto['error'])){ 
+            return ['ok' => false, 'error' => 'El producto Ya existe y es ' . $buscarProducto['nombre']];
+        }  
+ 
+        $datosRecibidos['foto'] = $this->gestionaFoto(($buscarProducto['foto']) ?? '');
+        
+        $consulta = "INSERT INTO productos (nombre, unidades, categoriaId, precio, generoId, foto, codigo, descripcion)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?) ";
+
+
+
+        $parametros = [$datosRecibidos['nombre'],$datosRecibidos['unidades'],$datosRecibidos['categoria'],
+                $datosRecibidos['precio'],$datosRecibidos['genero'],$datosRecibidos['foto'],
+                $datosRecibidos['newcod'],$datosRecibidos['descripcion']];
+        $respuesta = $this->misDatos->guardar($consulta, $parametros);
+
+        if($respuesta[0] === false) {
+            if($respuesta[1] == 1062) {
+                return ['ok' => false,'error' => 'El producto no se ha creado porque su código de barras ya existe'];
+            } else {
+                return ['ok' => false,'error' => 'No se ha podido crear el producto (' . $respuesta[1] . ')'];
+            }
+        }        
+        
         return ['ok' => true, 'mensaje' => 'Producto guardado correctamente']; 
 
     }
@@ -91,16 +120,27 @@ class Productos {
 
 
     public function eliminarProducto($datosRecibidos) {
+
         $productoBuscado = $this->buscarPorCodigoBarras($datosRecibidos['codigo']);
         $productoBuscado = json_decode($productoBuscado,true);
+        
         if(isset($productoBuscado['error'])){
             return ['ok' => false, 'error' => 'El producto no existe'];
-        }      
+        }  
+
         $consulta ="DELETE FROM productos WHERE codigo = ?";
         $productoEliminado = $this->misDatos->guardar($consulta, [$datosRecibidos['codigo']]);
+        
         if($productoEliminado[0] === false) {
+
             if($productoEliminado[1] == 1451) {
-                return ['ok' => false,'error' => 'El producto no se ha eliminado porque está incluido en algún pedido'];
+
+                $pedido = Pedido::getPedidoProducto($datosRecibidos['codigo']);
+                
+                if(empty($pedido)){
+                    return ['ok' => false,'error' => 'El producto no se ha eliminado porque está incluido en algún pedido pero no se cual'];
+                }
+                    return ['ok' => false,'error' => 'El producto no se ha eliminado porque está incluido en el pedido ' . $pedido['id'] . ' del cliente ' . $pedido['nombre'] ];
             } else {
                 return ['ok' => false,'error' => 'Producto encontrado pero no podido eliminar (' . $productoEliminado[1] . ')'];
             }

@@ -61,6 +61,7 @@ class Menu
             if (($pagina == '/tienda') && ($logeado['role'] == 1)) {
                 $navegacion .= self::menuTexto(self::$carrito, $pagina);
             }
+            
             if ($logeado['role'] == 9) {
                 $navegacion .= self::menuTexto(self::$usuarios, $pagina);
             }

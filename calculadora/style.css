@@ -1,0 +1,86 @@
+:root {
+    --primario: #000;
+    --secundario: #2e2f3f;
+    --blanco: #fff;
+    --fondo-claro: #3d3e50;
+    --fondo-oscuro: #1e1e2f;
+    --fondo-boton-pulsado: #57576d;
+    --fondo-boton-azul: #007aff;
+    --boton-azul-pulsado: #229cff;
+
+    --fuente-principal: sans-serif;
+}
+
+html {
+    font-size: 62.5%; /* un rem sea 10 pixeles */
+    box-sizing: border-box;
+    user-select: none;
+}
+
+* {
+    box-sizing: inherit;
+    font-family: var(--fuente-principal);
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--fondo-oscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora {
+    background-color: var(--secundario);
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 400px;
+    /* que si es ordenador sea maximo 400 px pero si es movil sea el 100% con estas dos lineas de arriba */
+    box-shadow: 0 1rem 3rem var(--primario);
+}
+
+.pantalla {
+    background-color: var(--fondo-oscuro);
+    color: var(--blanco);
+    font-size: 3rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: right;
+    margin-bottom: 2rem;
+    min-height: 6rem;
+    overflow-x: auto; /* si se sobrepasa el contenido lo pone en scroll */
+}
+
+.botones {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 2rem;
+    font-size: 3rem;
+    background-color: var(--fondo-claro);
+    color: var(--blanco);
+    border-radius: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button:hover {
+    background-color: var(--fondo-boton-pulsado);
+}
+button:active {
+    transform: scale(0.95);
+}
+.doble {
+    grid-column: span 2;
+}
+.azul {
+    background-color: var(--fondo-boton-azul);
+}
+.azul:hover {
+    background-color: var(--boton-azul-pulsado);
+}

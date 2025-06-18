@@ -25,6 +25,8 @@ Sobre el proyecto adjunto realizar las siguientes tareas:
  
 3) Escribe aquí y ejecuta en el terminal una consulta para modificar el roleId de un usuario que tengas creado a roleId = 9  (0.5 puntos)
 
+UPDATE clientes SET roleId = 9 WHERE id=1;
+
 4) Crear en el menú un link "/usuarios" llamado "Usuarios" que solamente aparezca cuando el usuario logeado tenga roleId = 9 en la base de datos. (1 punto)
 
 5) En el proyecto existe una vista llamada usuarios.php y en src/js/ un usuarios.js:

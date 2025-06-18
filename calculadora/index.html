@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Carga el manifiesto -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- Color de la url -->
+    <meta name="theme-color" content="#1e1e2f">
+
+    <!-- IOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-title" content="Calculadora">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-touch-icon" content="img/calcu.png">
+
+    <title>Calculator</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+    <link rel="icon" href="img/calcu.png" type="image/x-icon">
+</head>
+
+<body>
+    <main class="calculadora" aria-label="Calculadora" role="application">
+        <section class="pantalla" aria-label="pantalla de la calculadora">
+
+            <output id="pantalla" rol="status" alia-live="polite">0</output>
+
+        </section>
+
+        <section class="botones" aria-label="teclado de la calculadora">
+
+            <button aria-label="borrar todo">C</button>
+            <button aria-label="porcentaje">%</button>
+            <button aria-label="dividir">/</button>
+            <button aria-label="atras">&#x232b;</button>
+
+            <button aria-label="siete">7</button>
+            <button aria-label="ocho">8</button>
+            <button aria-label="nueve">9</button>
+            <button aria-label="multiplicar">*</button>
+
+            <button aria-label="cuatro">4</button>
+            <button aria-label="cinco">5</button>
+            <button aria-label="seis">6</button>
+            <button aria-label="restar">-</button>
+
+            <button aria-label="uno">1</button>
+            <button aria-label="dos">2</button>
+            <button aria-label="tres">3</button>
+            <button aria-label="sumar">+</button>
+
+            <button aria-label="cero" class="doble">0</button>
+            <button aria-label="punto decimal">.</button>
+            <button aria-label="calcular resultado" class="azul">=</button>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

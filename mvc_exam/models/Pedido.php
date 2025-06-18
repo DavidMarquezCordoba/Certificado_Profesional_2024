@@ -96,6 +96,17 @@ class Pedido {
         $estadoConsulta = $this->misDatos->guardar($consulta, [$this->pedidoId]);
     }
 
+    public static function getPedidoProducto($producto) {
+        $datos = new BaseDatos();
+        $consulta = "SELECT pe.id AS id, c.nombre AS nombre FROM pedidos pe
+                    JOIN pedidosproductos pp ON pe.id = pp.pedidoId
+                    JOIN clientes c ON c.id = pe.clienteId
+                    JOIN productos p ON pp.productoId = p.id
+                    WHERE p.codigo = ? LIMIT 1";
+
+        $resultado = $datos->consulta($consulta, [$producto]);
+        return $resultado[0];
+    }
 
 }
 ?>
