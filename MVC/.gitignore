@@ -1,0 +1,4 @@
+.env
+vendor/
+public/css/*.min.css
+public/js/*.min.js

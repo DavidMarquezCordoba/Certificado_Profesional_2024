@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Para leer el manifest -->
-    <link rel="manifest" href="manifest.json">
+    <!-- leer el manifest -->
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#3e0091">
 
-    <meta name="">
     <!-- Para IOS -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="YoungPeople">
@@ -25,7 +24,8 @@
     <script defer src="js/scripts.php?s=header"></script>
     <script defer src="js/scripts.php?s=popover"></script>
     <?php echo $scripts; ?>
-    </head>
+    
+</head>
 <body>
     <header class="<?php echo ($pagina == '/')?'':'fondo'; ?>">
         <a class="logo" href="index.php"></a>

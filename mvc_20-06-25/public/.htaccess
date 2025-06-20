@@ -1,0 +1,45 @@
+# Reescribimos rutas solamente si el módulo mod_rewrite está habilitado
+<IfModule mod_rewrite.c>
+    # -MultiViews Desactiva que Apache intente adivinar archivos por coincidencias parciales
+    # -Indexes es para que no te salga un indice con los archivos
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    # hacemos que no sea posible leer un archivo con esta extensión desde el servidor
+    <FilesMatch "\.(env|git|log|json|md|xml|ini|yml)$">
+    <IF "%{REQUEST_URI} != '/manifest.json'">
+        Require all denied
+    </If>
+        # Order allow,deny
+        # Deny from all
+    </FilesMatch>
+
+
+    # Forzar HTTPS (poner después de RewriteEngine On)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Options +FollowSymLinks Options +FollowSymLinks
+    # RewriteBase / Esta línea define la ruta base del proyecto que Apache usará para calcular las reglas de reescritura relativas.
+    # RewriteEngine On Activa el motor de reescritura de URLs (mod_rewrite) en Apache.
+    RewriteBase /
+    RewriteEngine On
+    
+    # Forzar HTTPS
+
+    # Manejo de la cabecera Autorization (token)
+    # RewriteCond %{HTTP:token} .
+    # RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:token}]
+
+    # Eliminar barra final si no es carpeta real
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Enviar todo a index.php
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+

@@ -1,0 +1,112 @@
+/* color de fondo de la caja para el texto */
+#alerta {
+    text-transform: uppercase;
+    background-color: red;
+    color: var(--seleccionado);
+}
+
+#alerta h2{
+    margin: 10px;
+}
+
+/* color de fondo de la tela oscura del modal */
+[popover]::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+} 
+
+#mensaje {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: yellow;
+    padding: 10px;
+    z-index: 10000;
+    text-transform: uppercase;
+}
+
+#mensaje-texto {
+    margin: 20px;
+    font-size: 3rem;
+}
+
+#mensaje.ver {
+    display: block;
+}
+
+#mensaje.entra {
+    animation: entra-mensaje 0.5s ease-in-out;
+}
+
+#mensaje.sale {
+    animation: sale-mensaje 0.5s ease-in-out;
+}
+
+@keyframes entra-mensaje {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes sale-mensaje {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+/* animacion de espera de carga */
+#animacion-carga {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+#animacion-carga.ver {
+    display: flex;
+}
+
+.svg-carga {
+    width: 8.8rem;
+    height: 8.8rem;
+    animation: rotacion 1s linear infinite;
+}
+.circulo-carga {
+    stroke: var(--seleccionado);
+    stroke-linecap: round;
+    animation: linea-discontinua 1.5s ease-in-out infinite;
+}
+
+@keyframes linea-discontinua {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+@keyframes rotacion {
+    100% {
+        transform: rotate(360deg);
+    }
+}

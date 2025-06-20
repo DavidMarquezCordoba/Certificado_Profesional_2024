@@ -1,0 +1,23 @@
+{
+    "name": "youngpeople/mvc",
+    "description": "Tienda de ropa para gente joven",
+    "type": "project",
+    "autoload": {
+        "psr-4":{
+            "MVC\\": "./core",
+            "Controllers\\": "./controllers",
+            "Models\\": "./models",
+            "Services\\": "./services"
+        }
+    },
+    "authors": [
+        {
+            "name": "Juan Antonio"
+        }
+    ],
+    "require": {
+        "matthiasmullie/minify": "^1.3",
+        "vlucas/phpdotenv": "^5.6",
+        "phpmailer/phpmailer": "^6.10"
+    }
+}
